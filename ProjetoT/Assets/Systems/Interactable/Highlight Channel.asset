@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2137a12927b6ef6498c2f541f721b21c, type: 3}
+  m_Name: Highlight Channel
+  m_EditorClassIdentifier: 
+  m_HighlightMaterialOn: {fileID: 2100000, guid: 4cff89b037a1c1140a70bf2d796e539f,
+    type: 2}
+  m_HighlightMaterialOff: {fileID: 2100000, guid: b26658c402e50874c91920f37f6fe0d1,
+    type: 2}
