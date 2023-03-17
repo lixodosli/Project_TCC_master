@@ -17,14 +17,14 @@ public class PlayerMovement : MonoBehaviour
     {
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
-        PlayerInputManager.Instance.PlayerInput.World.PickItem.performed += PickItem;
-        PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += PauseMovement;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed += PickItem;
+        //InventoryUI.Instance.OnCallInventory += PauseMovement;
     }
 
     private void OnDestroy()
     {
-        PlayerInputManager.Instance.PlayerInput.World.PickItem.performed -= PickItem;
-        PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= PauseMovement;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PickItem;
+        //InventoryUI.Instance.OnCallInventory -= PauseMovement;
     }
 
     private void Update()
@@ -46,9 +46,9 @@ public class PlayerMovement : MonoBehaviour
         _CanMove = true;
     }
 
-    private void PauseMovement(InputAction.CallbackContext context)
+    private void PauseMovement(bool visible)
     {
-        _PauseMovement = !_PauseMovement;
+        _PauseMovement = !visible;
 
         if (!_PauseMovement)
             _MoveDirection = Vector3.zero;

@@ -7,8 +7,12 @@ public class InventoryUI : MonoBehaviour
 {
     public static InventoryUI Instance;
 
+    public delegate void InventoryUICallback(bool visible);
+    public InventoryUICallback OnCallInventory;
+
     [SerializeField] private GameObject m_InventoryUI;
     [SerializeField] private List<InventoryUI_Slot> m_Slots = new List<InventoryUI_Slot>();
+    public int OptionSelected;
     public bool Visible { get; private set; }
 
     private void Awake()
@@ -16,11 +20,15 @@ public class InventoryUI : MonoBehaviour
         Instance = this;
         Visible = false;
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += SetInventoryVisible;
+        PlayerInputManager.Instance.PlayerInput.World.InventoryNavigateDown.performed += NavigateSelectionDown;
+        PlayerInputManager.Instance.PlayerInput.World.InventoryNavigateUp.performed += NavigateSelectionUp;
     }
 
     private void OnDestroy()
     {
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= SetInventoryVisible;
+        PlayerInputManager.Instance.PlayerInput.World.InventoryNavigateDown.performed -= NavigateSelectionDown;
+        PlayerInputManager.Instance.PlayerInput.World.InventoryNavigateUp.performed -= NavigateSelectionUp;
     }
 
     private void Start()
@@ -41,10 +49,35 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    private void NavigateSelectionDown(InputAction.CallbackContext context)
+    {
+        SetOptionSelection(1);
+    }
+
+    private void NavigateSelectionUp(InputAction.CallbackContext context)
+    {
+        SetOptionSelection(0);
+    }
+
+    public void SetOptionSelection(int selection)
+    {
+        OptionSelected = Mathf.Clamp(selection, 0, 1);
+
+        for (int i = 0; i < m_Slots.Count; i++)
+        {
+            m_Slots[i].UpdateOptionSelection(selection);
+        }
+    }
+
     public void AddItemInInventory(ItemSettings item, int index)
     {
-        m_Slots[index].SetItem(item.Item, m_Slots[index].Quantity + 1);
+        m_Slots[index].SetItem(item.Item);
         m_Slots[index].UpdateSlotElements();
+    }
+
+    public void RemoveItemInInventory(int index)
+    {
+        m_Slots[index].SetupSlot();
     }
 
     public void SetInventoryVisible(InputAction.CallbackContext context)
@@ -59,12 +92,28 @@ public class InventoryUI : MonoBehaviour
     {
         Visible = true;
         m_InventoryUI.SetActive(Visible);
+
+        for (int i = 0; i < m_Slots.Count; i++)
+        {
+            m_Slots[i].UpdateSlotSelection();
+            m_Slots[i].UpdateSlotElements();
+        }
+
+        SetOptionSelection(0);
+        SelectItem(Inventory.Instance.SelectedItemIndex());
+
+        OnCallInventory?.Invoke(Visible);
     }
 
     public void HideInventory()
     {
         Visible = false;
+        for (int i = 0; i < m_Slots.Count; i++)
+        {
+            m_Slots[i].UpdateSlotElements();
+        }
         m_InventoryUI.SetActive(Visible);
+        OnCallInventory?.Invoke(Visible);
     }
 
     public void SelectItem(int itemIndex)

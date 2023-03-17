@@ -16,11 +16,20 @@ public class InteractableItem : MonoBehaviour
         SetupTipBox();
         SetTipBoxVisible(false);
         SetInteraction(true);
+        Settings.Item.GameItem = this;
+        GenerateItemID();
+        string d = Settings.Item.GameItem.name + "\n" + Settings.Item.ItemID.ID;
+        Debug.Log(d);
     }
 
     private void Update()
     {
         SetupTipPosition();
+    }
+
+    public void GenerateItemID()
+    {
+        m_Settings.Item.GenerateID();
     }
 
     public void SetInteraction(bool interact)
@@ -42,7 +51,7 @@ public class InteractableItem : MonoBehaviour
     {
         Vector3 position = Camera.main.WorldToScreenPoint(transform.position + m_Offset);
 
-        m_Settings.TipBox.position = position;
+        m_Settings.TipBox.position = Vector3.Slerp(m_Settings.TipBox.position, position, Time.deltaTime * 20f);
     }
 
     public void SetTipBoxVisible(bool visible)

@@ -9,23 +9,24 @@ public class InventoryUI_Slot : MonoBehaviour
 {
     public Item Item;
     public Image ItemIconUIElement;
-    public TMP_Text QuantityUIElement;
     public Sprite DefaultIcon;
     public Sprite ItemIcon;
-    public int Quantity;
     public ColorListener Color;
     public bool IsSelected = false;
     public ItemSettings Settings;
+    public TMP_Text[] OptionsTexts;
 
     private void Awake()
     {
         SetupSlot();
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += UpdateColor;
+        InventoryUI.Instance.OnCallInventory += UpdateTipBoxVisible;
     }
 
     private void OnDestroy()
     {
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= UpdateColor;
+        InventoryUI.Instance.OnCallInventory -= UpdateTipBoxVisible;
     }
 
     public void UpdateColor(InputAction.CallbackContext context)
@@ -54,18 +55,46 @@ public class InventoryUI_Slot : MonoBehaviour
 
     public void SetupSlot()
     {
-        SetItem(null, 0);
+        SetItem(null);
         UpdateSlotElements();
     }
 
-    public void SetItem(Item item, int quantity)
+    public void SetItem(Item item)
     {
         Item = item;
 
         if(item != null)
             ItemIcon = item.ItemIcon;
+        else
+            ItemIcon = DefaultIcon;
+    }
 
-        Quantity = quantity;
+    public void UpdateOptionSelection(int index)
+    {
+        for (int i = 0; i < Settings.Options.Length; i++)
+        {
+            if (i == index)
+            {
+                Settings.Options[i].SetVisible(true);
+                OptionsTexts[i].color = ColorPicker.Instance.GetColor(ColorKey.OffWhite);
+            }
+            else
+            {
+                Settings.Options[i].SetVisible(false);
+                OptionsTexts[i].color = ColorPicker.Instance.GetColor(ColorKey.Brick);
+            }
+        }
+    }
+
+    public void UpdateTipBoxVisible(bool visible)
+    {
+        if (!visible)
+            return;
+
+        if (Item == null)
+            SetTipBoxVisible(false);
+        else
+            SetTipBoxVisible(true);
     }
 
     public void UpdateSlotElements()
@@ -74,12 +103,17 @@ public class InventoryUI_Slot : MonoBehaviour
             ItemIconUIElement.sprite = ItemIcon;
         else
             ItemIconUIElement.sprite = DefaultIcon;
-        QuantityUIElement.text = Quantity > 0 ? Quantity.ToString() : "";
+
+        if (Item != null)
+        {
+            Settings.Options[0].Setup(Item.Usage.UseText, false);
+            Settings.Options[1].Setup("Largar", false);
+        }
     }
 
     public void SetupTipBox()
     {
-        if(Item != null)
+        if (Item != null)
             Settings.SetupTipBox(Item.ItemName);
     }
 

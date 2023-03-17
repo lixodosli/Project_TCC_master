@@ -12,6 +12,9 @@ public class NearbyInteractables : MonoBehaviour
     {
         if (HasNearbyInteractables())
         {
+            if (Input.GetKeyDown(KeyCode.H))
+                Debug.Log(ClosestInteractables().name);
+
             if (!ClosestInteractables().Visible())
             {
                 AllInteractableVisible(false);

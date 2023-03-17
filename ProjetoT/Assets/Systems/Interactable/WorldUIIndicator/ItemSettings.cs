@@ -22,6 +22,10 @@ public class ItemSettings
     public RectTransform CollectBox;
     public TMP_Text CollectText;
     public Item Item;
+    public string ItemID;
+
+    [Header("Options Configs")]
+    public InventoryItemOption[] Options;
 
     public void SetupTipBox(string text)
     {

@@ -1,12 +1,7 @@
 using UnityEngine;
-using UnityEngine.Events;
 
-[System.Serializable]
-public class ItemEvent : UnityEvent<Item>
-{
-}
-
-public abstract class Item : ScriptableObject
+[CreateAssetMenu(menuName = "Scriptable Objects/Items/Item", fileName = "Item_")]
+public class Item : ScriptableObject
 {
     [Header("Basic Item Info")]
     public string ItemName;
@@ -14,25 +9,34 @@ public abstract class Item : ScriptableObject
     public Sprite ItemIcon;
 
     [Header("Item Effects")]
-    public ItemEvent OnUse;
-    public ItemEvent OnCancel;
-    public ItemEvent OnSelect;
-    public ItemEvent OnDiscard;
-    public ItemEvent OnGet;
+    public Usage Usage;
+    public InteractableItem GameItem;
 
-    public bool HaveOnUse = true;
-    public bool HaveOnCancel;
-    public bool HaveOnSelect;
-    public bool HaveOnDiscard;
-    public bool HaveOnGet;
+    [Header("Item ID")]
+    public ItemID ItemID;
 
-    public abstract bool CanUse();
-
-    public virtual void Use()
+    public virtual bool CanUse()
     {
-        if (!CanUse())
-            return;
+        return true;
+    }
 
-        OnUse?.Invoke(this);
+    public void UseItem()
+    {
+        Usage.Use(this);
+    }
+
+    public void GenerateID()
+    {
+        ItemID = new ItemID();
+    }
+}
+
+public class ItemID
+{
+    public string ID;
+
+    public ItemID()
+    {
+        ID = System.Guid.NewGuid().ToString();
     }
 }
