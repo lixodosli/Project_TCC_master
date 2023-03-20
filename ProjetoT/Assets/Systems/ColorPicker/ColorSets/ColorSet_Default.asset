@@ -33,3 +33,11 @@ MonoBehaviour:
     Color:
       serializedVersion: 2
       rgba: 4286418867
+  - Key: 5
+    Color:
+      serializedVersion: 2
+      rgba: 4286752335
+  - Key: 6
+    Color:
+      serializedVersion: 2
+      rgba: 4293241182

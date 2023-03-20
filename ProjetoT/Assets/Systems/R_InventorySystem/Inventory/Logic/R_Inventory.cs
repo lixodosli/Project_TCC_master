@@ -10,12 +10,14 @@ public class R_Inventory : MonoBehaviour
     #region ChangesEvents
     public delegate void InventoryCallback();
     public InventoryCallback OnCollectItem;
-    public InventoryCallback OnDropItem;
     public InventoryCallback OnOpenCloseInventory;
     public InventoryCallback OnChangeSelectedItem;
+    public InventoryCallback OnChangeSelectedOption;
 
     public delegate void ItemInInventoryCallback(R_Item item);
     public ItemInInventoryCallback OnCollectItemUI;
+    public ItemInInventoryCallback OnUseItem;
+    public ItemInInventoryCallback OnDropItem;
     #endregion
 
     #region List
@@ -29,47 +31,63 @@ public class R_Inventory : MonoBehaviour
     [SerializeField] private int m_SelectedItemIndex = 0;
     public int SelectedItemIndex => m_SelectedItemIndex;
 
-    private bool _MakeInput = false;
+    private bool _MakeInputX = false;
+    private bool _MakeInputY = false;
+
+    [SerializeField] private int _SelectedOption = 0;
+    public int SelectedOption => _SelectedOption;
     #endregion
 
     #region OpenAndClose
     private bool _InventoryVisible = false;
     #endregion
 
+    #region DropConfigs
+    [Header("Drop Item Configs")]
+    [SerializeField] private Vector3 m_DropOffset;
+    #endregion
+
     private void Awake()
     {
         Instance = this;
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += OpenInventory;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed += SelectOption;
+        OnDropItem += DropItem;
+        OnUseItem += UseItem;
     }
 
     private void OnDestroy()
     {
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= OpenInventory;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= SelectOption;
+        OnDropItem -= DropItem;
+        OnUseItem -= UseItem;
     }
 
     private void Update()
     {
-        UpdateSelectedItem();
+        UpdateSelectedItemInput();
+        UpdateSelectionInput();
     }
 
     #region SelectionManager
-    public void UpdateSelectedItem()
+    public void UpdateSelectedItemInput()
     {
         if (GameStateManager.Game.State != GameState.Inventory)
             return;
 
-        if (!_MakeInput)
+        if (!_MakeInputX)
         {
             if (Mathf.Abs(SelectionInput()) > 0.1f)
             {
                 ChangeSelection(SelectionInput() > 0 ? m_SelectedItemIndex + 1 : m_SelectedItemIndex -1);
-                _MakeInput = true;
+                _MakeInputX = true;
             }
         }
 
         if (SelectionInput() == 0)
         {
-            _MakeInput = false;
+            _MakeInputX = false;
         }
     }
 
@@ -93,6 +111,62 @@ public class R_Inventory : MonoBehaviour
     }
 
     private float SelectionInput() => PlayerInputManager.Instance.PlayerInput.World.Movement.ReadValue<Vector2>().x;
+    #endregion
+
+    #region OptionsInfo
+    public void ChangeSelectionY(int newSelection)
+    {
+        if (newSelection == _SelectedOption)
+            return;
+
+        _SelectedOption = Mathf.Clamp(newSelection, 0, 1);
+        RaiseSelectedOption();
+    }
+
+    public void UpdateSelectionInput()
+    {
+        if (GameStateManager.Game.State != GameState.Inventory || Items[SelectedItemIndex] == null)
+            return;
+
+        if (!_MakeInputY)
+        {
+            if (Mathf.Abs(SelectionInputY()) > 0.1f)
+            {
+                ChangeSelectionY(SelectionInputY() > 0 ? _SelectedOption - 1 : _SelectedOption + 1);
+                _MakeInputY = true;
+            }
+        }
+
+        if (SelectionInputY() == 0)
+        {
+            _MakeInputY = false;
+        }
+    }
+
+    public void SelectOption(InputAction.CallbackContext context)
+    {
+        if (GameStateManager.Game.State != GameState.Inventory || Items[SelectedItemIndex] == null)
+            return;
+
+        switch (_SelectedOption)
+        {
+            default:
+                return;
+            case 0:
+                OnUseItem?.Invoke(Items[SelectedItemIndex]);
+                break;
+            case 1:
+                OnDropItem?.Invoke(Items[SelectedItemIndex]);
+                break;
+        }
+    }
+
+    public void RaiseSelectedOption()
+    {
+        OnChangeSelectedOption?.Invoke();
+    }
+
+    private float SelectionInputY() => PlayerInputManager.Instance.PlayerInput.World.Movement.ReadValue<Vector2>().y;
     #endregion
 
     #region CollectItem
@@ -155,8 +229,19 @@ public class R_Inventory : MonoBehaviour
             return;
         }
 
+        Items[slot] = null;
         item.transform.parent = null;
-        RaiseDropItem();
+        item.transform.position = transform.position + transform.forward + m_DropOffset;
+        item.ChangeInteraction(true);
+        item.gameObject.SetActive(true);
+        CallForChangeInventory();
+    }
+    #endregion
+
+    #region UseItem
+    public void UseItem(R_Item item)
+    {
+        item.UseItem();
     }
     #endregion
 
@@ -240,11 +325,6 @@ public class R_Inventory : MonoBehaviour
     {
         OnCollectItem?.Invoke();
         OnCollectItemUI?.Invoke(item);
-    }
-
-    private void RaiseDropItem()
-    {
-        OnDropItem?.Invoke();
     }
     #endregion
 }

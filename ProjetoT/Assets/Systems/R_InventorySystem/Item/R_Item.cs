@@ -11,7 +11,6 @@ public abstract class R_Item : R_Interactable
         if (GameStateManager.Game.State != GameState.World_Free)
             return;
 
-        Debug.Log("Tentou interagir com o item <" + ItemName + ">.");
         R_Inventory.Instance.CollectItem(this);
     }
 }

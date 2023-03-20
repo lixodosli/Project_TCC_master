@@ -6,7 +6,9 @@ public enum ColorKey
     OffWhite,
     Brick,
     Yolk,
-    Sand
+    Sand,
+    SweetGreen,
+    SweetBlue
 }
 
 [CreateAssetMenu(menuName = "Scriptable Objects/ColorSet/New Color", fileName = "ColorSet_")]

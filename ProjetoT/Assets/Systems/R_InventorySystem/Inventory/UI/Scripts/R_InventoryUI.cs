@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 
@@ -13,6 +14,7 @@ public class R_InventoryUI : MonoBehaviour
     #region Elementos
     [SerializeField] private GameObject m_InventoryUIElements;
     [SerializeField] private R_InventoryUI_Slot[] m_Slots = new R_InventoryUI_Slot[9];
+    public R_InventoryUI_Slot[] Slots => m_Slots;
     #endregion
 
     #region Caracteristicas
@@ -25,15 +27,18 @@ public class R_InventoryUI : MonoBehaviour
         Instance = this;
         R_Inventory.Instance.OnOpenCloseInventory += DoInventoryDisplay;
         R_Inventory.Instance.OnChangeSelectedItem += UpdateSelection;
+        R_Inventory.Instance.OnChangeSelectedOption += UpdateOption;
         R_Inventory.Instance.OnCollectItemUI += DoInventoryItemDisplay;
+        R_Inventory.Instance.OnDropItem += DoRemoveItemInventory;
     }
 
     private void OnDestroy()
     {
         R_Inventory.Instance.OnOpenCloseInventory -= DoInventoryDisplay;
         R_Inventory.Instance.OnChangeSelectedItem -= UpdateSelection;
+        R_Inventory.Instance.OnChangeSelectedOption -= UpdateOption;
         R_Inventory.Instance.OnCollectItemUI -= DoInventoryItemDisplay;
-
+        R_Inventory.Instance.OnDropItem -= DoRemoveItemInventory;
     }
 
     private void Start()
@@ -51,13 +56,22 @@ public class R_InventoryUI : MonoBehaviour
         {
             if (i == R_Inventory.Instance.SelectedItemIndex)
             {
-                m_Slots[i].Select(true);
+                m_Slots[i].HighlightSlot(true);
+                UpdateOption();
             }
             else
             {
-                m_Slots[i].Select(false);
+                m_Slots[i].HighlightSlot(false);
             }
         }
+    }
+
+    public void UpdateOption()
+    {
+        if (!Visible)
+            return;
+
+        m_Slots[R_Inventory.Instance.SelectedItemIndex].Options.HighLightSelection(R_Inventory.Instance.SelectedOption);
     }
     #endregion
 
@@ -80,6 +94,25 @@ public class R_InventoryUI : MonoBehaviour
         int index = R_Inventory.Instance.SlotByItem(item);
 
         m_Slots[index].SetItem(item);
+    }
+
+    public void DoRemoveItemInventory(R_Item item)
+    {
+        int itemIndex = -1;
+
+        for (int i = 0; i < m_Slots.Length; i++)
+        {
+            if(m_Slots[i].ItemInSlot == item)
+            {
+                itemIndex = i;
+                break;
+            }
+        }
+
+        if (itemIndex == -1)
+            return;
+
+        m_Slots[itemIndex].SetItem(null);
     }
 
     private void ShowInventory()

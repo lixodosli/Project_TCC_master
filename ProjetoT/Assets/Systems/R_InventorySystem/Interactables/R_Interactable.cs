@@ -36,4 +36,7 @@ public abstract class R_Interactable : MonoBehaviour
     }
 
     public abstract void DoInteraction();
+
+    [ContextMenu("Set Id")]
+    public void SetID() => m_ItemID = System.Guid.NewGuid().ToString();
 }
