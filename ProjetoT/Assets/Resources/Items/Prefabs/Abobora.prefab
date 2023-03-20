@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: "Ab\xF3bora"
   m_ItemID: didashu
-  m_ItemSprite: {fileID: -2118740688, guid: 62c921304e07ea148998b5ceb4786e8d, type: 3}
+  m_ItemSprite: {fileID: 21300000, guid: c4b2e12410b343144bfa9172c785b57b, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_ToolTip: {fileID: 1657144627}
