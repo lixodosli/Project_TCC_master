@@ -17,13 +17,13 @@ public class PlayerMovement : MonoBehaviour
     {
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
-        R_Inventory.Instance.OnCollectItem += CollectItem;
+        R_Inventory.Instance.OnCollectItem += CollectItemAnim;
         R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
     }
 
     private void OnDestroy()
     {
-        R_Inventory.Instance.OnCollectItem += CollectItem;
+        R_Inventory.Instance.OnCollectItem += CollectItemAnim;
         R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
         //InventoryUI.Instance.OnCallInventory -= PauseMovement;
     }
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             _MoveDirection = Vector3.zero;
     }
 
-    private void CollectItem()
+    private void CollectItemAnim()
     {
         _CanMove = false;
         m_Animator.SetTrigger("Pick");

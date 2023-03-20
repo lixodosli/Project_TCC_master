@@ -9,7 +9,14 @@ public class R_InventoryUI_Slot : MonoBehaviour
     #region Slot
     [SerializeField] private Image m_SlotBG;
     private bool _Selected;
+    #endregion;
 
+    #region ItemInfo
+    [SerializeField] private Image m_ItemIcon;
+    [SerializeField] private Sprite m_BlankIcon;
+    #endregion;
+
+    #region Slot
     public void Select(bool select)
     {
         _Selected = select;
@@ -31,9 +38,6 @@ public class R_InventoryUI_Slot : MonoBehaviour
     #endregion;
 
     #region ItemInfo
-    [SerializeField] private Image m_ItemIcon;
-    [SerializeField] private Sprite m_BlankIcon;
-
     public void SetItem(R_Item item)
     {
         if (item == null)

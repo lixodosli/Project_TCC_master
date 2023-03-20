@@ -5,11 +5,14 @@ using UnityEngine.InputSystem;
 
 public class R_NearbyInteractables : MonoBehaviour
 {
+    public static R_NearbyInteractables Instance;
+
     [SerializeField] private Transform m_InstigatorPoint;
     private List<R_Interactable> m_Interactables = new List<R_Interactable>();
 
     private void Awake()
     {
+        Instance = this;
         PlayerInputManager.Instance.PlayerInput.World.Action.performed += DoInteraction;
     }
 

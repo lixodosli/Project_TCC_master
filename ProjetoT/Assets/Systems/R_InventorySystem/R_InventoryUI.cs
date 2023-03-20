@@ -23,14 +23,16 @@ public class R_InventoryUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        R_Inventory.Instance.OnOpenCloseInventory += DoDisplay;
+        R_Inventory.Instance.OnOpenCloseInventory += DoInventoryDisplay;
         R_Inventory.Instance.OnChangeSelectedItem += UpdateSelection;
+        R_Inventory.Instance.OnCollectItemUI += DoInventoryItemDisplay;
     }
 
     private void OnDestroy()
     {
-        R_Inventory.Instance.OnOpenCloseInventory -= DoDisplay;
+        R_Inventory.Instance.OnOpenCloseInventory -= DoInventoryDisplay;
         R_Inventory.Instance.OnChangeSelectedItem -= UpdateSelection;
+        R_Inventory.Instance.OnCollectItemUI -= DoInventoryItemDisplay;
 
     }
 
@@ -60,7 +62,7 @@ public class R_InventoryUI : MonoBehaviour
     #endregion
 
     #region Display
-    public void DoDisplay()
+    public void DoInventoryDisplay()
     {
         switch (GameStateManager.Game.State)
         {
@@ -71,6 +73,13 @@ public class R_InventoryUI : MonoBehaviour
                 HideInventory();
                 break;
         }
+    }
+
+    public void DoInventoryItemDisplay(R_Item item)
+    {
+        int index = R_Inventory.Instance.SlotByItem(item);
+
+        m_Slots[index].SetItem(item);
     }
 
     private void ShowInventory()

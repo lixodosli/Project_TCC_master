@@ -12,9 +12,10 @@ public class R_Inventory : MonoBehaviour
     public InventoryCallback OnCollectItem;
     public InventoryCallback OnDropItem;
     public InventoryCallback OnOpenCloseInventory;
-    public InventoryCallback OnOpenInventory;
-    public InventoryCallback OnCloseInventory;
     public InventoryCallback OnChangeSelectedItem;
+
+    public delegate void ItemInInventoryCallback(R_Item item);
+    public ItemInInventoryCallback OnCollectItemUI;
     #endregion
 
     #region List
@@ -112,9 +113,9 @@ public class R_Inventory : MonoBehaviour
         Items[slot] = item;
         Items[slot].transform.position = InventoryPool.transform.position;
         Items[slot].ChangeInteraction(false);
-        Items[slot].SetIsClose(false);
         Items[slot].gameObject.SetActive(false);
-        RaiseCollectItem();
+        R_NearbyInteractables.Instance.RemoveInteractable(item);
+        RaiseCollectItem(Items[slot]);
     }
 
     private bool TryCollect(R_Item item)
@@ -192,7 +193,7 @@ public class R_Inventory : MonoBehaviour
     #endregion
 
     #region Utilities
-    private int SlotByItem(R_Item item)
+    public int SlotByItem(R_Item item)
     {
         bool foundItem = false;
         int slot = -1;
@@ -235,9 +236,10 @@ public class R_Inventory : MonoBehaviour
         return slot;
     }
 
-    private void RaiseCollectItem()
+    private void RaiseCollectItem(R_Item item)
     {
         OnCollectItem?.Invoke();
+        OnCollectItemUI?.Invoke(item);
     }
 
     private void RaiseDropItem()
