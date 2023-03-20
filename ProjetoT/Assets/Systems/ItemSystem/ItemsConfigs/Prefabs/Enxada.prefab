@@ -198,6 +198,7 @@ MonoBehaviour:
     CollectBox: {fileID: 6440438636033518064}
     CollectText: {fileID: 6440438636517542580}
     Item: {fileID: 11400000, guid: 3391ee34e6e4aa54d923d3120cbca468, type: 2}
+    ItemID: 
     Options: []
 --- !u!33 &3330963532221857242
 MeshFilter:
@@ -309,7 +310,7 @@ PrefabInstance:
     - target: {fileID: 5257129954518955971, guid: 2a95edda13f52b24a89ff8fe63e0dc1d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5257129954518955971, guid: 2a95edda13f52b24a89ff8fe63e0dc1d,
         type: 3}
@@ -552,6 +553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000045776367
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396672456809717148, guid: 9153cafa413463d44b8ba4ca99b3fc5a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000005722046
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9153cafa413463d44b8ba4ca99b3fc5a, type: 3}

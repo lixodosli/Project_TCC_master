@@ -6,6 +6,10 @@ using TMPro;
 
 public class R_InventoryUI : MonoBehaviour
 {
+    #region Singleton
+    public static R_InventoryUI Instance;
+    #endregion
+
     #region Elementos
     [SerializeField] private GameObject m_InventoryUIElements;
     [SerializeField] private R_InventoryUI_Slot[] m_Slots = new R_InventoryUI_Slot[9];
@@ -18,6 +22,7 @@ public class R_InventoryUI : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         R_Inventory.Instance.OnOpenCloseInventory += DoDisplay;
         R_Inventory.Instance.OnChangeSelectedItem += UpdateSelection;
     }

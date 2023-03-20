@@ -2,23 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class R_Item : MonoBehaviour
+public abstract class R_Item : R_Interactable
 {
-    #region Propriedades
-    [SerializeField] protected string m_ItemName;
-    public string ItemName => m_ItemName;
-
-    [SerializeField] protected string m_ItemID;
-    public string ItemID => m_ItemID;
-
-    [SerializeField] protected Sprite m_ItemSprite;
-    public Sprite ItemIcon => m_ItemSprite;
-    #endregion
-
-    #region Caracteristicas
-    [SerializeField] protected bool m_CanCollect;
-    public bool CanCollect => m_CanCollect;
-    #endregion
-
     public abstract void UseItem();
+
+    public override void DoInteraction()
+    {
+        if (GameStateManager.Game.State != GameState.World_Free)
+            return;
+
+        Debug.Log("Tentou interagir com o item <" + ItemName + ">.");
+        R_Inventory.Instance.CollectItem(this);
+    }
 }

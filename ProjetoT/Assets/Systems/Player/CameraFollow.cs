@@ -19,12 +19,12 @@ public class CameraFollow : MonoBehaviour
 
     private void Awake()
     {
-        //InventoryUI.Instance.OnCallInventory += PauseMovement;
+        R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
     }
 
     private void OnDestroy()
     {
-        //InventoryUI.Instance.OnCallInventory -= PauseMovement;
+        R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
     }
 
     private void Start()
@@ -43,9 +43,12 @@ public class CameraFollow : MonoBehaviour
         m_CameraPivot.position = Vector3.Lerp(m_CameraPivot.position, m_Target.position, m_FollowSpeed * Time.deltaTime);
     }
 
-    private void PauseMovement(bool visible)
+    private void PauseMovement()
     {
-        _PauseMovement = !visible;
+        if (GameStateManager.Game.State == GameState.Inventory || GameStateManager.Game.State == GameState.Pause || GameStateManager.Game.State == GameState.Cutscene)
+            _PauseMovement = false;
+        else
+            _PauseMovement = true;
     }
 
     public void ChangeTarget(Transform newTarget)

@@ -17,13 +17,14 @@ public class PlayerMovement : MonoBehaviour
     {
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
-        PlayerInputManager.Instance.PlayerInput.World.Action.performed += PickItem;
-        //InventoryUI.Instance.OnCallInventory += PauseMovement;
+        R_Inventory.Instance.OnCollectItem += CollectItem;
+        R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
     }
 
     private void OnDestroy()
     {
-        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PickItem;
+        R_Inventory.Instance.OnCollectItem += CollectItem;
+        R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
         //InventoryUI.Instance.OnCallInventory -= PauseMovement;
     }
 
@@ -46,22 +47,22 @@ public class PlayerMovement : MonoBehaviour
         _CanMove = true;
     }
 
-    private void PauseMovement(bool visible)
+    private void PauseMovement()
     {
-        _PauseMovement = !visible;
+        if (GameStateManager.Game.State == GameState.Inventory || GameStateManager.Game.State == GameState.Pause || GameStateManager.Game.State == GameState.Cutscene)
+            _PauseMovement = false;
+        else
+            _PauseMovement = true;
 
         if (!_PauseMovement)
             _MoveDirection = Vector3.zero;
     }
 
-    private void PickItem(InputAction.CallbackContext context)
+    private void CollectItem()
     {
-        if (Inventory.Instance.Interactables.HasNearbyInteractables() && Inventory.Instance.Interactables.ClosestInteractables().Settings.IsCollectable)
-        {
-            _CanMove = false;
-            m_Animator.SetTrigger("Pick");
-            Invoke(nameof(SetCanMove), 0.5f);
-        }
+        _CanMove = false;
+        m_Animator.SetTrigger("Pick");
+        Invoke(nameof(SetCanMove), 0.5f);
     }
 
     private void FixedUpdate()

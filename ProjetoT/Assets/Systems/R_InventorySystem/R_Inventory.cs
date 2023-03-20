@@ -20,7 +20,8 @@ public class R_Inventory : MonoBehaviour
     #region List
     [Header("Inventory List")]
     public R_Item[] Items = new R_Item[9];
-    public Transform InventoryPool { get; private set; }
+    [SerializeField] private Transform m_InventoryPool;
+    public Transform InventoryPool => m_InventoryPool;
     #endregion
 
     #region SelectionManager
@@ -43,11 +44,6 @@ public class R_Inventory : MonoBehaviour
     private void OnDestroy()
     {
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= OpenInventory;
-    }
-
-    private void Start()
-    {
-        //OpenInventory();
     }
 
     private void Update()
@@ -81,7 +77,6 @@ public class R_Inventory : MonoBehaviour
         if (newSelection == SelectedItemIndex)
             return;
 
-        Debug.Log("Tentei mudar");
         m_SelectedItemIndex = Mathf.Clamp(newSelection, 0, 8);
         RaiseChangeSelectedItem();
     }
@@ -106,17 +101,19 @@ public class R_Inventory : MonoBehaviour
 
         if (slot < 0)
         {
-            Debug.Log("Não há mais espaço disponível no inventário.");
             return;
         }
 
-        if (!TryCollect(Items[slot]))
+        if (!TryCollect(item))
         {
-            Debug.Log("Não foi possível coletar o item.");
             return;
         }
 
         Items[slot] = item;
+        Items[slot].transform.position = InventoryPool.transform.position;
+        Items[slot].ChangeInteraction(false);
+        Items[slot].SetIsClose(false);
+        Items[slot].gameObject.SetActive(false);
         RaiseCollectItem();
     }
 
@@ -134,7 +131,6 @@ public class R_Inventory : MonoBehaviour
     {
         if (!item.CanCollect)
         {
-            Debug.Log("O Item <" + item.ItemName + "> não pode ser coletado.");
             return;
         }
 
@@ -181,7 +177,6 @@ public class R_Inventory : MonoBehaviour
 
         if (!isValidState)
         {
-            Debug.Log("Não foi possível abrir o inventário pois não estou em estado hábil para isto.");
             return;
         }
 
@@ -193,7 +188,6 @@ public class R_Inventory : MonoBehaviour
             GameStateManager.Game.RaiseChangeGameState(GameState.World_Free);
 
         OnOpenCloseInventory?.Invoke();
-        Debug.Log("Inventario visivel <" + _InventoryVisible + "> Tentativa de abrir/fechar inventario executada com sucesso.");
     }
     #endregion
 

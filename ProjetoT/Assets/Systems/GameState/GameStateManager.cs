@@ -32,13 +32,11 @@ public class GameStateManager : MonoBehaviour
     {
         if (state == State)
         {
-            Debug.Log("Estou tentando mudar de estado, porém estou indo para um estado que já me encontro.");
             return;
         }
 
         PreviousState = State;
         State = state;
-        Debug.Log("Estrei no estado <" + State.ToString() + ">.");
         OnStateChange?.Invoke(State);
     }
 }
