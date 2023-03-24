@@ -67,7 +67,7 @@ public class R_ToolTip : MonoBehaviour
 
         Vector3 position = Camera.main.WorldToScreenPoint(Interaction.transform.position + TipBox_PivotTargetOffset);
 
-        TipBox_BG.position = Vector3.Slerp(TipBox_BG.position, position, Time.deltaTime * TipBox_SpeedUpdate);
+        TipBox_BG.position = Vector3.Slerp(TipBox_BG.position, position, Time.deltaTime * 30f);
     }
 
     public void UpdateToolTipVisible()

@@ -232,6 +232,7 @@ public class R_Inventory : MonoBehaviour
         Items[slot] = null;
         item.transform.parent = null;
         item.transform.position = transform.position + transform.forward + m_DropOffset;
+        item.transform.rotation = Quaternion.identity;
         item.ChangeInteraction(true);
         item.gameObject.SetActive(true);
         CallForChangeInventory();
