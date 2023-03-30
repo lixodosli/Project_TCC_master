@@ -7,17 +7,17 @@ public class R_ToolTip : MonoBehaviour
     #region Position
     [Header("Position Configs")]
     public Vector3 TipBox_PivotTargetOffset;
-    public float TipBox_SpeedUpdate;
+    public float TipBox_SpeedUpdate = 30;
     #endregion
 
     #region Display
     [Header("Display Configs")]
     public GameObject TipBox_Elements;
     public Color32 TipBox_BGColor;
-    public int TipBox_CharSize;
-    public int TipBox_CharPadding;
-    public int TipBox_BG_MinSize;
-    public int TipBox_BG_MaxSize;
+    public int TipBox_CharSize = 8;
+    public int TipBox_CharPadding = 10;
+    public int TipBox_BG_MinSize = 48;
+    public int TipBox_BG_MaxSize = 160;
     #endregion
 
     #region GeneralComponents
@@ -67,7 +67,7 @@ public class R_ToolTip : MonoBehaviour
 
         Vector3 position = Camera.main.WorldToScreenPoint(Interaction.transform.position + TipBox_PivotTargetOffset);
 
-        TipBox_BG.position = Vector3.Slerp(TipBox_BG.position, position, Time.deltaTime * 30f);
+        TipBox_BG.position = Vector3.Slerp(TipBox_BG.position, position, Time.deltaTime * TipBox_SpeedUpdate);
     }
 
     public void UpdateToolTipVisible()

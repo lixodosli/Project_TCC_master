@@ -253,8 +253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ItemName: "Ab\xF3bora"
-  m_ItemID: didashu
-  m_ItemSprite: {fileID: 21300000, guid: c4b2e12410b343144bfa9172c785b57b, type: 3}
+  m_ItemID: c56e48b5-0333-47c8-9b4d-f9afb261c92d
+  m_ItemSprite: {fileID: 21300000, guid: 3061ff2ea6d6f7f46bd21e72d4ca51d5, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_ToolTip: {fileID: 1657144627}
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TipBox_PivotTargetOffset: {x: 0, y: 0.75, z: 0}
-  TipBox_SpeedUpdate: 50
+  TipBox_SpeedUpdate: 30
   TipBox_Elements: {fileID: 3154923703130445122}
   TipBox_BGColor:
     serializedVersion: 2

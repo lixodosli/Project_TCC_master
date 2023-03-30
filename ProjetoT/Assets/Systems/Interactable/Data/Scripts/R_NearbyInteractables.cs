@@ -49,13 +49,26 @@ public class R_NearbyInteractables : MonoBehaviour
         m_Interactables.Remove(item);
     }
 
+    public bool AlreadyInTheList(R_Interactable item)
+    {
+        for (int i = 0; i < m_Interactables.Count; i++)
+        {
+            if (m_Interactables[i].ItemID == item.ItemID)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         R_Interactable interactable = other.GetComponent<R_Interactable>();
 
         if (interactable != null)
         {
-            if (interactable.CanInteract)
+            if (interactable.CanInteract && !AlreadyInTheList(interactable))
             {
                 AddInteractable(interactable);
             }
@@ -66,7 +79,7 @@ public class R_NearbyInteractables : MonoBehaviour
     {
         R_Interactable interactable = other.GetComponent<R_Interactable>();
 
-        if (interactable != null)
+        if (interactable != null && AlreadyInTheList(interactable))
         {
             RemoveInteractable(interactable);
         }

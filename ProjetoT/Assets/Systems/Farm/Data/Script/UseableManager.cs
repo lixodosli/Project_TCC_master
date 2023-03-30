@@ -9,6 +9,12 @@ public class UseableManager : MonoBehaviour
     public delegate void UseableCallback(UseableInfo info);
     public UseableCallback OnUseable;
 
+    public delegate void UseableUseCallback(Useable use);
+    public UseableUseCallback OnUseableUse;
+
+    public delegate void UseableStateCallback(UseableObjInfo info);
+    public UseableStateCallback OnRequestChangeState;
+
     private void Awake()
     {
         Instance = this;
@@ -17,6 +23,11 @@ public class UseableManager : MonoBehaviour
     public void RaiseUseable(UseableInfo info)
     {
         OnUseable?.Invoke(info);
+    }
+
+    public void RequestChangeState(UseableObjInfo obj)
+    {
+        OnRequestChangeState?.Invoke(obj);
     }
 }
 
@@ -31,6 +42,21 @@ public struct UseableInfo
     public UseableInfo(R_Item item, Useable_Object obj)
     {
         _Item = item;
+        _Obj = obj;
+    }
+}
+
+public struct UseableObjInfo
+{
+    private Useable _Usb;
+    private Useable_Object _Obj;
+
+    public Useable Usb => _Usb;
+    public Useable_Object Obj => _Obj;
+
+    public UseableObjInfo(Useable usb, Useable_Object obj)
+    {
+        _Usb = usb;
         _Obj = obj;
     }
 }

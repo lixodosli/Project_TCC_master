@@ -4,7 +4,6 @@ using UnityEngine;
 public class CameraFollowDegrees : MonoBehaviour
 {
     [SerializeField] private float m_FollowAngle = 45f;
-    [SerializeField] private float m_Distance = 10f;
     [SerializeField] private CameraFollow m_CameraSettings;
 
     private void Update()
