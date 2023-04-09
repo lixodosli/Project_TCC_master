@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float m_RotationSpeed;
     [SerializeField] private Transform m_Orientation;
     [SerializeField] private Animator m_Animator;
+    [SerializeField] private ParticleSystem m_MovementParticle;
     private Rigidbody _Rigidbody;
     private Vector2 _InputValue;
     private Vector3 _MoveDirection = new Vector3();
@@ -19,13 +19,14 @@ public class PlayerMovement : MonoBehaviour
         _Rigidbody = GetComponent<Rigidbody>();
         R_Inventory.Instance.OnCollectItem += CollectItemAnim;
         R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
+        DaySystem.Instance.OnDayEnd += FuncaoTeste;
     }
 
     private void OnDestroy()
     {
         R_Inventory.Instance.OnCollectItem += CollectItemAnim;
         R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
-        //InventoryUI.Instance.OnCallInventory -= PauseMovement;
+        DaySystem.Instance.OnDayEnd -= FuncaoTeste;
     }
 
     private void Update()
@@ -36,10 +37,17 @@ public class PlayerMovement : MonoBehaviour
             _MoveDirection = m_Orientation.forward * _InputValue.y + m_Orientation.right * _InputValue.x;
 
             if(_MoveDirection.magnitude > 0.1f)
+            {
                 transform.forward = Vector3.Slerp(transform.forward, _MoveDirection.normalized, Time.deltaTime * m_RotationSpeed);
+            }
         }
 
         m_Animator.SetFloat("Movement", _MoveDirection.magnitude);
+    }
+
+    private void FuncaoTeste(int iha)
+    {
+        Debug.Log("Hoje e o dia " + iha);
     }
 
     private void SetCanMove()
@@ -68,6 +76,13 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if(_CanMove && _PauseMovement)
+        {
             _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
+
+            if (_Rigidbody.velocity.magnitude > 0.2f && !m_MovementParticle.isPlaying)
+                m_MovementParticle.Play();
+            else if (_Rigidbody.velocity.magnitude <= 0.2f && m_MovementParticle.isPlaying)
+                m_MovementParticle.Stop();
+        }
     }
 }
