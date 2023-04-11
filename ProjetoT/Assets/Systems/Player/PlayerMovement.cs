@@ -7,11 +7,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform m_Orientation;
     [SerializeField] private Animator m_Animator;
     [SerializeField] private ParticleSystem m_MovementParticle;
+    [SerializeField] private LayerMask m_TerrainLayer;
+    [SerializeField] private LayerMask m_WoodenLayer;
     private Rigidbody _Rigidbody;
     private Vector2 _InputValue;
     private Vector3 _MoveDirection = new Vector3();
     private bool _CanMove = true;
     private bool _PauseMovement = true;
+    private int _DirtParticle = 0;
 
     private void Awake()
     {
@@ -78,11 +81,33 @@ public class PlayerMovement : MonoBehaviour
         if(_CanMove && _PauseMovement)
         {
             _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
-
-            if (_Rigidbody.velocity.magnitude > 0.2f && !m_MovementParticle.isPlaying)
-                m_MovementParticle.Play();
-            else if (_Rigidbody.velocity.magnitude <= 0.2f && m_MovementParticle.isPlaying)
-                m_MovementParticle.Stop();
+            DoParticlePlay();
         }
+    }
+
+    private void DoParticlePlay()
+    {
+        if (GroundTypeLayerIndex() != 6)
+        {
+            m_MovementParticle.Stop();
+            return;
+        }
+
+        if (_Rigidbody.velocity.magnitude > 0.2f && !m_MovementParticle.isPlaying)
+        {
+            m_MovementParticle.Play();
+        }
+        else if (_Rigidbody.velocity.magnitude <= 0.2f && m_MovementParticle.isPlaying)
+        {
+            m_MovementParticle.Stop();
+        }
+    }
+
+    private int GroundTypeLayerIndex()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 2f))
+            return hit.collider.gameObject.layer;
+        else
+            return 0;
     }
 }

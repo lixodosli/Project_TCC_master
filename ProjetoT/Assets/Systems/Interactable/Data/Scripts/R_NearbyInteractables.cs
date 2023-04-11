@@ -31,7 +31,7 @@ public class R_NearbyInteractables : MonoBehaviour
 
     public void DoInteraction(InputAction.CallbackContext context)
     {
-        if (!HasNearbyInteractables())
+        if (!HasNearbyInteractables() && GameStateManager.Game.State == GameState.World_Free)
             return;
 
         ClosestInteractables().DoInteraction();
@@ -53,9 +53,16 @@ public class R_NearbyInteractables : MonoBehaviour
     {
         for (int i = 0; i < m_Interactables.Count; i++)
         {
-            if (m_Interactables[i].ItemID == item.ItemID)
+            if(m_Interactables[i] == item)
             {
-                return true;
+                if (m_Interactables[i].ItemID == item.ItemID)
+                {
+                    return true;
+                }
+                else
+                {
+                    Debug.Log("O item <" + m_Interactables[i].name + "> está com ID igual a de outro item.");
+                }
             }
         }
 
@@ -89,12 +96,19 @@ public class R_NearbyInteractables : MonoBehaviour
     #region Utilities
     private void UpdateVisibleTipBox()
     {
+        if (m_Interactables.Count == 0)
+            return;
+
         for (int i = 0; i < m_Interactables.Count; i++)
         {
             if (m_Interactables[i] == ClosestInteractables())
+            {
                 m_Interactables[i].SetIsClose(true);
+            }
             else
+            {
                 m_Interactables[i].SetIsClose(false);
+            }
         }
     }
 

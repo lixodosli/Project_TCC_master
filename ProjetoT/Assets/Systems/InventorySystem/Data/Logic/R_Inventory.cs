@@ -18,6 +18,7 @@ public class R_Inventory : MonoBehaviour
     public ItemInInventoryCallback OnCollectItemUI;
     public ItemInInventoryCallback OnUseItem;
     public ItemInInventoryCallback OnDropItem;
+    public ItemInInventoryCallback OnConsumeItem;
     #endregion
 
     #region List
@@ -45,6 +46,7 @@ public class R_Inventory : MonoBehaviour
     #region DropConfigs
     [Header("Drop Item Configs")]
     [SerializeField] private Vector3 m_DropOffset;
+    private bool _IsDropping;
     #endregion
 
     private void Awake()
@@ -221,6 +223,7 @@ public class R_Inventory : MonoBehaviour
         if (slot < 0)
         {
             Debug.Log("O Item <" + item.ItemName + "> não está no inventário.");
+            return;
         }
 
         if (Items[slot] == null)
@@ -243,6 +246,33 @@ public class R_Inventory : MonoBehaviour
     public void UseItem(R_Item item)
     {
         item.UseItem();
+        CallForChangeInventory();
+    }
+
+    public void ConsumeItem(R_Item item)
+    {
+        int slot = SlotByItem(item);
+
+        if (slot < 0)
+        {
+            Debug.Log("O Item <" + item.ItemName + "> não está no inventário.");
+            return;
+        }
+
+        if (Items[slot] == null)
+        {
+            Debug.Log("Este Slot está vazio.");
+            return;
+        }
+
+        Items[slot] = null;
+        OnConsumeItem?.Invoke(item);
+        Destroy(item.gameObject);
+        //item.transform.parent = null;
+        //item.transform.position = transform.position + transform.forward + m_DropOffset;
+        //item.transform.rotation = Quaternion.identity;
+        //item.ChangeInteraction(true);
+        //item.gameObject.SetActive(true);
     }
     #endregion
 

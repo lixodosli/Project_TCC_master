@@ -6,33 +6,14 @@ public class Balde : R_Item
 {
     public override void UseItem()
     {
-        Collider[] closeObjects = Physics.OverlapSphere(transform.position, 1.5f);
-        List<Useable_Object> useableObjects = new List<Useable_Object>();
+        Useable_Object closest = ClosestUseable();
 
-        bool haveUseableItem = false;
-
-        for (int i = 0; i < closeObjects.Length; i++)
-        {
-            if (closeObjects[i].GetComponent<Useable_Object>() != null)
-            {
-                haveUseableItem = true;
-                useableObjects.Add(closeObjects[i].GetComponent<Useable_Object>());
-            }
-        }
-
-        if (!haveUseableItem)
+        if (closest == null)
             return;
 
-        int closestIndex = 0;
+        if (!DateSystem.Instance.CanUpdateHour)
+            return;
 
-        for (int i = 0; i < useableObjects.Count; i++)
-        {
-            if (Vector3.Distance(transform.position, useableObjects[i].transform.position) < Vector3.Distance(transform.position, useableObjects[closestIndex].transform.position))
-            {
-                closestIndex = i;
-            }
-        }
-
-        UseableManager.Instance.RaiseUseable(new UseableInfo(this, useableObjects[closestIndex]));
+        UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
     }
 }
