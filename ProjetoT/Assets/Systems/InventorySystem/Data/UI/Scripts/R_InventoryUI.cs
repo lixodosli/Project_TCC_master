@@ -30,6 +30,7 @@ public class R_InventoryUI : MonoBehaviour
         R_Inventory.Instance.OnChangeSelectedOption += UpdateOption;
         R_Inventory.Instance.OnCollectItemUI += DoInventoryItemDisplay;
         R_Inventory.Instance.OnDropItem += DoRemoveItemInventory;
+        R_Inventory.Instance.OnConsumeItem += DoRemoveItemInventory;
     }
 
     private void OnDestroy()
@@ -39,6 +40,7 @@ public class R_InventoryUI : MonoBehaviour
         R_Inventory.Instance.OnChangeSelectedOption -= UpdateOption;
         R_Inventory.Instance.OnCollectItemUI -= DoInventoryItemDisplay;
         R_Inventory.Instance.OnDropItem -= DoRemoveItemInventory;
+        R_Inventory.Instance.OnConsumeItem -= DoRemoveItemInventory;
     }
 
     private void Start()

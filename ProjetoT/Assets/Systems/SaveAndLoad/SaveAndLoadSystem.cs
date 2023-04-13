@@ -23,6 +23,11 @@ namespace SaveSystem
             m_SaveChannel.OnLoad -= Load;
         }
 
+        private void Start()
+        {
+            Debug.Log(SavePath);
+        }
+
         [ContextMenu("Save")]
         public void Save()
         {
@@ -54,7 +59,7 @@ namespace SaveSystem
             using (FileStream stream = File.Open(SavePath, FileMode.Open))
             {
                 var formatter = new BinaryFormatter();
-
+                stream.Position = 0;
                 return (Dictionary<string, object>)formatter.Deserialize(stream);
             }
         }

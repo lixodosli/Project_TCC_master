@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DaySystem : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class DaySystem : MonoBehaviour
     public delegate void DaySystemCallback(int newDay);
     public DaySystemCallback OnDayStart;
     public DaySystemCallback OnDayEnd;
+
+    [SerializeField] private TMP_Text m_FeedcackDisplay;
 
     private int _DayCount = 0;
     public int DayCount => _DayCount;
@@ -25,6 +28,11 @@ public class DaySystem : MonoBehaviour
     private void OnDestroy()
     {
         SceneTransition.Instance.OnSceneTransitionStart -= UpdateDay;
+    }
+
+    private void Update()
+    {
+        m_FeedcackDisplay.text = "Dia: " + DayCount.ToString();
     }
 
     public void RaiseEndDay(int newDay)
@@ -47,7 +55,7 @@ public class DaySystem : MonoBehaviour
     {
         if (OnDayEnd != null)
         {
-            Delegate[] invocationList = DaySystem.Instance.OnDayEnd.GetInvocationList();
+            Delegate[] invocationList = OnDayEnd.GetInvocationList();
             int eventCount = 0;
 
             while (eventCount < invocationList.Length)

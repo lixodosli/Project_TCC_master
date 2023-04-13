@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -81,6 +82,7 @@ public class SceneTransition : MonoBehaviour
         _MovingState = 1;
         _IsMoving = true;
         _IsPaused = false;
+        GameStateManager.Game.RaiseChangeGameState(GameState.Cutscene);
     }
     
     public void StartFadeOut()
@@ -92,5 +94,6 @@ public class SceneTransition : MonoBehaviour
         _IsMoving = true;
         _IsPaused = false;
         OnSceneTransitionEnd?.Invoke();
+        GameStateManager.Game.RaiseChangeGameState(GameState.World_Free);
     }
 }

@@ -12,8 +12,6 @@ public class R_ToolTip : MonoBehaviour
 
     #region Display
     [Header("Display Configs")]
-    public GameObject TipBox_Elements;
-    public Color32 TipBox_BGColor;
     public int TipBox_CharSize = 8;
     public int TipBox_CharPadding = 10;
     public int TipBox_BG_MinSize = 48;
@@ -23,18 +21,13 @@ public class R_ToolTip : MonoBehaviour
     #region GeneralComponents
     [Header("General Component Configs")]
     public R_Interactable Interaction;
+    public GameObject TipBox_Elements;
     #endregion
 
     #region ToolTipComponents
-    [Header("Tooltip Configs")]
-    public RectTransform TipBox_BG;
-    public Image TipBox_BGImage;
-    public TMP_Text TipBox_TextField;
-    #endregion
-
-    #region CollectComponents
-    [Header("Collect Configs")]
-    public GameObject Collect_Elements;
+    private RectTransform _TipBox_BG;
+    private TMP_Text _TipBox_TextField;
+    private CollectBox _CollectBox_Elements;
     #endregion
 
     private void Start()
@@ -51,13 +44,22 @@ public class R_ToolTip : MonoBehaviour
 
     public void SetupTip()
     {
-        TipBox_TextField.text = Interaction.ItemName;
+        if(TipBox_Elements == null)
+        {
+            Debug.Log("A interacao <" + Interaction.name + "> esta sem tipbox e precisa ser atualizada.");
+            return;
+        }
 
-        int charCount = TipBox_TextField.text.Length;
+        _TipBox_BG = TipBox_Elements.GetComponentInChildren<RectTransform>();
+        _TipBox_TextField = TipBox_Elements.GetComponentInChildren<TMP_Text>();
+        _CollectBox_Elements = TipBox_Elements.GetComponentInChildren<CollectBox>();
+
+        _TipBox_TextField.text = Interaction.ItemName;
+
+        int charCount = _TipBox_TextField.text.Length;
         float canvasWidth = TipBox_CharPadding * 2 + charCount * TipBox_CharSize;
 
-        TipBox_BG.sizeDelta = new Vector2(Mathf.Clamp(canvasWidth, TipBox_BG_MinSize, TipBox_BG_MaxSize), TipBox_BG.sizeDelta.y);
-        TipBox_BGImage.color = TipBox_BGColor;
+        _TipBox_BG.sizeDelta = new Vector2(Mathf.Clamp(canvasWidth, TipBox_BG_MinSize, TipBox_BG_MaxSize), _TipBox_BG.sizeDelta.y);
     }
 
     public void UpdateToolTipPosition()
@@ -67,7 +69,7 @@ public class R_ToolTip : MonoBehaviour
 
         Vector3 position = Camera.main.WorldToScreenPoint(Interaction.transform.position + TipBox_PivotTargetOffset);
 
-        TipBox_BG.position = Vector3.Slerp(TipBox_BG.position, position, Time.deltaTime * TipBox_SpeedUpdate);
+        _TipBox_BG.position = Vector3.Slerp(_TipBox_BG.position, position, Time.deltaTime * TipBox_SpeedUpdate);
     }
 
     public void UpdateToolTipVisible()
@@ -89,22 +91,22 @@ public class R_ToolTip : MonoBehaviour
         {
             if (Interaction.CanCollect && TipBox_Elements.activeSelf)
             {
-                Collect_Elements.SetActive(true);
+                _CollectBox_Elements.gameObject.SetActive(true);
             }
             else if (!Interaction.CanCollect)
             {
-                Collect_Elements.SetActive(false);
+                _CollectBox_Elements.gameObject.SetActive(false);
             }
         }
-        else
-            Collect_Elements.SetActive(false);
+        //else
+        //    _CollectBox_Elements.gameObject.SetActive(false);
     }
 
     public void OpenToolTip()
     {
         Vector3 position = Camera.main.WorldToScreenPoint(Interaction.transform.position + TipBox_PivotTargetOffset);
 
-        TipBox_BG.position = position;
+        _TipBox_BG.position = position;
         TipBox_Elements.SetActive(true);
     }
 

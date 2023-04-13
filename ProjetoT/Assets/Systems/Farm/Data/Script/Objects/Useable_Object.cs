@@ -5,6 +5,7 @@ using UnityEngine;
 public class Useable_Object : MonoBehaviour
 {
     [SerializeField] private Useable[] m_State;
+    public Useable[] States => m_State;
     public int StartState;
     private int _ActiveState;
     public int ActiveState => _ActiveState;
