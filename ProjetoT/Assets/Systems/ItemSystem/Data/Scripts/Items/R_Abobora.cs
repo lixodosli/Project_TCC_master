@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class R_Abobora : R_Item
 {
     [Header("Ao Consumir")]

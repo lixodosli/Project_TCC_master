@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 public class Enxada : R_Item
 {
     public override void UseItem()

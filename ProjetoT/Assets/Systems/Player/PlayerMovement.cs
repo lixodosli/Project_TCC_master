@@ -1,7 +1,10 @@
 using UnityEngine;
+using SaveSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, ISaveable
 {
+    public SaveChannel Save;
+
     [SerializeField] private float m_Speed;
     [SerializeField] private float m_RotationSpeed;
     [SerializeField] private Transform m_Orientation;
@@ -14,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _MoveDirection = new Vector3();
     private bool _CanMove = true;
     private bool _PauseMovement = true;
-    private int _DirtParticle = 0;
 
     private void Awake()
     {
@@ -46,6 +48,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         m_Animator.SetFloat("Movement", _MoveDirection.magnitude);
+
+        if (Input.GetKeyDown(KeyCode.F12))
+        {
+            Save.RaiseSave();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F11))
+        {
+            Save.RaiseLoad();
+        }
     }
 
     private void FuncaoTeste(int iha)
@@ -109,5 +121,46 @@ public class PlayerMovement : MonoBehaviour
             return hit.collider.gameObject.layer;
         else
             return 0;
+    }
+
+    [System.Serializable]
+    private struct SaveData
+    {
+        public float xPos;
+        public float yPos;
+        public float zPos;
+
+        public float xRot;
+        public float yRot;
+        public float zRot;
+
+        public bool PauseMovement;
+        public bool CanMove;
+    }
+
+    public object CaptureState()
+    {
+        return new SaveData
+        {
+            xPos = transform.position.x,
+            yPos = transform.position.y,
+            zPos = transform.position.z,
+
+            xRot = transform.rotation.x,
+            yRot = transform.rotation.y,
+            zRot = transform.rotation.z,
+
+            PauseMovement = _PauseMovement,
+            CanMove = _CanMove
+        };
+    }
+
+    public void RestoreState(object state)
+    {
+        var savedData = (SaveData)state;
+
+        transform.SetPositionAndRotation(new Vector3(savedData.xPos, savedData.yPos, savedData.zPos), Quaternion.Euler(savedData.xRot, savedData.yRot, savedData.zRot));
+        _CanMove = savedData.CanMove;
+        _PauseMovement = savedData.PauseMovement;
     }
 }

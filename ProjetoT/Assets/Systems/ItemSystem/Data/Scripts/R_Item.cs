@@ -2,14 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public abstract class R_Item : R_Interactable
 {
+    private ItemSaveState _SaveState;
+    public ItemSaveState SaveState => _SaveState;
+
+    private void Awake()
+    {
+        if (_SaveState == null) 
+            SetupItemSaveState();
+
+        UpdateParent();
+    }
+
     private void Start()
     {
         if(ItemID == null)
         {
             Debug.Log("O item <" + gameObject.name + "> Está sem ID, portanto precisa de um ID.");
         }
+    }
+
+    private void OnEnable()
+    {
+        _SaveState.IsActive = true;
+    }
+
+    private void OnDisable()
+    {
+        _SaveState.IsActive = false;
+    }
+
+    private void OnTransformParentChanged()
+    {
+        UpdateParent();
+    }
+
+    public void SetupItemSaveState()
+    {
+        _SaveState = new ItemSaveState(this);
     }
 
     public abstract void UseItem();
@@ -55,5 +87,28 @@ public abstract class R_Item : R_Interactable
             return null;
 
         return useableObjects[closestIndex];
+    }
+
+    public void UpdateParent()
+    {
+        _SaveState.ItemParent = transform.parent;
+    }
+
+    protected virtual void RestoreItem()
+    {
+        transform.parent = _SaveState.ItemParent;
+    }
+}
+
+[System.Serializable]
+public class ItemSaveState
+{
+    public R_Item Item;
+    public Transform ItemParent;
+    public bool IsActive;
+
+    public ItemSaveState(R_Item item)
+    {
+        Item = item;
     }
 }

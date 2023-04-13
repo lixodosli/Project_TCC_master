@@ -1,5 +1,6 @@
 using UnityEngine;
-
+  
+[System.Serializable]
 public abstract class R_Interactable : MonoBehaviour
 {
     #region Propriedades
@@ -38,5 +39,5 @@ public abstract class R_Interactable : MonoBehaviour
     public abstract void DoInteraction();
 
     [ContextMenu("Set Id")]
-    public void SetID() => m_ItemID = System.Guid.NewGuid().ToString();
+    public void SetID() => m_ItemID = ItemName + "." + System.Guid.NewGuid().ToString();
 }
