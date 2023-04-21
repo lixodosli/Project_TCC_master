@@ -16,29 +16,36 @@ public class SheetsReader : MonoBehaviour
     public void ParseCSV()
     {
         _GameData.entries.Clear();
-        string debug = "== Starting Proccess ==\n";
-        string csv = _Client.DownloadString(m_Url);
 
+        string csv = _Client.DownloadString(m_Url);
         string[] lines = csv.Split(new char[] { '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
 
         for (int i = 1; i < lines.Length; i++)
         {
             string[] values = lines[i].Split(',');
             _GameData.entries.Add(new Entry(values[0], values[1]));
-
-            for (int j = 0; j < values.Length; j++)
-            {
-                values[j].Trim();
-            }
-
-            debug += "Adding the entry: " + values[0] + ": " + values[1] + "\n";
         }
 
         string json = JsonUtility.ToJson(_GameData);
+        json = json.Replace(@"\r", "");
 
         File.WriteAllText(m_SavePath, json, Encoding.UTF8);
-        debug += "== Done ==";
-        Debug.Log(debug);
+        Debug.Log("== Done ==");
+    }
+
+    public static Dictionary<int, string> ReadJSONData(string text)
+    {
+        Data data = JsonUtility.FromJson<Data>(text);
+
+        Dictionary<int, string> dict = new Dictionary<int, string>();
+
+        foreach (Entry entry in data.entries)
+        {
+            int id = int.Parse(entry.ID);
+            dict[id] = entry.Name;
+        }
+
+        return dict;
     }
 
     public static T ReadJSON<T>(string fileText)
@@ -46,30 +53,24 @@ public class SheetsReader : MonoBehaviour
         T data = JsonUtility.FromJson<T>(fileText);
 
         return data;
-    }
+    }    
+}
 
-    [System.Serializable]
-    private class Reader
+[System.Serializable]
+public class Data
+{
+    public List<Entry> entries = new List<Entry>();
+}
+
+[System.Serializable]
+public class Entry
+{
+    public string ID;
+    public string Name;
+
+    public Entry(string name, string value)
     {
-
-    }
-
-    [System.Serializable]
-    private class Data
-    {
-        public List<Entry> entries = new List<Entry>();
-    }
-
-    [System.Serializable]
-    private class Entry
-    {
-        public string name;
-        public string value;
-
-        public Entry(string name, string value)
-        {
-            this.name = name;
-            this.value = value;
-        }
+        this.ID = name;
+        this.Name = value;
     }
 }

@@ -1,11 +1,11 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Enxada : R_Item
+public class Enxada : Item
 {
     public override void UseItem()
     {
-        Useable_Object closest = ClosestUseable();
+        Useable_Set closest = ClosestUseable();
 
         if (closest == null)
             return;
@@ -13,7 +13,7 @@ public class Enxada : R_Item
         if (!DateSystem.Instance.CanUpdateHour)
             return;
 
-        UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
+        closest.UseUseable(this);
         GEventManager.Instance.AddGEvent(new GEvent(() => Plages()));
     }
 

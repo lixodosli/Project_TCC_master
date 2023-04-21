@@ -33,13 +33,13 @@ public class UseableManager : MonoBehaviour
 
 public struct UseableInfo
 {
-    private R_Item _Item;
+    private Item _Item;
     private Useable_Object _Obj;
 
-    public R_Item Item => _Item;
+    public Item Item => _Item;
     public Useable_Object Obj => _Obj;
 
-    public UseableInfo(R_Item item, Useable_Object obj)
+    public UseableInfo(Item item, Useable_Object obj)
     {
         _Item = item;
         _Obj = obj;

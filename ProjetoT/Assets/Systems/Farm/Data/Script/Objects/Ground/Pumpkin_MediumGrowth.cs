@@ -32,13 +32,13 @@ public class Pumpkin_MediumGrowth : Useable
         }
     }
 
-    public override void OnUsed(R_Item item)
+    public override void OnUsed(Item item)
     {
         base.OnUsed(item);
         Vector3 position = new Vector3(transform.position.x, transform.position.y + m_HeightOffset, transform.position.z);
 
         GameObject broba = Instantiate(m_Abroba, position, Quaternion.identity);
-        broba.GetComponent<R_Item>().SetID();
+        broba.GetComponent<Item>().SetID();
     }
 
     private void OnDrawGizmos()

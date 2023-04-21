@@ -30,6 +30,9 @@ public class Useable_Object : MonoBehaviour
 
     public void SetupStates()
     {
+        Useable[] childs = GetComponentsInChildren<Useable>(true);
+        m_State = childs;
+
         for (int i = 0; i < m_State.Length; i++)
         {
             m_State[i].SetupObj(this);

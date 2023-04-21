@@ -22,15 +22,15 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     {
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
-        R_Inventory.Instance.OnCollectItem += CollectItemAnim;
-        R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
+        Inventory.Instance.OnCollectItem += CollectItemAnim;
+        Inventory.Instance.OnOpenCloseInventory += PauseMovement;
         DaySystem.Instance.OnDayEnd += FuncaoTeste;
     }
 
     private void OnDestroy()
     {
-        R_Inventory.Instance.OnCollectItem += CollectItemAnim;
-        R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
+        Inventory.Instance.OnCollectItem += CollectItemAnim;
+        Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
         DaySystem.Instance.OnDayEnd -= FuncaoTeste;
     }
 

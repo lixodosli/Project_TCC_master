@@ -10205,7 +10205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734622091366924172}
-  - component: {fileID: 734622091366924175}
+  - component: {fileID: 6498152904203027722}
   - component: {fileID: 1476494639592380383}
   m_Layer: 0
   m_Name: PlayerInventory
@@ -10229,7 +10229,7 @@ Transform:
   m_Father: {fileID: 734622091457285655}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &734622091366924175
+--- !u!114 &6498152904203027722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10238,7 +10238,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 734622091366924179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef18f28eeba4b364bb9d0ee7c3bb1e13, type: 3}
+  m_Script: {fileID: 11500000, guid: e40d421f87f358549a451bdbf2e96551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Items:
@@ -10254,7 +10254,7 @@ MonoBehaviour:
   m_InventoryPool: {fileID: 734622091366924172}
   m_SelectedItemIndex: 0
   _SelectedOption: 0
-  m_DropOffset: {x: 0, y: 0.33, z: 0}
+  m_DropOffset: {x: 0, y: 0.5, z: 0}
 --- !u!114 &1476494639592380383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10335,6 +10335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f362bd53a0dc3b041bd7a342f331bb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Save: {fileID: 0}
   m_Speed: 35
   m_RotationSpeed: 10
   m_Orientation: {fileID: 734622091328443857}

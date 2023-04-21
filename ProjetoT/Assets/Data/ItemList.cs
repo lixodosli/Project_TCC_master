@@ -1,0 +1,15 @@
+public enum ItemList {
+Enxada,
+Abobora,
+Balde,
+SementeDeAbóbora,
+Farinha,
+Mandioca,
+Madeira,
+Pedra,
+Machado,
+Palha,
+SementedeMilho,
+Adubo,
+Corda,
+}
