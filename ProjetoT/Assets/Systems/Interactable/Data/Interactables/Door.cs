@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : R_Interactable
+public class Door : Interactable
 {
     [SerializeField] private TeleportConfig m_TeleportConfig;
 

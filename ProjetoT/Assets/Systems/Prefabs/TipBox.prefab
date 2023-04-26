@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3396672455453438113}
+  - component: {fileID: 4766792721807265824}
   m_Layer: 0
   m_Name: TipBox
   m_TagString: Untagged
@@ -39,6 +40,18 @@ RectTransform:
   m_AnchoredPosition: {x: 154.07722, y: 103.493904}
   m_SizeDelta: {x: 14, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4766792721807265824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396672455453438112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b614b54f6d3208246b4a7cbb0fda6cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3396672456038618084
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,12 +19,12 @@ public class CameraFollow : MonoBehaviour
 
     private void Awake()
     {
-        R_Inventory.Instance.OnOpenCloseInventory += PauseMovement;
+        Inventory.Instance.OnOpenCloseInventory += PauseMovement;
     }
 
     private void OnDestroy()
     {
-        R_Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
+        Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
     }
 
     private void Start()

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class SementeDeAbobora : R_Item
+public class SementeDeAbobora : Item
 {
     public override void UseItem()
     {
-        Useable_Object closest = ClosestUseable();
+        Useable_Set closest = ClosestUseable();
 
         if (closest == null)
             return;
@@ -15,8 +15,9 @@ public class SementeDeAbobora : R_Item
         if (!DateSystem.Instance.CanUpdateHour)
             return;
 
-        R_Inventory.Instance.ConsumeItem(this);
+        Inventory.Instance.ConsumeItem(this);
         gameObject.SetActive(false);
-        UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
+        closest.UseUseable(this);
+        //UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
     }
 }
