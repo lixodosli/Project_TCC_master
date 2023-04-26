@@ -8,7 +8,6 @@ public class GEvent
     public GEvent(Action action)
     {
         DaySystem.Instance.OnDayEnd += Execute;
-        Debug.Log("New Event Created");
         _action = action;
     }
 

@@ -9,13 +9,18 @@ public class Useable_Set : MonoBehaviour
 
     private void Awake()
     {
+        //SetName = this.name;
         SetupUseables();
         Messenger.AddListener<string>(SetName, UpdateSelectedUseable);
     }
 
     public void UpdateSelectedUseable(string tile)
     {
-        SetActive(_Useables[UseableByIndex(tile)]);
+        int i = UseableByIndex(tile);
+
+        Debug.Log($"{i} - <{SetName}, {_Useables[i].UseableName}>");
+
+        SetActive(_Useables[i]);
     }
 
     public void UseUseable(Item item)

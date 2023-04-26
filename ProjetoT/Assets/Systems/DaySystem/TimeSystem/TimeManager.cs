@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
     public static string AdvanceTimeString = "Advance Time";
     public static int CurrentHour = 0;
     public static int CurrentDay = 1;
+    public static int TotalHours => CurrentDay * 24 + CurrentHour;
 
     private void Start()
     {

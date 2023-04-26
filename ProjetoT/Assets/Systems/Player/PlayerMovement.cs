@@ -9,9 +9,9 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     [SerializeField] private float m_RotationSpeed;
     [SerializeField] private Transform m_Orientation;
     [SerializeField] private Animator m_Animator;
+    [SerializeField] private AnimationsEvents m_AnimationsEvents;
     [SerializeField] private ParticleSystem m_MovementParticle;
-    [SerializeField] private LayerMask m_TerrainLayer;
-    [SerializeField] private LayerMask m_WoodenLayer;
+    public Transform InteractionPoint;
     private Rigidbody _Rigidbody;
     private Vector2 _InputValue;
     private Vector3 _MoveDirection = new Vector3();
@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory += PauseMovement;
         DaySystem.Instance.OnDayEnd += FuncaoTeste;
+        m_AnimationsEvents.OnAnimationEnd += SetCanMove;
     }
 
     private void OnDestroy()
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
         DaySystem.Instance.OnDayEnd -= FuncaoTeste;
+        m_AnimationsEvents.OnAnimationEnd -= SetCanMove;
     }
 
     private void Update()
@@ -85,7 +87,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     {
         _CanMove = false;
         m_Animator.SetTrigger("Pick");
-        Invoke(nameof(SetCanMove), 0.5f);
     }
 
     private void FixedUpdate()
