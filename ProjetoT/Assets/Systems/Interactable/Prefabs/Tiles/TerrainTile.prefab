@@ -859,6 +859,31 @@ PrefabInstance:
       propertyPath: m_Configs.Array.data[1].TimeToTrigger
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: m_Configs.Array.data[0].Transformations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: m_Configs.Array.data[0].Transformations.Array.data[0].Wheight
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: m_Configs.Array.data[0].Transformations.Array.data[1].Wheight
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: m_Configs.Array.data[0].Transformations.Array.data[0].Transformation
+      value: 
+      objectReference: {fileID: 6775853120219434278}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: m_Configs.Array.data[0].Transformations.Array.data[1].Transformation
+      value: 
+      objectReference: {fileID: 6775853119168184911}
     - target: {fileID: 5724801926057170915, guid: 66cff85151cba2e449b4e8b448200110,
         type: 3}
       propertyPath: m_Enabled
@@ -909,7 +934,8 @@ PrefabInstance:
       propertyPath: m_Configs.Array.data[1].ChanceByWeight
       value: 25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5724801926057170915, guid: 66cff85151cba2e449b4e8b448200110, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66cff85151cba2e449b4e8b448200110, type: 3}
 --- !u!4 &6775853119861901905 stripped
 Transform:

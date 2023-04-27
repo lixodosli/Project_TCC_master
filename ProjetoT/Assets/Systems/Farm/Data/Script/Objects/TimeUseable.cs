@@ -76,8 +76,53 @@ public class TimeUseable : Useable
 [System.Serializable]
 public class TransformConfig
 {
-    public Useable TransformTo;
-    public int ChanceByWeight;
+    public TransformToConfig[] Transformations;
     public int TimeToTrigger;
     public bool PauseWhenDisabled;
+
+    public Useable NextStage()
+    {
+        return Transformations[0].Transformation;
+    }
+
+    public Useable NextStage(int index)
+    {
+        return Transformations[index].Transformation;
+    }
+
+    public Useable NextStage(bool random)
+    {
+        if (random)
+        {
+            // Return a Useable of a totaly random Transformation index.
+            int randomIndex = Random.Range(0, Transformations.Length);
+            return Transformations[randomIndex].Transformation;
+        }
+        else
+        {
+            // Return a Useable of a random Transformation index, calculated by the wheights defined by each one.
+            int totalWeight = Transformations.Sum(t => t.Wheight);
+            int randomValue = Random.Range(0, totalWeight);
+            int currentIndex = 0;
+
+            foreach (var transformation in Transformations)
+            {
+                currentIndex += transformation.Wheight;
+                if (randomValue < currentIndex)
+                {
+                    return transformation.Transformation;
+                }
+            }
+        }
+
+        // If no valid Useable was found, return null.
+        return null;
+    }
+}
+
+[System.Serializable]
+public struct TransformToConfig
+{
+    public Useable Transformation;
+    public int Wheight;
 }

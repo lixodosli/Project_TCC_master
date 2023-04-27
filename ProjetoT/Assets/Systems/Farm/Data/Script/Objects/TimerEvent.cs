@@ -60,8 +60,8 @@ public class TimerEvent
     {
         End = true;
         Debug.Log($"The timer of <{UseableSetName}, {UseableName}> is trying to end and send the messages.");
-        Messenger.Broadcast<string>(UseableName + UseableSetName, TrasnformationConfig.TransformTo.UseableName);
-        Messenger.Broadcast<string>(UseableSetName, TrasnformationConfig.TransformTo.UseableName);
+        Messenger.Broadcast<string>(UseableName + UseableSetName, TrasnformationConfig.NextStage(false).UseableName);
+        Messenger.Broadcast<string>(UseableSetName, TrasnformationConfig.NextStage(false).UseableName);
         _Counting = false;
     }
 
