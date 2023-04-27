@@ -52,14 +52,15 @@ MonoBehaviour:
       type: 3}
     NextStage: {fileID: 0}
     TimeToExecut: 0
-  m_UseChances: 1
+  StartWhenEnable: 1
+  PauseWhenDisable: 1
+  StopWhenDisable: 1
+  UseChances: 0
   m_Configs:
   - TransformTo: {fileID: 0}
     ChanceByWeight: 75
     TimeToTrigger: 24
-  - TransformTo: {fileID: 0}
-    ChanceByWeight: 25
-    TimeToTrigger: 24
+  Timers: []
 --- !u!114 &5724801926057170915
 MonoBehaviour:
   m_ObjectHideFlags: 0
