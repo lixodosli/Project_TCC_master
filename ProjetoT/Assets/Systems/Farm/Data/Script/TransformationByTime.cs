@@ -51,7 +51,7 @@ public class TransformationByTime : MonoBehaviour
 
         if (_TriggerCounter >= _TimeToTrigger)
         {
-            Messenger.Broadcast<string>(m_ItemToTransform.SetName, _TargetTransformConfig.TransformTo.UseableName);
+            //Messenger.Broadcast<string>(m_ItemToTransform.SetName, _TargetTransformConfig.Transformations.UseableName);
 
             _Counting = false;
         }
