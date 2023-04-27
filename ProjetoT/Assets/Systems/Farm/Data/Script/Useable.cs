@@ -20,7 +20,7 @@ public abstract class Useable : MonoBehaviour
     {
         for (int i = 0; i < StatesConfigs.Length; i++)
         {
-            if (StatesConfigs[i].ContainsItem(item))
+            if (StatesConfigs[i].ContainsItem(item) || item == null && StatesConfigs[i].ItemRequiredToInteract == null)
             {
                 _NextStageIndex = i;
                 return true;

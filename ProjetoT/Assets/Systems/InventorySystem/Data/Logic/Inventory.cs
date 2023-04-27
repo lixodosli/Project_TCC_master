@@ -192,7 +192,8 @@ public class Inventory : MonoBehaviour
         Items[slot].transform.position = InventoryPool.transform.position;
         Items[slot].ChangeInteraction(false);
         Items[slot].gameObject.SetActive(false);
-        NearbyInteractables.Instance.RemoveInteractable(item);
+        Messenger.Broadcast(NearbyInteractables.InteractableName, Items[slot].ItemName);
+        //NearbyInteractables.Instance.RemoveInteractable(item);
         RaiseCollectItem(Items[slot]);
     }
 

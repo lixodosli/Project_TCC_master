@@ -31641,7 +31641,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5312
+  m_Name: pb_Mesh-4836
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36866,6 +36866,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1476494639592380381}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1881350469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881350449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ca834232f57b64e831a9965e2a4370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1935761433
 GameObject:
   m_ObjectHideFlags: 0
@@ -40483,6 +40495,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 734622091457285645, guid: 65a459fe897d73640a875f4029244c19,
+        type: 3}
+      propertyPath: InstigatorPoint
+      value: 
+      objectReference: {fileID: 250543266}
     - target: {fileID: 734622091457285651, guid: 65a459fe897d73640a875f4029244c19,
         type: 3}
       propertyPath: Save

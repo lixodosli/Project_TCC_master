@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class NearbyUseableSets : MonoBehaviour
 {
-    private List<Useable_Set> m_NearbySets = new List<Useable_Set>();
+    private List<Useable_Set> _NearbySets = new List<Useable_Set>();
     public static Useable_Set ClosestUseableSet;
 
     public Transform InstigatorPoint;
@@ -11,9 +12,9 @@ public class NearbyUseableSets : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Useable_Set set = other.GetComponent<Useable_Set>();
-        if (set != null && !m_NearbySets.Contains(set))
+        if (set != null && !_NearbySets.Contains(set))
         {
-            m_NearbySets.Add(set);
+            _NearbySets.Add(set);
         }
     }
 
@@ -22,26 +23,17 @@ public class NearbyUseableSets : MonoBehaviour
         Useable_Set set = other.GetComponent<Useable_Set>();
         if (set != null)
         {
-            m_NearbySets.Remove(set);
+            _NearbySets.Remove(set);
         }
     }
 
     private Useable_Set GetClosestSet()
     {
-        float closestDistance = float.MaxValue;
-        Useable_Set closestSet = null;
+        if (_NearbySets.Count == 0)
+            return null;
 
-        foreach (Useable_Set set in m_NearbySets)
-        {
-            float distance = Vector3.Distance(InstigatorPoint.position, set.transform.position);
-            if (distance < closestDistance)
-            {
-                closestDistance = distance;
-                closestSet = set;
-            }
-        }
-
-        return closestSet;
+        Useable_Set closest = _NearbySets.OrderBy(i => Vector3.Distance(i.transform.position, InstigatorPoint.transform.position)).FirstOrDefault();
+        return closest;
     }
 
     private void Update()

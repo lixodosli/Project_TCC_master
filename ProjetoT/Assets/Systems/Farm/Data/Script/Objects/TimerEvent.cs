@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class TimerEvent
 {
-    public TransformConfig Config { get; private set; }
+    public TransformConfig TrasnformationConfig;
     public string UseableSetName { get; private set; }
     public string UseableName { get; private set; }
     public bool Paused { get; private set; }
@@ -14,18 +15,25 @@ public class TimerEvent
     private int _LastUpdate;
     private bool _Counting;
 
-    public TimerEvent(TransformConfig config, string setName, string useAbleName)
+    public TimerEvent(TransformConfig transformationConfig, string setName, string useAbleName)
     {
-        Config = config;
+        TrasnformationConfig = transformationConfig;
         UseableSetName = setName;
         UseableName = useAbleName;
     }
 
     public void StartCounting()
     {
+        if (Paused)
+        {
+            Paused = false;
+            return;
+        }
+
         _Counter = 0;
         _LastUpdate = TimeManager.TotalHours;
         _Counting = true;
+        End = false;
     }
 
     public void UpdateCounting()
@@ -42,7 +50,7 @@ public class TimerEvent
         _Counter += TimeManager.TotalHours - _LastUpdate;
         _LastUpdate = TimeManager.TotalHours;
 
-        if(_Counter >= Config.TimeToTrigger)
+        if(_Counter >= TrasnformationConfig.TimeToTrigger)
         {
             StopCounting();
         }
@@ -50,8 +58,10 @@ public class TimerEvent
 
     public void StopCounting()
     {
-        Messenger.Broadcast<string>(UseableName + UseableSetName, Config.TransformTo.UseableName);
-        Messenger.Broadcast<string>(UseableSetName, Config.TransformTo.UseableName);
+        End = true;
+        Debug.Log($"The timer of <{UseableSetName}, {UseableName}> is trying to end and send the messages.");
+        Messenger.Broadcast<string>(UseableName + UseableSetName, TrasnformationConfig.TransformTo.UseableName);
+        Messenger.Broadcast<string>(UseableSetName, TrasnformationConfig.TransformTo.UseableName);
         _Counting = false;
     }
 
