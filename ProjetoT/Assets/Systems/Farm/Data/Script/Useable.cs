@@ -6,6 +6,8 @@ public abstract class Useable : MonoBehaviour
 {
     public string UseableName;
     public string SetName { get; private set; }
+    public bool ShowIndication = true;
+    public bool UseItemTransition = true;
 
     public StatesConfig[] StatesConfigs;
 
@@ -32,18 +34,18 @@ public abstract class Useable : MonoBehaviour
 
     public virtual void Use(Item item)
     {
-        if (!CanBeUsed(item))
+        if (!CanBeUsed(item) || _NextStageIndex < 0 || !UseItemTransition)
         {
             return;
         }
 
-        if(_NextStageIndex < 0)
-        {
-            return;
-        }
-
-        Messenger.Broadcast<string>(SetName, StatesConfigs[_NextStageIndex].NextStage.UseableName);
+        SendMessage(_NextStageIndex);
         Messenger.Broadcast<int>(TimeManager.AdvanceTimeString, StatesConfigs[_NextStageIndex].TimeToExecut);
+    }
+
+    public virtual void SendMessage(int index)
+    {
+        Messenger.Broadcast<string>(SetName, StatesConfigs[index].NextStage.UseableName);
     }
 }
 

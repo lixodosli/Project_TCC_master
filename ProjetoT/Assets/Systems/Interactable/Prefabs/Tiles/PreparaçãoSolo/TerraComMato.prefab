@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6057391126708117363}
   - component: {fileID: 6057391126708117360}
+  - component: {fileID: 2357126917962369095}
   m_Layer: 0
   m_Name: TerraComMato
   m_TagString: Untagged
@@ -47,11 +48,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UseableName: TerraComMato
+  ShowIndication: 1
+  UseItemTransition: 1
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
       type: 3}
     NextStage: {fileID: 0}
     TimeToExecut: 1
+--- !u!65 &2357126917962369095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057391126708117361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55, y: 0.5, z: 0.55}
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1001 &6057391126238756239
 PrefabInstance:
   m_ObjectHideFlags: 0

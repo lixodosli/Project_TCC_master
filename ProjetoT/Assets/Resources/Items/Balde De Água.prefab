@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9256ff75e2b6a7e418bc521016774487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ItemName: Balde
+  m_ItemName: BaldeDeAgua
   m_ItemID: 
   m_ItemSprite: {fileID: 21300000, guid: 2c936abd14c89de438454f106d151c1a, type: 3}
   m_CanInteract: 1

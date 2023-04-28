@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &196411992313094969
+--- !u!1 &3407262194972734350
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,144 +8,163 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 196411992313094971}
-  - component: {fileID: 2512547627534834930}
-  - component: {fileID: 6043627395664468357}
+  - component: {fileID: 2840273004434774879}
+  - component: {fileID: 3094663359381485335}
+  - component: {fileID: 2208792080412833810}
+  - component: {fileID: 1891039912191004108}
   m_Layer: 0
-  m_Name: TerraLimpa
+  m_Name: Maturacao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &196411992313094971
+--- !u!4 &2840273004434774879
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196411992313094969}
+  m_GameObject: {fileID: 3407262194972734350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 374769465518074144}
+  - {fileID: 6852827761726594712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2512547627534834930
+--- !u!114 &3094663359381485335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196411992313094969}
+  m_GameObject: {fileID: 3407262194972734350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7967c6d3371a39240b768ca29d9987ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ItemToTransform: {fileID: 2208792080412833810}
+  m_TransformOffsetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &2208792080412833810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3407262194972734350}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 812b1c0329ef181488a46c86bbf72d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseableName: TerraLimpa
+  UseableName: CebolaStage03Maturacao
   ShowIndication: 1
   UseItemTransition: 1
   StatesConfigs:
-  - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
+  - ItemRequiredToInteract: {fileID: 3791583461524819437, guid: fb4f2788615438c4aa8937d86a5e05f3,
       type: 3}
     NextStage: {fileID: 0}
     TimeToExecut: 0
-  m_TransformationByTimeConfigs: []
+  - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
+      type: 3}
+    NextStage: {fileID: 0}
+    TimeToExecut: 1
+  m_TransformationByTimeConfigs:
+  - Transformations:
+    - Transformation: {fileID: 0}
+      Wheight: 100
+    TimeToTrigger: 24
+    PauseWhenDisabled: 0
   Timers: []
---- !u!65 &6043627395664468357
+--- !u!65 &1891039912191004108
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196411992313094969}
+  m_GameObject: {fileID: 3407262194972734350}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.5, z: 0.55}
   m_Center: {x: 0, y: 0.25, z: 0}
---- !u!1001 &196411992429514443
+--- !u!1001 &6381772160936671603
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 196411992313094971}
+    m_TransformParent: {fileID: 2840273004434774879}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000082321465
+      value: 0.00008232209
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: a9c9349b8c647fd42a45cdc746d788a6,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1759583896e478840972e093e627eac0, type: 2}
-    - target: {fileID: 919132149155446097, guid: a9c9349b8c647fd42a45cdc746d788a6,
+    - target: {fileID: 919132149155446097, guid: 49f3dc1892fb94446a63a01a49273531,
         type: 3}
       propertyPath: m_Name
-      value: Terra_Sem_Arar_MESH
+      value: Terra_Arada_LP_2_MESH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a9c9349b8c647fd42a45cdc746d788a6, type: 3}
---- !u!4 &374769465518074144 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 49f3dc1892fb94446a63a01a49273531, type: 3}
+--- !u!4 &6852827761726594712 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9c9349b8c647fd42a45cdc746d788a6,
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
     type: 3}
-  m_PrefabInstance: {fileID: 196411992429514443}
+  m_PrefabInstance: {fileID: 6381772160936671603}
   m_PrefabAsset: {fileID: 0}

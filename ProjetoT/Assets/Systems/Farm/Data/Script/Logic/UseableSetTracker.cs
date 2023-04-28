@@ -12,7 +12,7 @@ public class UseableSetTracker : MonoBehaviour
     private void UpdateTarget()
     {
         target = NearbyUseableSets.ClosestUseableSet != null ? NearbyUseableSets.ClosestUseableSet.transform : null;
-        image.enabled = target != null;
+        image.enabled = target != null && NearbyUseableSets.ClosestUseableSet.CurrentState().ShowIndication;
     }
 
     private void LateUpdate()

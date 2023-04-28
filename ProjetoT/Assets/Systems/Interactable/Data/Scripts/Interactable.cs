@@ -1,7 +1,7 @@
 using UnityEngine;
   
 [System.Serializable]
-public abstract class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour, IInteractable
 {
     #region Propriedades
     [SerializeField] protected string m_ItemName;

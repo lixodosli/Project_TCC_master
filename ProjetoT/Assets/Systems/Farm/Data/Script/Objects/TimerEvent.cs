@@ -22,6 +22,8 @@ public class TimerEvent
         UseableName = useAbleName;
     }
 
+    public string DebugString() => $"<{UseableName}, {UseableSetName}> || {_Counter}/{TrasnformationConfig.TimeToTrigger}";
+
     public void StartCounting()
     {
         if (Paused)
@@ -49,6 +51,8 @@ public class TimerEvent
 
         _Counter += TimeManager.TotalHours - _LastUpdate;
         _LastUpdate = TimeManager.TotalHours;
+
+        Debug.Log(DebugString());
 
         if(_Counter >= TrasnformationConfig.TimeToTrigger)
         {
