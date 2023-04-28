@@ -6,12 +6,16 @@ using UnityEngine;
 public class Abobora : Item
 {
     [Header("Ao Consumir")]
-    [SerializeField] private GameObject m_Semente;
+    [SerializeField] private ItemList m_ItemToDrop;
+    [SerializeField] private int m_DropQuantity;
 
     public override void UseItem()
     {
         Inventory.Instance.ConsumeItem(this);
-        GameObject seed = Instantiate(m_Semente, Inventory.Instance.transform.position + (Vector3.up * 1f), Quaternion.identity);
-        seed.GetComponent<Item>().SetID();
+
+        for (int i = 0; i < m_DropQuantity; i++)
+        {
+            ItemSpawnPoint.InstItem(m_ItemToDrop, transform);
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 
 public class TimeUseable : Useable
 {
-    [SerializeField] private List<TransformConfig> m_Configs = new List<TransformConfig>();
+    [SerializeField] private List<TransformConfig> m_TransformationByTimeConfigs = new List<TransformConfig>();
 
     public List<TimerEvent> Timers = new List<TimerEvent>();
 
@@ -22,7 +22,7 @@ public class TimeUseable : Useable
         Timers.RemoveAll(t => !t.TrasnformationConfig.PauseWhenDisabled);
 
         // Start any unstarted timer from the configs
-        foreach (TransformConfig config in m_Configs)
+        foreach (TransformConfig config in m_TransformationByTimeConfigs)
         {
             if (!Timers.Any(t => t.TrasnformationConfig == config))
             {
@@ -32,6 +32,7 @@ public class TimeUseable : Useable
 
         // Start counting for all timers
         Timers.ForEach(t => t.StartCounting());
+        Timers.ForEach(i => Debug.Log(i.DebugString()));
     }
 
     private void OnDisable()
@@ -52,14 +53,6 @@ public class TimeUseable : Useable
                 Timers.RemoveAt(i);
             }
         }
-    }
-
-    public override void Use(Item item)
-    {
-        if (!CanBeUsed(item) || _NextStageIndex < 0)
-            return;
-
-        Messenger.Broadcast<int>(TimeManager.AdvanceTimeString, StatesConfigs[_NextStageIndex].TimeToExecut);
     }
 
     private void UpdateCounting(int time)
