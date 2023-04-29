@@ -26,7 +26,7 @@ public class GEventManager : MonoBehaviour
     {
         foreach (GEvent evt in _GEvents)
         {
-            evt.Execute(DaySystem.Instance.DayCount);
+            evt.Execute();
             _GEvents.Remove(evt);
         }
     }

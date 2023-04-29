@@ -9,5 +9,6 @@ public class Bed : Interactable
         int hourDiference = (24 - TimeManager.CurrentHour) + Despertador.HoursToWakeUp;
         
         Messenger.Broadcast(TimeManager.AdvanceTimeString, hourDiference);
+        TimeManager.Instance.ExecuteEndOfDayFunctions();
     }
 }

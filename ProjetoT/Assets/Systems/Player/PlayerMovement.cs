@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         _Rigidbody = GetComponent<Rigidbody>();
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory += PauseMovement;
-        DaySystem.Instance.OnDayEnd += FuncaoTeste;
         m_AnimationsEvents.OnAnimationEnd += SetCanMove;
     }
 
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     {
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
-        DaySystem.Instance.OnDayEnd -= FuncaoTeste;
         m_AnimationsEvents.OnAnimationEnd -= SetCanMove;
     }
 
@@ -62,11 +60,6 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         }
     }
 
-    private void FuncaoTeste(int iha)
-    {
-        Debug.Log("Hoje e o dia " + iha);
-    }
-
     private void SetCanMove()
     {
         _CanMove = true;
@@ -74,7 +67,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     private void PauseMovement()
     {
-        if (GameStateManager.Game.State == GameState.Inventory || GameStateManager.Game.State == GameState.Pause || GameStateManager.Game.State == GameState.Cutscene)
+        if (GameStateManager.Game.State != GameState.World_Free)
             _PauseMovement = false;
         else
             _PauseMovement = true;
@@ -91,11 +84,15 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     private void FixedUpdate()
     {
-        if(_CanMove && _PauseMovement)
+        //if(_CanMove && _PauseMovement)
+        //{
+
+        if(GameStateManager.Game.State == GameState.World_Free)
         {
             _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
             DoParticlePlay();
         }
+        //}
     }
 
     private void DoParticlePlay()

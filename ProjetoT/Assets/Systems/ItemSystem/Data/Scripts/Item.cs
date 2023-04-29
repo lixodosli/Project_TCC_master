@@ -37,9 +37,6 @@ public abstract class Item : Interactable
         if (closest == null)
             return;
 
-        if (!DateSystem.Instance.CanUpdateHour)
-            return;
-
         closest.UseUseable(this);
     }
 

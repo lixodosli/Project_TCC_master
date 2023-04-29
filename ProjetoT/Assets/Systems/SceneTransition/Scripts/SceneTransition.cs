@@ -58,6 +58,7 @@ public class SceneTransition : MonoBehaviour
                 _Count = 0;
                 _IsPaused = true;
                 OnSceneTransitionStart?.Invoke();
+                StartCoroutine(DoTheFadeOut());
             }
             else if (_MovingState == 2)
             {
@@ -72,6 +73,22 @@ public class SceneTransition : MonoBehaviour
         m_Transition.transform.position = m_StartPoint.position;
         _IsMoving = false;
         _IsPaused = true;
+    }
+
+    private IEnumerator DoTheFadeOut()
+    {
+        bool allFunctionsExecuted = false;
+        while (!allFunctionsExecuted)
+        {
+            yield return null;
+            // Check if any functions are still subscribed to the event
+            if (OnSceneTransitionStart == null)
+            {
+                allFunctionsExecuted = true;
+            }
+        }
+
+        Invoke(nameof(StartFadeOut), 0.75f);
     }
 
     public void StartFadeIn()
