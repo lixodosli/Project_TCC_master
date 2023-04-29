@@ -12,9 +12,6 @@ public class SementeDeAbobora : Item
         if (closest == null)
             return;
 
-        if (!DateSystem.Instance.CanUpdateHour)
-            return;
-
         Inventory.Instance.ConsumeItem(this);
         gameObject.SetActive(false);
         closest.UseUseable(this);

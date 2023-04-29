@@ -6,6 +6,9 @@ public class Bed : Interactable
 {
     public override void DoInteraction()
     {
-        DaySystem.Instance.RaiseEndDay(DaySystem.Instance.DayCount);
+        int hourDiference = (24 - TimeManager.CurrentHour) + Despertador.HoursToWakeUp;
+        
+        Messenger.Broadcast(TimeManager.AdvanceTimeString, hourDiference);
+        TimeManager.Instance.ExecuteEndOfDayFunctions();
     }
 }

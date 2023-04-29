@@ -1,19 +1,19 @@
 using System;
 using UnityEngine;
 
-public class GEvent 
+public struct GEvent
 {
     private readonly Action _action;
 
     public GEvent(Action action)
     {
-        DaySystem.Instance.OnDayEnd += Execute;
+        Debug.Log($"--- Criando o evento da acao <{action}> hihihi");
         _action = action;
     }
 
-    public void Execute(int day)
+    public void Execute()
     {
-        DaySystem.Instance.OnDayEnd -= Execute;
+        Debug.Log($"Invoking the action <{_action}> hihihi");
         _action?.Invoke();
     }
 }

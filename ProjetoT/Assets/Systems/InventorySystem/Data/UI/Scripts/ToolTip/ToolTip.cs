@@ -71,9 +71,8 @@ public class ToolTip : MonoBehaviour
         if (!_Interaction.IsClose)
             return;
 
-        Vector3 position = Camera.main.WorldToScreenPoint(_Interaction.transform.position + TipBox_PivotTargetOffset);
-
-        _TipBox_BG.position = Vector3.Slerp(_TipBox_BG.position, position, Time.deltaTime * TipBox_SpeedUpdate);
+        Vector3 screenPosition = Camera.main.WorldToScreenPoint(_Interaction.transform.position + TipBox_PivotTargetOffset);
+        _TipBox_BG.position = Vector3.Lerp(_TipBox_BG.position, screenPosition, Time.deltaTime * TipBox_SpeedUpdate);
     }
 
     public void UpdateToolTipVisible()
@@ -102,8 +101,6 @@ public class ToolTip : MonoBehaviour
                 _CollectBox_Elements.gameObject.SetActive(false);
             }
         }
-        //else
-        //    _CollectBox_Elements.gameObject.SetActive(false);
     }
 
     public void OpenToolTip()
