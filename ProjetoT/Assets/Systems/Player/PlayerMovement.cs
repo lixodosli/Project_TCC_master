@@ -84,15 +84,14 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     private void FixedUpdate()
     {
-        //if(_CanMove && _PauseMovement)
-        //{
-
-        if(GameStateManager.Game.State == GameState.World_Free)
+        if (_CanMove && _PauseMovement)
         {
-            _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
-            DoParticlePlay();
+            if (GameStateManager.Game.State == GameState.World_Free)
+            {
+                _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
+                DoParticlePlay();
+            }
         }
-        //}
     }
 
     private void DoParticlePlay()

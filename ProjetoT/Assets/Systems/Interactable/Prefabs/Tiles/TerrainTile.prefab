@@ -325,6 +325,11 @@ PrefabInstance:
       propertyPath: StatesConfigs.Array.data[1].NextStage
       value: 
       objectReference: {fileID: 6775853120219434278}
+    - target: {fileID: 5849459742421007086, guid: 396d8a4353b959b49838fa4dca1edaef,
+        type: 3}
+      propertyPath: StatesConfigs.Array.data[1].TimeToExecut
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 396d8a4353b959b49838fa4dca1edaef, type: 3}
 --- !u!114 &6775853119261343801 stripped
@@ -931,6 +936,11 @@ PrefabInstance:
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 9110568641871705496}
+    - target: {fileID: 1922375378076546443, guid: 87f6790bac2802748996a6a8c27770b8,
+        type: 3}
+      propertyPath: StatesConfigs.Array.data[0].TimeToExecut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1922375378076546444, guid: 87f6790bac2802748996a6a8c27770b8,
         type: 3}
       propertyPath: m_Name
