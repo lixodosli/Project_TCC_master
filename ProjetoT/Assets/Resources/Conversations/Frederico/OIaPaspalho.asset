@@ -17,15 +17,36 @@ MonoBehaviour:
   - Name: "Sebasti\xE3o"
     Text: "B\xE3o dimais receb\xEA oc\xEA na fazenda, s\xF4!\r"
     Options: 
+    LettersPerSecond: 0
   - Name: "Sebasti\xE3o"
     Text: "Essa terra \xE9 bunita e boa di mais pras plenta\xE7\xE3os."
     Options: 
+    LettersPerSecond: 0
   - Name: "Sebasti\xE3o"
     Text: "N\xF3is aqui temos varriadas cultura, cuma mi, feij\xE3o e trigu."
     Options: 
+    LettersPerSecond: 0
+  - Name: 
+    Text: "Voc\xEA n\xE3o sabia ainda, mas a terra era ruim."
+    Options: 
+    LettersPerSecond: 0
   - Name: "Sebasti\xE3o"
     Text: "Tam\xE9m criamos anim\xE1, cuma vaca, franguin e porco."
     Options: 
+    LettersPerSecond: 0
+  - Name: 
+    Text: "At\xE9 hoje, nenhum animal tinha sobrevivido."
+    Options: 
+    LettersPerSecond: 0
   - Name: "Sebasti\xE3o"
     Text: "O trem \xE9 trabaioso, mais a recompensa \xE9 da hora."
     Options: 
+    LettersPerSecond: 0
+  - Name: 
+    Text: AHH...
+    Options: 
+    LettersPerSecond: 1
+  - Name: 
+    Text: ESQUECI MINHAS ROUPAS NO VARAL.
+    Options: 
+    LettersPerSecond: 90

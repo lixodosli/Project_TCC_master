@@ -15,4 +15,5 @@ public class Dialogue
     public string Name;
     [TextArea] public string Text;
     public int[] Options;
+    public float LettersPerSecond;
 }
