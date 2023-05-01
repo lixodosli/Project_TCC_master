@@ -29,4 +29,15 @@ public class PlayerQuests : MonoBehaviour
     {
         return Quests.ContainsKey(quest.PreviousQuestRequired) && IsCompleted(quest.PreviousQuestRequired);
     }
+
+    public static void UpdateProgress(Quest quest)
+    {
+        if (!Quests.ContainsKey(quest))
+            return;
+
+        if (IsCompleted(quest))
+            return;
+
+        Quests[quest]++;
+    }
 }

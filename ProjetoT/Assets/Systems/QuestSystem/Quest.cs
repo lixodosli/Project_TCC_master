@@ -15,4 +15,5 @@ public class QuestSteps
 {
     public string StepName;
     [TextArea] public string StepDescription;
+    public QuestInstigator QuestCondition;
 }
