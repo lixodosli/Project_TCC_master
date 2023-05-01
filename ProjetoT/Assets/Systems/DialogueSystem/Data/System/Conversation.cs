@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Conversation : ScriptableObject
 {
     public Quest RequiredQuest;
-    public string Name;
+    [TextArea] public string Name;
     public Quest GiveQuest;
     public List<Dialogue> Dialogues = new List<Dialogue>();
 }
