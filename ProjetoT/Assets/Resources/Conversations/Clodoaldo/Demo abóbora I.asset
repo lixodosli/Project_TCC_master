@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: "Demo ab\xF3bora I"
+  m_EditorClassIdentifier: 
+  Name: "Clodoaldo entregando semente de ab\xF3bora"
+  Dialogues:
+  - Name: Clodoaldo
+    Text: Bom dia, Alan!
+    Options: 
+  - Name: Clodoaldo
+    Text: "Trouxe algo pra voc\xEA que vai te interessar um \r\nmonte.\r"
+    Options: 
+  - Name: Clodoaldo
+    Text: "Tome aqui, um punhado de semente de 'ab\xF3bra' pra \rvoc\xEA crescer
+      no seu quintal."
+    Options: 
+  - Name: Clodoaldo
+    Text: "Hoje mais cedo eu tava buscando uns cogumelo e \rlogo achei uma danada
+      dessa crescendo no ch\xE3o da \rmata."
+    Options: 
+  - Name: Clodoaldo
+    Text: "N\xE3o demorei de levar pra casa e aproveitar pra \r\ntirar as semente
+      de dentro pra gente."
+    Options: 
+  - Name: 
+    Text: "Voc\xEA recebeu *Sementes de ab\xF3bora*"
+    Options: 
+  - Name: Clodoaldo
+    Text: "Ela uma planta que rende um monte, mas tamb\xE9m \rprecisa ser muito bem
+      cuidada. N\xE3o esquece de \radubar o ch\xE3o e regar ela umas duas vez no
+      dia \rpra ela crescer bem boa!"
+    Options: 
+  - Name: Clodoaldo
+    Text: "Tamb\xE9m pode pegar fungo, ent\xE3o se atenta a isso."
+    Options: 
+  - Name: Clodoaldo
+    Text: "Que sorte que tanto falta pra n\xF3s, ein? Agora \r\ncom voc\xEA tamb\xE9m
+      criando dela por aqui a gente \rconsegue tirar mais comida do nosso trabalho."
+    Options: 
+  - Name: Clodoaldo
+    Text: "Licen\xE7a, que eu preciso ir indo, boa sorte \r\nplantando!"
+    Options: 
