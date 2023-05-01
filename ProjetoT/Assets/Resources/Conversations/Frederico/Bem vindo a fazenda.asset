@@ -10,43 +10,72 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: OIaPaspalho
+  m_Name: Bem vindo a fazenda
   m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
   Name: "Ol\xE1 Paspalho"
+  GiveQuest: {fileID: 11400000, guid: 4614cf771c41b0743a85240a56d3eb64, type: 2}
   Dialogues:
   - Name: "Sebasti\xE3o"
     Text: "B\xE3o dimais receb\xEA oc\xEA na fazenda, s\xF4!\r"
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: "Sebasti\xE3o"
     Text: "Essa terra \xE9 bunita e boa di mais pras plenta\xE7\xE3os."
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: "Sebasti\xE3o"
     Text: "N\xF3is aqui temos varriadas cultura, cuma mi, feij\xE3o e trigu."
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: 
     Text: "Voc\xEA n\xE3o sabia ainda, mas a terra era ruim."
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: "Sebasti\xE3o"
     Text: "Tam\xE9m criamos anim\xE1, cuma vaca, franguin e porco."
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: 
     Text: "At\xE9 hoje, nenhum animal tinha sobrevivido."
     Options: 
     LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: "Sebasti\xE3o"
     Text: "O trem \xE9 trabaioso, mais a recompensa \xE9 da hora."
     Options: 
     LettersPerSecond: 0
-  - Name: 
-    Text: AHH...
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Sebasti\xE3o"
+    Text: "Enfim, que tal come\xE7ar limpando aquele terreno?"
     Options: 
-    LettersPerSecond: 1
-  - Name: 
-    Text: ESQUECI MINHAS ROUPAS NO VARAL.
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Sebasti\xE3o"
+    Text: "Depoi qui termin\xE1 tu pode ir durmi."
     Options: 
-    LettersPerSecond: 90
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

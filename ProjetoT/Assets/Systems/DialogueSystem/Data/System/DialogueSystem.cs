@@ -47,6 +47,7 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
+            PlayerQuests.AddQuest(_CurrentConversation.GiveQuest);
             EndConversation();
         }
     }
@@ -87,6 +88,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (m_DialogueUI.IsActive && GameStateManager.Game.State == GameState.Cutscene)
         {
+            _CurrentConversation.Dialogues[_CurrentDialogueIndex].OnEndDialogue?.Invoke();
             _CurrentDialogueIndex++;
             DisplayCurrentDialogue();
         }
