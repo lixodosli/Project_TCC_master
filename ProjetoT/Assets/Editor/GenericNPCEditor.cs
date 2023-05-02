@@ -1,14 +1,14 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(GenericNPC))]
+[CustomEditor(typeof(NPC))]
 public class GenericNPCEditor : Editor
 {
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
-        GenericNPC conv = (GenericNPC)target;
+        NPC conv = (NPC)target;
 
         if(GUILayout.Button("Check Character Count"))
         {

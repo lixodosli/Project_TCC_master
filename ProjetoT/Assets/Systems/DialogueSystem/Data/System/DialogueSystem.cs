@@ -47,7 +47,9 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            PlayerQuests.AddQuest(_CurrentConversation.GiveQuest);
+            if(_CurrentConversation.GiveQuest != null)
+                PlayerQuests.Instance.AddQuest(_CurrentConversation.GiveQuest);
+
             EndConversation();
         }
     }

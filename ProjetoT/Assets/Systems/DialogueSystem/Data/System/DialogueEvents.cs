@@ -24,4 +24,14 @@ public class DialogueEvents : ScriptableObject
     {
         Debug.Log("Vamo falar sobre outra coisa");
     }
+
+    public void ChangeConversationIndex(int index)
+    {
+        NPCFeitoNasCoxa.Instance.ChangeConversation(index);
+    }
+
+    public void VaiPraLonge()
+    {
+        NPCFeitoNasCoxa.Instance.VaiPraOndeJudasPerdeuAsBotas();
+    }
 }

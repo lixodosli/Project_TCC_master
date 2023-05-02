@@ -15,6 +15,7 @@ public class SementeDeAbobora : Item
         Inventory.Instance.ConsumeItem(this);
         gameObject.SetActive(false);
         closest.UseUseable(this);
+        NPCFeitoNasCoxa.Instance.HaveCondition1 = true;
         //UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
     }
 }
