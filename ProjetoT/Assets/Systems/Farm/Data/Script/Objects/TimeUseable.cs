@@ -9,7 +9,7 @@ public class TimeUseable : Useable
 
     public List<TimerEvent> Timers = new List<TimerEvent>();
 
-    private void Start()
+    private void Awake()
     {
         Messenger.AddListener<int>(TimeManager.AdvanceTimeString, UpdateCounting);
         Messenger.AddListener<string>(UseableName + SetName, UpdateTimers);
@@ -17,6 +17,8 @@ public class TimeUseable : Useable
 
     private void OnEnable()
     {
+        SetName = GetSetNameFromParent(transform.parent.gameObject);
+
         // Remove any ended timer from the list
         Timers.RemoveAll(t => t.End);
         Timers.RemoveAll(t => !t.TrasnformationConfig.PauseWhenDisabled);

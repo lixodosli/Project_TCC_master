@@ -9,7 +9,7 @@ public class QuestInstigator_Item : QuestInstigator
 
     public override bool CanUpdateQuestProgress()
     {
-        return Inventory.Instance.VerifyInventory(ItemsNeeded);
+        return Inventory.Instance.HaveInInventory(ItemsNeeded);
     }
 
     public override void UpdateQuestProgress(Quest quest)
@@ -17,6 +17,6 @@ public class QuestInstigator_Item : QuestInstigator
         if (!CanUpdateQuestProgress())
             return;
 
-        PlayerQuests.UpdateProgress(quest);
+        PlayerQuests.Instance.UpdateProgress(quest);
     }
 }

@@ -16,7 +16,7 @@ public class TransformationByTime : MonoBehaviour
 
     private TransformConfig _TargetTransformConfig;
 
-    private void Start()
+    private void Awake()
     {
         Messenger.AddListener<int>(TimeManager.AdvanceTimeString, UpdateCounter);
     }

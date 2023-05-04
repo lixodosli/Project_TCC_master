@@ -812,6 +812,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8292613108852100719, guid: bebc2875b9c06e54280db6243a91320a,
+        type: 3}
+      propertyPath: m_ItemName
+      value: "Ab\xF3bora"
+      objectReference: {fileID: 0}
     - target: {fileID: 8523619569682502327, guid: bebc2875b9c06e54280db6243a91320a,
         type: 3}
       propertyPath: m_Mesh
@@ -1101,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
         type: 3}
       propertyPath: m_TransformationByTimeConfigs.Array.data[0].TimeToTrigger
-      value: 12
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
         type: 3}

@@ -18,14 +18,12 @@ public class TimeManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Messenger.AddListener<int>(AdvanceTimeString, AdvanceTime);
     }
 
     private void Start()
     {
-        CurrentHour = 8;
-        CurrentDay = 1;
-
-        Messenger.AddListener<int>(AdvanceTimeString, AdvanceTime);
+        Messenger.Broadcast(AdvanceTimeString, 5);
     }
 
     public void AddEvent(GEvent e)

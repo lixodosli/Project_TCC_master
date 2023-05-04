@@ -9,7 +9,6 @@ public class Useable_Set : MonoBehaviour
 
     private void Awake()
     {
-        //SetName = this.name;
         SetupUseables();
         Messenger.AddListener<string>(SetName, UpdateSelectedUseable);
     }

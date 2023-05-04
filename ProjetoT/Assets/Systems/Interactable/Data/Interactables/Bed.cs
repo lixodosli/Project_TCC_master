@@ -10,5 +10,6 @@ public class Bed : Interactable
         
         Messenger.Broadcast(TimeManager.AdvanceTimeString, hourDiference);
         TimeManager.Instance.ExecuteEndOfDayFunctions();
+        NPCFeitoNasCoxa.Instance.HaveCondition1 = true;
     }
 }

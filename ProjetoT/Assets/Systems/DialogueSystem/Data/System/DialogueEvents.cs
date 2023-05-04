@@ -5,9 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Scriptable Objects/Dialogue System/Dialogue Events")]
 public class DialogueEvents : ScriptableObject
 {
-    public void GiveItem(Item item)
+    public void GiveItem(GameObject item)
     {
-        Debug.Log("Toma esse item ai hihihi");
+        for (int i = 0; i < 3; i++)
+        {
+            //GameObject c = ItemSpawnPoint.InstItem(ItemList.SementeDeAbóbora, Inventory.Instance.transform);
+
+            GameObject c = Instantiate(item, TimeManager.Instance.transform);
+            c.GetComponent<Item>().SetID();
+            Inventory.Instance.CollectItem(c.GetComponent<Item>());
+        }
     }
 
     public void UpdateQuest(Quest quest)
@@ -23,5 +30,15 @@ public class DialogueEvents : ScriptableObject
     public void GoToAnotherConversation(Conversation conversation)
     {
         Debug.Log("Vamo falar sobre outra coisa");
+    }
+
+    public void ChangeConversationIndex(int index)
+    {
+        NPCFeitoNasCoxa.Instance.ChangeConversation(index);
+    }
+
+    public void VaiPraLonge()
+    {
+        NPCFeitoNasCoxa.Instance.VaiPraOndeJudasPerdeuAsBotas();
     }
 }

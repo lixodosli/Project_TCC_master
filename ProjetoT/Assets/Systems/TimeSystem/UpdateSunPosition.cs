@@ -14,7 +14,7 @@ public class UpdateSunPosition : MonoBehaviour
     private Quaternion _StartRotation;
     private Vector3 _TargetRotation;
 
-    private void Start()
+    private void Awake()
     {
         StartUpdateRotation(0);
         Messenger.AddListener<int>(TimeManager.AdvanceTimeString, StartUpdateRotation);

@@ -19,5 +19,6 @@ public class FarmingCollect : Interactable
 
         Inventory.Instance.CollectItem(item.GetComponent<Item>());
         UseableReference.SendMessage(0);
+        NPCFeitoNasCoxa.Instance.HaveCondition2 = true;
     }
 }

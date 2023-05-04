@@ -311,7 +311,7 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
-    public bool VerifyInventory(Item[] verification)
+    public bool HaveInInventory(Item[] verification)
     {
         // create dictionaries to count the number of items in the inventory and verification arrays
         Dictionary<string, int> inventoryCounts = new Dictionary<string, int>();

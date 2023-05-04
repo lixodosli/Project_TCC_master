@@ -12,26 +12,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
   m_Name: "Demo ab\xF3bora III"
   m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
   Name: "Ao falar com Clodoaldo TENDO a ab\xF3bora para entregar"
+  GiveQuest: {fileID: 0}
   Dialogues:
   - Name: Clodoaldo
-    Text: "Voc\xEA conseguiu, 'home'!\r"
+    Text: "Voc\xEA conseguiu, 'home'!"
     Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: Clodoaldo
-    Text: "Ela t\xE1 com um tamanho at\xE9 que bem decente, com a \rpr\xE1tica as
-      pr\xF3xima fica maior."
+    Text: "Ela t\xE1 com um tamanho at\xE9 que bem decente, com a pr\xE1tica as pr\xF3xima
+      fica maior."
     Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: Clodoaldo
     Text: "Me d\xE1 um segundo, deixa eu fazer uma coisa..."
     Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: 
     Text: ...
     Options: 
+    LettersPerSecond: 1
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: Clodoaldo
-    Text: "Pronto, viu? As semente ficam aqui, ent\xE3o sempre \rque colher voc\xEA
-      vai ter mais pra poder plantar \rde novo.\r"
+    Text: Pronto, viu?
     Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: Clodoaldo
-    Text: "Agradecido, vai ser \xF3timo pra n\xF3s tudo! No \r\npr\xF3ximo sop\xE3o
-      pode ter certeza que vamo ter \r\n'ab\xF3bra' pra comer."
+    Text: "As semente ficam aqui, ent\xE3o sempre que colher voc\xEA vai ter mais
+      pra poder plantar de novo."
     Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Agradecido, vai ser \xF3timo pra n\xF3s tudo!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "No pr\xF3ximo sop\xE3o pode ter certeza que vamo ter 'ab\xF3bra' pra comer."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: VaiPraLonge
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
