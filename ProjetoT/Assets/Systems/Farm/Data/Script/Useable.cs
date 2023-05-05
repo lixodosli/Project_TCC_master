@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Useable : MonoBehaviour
@@ -8,6 +6,7 @@ public abstract class Useable : MonoBehaviour
     public string SetName { get; protected set; }
     public bool ShowIndication = true;
     public bool UseItemTransition = true;
+    public float BarTime = 5f;
 
     public StatesConfig[] StatesConfigs;
 
@@ -16,7 +15,6 @@ public abstract class Useable : MonoBehaviour
     private void OnEnable()
     {
         SetName = GetSetNameFromParent(transform.parent.gameObject);
-        Debug.Log(SetName);
     }
 
     public string GetSetNameFromParent(GameObject gameObject)

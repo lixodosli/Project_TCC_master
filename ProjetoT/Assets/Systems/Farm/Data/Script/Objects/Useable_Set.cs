@@ -7,6 +7,8 @@ public class Useable_Set : MonoBehaviour
     public string SetName;
     private Useable[] _Useables;
 
+    private Item _UsedItem;
+
     private void Awake()
     {
         SetupUseables();
@@ -24,7 +26,23 @@ public class Useable_Set : MonoBehaviour
 
     public void UseUseable(Item item)
     {
-        CurrentState().Use(item);
+        _UsedItem = item;
+        ExecutionBar.StartCounting(CurrentState().BarTime);
+        ExecutionBar.Complete += UseItem;
+        ExecutionBar.Canceled += CancelUse;
+    }
+
+    private void UseItem()
+    {
+        CurrentState().Use(_UsedItem);
+        ExecutionBar.Complete -= UseItem;
+        ExecutionBar.Canceled -= CancelUse;
+    }
+
+    private void CancelUse()
+    {
+        ExecutionBar.Complete -= UseItem;
+        ExecutionBar.Canceled -= CancelUse;
     }
 
     public Useable CurrentState()

@@ -155,6 +155,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6057391126708117360, guid: 9060e6a175f7d0947b08eca0de3b3aa7,
         type: 3}
+      propertyPath: BarTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057391126708117360, guid: 9060e6a175f7d0947b08eca0de3b3aa7,
+        type: 3}
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 9110568641871705496}
@@ -314,6 +319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849459742421007086, guid: 396d8a4353b959b49838fa4dca1edaef,
+        type: 3}
+      propertyPath: BarTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5849459742421007086, guid: 396d8a4353b959b49838fa4dca1edaef,
         type: 3}
@@ -938,6 +948,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1922375378076546443, guid: 87f6790bac2802748996a6a8c27770b8,
         type: 3}
+      propertyPath: BarTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922375378076546443, guid: 87f6790bac2802748996a6a8c27770b8,
+        type: 3}
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 9110568641871705496}
@@ -1062,6 +1077,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
+        type: 3}
+      propertyPath: BarTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2512547627534834930, guid: 66cff85151cba2e449b4e8b448200110,
         type: 3}
@@ -1305,6 +1325,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419995503170709745, guid: 9e36fdeb521282241b8c2cb8f27fe53e,
+        type: 3}
+      propertyPath: BarTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7419995503170709745, guid: 9e36fdeb521282241b8c2cb8f27fe53e,
         type: 3}
