@@ -129,12 +129,7 @@ PrefabInstance:
     - target: {fileID: 9002353393524994000, guid: 37c7433af7c630946b3f1d8d90009381,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 998
-      objectReference: {fileID: 0}
-    - target: {fileID: 9118269390220855149, guid: 37c7433af7c630946b3f1d8d90009381,
-        type: 3}
-      propertyPath: BarTime
-      value: 5
+      value: 1004
       objectReference: {fileID: 0}
     - target: {fileID: 9118269390220855149, guid: 37c7433af7c630946b3f1d8d90009381,
         type: 3}
@@ -190,11 +185,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3650242999593048648, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3650242999593048648, guid: eebf689f407690c43aafb543262637a3,
-        type: 3}
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 7663320479535454608}
@@ -206,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 4399726392784292438, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1001
+      value: 1007
       objectReference: {fileID: 0}
     - target: {fileID: 6425921441655933711, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
@@ -350,11 +340,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4135085061745571679, guid: 4de0faeb856883e45951236f1fc218cd,
-        type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5928616421326044407, guid: 4de0faeb856883e45951236f1fc218cd,
         type: 3}
       propertyPath: m_Name
@@ -405,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 1585653505896382681, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1361
+      value: 1370
       objectReference: {fileID: 0}
     - target: {fileID: 1715966941680302340, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
@@ -420,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 2090962109397801663, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1179
+      value: 1188
       objectReference: {fileID: 0}
     - target: {fileID: 2493086924745463171, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
@@ -499,11 +484,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977400515971154532, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977400515971154532, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
-        type: 3}
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 6023861545494299281}
@@ -538,11 +518,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 944311365100375154, guid: 4174d5173488a0043b8425b79a2fd911,
-        type: 3}
-      propertyPath: BarTime
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 944311365100375154, guid: 4174d5173488a0043b8425b79a2fd911,
         type: 3}
@@ -627,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 6247332839380085735, guid: 4174d5173488a0043b8425b79a2fd911,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1367
+      value: 1373
       objectReference: {fileID: 0}
     - target: {fileID: 7029367055001350099, guid: 4174d5173488a0043b8425b79a2fd911,
         type: 3}
@@ -637,7 +612,7 @@ PrefabInstance:
     - target: {fileID: 7029367055001350099, guid: 4174d5173488a0043b8425b79a2fd911,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1185
+      value: 1191
       objectReference: {fileID: 0}
     - target: {fileID: 7992926635362003625, guid: 4174d5173488a0043b8425b79a2fd911,
         type: 3}
@@ -704,7 +679,7 @@ PrefabInstance:
     - target: {fileID: 2385505911616980151, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1191
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 2742625949146782287, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -714,7 +689,7 @@ PrefabInstance:
     - target: {fileID: 2742625949146782287, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1373
+      value: 1382
       objectReference: {fileID: 0}
     - target: {fileID: 3113820150879943857, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -778,11 +753,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4979199595463169835, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979199595463169835, guid: a02dc9a893d068d4d961811f92dbc0f8,
-        type: 3}
       propertyPath: m_TransformationByTimeConfigs.Array.data[0].Transformations.Array.data[0].Transformation
       value: 
       objectReference: {fileID: 6994945819293450691}
@@ -814,7 +784,7 @@ PrefabInstance:
     - target: {fileID: 7721639809272828625, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1376
+      value: 1385
       objectReference: {fileID: 0}
     - target: {fileID: 8220546649932020680, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -848,11 +818,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3107422572329202127}
     m_Modifications:
-    - target: {fileID: 2931685549401674062, guid: 9d97fc936421ea247b3936e96b7eb538,
-        type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2931685549401674062, guid: 9d97fc936421ea247b3936e96b7eb538,
         type: 3}
       propertyPath: m_TransformationByTimeConfigs.Array.data[0].Transformations.Array.data[0].Transformation
@@ -957,11 +922,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2208792080412833810, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
-      propertyPath: BarTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2208792080412833810, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
-        type: 3}
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 3657800054177080667}
@@ -1033,7 +993,7 @@ PrefabInstance:
     - target: {fileID: 2956407414594249749, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1373
+      value: 1385
       objectReference: {fileID: 0}
     - target: {fileID: 3407262194972734350, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
@@ -1073,7 +1033,7 @@ PrefabInstance:
     - target: {fileID: 6944959464766236248, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1191
+      value: 1203
       objectReference: {fileID: 0}
     - target: {fileID: 7305369769002032148, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
@@ -1083,7 +1043,7 @@ PrefabInstance:
     - target: {fileID: 7305369769002032148, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1376
+      value: 1388
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f524ea8f46dbda44a99cb9d4f4dc8280, type: 3}

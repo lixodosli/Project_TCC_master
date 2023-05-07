@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class TimeManager : MonoBehaviour
 {
@@ -33,6 +32,9 @@ public class TimeManager : MonoBehaviour
 
     public void AdvanceTime(int time)
     {
+        if (time <= 0)
+            return;
+
         CurrentHour += time;
 
         if(CurrentHour >= 24)

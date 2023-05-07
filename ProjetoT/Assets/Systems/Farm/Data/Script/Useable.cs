@@ -7,6 +7,7 @@ public abstract class Useable : MonoBehaviour
     public bool ShowIndication = true;
     public bool UseItemTransition = true;
     public float BarTime = 5f;
+    public float HungryChanger = 30f;
 
     public StatesConfig[] StatesConfigs;
 
@@ -69,7 +70,8 @@ public abstract class Useable : MonoBehaviour
             return;
 
         SendMessage(_NextStageIndex);
-        Messenger.Broadcast<int>(TimeManager.AdvanceTimeString, StatesConfigs[_NextStageIndex].TimeToExecut);
+        Messenger.Broadcast(TimeManager. AdvanceTimeString, StatesConfigs[_NextStageIndex].TimeToExecut);
+        Messenger.Broadcast(HungrySystem.HungryCountName, HungryChanger);
     }
 
     public virtual void SendMessage(int index)

@@ -51,15 +51,13 @@ MonoBehaviour:
   UseableName: TerraComMatoEPedra
   ShowIndication: 1
   UseItemTransition: 1
+  BarTime: 7
+  HungryChanger: 50
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
       type: 3}
     NextStage: {fileID: 0}
     TimeToExecut: 1
-  - ItemRequiredToInteract: {fileID: 3791583461524819437, guid: 6bb678455b5d93a49b3daba2483b4bba,
-      type: 3}
-    NextStage: {fileID: 0}
-    TimeToExecut: 2
 --- !u!65 &2869233928456865
 BoxCollider:
   m_ObjectHideFlags: 0
