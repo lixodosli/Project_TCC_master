@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InteractableInstigator : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class InteractableInstigator : MonoBehaviour
         PlayerInputManager.Instance.PlayerInput.World.Action.performed -= OnInteractionTriggered;
     }
 
-    private void OnInteractionTriggered(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    private void OnInteractionTriggered(InputAction.CallbackContext context)
     {
         if (GameStateManager.Game.State != GameState.World_Free || NearbyInteractables.ClosestInteractable == null)
             return;

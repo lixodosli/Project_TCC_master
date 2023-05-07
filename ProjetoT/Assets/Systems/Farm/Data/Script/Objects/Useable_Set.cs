@@ -7,6 +7,8 @@ public class Useable_Set : MonoBehaviour
     public string SetName;
     private Useable[] _Useables;
 
+    private Item _UsedItem;
+
     private void Awake()
     {
         SetupUseables();
@@ -17,14 +19,46 @@ public class Useable_Set : MonoBehaviour
     {
         int i = UseableByIndex(tile);
 
-        Debug.Log($"{i} - <{SetName}, {_Useables[i].UseableName}>");
+        Debug.Log($"The set {SetName} will turn of:\n{CurrentStateIndex()} - <{CurrentState().UseableName}>\npara\n{i} - <{_Useables[i].UseableName}>");
 
         SetActive(_Useables[i]);
     }
 
+    public bool TryUse(Item item)
+    {
+        _UsedItem = item;
+
+        if (CurrentState().CanBeUsed(_UsedItem))
+        {
+            _UsedItem = item;
+            ExecutionBar.StartCounting(CurrentState().BarTime);
+            ExecutionBar.Complete += UseItem;
+            ExecutionBar.Canceled += CancelUse;
+            return true;
+        }
+
+        return false;
+    }
+
     public void UseUseable(Item item)
     {
-        CurrentState().Use(item);
+        _UsedItem = item;
+        ExecutionBar.StartCounting(CurrentState().BarTime);
+        ExecutionBar.Complete += UseItem;
+        ExecutionBar.Canceled += CancelUse;
+    }
+
+    private void UseItem()
+    {
+        CurrentState().Use(_UsedItem);
+        ExecutionBar.Complete -= UseItem;
+        ExecutionBar.Canceled -= CancelUse;
+    }
+
+    private void CancelUse()
+    {
+        ExecutionBar.Complete -= UseItem;
+        ExecutionBar.Canceled -= CancelUse;
     }
 
     public Useable CurrentState()
@@ -38,6 +72,19 @@ public class Useable_Set : MonoBehaviour
         }
 
         return null;
+    }
+
+    public int CurrentStateIndex()
+    {
+        for (int i = 0; i < _Useables.Length; i++)
+        {
+            if (_Useables[i].gameObject.activeSelf)
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void SetupUseables() => _Useables = GetComponentsInChildren<Useable>(true);
@@ -59,12 +106,16 @@ public class Useable_Set : MonoBehaviour
     {
         SetupUseables();
 
+        int newActive = 0;
+
         for (int i = 0; i < _Useables.Length; i++)
         {
-            if (_Useables[i] == tile)
-                _Useables[i].gameObject.SetActive(true);
-            else
+            if (_Useables[i] != tile)
                 _Useables[i].gameObject.SetActive(false);
+            else
+                newActive = i;
         }
+
+        _Useables[newActive].gameObject.SetActive(true);
     }
 }

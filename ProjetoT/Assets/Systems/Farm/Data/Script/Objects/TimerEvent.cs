@@ -52,7 +52,7 @@ public class TimerEvent
         _Counter += TimeManager.TotalHours - _LastUpdate;
         _LastUpdate = TimeManager.TotalHours;
 
-        Debug.Log(DebugString());
+        Debug.Log("Updating the counter: " + DebugString());
 
         if(_Counter >= TrasnformationConfig.TimeToTrigger)
         {

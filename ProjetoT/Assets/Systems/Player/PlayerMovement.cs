@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using SaveSystem;
 
 public class PlayerMovement : MonoBehaviour, ISaveable
@@ -18,12 +19,16 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     private bool _CanMove = true;
     private bool _PauseMovement = true;
 
+    public static event System.Action DoneSomeAction;
+
     private void Awake()
     {
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory += PauseMovement;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed += PlayerAction;
+        PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += PlayerAction;
         m_AnimationsEvents.OnAnimationEnd += SetCanMove;
     }
 
@@ -31,6 +36,8 @@ public class PlayerMovement : MonoBehaviour, ISaveable
     {
         Inventory.Instance.OnCollectItem += CollectItemAnim;
         Inventory.Instance.OnOpenCloseInventory -= PauseMovement;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PlayerAction;
+        PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= PlayerAction;
         m_AnimationsEvents.OnAnimationEnd -= SetCanMove;
     }
 
@@ -58,6 +65,11 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         {
             Save.RaiseLoad();
         }
+    }
+
+    public void PlayerAction(InputAction.CallbackContext context)
+    {
+        DoneSomeAction?.Invoke();
     }
 
     private void SetCanMove()
@@ -88,8 +100,12 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         {
             if (GameStateManager.Game.State == GameState.World_Free)
             {
-                _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
-                DoParticlePlay();
+                if(_MoveDirection.magnitude > 0)
+                {
+                    _Rigidbody.AddForce(_MoveDirection * m_Speed, ForceMode.Force);
+                    DoParticlePlay();
+                    DoneSomeAction?.Invoke();
+                }
             }
         }
     }

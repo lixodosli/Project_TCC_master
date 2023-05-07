@@ -10,7 +10,10 @@ public class Enxada : Item
         Useable_Set closest = ClosestUseable();
 
         if (closest == null)
+        {
+            FeedbackMessage.ShowFeedback("Não há uso para este item aqui.");
             return;
+        }
 
         closest.UseUseable(this);
         //GEventManager.Instance.AddGEvent(new GEvent(() => Plages()));
