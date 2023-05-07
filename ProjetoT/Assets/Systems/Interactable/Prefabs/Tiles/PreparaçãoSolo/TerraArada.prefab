@@ -50,6 +50,8 @@ MonoBehaviour:
   UseableName: TerraArada
   ShowIndication: 1
   UseItemTransition: 1
+  BarTime: 2
+  HungryChanger: 5
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 0}
     NextStage: {fileID: 0}

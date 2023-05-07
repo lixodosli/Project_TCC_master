@@ -733,6 +733,8 @@ MonoBehaviour:
   UseableName: CebolaStage03Maturacao
   ShowIndication: 1
   UseItemTransition: 1
+  BarTime: 1.5
+  HungryChanger: 5
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 3791583461524819437, guid: fb4f2788615438c4aa8937d86a5e05f3,
       type: 3}

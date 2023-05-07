@@ -10,11 +10,17 @@ public class SementeDeAbobora : Item
         Useable_Set closest = ClosestUseable();
 
         if (closest == null)
+        {
+            FeedbackMessage.ShowFeedback("Você não pode utilizar este item agora.");
             return;
+        }
 
-        Inventory.Instance.ConsumeItem(this);
-        gameObject.SetActive(false);
-        closest.UseUseable(this);
-        //UseableManager.Instance.RaiseUseable(new UseableInfo(this, closest));
+        if (closest.TryUse(this))
+        {
+            Inventory.Instance.ConsumeItem(this);
+            gameObject.SetActive(false);
+            closest.UseUseable(this);
+            NPCFeitoNasCoxa.Instance.HaveCondition1 = true;
+        }
     }
 }

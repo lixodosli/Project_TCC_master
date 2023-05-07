@@ -11,6 +11,7 @@ public class Abobora : Item
 
     public override void UseItem()
     {
+        Messenger.Broadcast(HungrySystem.HungryName, 1);
         Inventory.Instance.ConsumeItem(this);
 
         for (int i = 0; i < m_DropQuantity; i++)

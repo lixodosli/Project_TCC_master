@@ -311,6 +311,57 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
+    public bool HaveInInventory(Item[] verification)
+    {
+        // create dictionaries to count the number of items in the inventory and verification arrays
+        Dictionary<string, int> inventoryCounts = new Dictionary<string, int>();
+        Dictionary<string, int> verificationCounts = new Dictionary<string, int>();
+
+        // count the items in the inventory array
+        foreach (Item invItem in m_InventoryPool)
+        {
+            if (invItem != null)
+            {
+                if (inventoryCounts.ContainsKey(invItem.ItemName))
+                {
+                    inventoryCounts[invItem.ItemName]++;
+                }
+                else
+                {
+                    inventoryCounts.Add(invItem.ItemName, 1);
+                }
+            }
+        }
+
+        // count the items in the verification array
+        foreach (Item verItem in verification)
+        {
+            if (verItem != null)
+            {
+                if (verificationCounts.ContainsKey(verItem.ItemName))
+                {
+                    verificationCounts[verItem.ItemName]++;
+                }
+                else
+                {
+                    verificationCounts.Add(verItem.ItemName, 1);
+                }
+            }
+        }
+
+        // check if the inventory contains the same number of items as the verification array
+        foreach (KeyValuePair<string, int> pair in verificationCounts)
+        {
+            if (!inventoryCounts.ContainsKey(pair.Key) || inventoryCounts[pair.Key] < pair.Value)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
     #region Utilities
     public int SlotByItem(Item item)
     {

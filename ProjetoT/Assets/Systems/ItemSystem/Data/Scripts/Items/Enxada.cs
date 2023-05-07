@@ -6,11 +6,14 @@ public class Enxada : Item
 {
     public override void UseItem()
     {
-        TimeManager.Instance.AddEvent(new GEvent(() => Plages()));
+        //TimeManager.Instance.AddEvent(new GEvent(() => Plages()));
         Useable_Set closest = ClosestUseable();
 
         if (closest == null)
+        {
+            FeedbackMessage.ShowFeedback("Não há uso para este item aqui.");
             return;
+        }
 
         closest.UseUseable(this);
         //GEventManager.Instance.AddGEvent(new GEvent(() => Plages()));
