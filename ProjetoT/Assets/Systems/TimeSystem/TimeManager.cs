@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class TimeManager : MonoBehaviour
 {
@@ -18,14 +17,12 @@ public class TimeManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Messenger.AddListener<int>(AdvanceTimeString, AdvanceTime);
     }
 
     private void Start()
     {
-        CurrentHour = 8;
-        CurrentDay = 1;
-
-        Messenger.AddListener<int>(AdvanceTimeString, AdvanceTime);
+        Messenger.Broadcast(AdvanceTimeString, 5);
     }
 
     public void AddEvent(GEvent e)
@@ -35,6 +32,9 @@ public class TimeManager : MonoBehaviour
 
     public void AdvanceTime(int time)
     {
+        if (time <= 0)
+            return;
+
         CurrentHour += time;
 
         if(CurrentHour >= 24)

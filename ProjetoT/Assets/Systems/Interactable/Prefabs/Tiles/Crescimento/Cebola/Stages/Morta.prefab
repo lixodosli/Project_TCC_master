@@ -135,6 +135,8 @@ MonoBehaviour:
   UseableName: CebolaStage05Morta
   ShowIndication: 1
   UseItemTransition: 1
+  BarTime: 3
+  HungryChanger: 15
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
       type: 3}

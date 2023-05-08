@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Text.RegularExpressions;
 
 public class TextFormatter
 {

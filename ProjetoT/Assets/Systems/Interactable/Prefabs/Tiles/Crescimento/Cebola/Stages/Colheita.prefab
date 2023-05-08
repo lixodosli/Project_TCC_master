@@ -137,6 +137,8 @@ MonoBehaviour:
   UseableName: CebolaStage04Colheita
   ShowIndication: 0
   UseItemTransition: 0
+  BarTime: 0
+  HungryChanger: 0
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 0}
     NextStage: {fileID: 0}
