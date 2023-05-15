@@ -54,16 +54,12 @@ public class Inventory : MonoBehaviour
         Instance = this;
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed += OpenInventory;
         PlayerInputManager.Instance.PlayerInput.World.Action.performed += SelectOption;
-        OnDropItem += DropItem;
-        OnUseItem += UseItem;
     }
 
     private void OnDestroy()
     {
         PlayerInputManager.Instance.PlayerInput.World.Inventory.performed -= OpenInventory;
         PlayerInputManager.Instance.PlayerInput.World.Action.performed -= SelectOption;
-        OnDropItem -= DropItem;
-        OnUseItem -= UseItem;
     }
 
     private void Update()
@@ -155,10 +151,10 @@ public class Inventory : MonoBehaviour
             default:
                 return;
             case 0:
-                OnUseItem?.Invoke(Items[SelectedItemIndex]);
+                UseItem(Items[SelectedItemIndex]);
                 break;
             case 1:
-                OnDropItem?.Invoke(Items[SelectedItemIndex]);
+                DropItem(Items[SelectedItemIndex]);
                 break;
         }
     }

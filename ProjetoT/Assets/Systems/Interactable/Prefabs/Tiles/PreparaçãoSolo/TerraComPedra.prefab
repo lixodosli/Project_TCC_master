@@ -50,11 +50,13 @@ MonoBehaviour:
   UseableName: TerraComPedra
   ShowIndication: 1
   UseItemTransition: 1
+  BarTime: 5
+  HungryChanger: 30
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
       type: 3}
     NextStage: {fileID: 0}
-    TimeToExecut: 2
+    TimeToExecut: 1
 --- !u!65 &2520650672371097161
 BoxCollider:
   m_ObjectHideFlags: 0

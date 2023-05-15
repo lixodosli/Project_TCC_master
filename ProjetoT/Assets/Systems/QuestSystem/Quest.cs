@@ -7,13 +7,5 @@ public class Quest : ScriptableObject
 {
     public Quest PreviousQuestRequired;
     public string QuestName;
-    public List<QuestSteps> Steps = new List<QuestSteps>();
-}
-
-[System.Serializable]
-public class QuestSteps
-{
-    public string StepName;
-    [TextArea] public string StepDescription;
-    public QuestInstigator QuestCondition;
+    public List<QuestStep> Steps = new List<QuestStep>();
 }

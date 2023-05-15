@@ -55,7 +55,7 @@ MonoBehaviour:
   StatesConfigs:
   - ItemRequiredToInteract: {fileID: 0}
     NextStage: {fileID: 0}
-    TimeToExecut: 0
+    TimeToExecut: 1
   m_TransformationByTimeConfigs: []
   Timers: []
 --- !u!114 &7319601376741610833

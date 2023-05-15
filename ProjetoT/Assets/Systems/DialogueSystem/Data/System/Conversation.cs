@@ -8,7 +8,8 @@ public class Conversation : ScriptableObject
 {
     public Quest RequiredQuest;
     [TextArea] public string Name;
-    public Quest GiveQuest;
+    public Quest StartQuest;
+    public Conversation ConversationIfDontHaveRequiredQuest;
     public List<Dialogue> Dialogues = new List<Dialogue>();
 }
 
