@@ -3,6 +3,16 @@ using UnityEngine.InputSystem;
 
 public class InteractableInstigator : MonoBehaviour
 {
+    public static InteractableInstigator Instance { get; private set; }
+
+    public delegate void InteractableCallback(Interactable interactable);
+    public InteractableCallback OnInteract;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void OnEnable()
     {
         PlayerInputManager.Instance.PlayerInput.World.Action.performed += OnInteractionTriggered;
@@ -19,5 +29,6 @@ public class InteractableInstigator : MonoBehaviour
             return;
 
         NearbyInteractables.ClosestInteractable.DoInteraction();
+        OnInteract?.Invoke(NearbyInteractables.ClosestInteractable);
     }
 }

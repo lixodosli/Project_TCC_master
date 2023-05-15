@@ -69,6 +69,7 @@ public abstract class Useable : MonoBehaviour
         if (!UseItemTransition)
             return;
 
+        Inventory.Instance.OnUseItem?.Invoke(item);
         SendMessage(_NextStageIndex);
         Messenger.Broadcast(TimeManager. AdvanceTimeString, StatesConfigs[_NextStageIndex].TimeToExecut);
         Messenger.Broadcast(HungrySystem.HungryCountName, HungryChanger);

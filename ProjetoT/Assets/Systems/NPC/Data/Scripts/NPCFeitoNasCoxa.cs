@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ public class NPCFeitoNasCoxa : NPC
 
     public override void DoInteraction()
     {
-        VerifyConditions(m_CurrentConversationIndex);
+        //VerifyConditions(m_CurrentConversationIndex);
 
         base.DoInteraction();
     }
@@ -34,11 +34,11 @@ public class NPCFeitoNasCoxa : NPC
                 break;
             case 1:
                 if (HaveCondition1)
-                    ChangeConversation(2);
+                    ChangeNarrative(2);
                 break;
             case 3:
                 if (HaveCondition2)
-                    ChangeConversation(4);
+                    ChangeNarrative(4);
                 break;
         }
     }

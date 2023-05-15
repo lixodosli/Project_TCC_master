@@ -946,11 +946,6 @@ PrefabInstance:
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 9110568641871705496}
-    - target: {fileID: 1922375378076546443, guid: 87f6790bac2802748996a6a8c27770b8,
-        type: 3}
-      propertyPath: StatesConfigs.Array.data[0].TimeToExecut
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1922375378076546444, guid: 87f6790bac2802748996a6a8c27770b8,
         type: 3}
       propertyPath: m_Name

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TMPro;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<Conversation> m_Conversations = new List<Conversation>();
 
     private Conversation _CurrentConversation;
+    public NPC CurrentNPC;
     public Conversation CurrentConversation => _CurrentConversation;
     private int _CurrentDialogueIndex;
 
@@ -21,14 +21,28 @@ public class DialogueSystem : MonoBehaviour
         Instance = this;
     }
 
-    public void StartConversation(string conversationName)
+    public void StartConversation(NPC npc)
     {
+        CurrentNPC = npc;
+
+        int narrativeIndex = npc.CurrentNarrativeIndex;
+        int conversationIndex = npc.Narratives[narrativeIndex].CurrentConversationIndex;
+        string conversationName = npc.Narratives[narrativeIndex].Conversations[conversationIndex].Name;
+
         _CurrentConversation = m_Conversations.Find(conversation => conversation.Name == conversationName);
 
         if (_CurrentConversation == null)
         {
             Debug.LogError($"Conversation '{conversationName}' not found.");
             return;
+        }
+
+        if(_CurrentConversation.RequiredQuest != null)
+        {
+            if (!PlayerQuests.Instance.IsCompleted(_CurrentConversation.RequiredQuest))
+            {
+                _CurrentConversation = _CurrentConversation.ConversationIfDontHaveRequiredQuest;
+            }
         }
 
         _CurrentDialogueIndex = 0;
@@ -47,8 +61,8 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            if(_CurrentConversation.GiveQuest != null)
-                PlayerQuests.Instance.AddQuest(_CurrentConversation.GiveQuest);
+            if(_CurrentConversation.StartQuest != null)
+                PlayerQuests.Instance.AddQuest(_CurrentConversation.StartQuest);
 
             EndConversation();
         }
@@ -59,6 +73,7 @@ public class DialogueSystem : MonoBehaviour
         m_DialogueUI.HideDialogue();
         _CurrentConversation = null;
         _CurrentDialogueIndex = 0;
+        CurrentNPC = null;
         PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PassDialogue;
         GameStateManager.Game.RaiseChangeGameState(GameState.World_Free);
     }

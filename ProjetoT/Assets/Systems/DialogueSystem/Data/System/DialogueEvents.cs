@@ -27,6 +27,20 @@ public class DialogueEvents : ScriptableObject
         Debug.Log("ME DA ESSA BOSTA");
     }
 
+    public void AdvanceNarrative()
+    {
+        if (DialogueSystem.Instance.CurrentNPC == null)
+        {
+            Debug.LogError($"Trying to iterate over a null NPC.");
+            return;
+        }
+
+        DialogueSystem.Instance.CurrentNPC.NextNarrative();
+    }
+    public void ChangeNarrative(int index) => DialogueSystem.Instance.CurrentNPC.ChangeNarrative(index);
+    public void AdvanceConversation() => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].NextConversation();
+    public void ChangeConversation(int index) => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].ChangeConversation(index);
+
     public void GoToAnotherConversation(Conversation conversation)
     {
         Debug.Log("Vamo falar sobre outra coisa");
@@ -34,7 +48,7 @@ public class DialogueEvents : ScriptableObject
 
     public void ChangeConversationIndex(int index)
     {
-        NPCFeitoNasCoxa.Instance.ChangeConversation(index);
+        NPCFeitoNasCoxa.Instance.ChangeNarrative(index);
     }
 
     public void VaiPraLonge()

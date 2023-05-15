@@ -129,7 +129,7 @@ PrefabInstance:
     - target: {fileID: 9002353393524994000, guid: 37c7433af7c630946b3f1d8d90009381,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1004
+      value: 1007
       objectReference: {fileID: 0}
     - target: {fileID: 9118269390220855149, guid: 37c7433af7c630946b3f1d8d90009381,
         type: 3}
@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 7663320479535454608}
+    - target: {fileID: 3650242999593048648, guid: eebf689f407690c43aafb543262637a3,
+        type: 3}
+      propertyPath: StatesConfigs.Array.data[0].TimeToExecut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4399726392784292438, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
       propertyPath: m_Mesh
@@ -196,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 4399726392784292438, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1007
+      value: 1013
       objectReference: {fileID: 0}
     - target: {fileID: 6425921441655933711, guid: eebf689f407690c43aafb543262637a3,
         type: 3}
@@ -390,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 1585653505896382681, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1370
+      value: 1376
       objectReference: {fileID: 0}
     - target: {fileID: 1715966941680302340, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
@@ -405,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 2090962109397801663, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1188
+      value: 1194
       objectReference: {fileID: 0}
     - target: {fileID: 2493086924745463171, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
         type: 3}
@@ -487,6 +492,11 @@ PrefabInstance:
       propertyPath: StatesConfigs.Array.data[0].NextStage
       value: 
       objectReference: {fileID: 6023861545494299281}
+    - target: {fileID: 8977400515971154532, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e,
+        type: 3}
+      propertyPath: StatesConfigs.Array.data[0].TimeToExecut
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfead2ed08a7f445b2a7a2c7a41bd8e, type: 3}
 --- !u!114 &4607431965304121774 stripped
@@ -679,7 +689,7 @@ PrefabInstance:
     - target: {fileID: 2385505911616980151, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1200
+      value: 1203
       objectReference: {fileID: 0}
     - target: {fileID: 2742625949146782287, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -689,7 +699,7 @@ PrefabInstance:
     - target: {fileID: 2742625949146782287, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1382
+      value: 1385
       objectReference: {fileID: 0}
     - target: {fileID: 3113820150879943857, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -784,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 7721639809272828625, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1385
+      value: 1388
       objectReference: {fileID: 0}
     - target: {fileID: 8220546649932020680, guid: a02dc9a893d068d4d961811f92dbc0f8,
         type: 3}
@@ -993,7 +1003,7 @@ PrefabInstance:
     - target: {fileID: 2956407414594249749, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1385
+      value: 1391
       objectReference: {fileID: 0}
     - target: {fileID: 3407262194972734350, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
@@ -1033,7 +1043,7 @@ PrefabInstance:
     - target: {fileID: 6944959464766236248, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1203
+      value: 1209
       objectReference: {fileID: 0}
     - target: {fileID: 7305369769002032148, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
@@ -1043,7 +1053,7 @@ PrefabInstance:
     - target: {fileID: 7305369769002032148, guid: f524ea8f46dbda44a99cb9d4f4dc8280,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1388
+      value: 1394
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f524ea8f46dbda44a99cb9d4f4dc8280, type: 3}

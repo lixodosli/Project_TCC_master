@@ -737,7 +737,7 @@ MonoBehaviour:
   - ItemRequiredToInteract: {fileID: 3791583461524819437, guid: fb4f2788615438c4aa8937d86a5e05f3,
       type: 3}
     NextStage: {fileID: 0}
-    TimeToExecut: 0
+    TimeToExecut: 1
   - ItemRequiredToInteract: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
       type: 3}
     NextStage: {fileID: 0}
