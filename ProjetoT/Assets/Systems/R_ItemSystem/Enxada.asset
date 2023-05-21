@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d9c305b5615244c83e38c8c5f7879f, type: 3}
+  m_Name: Enxada
+  m_EditorClassIdentifier: 
+  ItemName: Enxada
+  ItemDescription: Usada para poder enxadar os outros.
+  ItemIcon: {fileID: 21300000, guid: 01ed9266520b9bf4d80234b24ee4b466, type: 3}
+  ItemModel: {fileID: 6247437171430698618, guid: 57e32433e408f43428f41771b2cfc100,
+    type: 3}
+  Type:
+    rid: 8580562844720037888
+  references:
+    version: 2
+    RefIds:
+    - rid: 8580562844720037888
+      type: {class: R_ItemType_Tool, ns: , asm: Assembly-CSharp}
+      data:
+        Type: Tool

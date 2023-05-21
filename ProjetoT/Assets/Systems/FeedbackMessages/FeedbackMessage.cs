@@ -41,6 +41,7 @@ public class FeedbackMessage : MonoBehaviour
         if (TimeCounter != null)
             StopFeedback(true);
 
+        m_Message.text = message;
         TimeCounter = new Counter("TimeToDesappear", message.Length * m_TimePerMessageLetter);
         Messenger.AddListener<bool>(TimeCounter.CounterName, StopFeedback);
         TimeCounter.Play();
