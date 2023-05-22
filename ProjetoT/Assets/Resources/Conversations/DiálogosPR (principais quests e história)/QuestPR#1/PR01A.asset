@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: PR01A
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Clodoaldo faz sua visita habitual para recolher as contribui\xE7\xF5es para
+    o vilarejo.\nEssa sess\xE3o ocorre caso o jogador n\xE3o tenha acumulado pontos
+    o suficiente para subir para o pr\xF3ximo Est\xE1gio de Progress\xE3o desde a
+    \xFAltima checagem."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: Clodoaldo
+    Text: Bom dia, Alan.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Vamos ver o que voc\xEA separou para o vilarejo..."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: ...
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Vejo algumas contribui\xE7\xF5es interessantes, continue o trabalho para
+      irmos melhorando as condi\xE7\xF5es do vilarejo cada vez mais!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Daqui seis dias passarei de novo para ver as contribui\xE7\xF5es. At\xE9
+      mais!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

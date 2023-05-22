@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: PR00A
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Primeiro di\xE1logo; obrigat\xF3rio, ocorre assim que o jogo come\xE7a"
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: Clodoaldo
+    Text: "Isso que eu vou te dizer \xE9 algo muito dif\xEDcil de se assumir, mas
+      \xE9 a realidade."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Eu estou duvidando de mim mesmo, n\xE3o sei muito mais o que posso fazer..."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "J\xE1 faz quase um ano que a nossa principal fonte de \xE1gua est\xE1
+      em p\xE9ssimas condi\xE7\xF5es."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Com o pouco que temos aqui no vilarejo mal conseguimos as coisas mais
+      b\xE1sicas pra continuar vivendo dignamente."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Nos primeiros meses em que a natureza daqui come\xE7ou a decair at\xE9
+      consegu\xEDamos nos virar ainda,"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "mas de l\xE1 pra c\xE1 as coisas s\xF3 pioram."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Como l\xEDder de um vilarejo t\xE3o pequeno \xE9 imposs\xEDvel n\xE3o
+      sentir na minha pr\xF3pria pele essas mudan\xE7as,"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: eu temo de verdade pela vida das pessoas que aqui vivem. Afinal, eu assumi
+      essa responsabilidade.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Alan, quis falar contigo pois como j\xE1 sabe fui um amigo de longa data
+      de sua m\xE3e, vi voc\xEA nascer e crescer."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Voc\xEA viveu boa parte da sua vida respirando natureza,"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "sabe muito bem como funciona a sobrevivencia nessa nossa realidade t\xE3o
+      longe das cidades."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Por isso, n\xF3s precisamos de voc\xEA!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Faz tempo que voc\xEA esteve exercendo outras atividades que n\xE3o o
+      plantio, \xE9 verdade,"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "mas sabemos que voc\xEA \xE9 mais do que capaz! Esse tipo de conhecimento
+      que tu carrega a gente n\xE3o perde."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: ...
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Que \xF3timo que podemos contar com voc\xEA."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Toda e qualquer ajuda que tivermos para produzir comida \xE9 indispens\xE1vel."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "O ambiente da regi\xE3o est\xE1 muito estranho, sinto como se a natureza
+      agonizasse."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "O mundo em que vivemos j\xE1 n\xE3o \xE9 o mesmo de d\xE9cadas atr\xE1s."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "vamos dar o nosso melhor para lidar com isso e aos poucos, se Deus quiser,
+      finalmente mudarmos essa situa\xE7\xE3o."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: 'Aqui, tome essas sementes e mudas:'
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Muda de salsinha."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Muda de cebola."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Sementes de alface."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Sementes de almeir\xE3o."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Semesntes de Jil\xF3."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Essas s\xE3o um bom ponto de partida pra voc\xEA retomar a pr\xE1tica."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: Deixarei uma caixa de estocagem na frente da sua casa,
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: basta ir deixando as coisas que colher ali dentro para colaborar com a
+      nossa comunidade.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "S\xF3 n\xE3o se prive de alimentar a si mesmo tamb\xE9m, n\xE3o queremos
+      que fa\xE7a tudo por n\xF3s e morra de fome no processo."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: A cada seis dias visitarei a fazenda para acompanhar seu progresso e demandas.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
