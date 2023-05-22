@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d519fd6eaec9b6442a6c71a44eecbb37, type: 3}
-  m_Name: New Quest
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: ishi
   m_EditorClassIdentifier: 
-  PreviousQuestRequired: {fileID: 11400000, guid: aae770ee9bda44842ba286342e2ab88e,
-    type: 2}
-  QuestName: Julio
-  Steps: []
+  RequiredQuest: {fileID: 0}
+  Name: ishi
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues: []
