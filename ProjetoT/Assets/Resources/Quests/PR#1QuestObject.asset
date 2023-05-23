@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PR#1QuestObject
   m_EditorClassIdentifier: 
   PreviousQuestRequired: {fileID: 0}
-  QuestName: Churrasquinho vegano
+  QuestName: "Colabora\xE7\xE3o comunit\xE1ria"
   Steps: []

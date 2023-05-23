@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PR#3QuestObject
   m_EditorClassIdentifier: 
   PreviousQuestRequired: {fileID: 0}
-  QuestName: Churrasquinho vegano
+  QuestName: "Estou chegando para acabar com voc\xEAs"
   Steps: []
