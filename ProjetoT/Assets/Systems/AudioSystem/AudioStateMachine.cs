@@ -27,9 +27,9 @@ public class AudioStateMachine : MonoBehaviour
 
     private void Start()
     {
-        _BGMInfos.Setup(m_BGMSource);
-        _BGAInfos.Setup(m_BGASource);
-        _SFXInfos.Setup(m_SFXSource);
+        _BGMInfos = new ChangeInfo(m_BGMSource);
+        _BGAInfos = new ChangeInfo(m_BGASource);
+        _SFXInfos = new ChangeInfo(m_SFXSource);
     }
 
     private void Update()
@@ -49,7 +49,7 @@ public class AudioStateMachine : MonoBehaviour
         if (!info.Source.isPlaying)
         {
             info.Source.clip = info.NextClip;
-            //info.Source.Play();
+            info.Source.Play();
         }
 
         if (info.Growing)
@@ -77,6 +77,8 @@ public class AudioStateMachine : MonoBehaviour
                 info.Growing = true;
             }
         }
+
+        info.Source.volume = info.Counter;
     }
 
     public void ChangeClip(AudioType type, AudioClip newClip, AudioConfigs configs)
@@ -166,7 +168,7 @@ public class AudioStateMachine : MonoBehaviour
 }
 
 [System.Serializable]
-public struct ChangeInfo
+public class ChangeInfo
 {
     public bool Change;
     public bool Growing;
@@ -175,7 +177,7 @@ public struct ChangeInfo
     public AudioSource Source;
     public AudioClip NextClip;
 
-    public void Setup(AudioSource source)
+    public ChangeInfo(AudioSource source)
     {
         Source = source;
     }
