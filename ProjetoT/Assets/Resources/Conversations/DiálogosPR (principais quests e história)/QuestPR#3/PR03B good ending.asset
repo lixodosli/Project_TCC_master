@@ -10,67 +10,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: PR04B
+  m_Name: PR03B good ending
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Ao falar com Ant\xF4nio ap\xF3s trazer os ingredientes."
+  Name: "Ao se passarem 7 dias desde o di\xE1logo anterior e o jogador tiver jogado
+    a planta desconhecida no po\xE7o de Ip\xE1"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
-  - Name: "Ant\xF4nio"
-    Text: "Maravilha, voc\xEA trouxe!"
+  - Name: Clodoaldo
+    Text: "Alan, n\xF3s conseguimos..."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Valeu, Alan, v\xE3o adorar o que irei preparar aqui juntando o que tenho
-      e o que voc\xEA trouxe."
+  - Name: Clodoaldo
+    Text: Conseguimos superar a crise que o vilarejo estava passando!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: 'Aqui, fica com isso:'
+  - Name: Clodoaldo
+    Text: "As \xE1guas da fonte voltaram a emergir limpas e cristalinas!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: 
-    Text: "Voc\xEA recebeu Saco de arroz."
+  - Name: Clodoaldo
+    Text: "A natureza parece calma como eu n\xE3o via h\xE1 bastante tempo, apesar
+      do clima continuar muito quente."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Vai l\xE1 e leva isso pra sua caixa de estocagem."
+  - Name: Clodoaldo
+    Text: "De qualquer forma, o vilarejo enfim respira de verdade! a tend\xEAncia
+      \xE9 que n\xE3o passemos mais tamanhas dificuldades para nos alimentar."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Tenho certeza que todos v\xE3o adorar comer os espetinhos junto com esse
-      arroz indo pra contribui\xE7\xE3o comunit\xE1ria."
+  - Name: Clodoaldo
+    Text: Muito obrigado por toda a sua ajuda!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Clodoaldo vai ficar muito feliz amanh\xE3 quando eu levar os espetinhos
-      para todos pessoalmente."
+  - Name: Clodoaldo
+    Text: "Eu n\xE3o esperava que a essa altura estiv\xE9ssemos tendo motivos para
+      comemorar."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Farei quest\xE3o de dier que tamb\xE9m foi gra\xE7as a voc\xEA."
+  - Name: Clodoaldo
+    Text: Obrigado.
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

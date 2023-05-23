@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PA02A
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Ao falar com maira ela revela ter conseguido uma muda de alho, planta capaz
-    de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
+  Name: "\"Antipragas e antif\xFAngicos\".\nAo falar com maira ela revela ter conseguido
+    uma muda de alho, planta capaz de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

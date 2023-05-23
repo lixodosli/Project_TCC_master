@@ -10,107 +10,102 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: PR03A
+  m_Name: PR02D
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "\"Temperamento forte\"\nAnt\xF4nio precisa repor seu estoque de especiarias,
-    furtado por um vulto."
+  Name: "Ao falar com Ip\xE1 pela quarta vez"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
-  - Name: "Ant\xF4nio"
-    Text: "Alan, foi mal, mas n\xE3o t\xF4 legal."
+  - Name: "Ip\xE1"
+    Text: Oi, Alan!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Ontem eu tinha ido at\xE9 a floresta, ver se dava sorte de achar coisa
-      boa pra coletar,"
+  - Name: "Ip\xE1"
+    Text: "Fiquei sabendo que esse \xE9 o seu nome!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Da\xED, quando voltei pra c\xE1, j\xE1 de noite, vi algo mexendo na minha
-      mochila."
+  - Name: "Ip\xE1"
+    Text: "Como eu j\xE1 disse, n\xE3o me importo com isso,"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Tava meio escuro, ent\xE3o n\xE3o consegui ver direito, mas acho que era
-      um bicho."
+  - Name: "Ip\xE1"
+    Text: "afinal assim que eu me libertar do meu aprisionamento vou acabar com a
+      sua ra\xE7a, literalmente."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: Quando me viu ele sumiu como um vulto, levou meu estoque de temperos quase
-      inteiro.
+  - Name: "Ip\xE1"
+    Text: "Mas analisando os fatos de forma fria, esse \xE9 um belo nome!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: Fiquei indignado... sempre guardo muito bem minhas mercadorias, e mesmo
-      assim aquele safado me surrupiou!
+  - Name: "Ip\xE1"
+    Text: "\xC9 agrad\xE1vel o som que faz, as s\xEDlabas quase dan\xE7am na boca
+      ao falar..."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "T\xF4 lascado..."
+  - Name: "Ip\xE1"
+    Text: "Por isso, a partir de agora esse ser\xE1 meu mais novo nome!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: 
-    Text: ...
+  - Name: Alan
+    Text: Inclusive, usarei apenas Alan como palavra!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Qu\xEA? voc\xEA vai me ajudar?"
+  - Name: Alan
+    Text: Alan! Alan Alan WHAHAHAHAHAHA!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: Muito obrigado, isso significa muito, parceiro!
+  - Name: Alan
+    Text: Alan Alan Alan Alan Alan Alan Alan Alan, Alan Alan Alan Alan Alan Alan,
+      Alan Alan Alan Alan. Alan Alan....
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Temperos s\xE3o o carro chefe das minhas viagens em que troco muambas,"
+  - Name: Alan
+    Text: Alan.
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Se me trouxer os ingredientes que preciso pra fazer ao menos um bom vinagrete
-      j\xE1 ser\xE1 excelente."
+  - Name: "Ip\xE1"
+    Text: "T\xE1, cansei."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Eles s\xE3o: salsinha, cebola e tomate. Dois de cada, exceto o tomate,
-      que pode ser s\xF3 um."
+  - Name: "Ip\xE1"
+    Text: Indo ao que realmente interessa!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: PA02D pimenta
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha alho
+  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha pimenta
     no invent\xE1rio. "
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
-    Text: Mais extrato de alho pra afastar as pragas?
+    Text: "Mais extrato de pimenta pras planta n\xE3o criar fungo?"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

@@ -10,52 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: PA02D alho
+  m_Name: PR02C
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha alho
-    no invent\xE1rio. "
+  Name: "Ao falar com Ip\xE1 pela terceira vez"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
-  - Name: Maira
-    Text: Mais extrato de alho pra afastar as pragas?
+  - Name: "Ip\xE1"
+    Text: Boa noite, flor da noite!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: Maira
-    Text: "Muito bem, s\xF3 um segundo."
+  - Name: "Ip\xE1"
+    Text: Ei, quer ouvir uma piada?
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: 
-    Text: ...
+  - Name: "Ip\xE1"
+    Text: "Por que o macaco pegou as cinzas da v\xF3 dele pra pregar uma pe\xE7a?"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: Maira
-    Text: "Pronto, aqui est\xE1:"
+  - Name: "Ip\xE1"
+    Text: "Poque ele queria usar p\xF3 de mico!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: 
-    Text: "Voc\xEA recebeu Extrato de alho (antipraga)."
+  - Name: "Ip\xE1"
+    Text: WHAAAAAAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHHHHHAHAHAHAHAHAAA!!!!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: Maira
-    Text: "Sempre que precisar traga alho ou pimenta, que eu fa\xE7o mais desses
-      extrato que mant\xE9m as plantas saud\xE1vel."
+  - Name: "Ip\xE1"
+    Text: Cof cof cof cof-eek!
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Enfim, vamos falar de neg\xF3cios, vamos para as minhas oferendas!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

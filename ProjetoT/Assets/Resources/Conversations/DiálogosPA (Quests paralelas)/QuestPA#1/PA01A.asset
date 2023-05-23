@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: PA01A
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Ao falar com Maira pela primeira vez ela relata ver muitas lagartas ultimamente
-    e alerta sobre a amea\xE7a que elas s\xE3o para a planta\xE7\xE3o."
+  Name: "\"Insetos indesejados\".\nAo falar com Maira pela primeira vez ela relata
+    ver muitas lagartas ultimamente e alerta sobre a amea\xE7a que elas s\xE3o para
+    a planta\xE7\xE3o."
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

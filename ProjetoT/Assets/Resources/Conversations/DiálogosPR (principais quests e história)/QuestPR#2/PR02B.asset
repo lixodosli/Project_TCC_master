@@ -10,67 +10,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: PR04B
+  m_Name: PR02B
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Ao falar com Ant\xF4nio ap\xF3s trazer os ingredientes."
+  Name: "Ao falar com Ip\xE1 pela segunda vez"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
-  - Name: "Ant\xF4nio"
-    Text: "Maravilha, voc\xEA trouxe!"
+  - Name: "Ip\xE1"
+    Text: "Ei, por acaso voc\xEA pratica algum esporte?"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Valeu, Alan, v\xE3o adorar o que irei preparar aqui juntando o que tenho
-      e o que voc\xEA trouxe."
+  - Name: "Ip\xE1"
+    Text: "Fiquei sabendo que de tempos em tempos sua esp\xE9cie organiza uma grande
+      competi\xE7\xE3o mundial de diversas modalidades!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: 'Aqui, fica com isso:'
+  - Name: "Ip\xE1"
+    Text: "Eu adoraria participar de algo assim, mas os outros esp\xEDritos da natureza
+      n\xE3o se interessam..."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: 
-    Text: "Voc\xEA recebeu Saco de arroz."
+  - Name: "Ip\xE1"
+    Text: Um dia com certeza farei com que participem!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Vai l\xE1 e leva isso pra sua caixa de estocagem."
+  - Name: "Ip\xE1"
+    Text: "E ent\xE3o serei finalmente sagrado como campe\xE3o na modalidade dilaceramento
+      ornamental!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Tenho certeza que todos v\xE3o adorar comer os espetinhos junto com esse
-      arroz indo pra contribui\xE7\xE3o comunit\xE1ria."
+  - Name: "Ip\xE1"
+    Text: "at\xE9 mesmo arremesso de corpos, hipismo com mula sem cabe\xE7a... s\xE3o
+      muitas as possibilidades!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Clodoaldo vai ficar muito feliz amanh\xE3 quando eu levar os espetinhos
-      para todos pessoalmente."
+  - Name: "Ip\xE1"
+    Text: "Apenas aguardem, s\xF3 preciso retomar minha antiga forma"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: "Ant\xF4nio"
-    Text: "Farei quest\xE3o de dier que tamb\xE9m foi gra\xE7as a voc\xEA."
+  - Name: "Ip\xE1"
+    Text: Agora, indo ao que interessa, minhas oferendas!
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
