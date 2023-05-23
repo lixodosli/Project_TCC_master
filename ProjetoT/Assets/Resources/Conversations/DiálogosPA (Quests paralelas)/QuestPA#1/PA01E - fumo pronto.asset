@@ -13,13 +13,20 @@ MonoBehaviour:
   m_Name: PA01E - fumo pronto
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: Caso o jogador fale com Maira novamente antes do fumo estar pronto
+  Name: Caso o jogador fale com Maira novamente e o fumo estiver pronto
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
+  - Name: 
+    Text: "Voc\xEA recebeu Fumo de corda."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
   - Name: Maira
-    Text: "Sobre o fumo de corda, as folhas de tabaco ainda n\xE3o secaram totalmente,
-      ainda n\xE3o posso tran\xE7\xE1-las."
+    Text: "Traga mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais
+      fumo de corda."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
