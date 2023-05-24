@@ -98,10 +98,8 @@ public class AudioStateMachine : MonoBehaviour
                 StartChangeBGA(newClip, configs);
                 break;
             case AudioType.SFX:
-                if (newClip == m_SFXSource.clip)
-                    return;
-
-                StartChangeSFX(newClip, configs);
+                m_SFXSource.PlayOneShot(newClip);
+                //StartChangeSFX(newClip, configs);
                 break;
         }
     }

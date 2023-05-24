@@ -35,7 +35,15 @@ public abstract class Item : Interactable
         Useable_Set closest = ClosestUseable();
 
         if (closest == null)
+        {
+            FeedbackMessage.ShowFeedback("Não há uso para este item aqui.");
             return;
+        }
+
+        if (OnInteractSFX != null)
+        {
+            AudioManager.Instance.Play(OnInteractSFX, AudioType.SFX, AudioConfigs.Default());
+        }
 
         closest.UseUseable(this);
     }

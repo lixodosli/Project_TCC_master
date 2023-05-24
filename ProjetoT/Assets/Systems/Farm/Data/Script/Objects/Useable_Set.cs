@@ -8,6 +8,7 @@ public class Useable_Set : MonoBehaviour
     private Useable[] _Useables;
 
     private Item _UsedItem;
+    [SerializeField] private AudioClip m_OnChangeSFX;
 
     private void Awake()
     {
@@ -117,5 +118,6 @@ public class Useable_Set : MonoBehaviour
         }
 
         _Useables[newActive].gameObject.SetActive(true);
+        AudioManager.Instance.Play(m_OnChangeSFX, AudioType.SFX, AudioConfigs.Default());
     }
 }
