@@ -47,6 +47,8 @@ public class Inventory : MonoBehaviour
     [Header("Drop Item Configs")]
     [SerializeField] private Vector3 m_DropOffset;
     private bool _IsDropping;
+
+    [SerializeField] private AudioClip m_CollectSound;
     #endregion
 
     private void Awake()
@@ -191,6 +193,7 @@ public class Inventory : MonoBehaviour
         Messenger.Broadcast(NearbyInteractables.InteractableName, Items[slot].ItemName);
         //NearbyInteractables.Instance.RemoveInteractable(item);
         RaiseCollectItem(Items[slot]);
+        AudioManager.Instance.Play(m_CollectSound, AudioType.SFX, AudioConfigs.Default());
     }
 
     private bool TryCollect(Item item)

@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
         }
 
         m_Animator.SetFloat("Movement", _MoveDirection.magnitude);
+        m_Animator.SetFloat("Speed", m_Speed / 10);
 
         if (Input.GetKeyDown(KeyCode.F12))
         {
