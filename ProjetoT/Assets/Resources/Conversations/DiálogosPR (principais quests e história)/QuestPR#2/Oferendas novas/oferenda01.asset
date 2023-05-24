@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: oferenda01
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Enquanto no Est\xE1gio de Progress\xE3o 1 de colabora\xE7\xE3o comunit\xE1ria."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: "Ip\xE1"
+    Text: Bom, sobre minha nova oferenda,
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "dessa vez vou querer algo diferenciado! Me traga jil\xF3! Isso mesmo,
+      me traga jil\xF3 em no m\xE1ximo 10 dias."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Muitos desdenham desse fruto, mas o azar \xE9 dos humanos imbec\xEDs que
+      pensam assim, eu adoro!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Tem um gostinho \xFAnico! a leve croc\xE2ncia das sementes dentro dele
+      s\xE3o a melhor parte!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

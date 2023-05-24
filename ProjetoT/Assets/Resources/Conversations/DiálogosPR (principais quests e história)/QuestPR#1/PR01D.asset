@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: PR01D
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Clodoaldo faz sua visita habitual para recolher as contribui\xE7\xF5es para
+    o vilarejo.\nEssa sess\xE3o ocorre caso o jogador tenha contribuido o suficiente
+    para subir para o Est\xE1gio de Progress\xE3o 4"
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: Clodoaldo
+    Text: Bom dia, Alan.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Vamos ver o que voc\xEA separou para o vilarejo..."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: ...
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "As contribui\xE7\xF5es foram excelentes!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Fique, \xE9 seu:"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Sementes de ab\xF3bora."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Picareta"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Considere essas coisas um singelo gesto de gratid\xE3o por tudo que vem
+      fazendo pelo vilarejo."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: Na verdade, recentemente encontrei umas outras sementes curiosas para lhe
+      entregar,
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: mas pra falar a verdade acabei esquecendo e nem estou com elas aqui agora.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "N\xE3o sei nem do que se tratam, vou tentar descobrir."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "A vida de todos por aqui j\xE1 melhorou consideravelmente gra\xE7as tamb\xE9m
+      a voc\xEA, Alan."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Obrigado, continue com o \xF3timo trabalho."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Clodoaldo
+    Text: "Era isso, at\xE9 mais!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

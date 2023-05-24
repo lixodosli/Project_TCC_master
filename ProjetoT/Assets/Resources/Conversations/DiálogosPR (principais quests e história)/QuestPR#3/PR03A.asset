@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: PR03A
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "\"Estou chegando para acabar com voc\xEAs\"\nIp\xE1 finalmente juntou for\xE7as
+    o suficiente para se libertar de seu aprisionamento e assumir sua real forma
+    e promete viol\xEAncia. O jogador deve dentro de sete dias plantar colher e jogar
+    no po\xE7o de Ip\xE1 a planta desconhecida que Clodoaldo lhe deu para impedir
+    que isso aconte\xE7a."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: "Ip\xE1"
+    Text: "\xC9 uma bela noite, n\xE3o \xE9 verdade?"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "A lua ainda n\xE3o est\xE1 cheia, mas brilha intensamente."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Daqui sete dias estar\xE1 perfeita. Bem quando eu finalmente me libertarei."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Soa po\xE9tico, n\xE3o \xE9 verdade? Digno de uma noite para se lembrar."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: Oque?
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Ah, \xE9 verdade, voc\xEA ainda n\xE3o sabia."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Sim, \xE9 isso mesmo que voc\xEA ouviu, eu estou prestes a finalmente
+      me livrar desse corpinho rid\xEDculo."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Essa pris\xE3o em que fui selado h\xE1 muitas eras atr\xE1s ser\xE1 quebrada
+      e eu voltarei \xE0 minha forma antiga"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Enfim poderei me vingar de tudo e todos com toda a bestialidade que h\xE1
+      em mim"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "\xC9 a ordem natural das coisas, a natureza voltando ao equil\xEDbrio
+      em um grande efeito mola que a humanidade escolhe ignorar desde sempre."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Por quanto tempo as pessoas assistem \xE0 destrui\xE7\xE3o que elas mesmas
+      causam sem nada fazer?"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "At\xE9 quando pretendem manter essa forma imediatista de se pensar? Eu
+      sei a reposta."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Pra sempre. Ningu\xE9m moveria um dedo pelo outro a n\xE3o ser que fosse
+      algo que afetasse aos pr\xF3prios."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "S\xF3 haveria alguma mobiliza\xE7\xE3o a partir do momento que \"a \xE1gua
+      batesse na bunda\"."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Ou seja, a partir do momento que n\xE3o houvesse mais volta e o planeta
+      j\xE1 estivesse condenado."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "E eu impedirei isso, exterminando o problema pela raiz. Acabarei com cada
+      um de voc\xEAs, at\xE9 que n\xE3o sobre algum."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: Ou melhor,
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Como essa \xE9 provavelmente nossa despedida, espero que tenha aproveitado
+      o privil\xE9gio de ter me conhecido."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "No fim, voc\xEA ajudou essa grande causa de alguma forma m\xEDnima, ent\xE3o
+      eu talvez lhe poupe."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Afinal, se s\xF3 houver voc\xEA vivo mesmo, n\xE3o faz diferen\xE7a, voc\xEA
+      n\xE3o \xE9 capaz de perpetuar a esp\xE9cie sozinho."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Viver\xE1 os anos que lhe restarem contemplando a pr\xF3pria e solit\xE1ria
+      exist\xEAncia."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: Considere isso um gesto de afeto e caridade
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Enfim, tenha uma \xF3tima semana, Alan."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Aproveite os \xFAltimos sete dias de companhia das pessoas que gosta."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

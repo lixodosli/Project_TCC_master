@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: PA01A
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "\"Insetos indesejados\".\nAo falar com Maira pela primeira vez ela relata
+    ver muitas lagartas ultimamente e alerta sobre a amea\xE7a que elas s\xE3o para
+    a planta\xE7\xE3o."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: Maira
+    Text: Ah, oi, Alan.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Ultimamente t\xEAm andado muitas lagartas por aqui."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Elas devastam tudo que \xE9 folha que encontram, pra afastar esses bicho,
+      s\xF3 queimando um fumo de corda."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Elas n\xE3o chegam nem perto se sentem o cheiro da fuma\xE7a que faz."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "O problema \xE9 que aqui comigo eu n\xE3o tenho mais nenhuma folha de
+      tabaco pra fazer um desse."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Voc\xEA poderia trazer pra mim?"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "J\xE1 deve ter topado com essa planta por a\xED, ela virou uma erva daninha
+      na nossa regi\xE3o"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
