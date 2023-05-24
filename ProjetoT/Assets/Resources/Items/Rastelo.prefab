@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Rastelo
   m_ItemID: Rastelo.1cb1cde4-f4fb-407f-b75d-e0f6c401810e
-  m_ItemSprite: {fileID: 1646878864, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: -1164661775, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}

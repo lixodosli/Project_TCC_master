@@ -118,10 +118,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: "Ab\xF3bora"
   m_ItemID: 
-  m_ItemSprite: {fileID: 704535144, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: 1859471735, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
+  m_InteractWithClosest: 0
   Effects:
   - rid: 8580562910135975936
   - rid: 8580562910135975937
