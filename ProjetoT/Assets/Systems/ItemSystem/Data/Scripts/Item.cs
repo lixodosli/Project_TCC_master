@@ -5,6 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public abstract class Item : Interactable
 {
+    [SerializeField] private bool m_InteractWithClosest;
+    [SerializeReference] public List<ItemEffect> Effects = new List<ItemEffect>();
+
+    [ContextMenu("Add Consumable")] public void AddConsumable() => Effects.Add(new ConsumableEffect(this));
+    [ContextMenu("Add Food")] public void AddFood() => Effects.Add(new HungryEffect(this));
+    [ContextMenu("Add Transform To")] public void AddTransformTo() => Effects.Add(new TransformToEffect(this));
+
     private void Awake()
     {
         UpdateParent();
@@ -16,11 +23,24 @@ public abstract class Item : Interactable
         {
             Debug.Log("O item <" + gameObject.name + "> Está sem ID, portanto precisa de um ID.");
         }
+
+        foreach (ItemEffect effect in Effects)
+        {
+            effect.Setup(this);
+        }
     }
 
     private void OnTransformParentChanged()
     {
         UpdateParent();
+    }
+
+    public void UseEffects()
+    {
+        foreach (ItemEffect effect in Effects)
+        {
+            effect.UseEffect();
+        }
     }
 
     public void SetItemNameAndId(string name, string id)
@@ -34,18 +54,28 @@ public abstract class Item : Interactable
     {
         Useable_Set closest = ClosestUseable();
 
-        if (closest == null)
+        if (m_InteractWithClosest)
         {
-            FeedbackMessage.ShowFeedback("Não há uso para este item aqui.");
-            return;
-        }
+            if (closest == null)
+            {
+                FeedbackMessage.ShowFeedback("Não há uso para este item aqui.");
+                return;
+            }
 
-        if (OnInteractSFX != null)
+            if (closest.TryUse(this))
+            {
+                if (OnInteractSFX != null)
+                {
+                    AudioManager.Instance.Play(OnInteractSFX, AudioType.SFX, AudioConfigs.Default());
+                }
+
+                closest.UseUseable(this);
+            }
+        }
+        else
         {
-            AudioManager.Instance.Play(OnInteractSFX, AudioType.SFX, AudioConfigs.Default());
+            UseEffects();
         }
-
-        closest.UseUseable(this);
     }
 
     public override void DoInteraction()
@@ -67,5 +97,74 @@ public abstract class Item : Interactable
 
     protected virtual void RestoreItem()
     {
+    }
+}
+
+[System.Serializable]
+public class ItemEffect
+{
+    protected Item _Item;
+
+    public ItemEffect(Item item)
+    {
+        _Item = item;
+    }
+
+    public void Setup(Item item)
+    {
+        _Item = item;
+    }
+
+    public virtual void UseEffect()
+    {
+        return;
+    }
+}
+
+public class ConsumableEffect : ItemEffect
+{
+    public List<ItemList> DropOnConsume;
+
+    public ConsumableEffect(Item item) : base(item)
+    {
+    }
+
+    public override void UseEffect()
+    {
+        Inventory.Instance.ConsumeItem(_Item);
+
+        for (int i = 0; i < DropOnConsume.Count; i++)
+        {
+            ItemSpawnPoint.InstItem(DropOnConsume[i], _Item.transform);
+        }
+        base.UseEffect();
+    }
+}
+
+public class HungryEffect : ItemEffect
+{
+    public int HungryChange;
+
+    public HungryEffect(Item item) : base(item)
+    {
+    }
+
+    public override void UseEffect()
+    {
+        Messenger.Broadcast(HungrySystem.HungryName, HungryChange);
+    }
+}
+
+public class TransformToEffect : ItemEffect
+{
+    public Item TransformToItem;
+
+    public TransformToEffect(Item item) : base(item)
+    {
+    }
+
+    public override void UseEffect()
+    {
+        _Item = TransformToItem;
     }
 }

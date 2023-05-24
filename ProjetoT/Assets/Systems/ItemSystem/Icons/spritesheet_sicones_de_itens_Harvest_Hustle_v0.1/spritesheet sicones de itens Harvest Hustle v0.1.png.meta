@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,24 +36,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -76,20 +76,1354 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b8a1548a65794183423df2ae84915
+      internalID: 1150601309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f182cb6d4dabfe744a57ffc0ad6f3b6d
+      internalID: -346712471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2706ee268959ae24b9919e682d3db34b
+      internalID: -458439505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133024d34f4381f458a5185d76efaf49
+      internalID: -547388201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c319ed46075e24a99f65bb9c2fa483
+      internalID: -260379235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62d973116bfb4742bd5c55e42ed9daa
+      internalID: -559794507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa6344f99f6a9f428b3e19f857aa56d
+      internalID: 2008359769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4459d2d219bd14e8d6165c66eb46be
+      internalID: -604661256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_8
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7766c8fb1a1dbc49bf6612a5c45480d
+      internalID: 382662393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c42e7e7cc3cc754e9859093f7e53587
+      internalID: 2113756157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdd387154bf8ed4396a390140c6fed9
+      internalID: -63171678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c7f39a13feab740ab0da1aae790af4
+      internalID: 1209792024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734ec61ae8d5c8848b8b7e1ced2892d5
+      internalID: -474979397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_13
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0a5084ff875e24387118486ef5e5a4
+      internalID: -1169342664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35625c57106c55468902eecbf896f4b
+      internalID: 872977920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11bc163dda1aeb4e8e4fd96bec307af
+      internalID: -450545799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_16
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1815657e272ceaf4c951a036d2731938
+      internalID: 1664252174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e201efed348c42846a2496b732db12a1
+      internalID: -1076990104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_18
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 6000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809caa11fb4a7894a991fe156232181d
+      internalID: -1138908261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225ec26d136bb5747811aa5b017a111b
+      internalID: 171354232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9474d9c2b4a7743b20414da186f985
+      internalID: -680612649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 5750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cd194b2010a5648b807bb0b911407d
+      internalID: 690813254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340094a68a8da441b82473bd1231542
+      internalID: -576857838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_23
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ed69f62ee66d04c9eaf076b5e73742
+      internalID: -206946032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c839c80853cfe45aaab0b218745cfb
+      internalID: -248875387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bc9f0f1cb18ec48928e579e440b3b7
+      internalID: -387895269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_26
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 5500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb661e598ef448241b630a4b00c3160e
+      internalID: -96344293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_27
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d27a057b1c857c408cd1cff4f10a819
+      internalID: -290549384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_28
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a357b6a272288bc4699732716bf7d3b5
+      internalID: -277431251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27f73e435e46c348a3ec24dac86b64c
+      internalID: -1337032456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19d4da2be7f0a84c806cff5f16e2b38
+      internalID: 1287819124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 5250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb40b86f3fcbe245ae3be6f0cfb9947
+      internalID: 1646878864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_32
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd67f41961f9474f90a388ff27aba84
+      internalID: -2068497808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_33
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f0c44067cb8248ba0af185d187146
+      internalID: -313094881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460050d9d0cfb594d8933e06d48199aa
+      internalID: 2099281893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034d9a11ac33d1c41a52b5769b04a771
+      internalID: -812223602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_36
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 5000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697e6edb33d4c8e4d9fb8b3e9f189202
+      internalID: 1157611581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19411e6a09b105c4fb6a0cd6ea5d878b
+      internalID: -168103312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_38
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 5000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d335d8f0cf773f74283109ca98a747a1
+      internalID: -1761407538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_39
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e45aaaaefbea2749a9fda9813ca27ff
+      internalID: 1505831322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee509ff8265aa6409c889db47b5ae70
+      internalID: -878049215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_41
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 4750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c40cf962938644ab8b3bd2798ba7ef
+      internalID: 1966806481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_42
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55a34775f9978b4099ddda0d7674c1b
+      internalID: -777489812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_43
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74602abade95744419368c39ceda2fa7
+      internalID: 1231775311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723fc40cb1245e340be7336b5ebc8ae1
+      internalID: 1763390709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a833bbc39b02774458be31a5e163b176
+      internalID: 1832098860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_46
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 4500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe36e330bef82bb49805f91f64e9faa7
+      internalID: 4936299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_47
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa26c2ff091a9844fbf6f1bef50016e1
+      internalID: -714904466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_48
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f79be329145d40449e81d20fe0ddedd
+      internalID: -649496698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_49
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2ced2d6ac98144a8b4c62ca5dbeaea
+      internalID: 538415208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da14a664038e63547a2e3fc4256086a5
+      internalID: -1219128504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_51
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 4250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e2b1f23ef86db4fa0acef9d73215f4
+      internalID: -769156525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_52
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034f934f04fef9b4aaedd6b2a7d5f905
+      internalID: 704535144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_53
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d79775e94150a41828748d96ebed20
+      internalID: -2086687043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db673023d79e99d488714f85eb263c3d
+      internalID: -1491971758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_55
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a02bb95e24020145aa4ceb5cace11b6
+      internalID: -1250416440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_56
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e880ff5c26a23fd49930f5e1881965dd
+      internalID: 1261610033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_57
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358076ca95bc764469a2841c22c2645b
+      internalID: -944759646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet sicones de itens Harvest Hustle v0.1_58
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c17b1bee999e2d4c821adbf4a4f777d
+      internalID: 650739511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8583756273aebf1468e3f9f358f4adcb
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet sicones de itens Harvest Hustle v0.1_10: -63171678
+      spritesheet sicones de itens Harvest Hustle v0.1_3: -547388201
+      spritesheet sicones de itens Harvest Hustle v0.1_4: -260379235
+      spritesheet sicones de itens Harvest Hustle v0.1_29: -1337032456
+      spritesheet sicones de itens Harvest Hustle v0.1_55: -1250416440
+      spritesheet sicones de itens Harvest Hustle v0.1_12: -474979397
+      spritesheet sicones de itens Harvest Hustle v0.1_19: 171354232
+      spritesheet sicones de itens Harvest Hustle v0.1_27: -290549384
+      spritesheet sicones de itens Harvest Hustle v0.1_21: 690813254
+      spritesheet sicones de itens Harvest Hustle v0.1_15: -450545799
+      spritesheet sicones de itens Harvest Hustle v0.1_48: -649496698
+      spritesheet sicones de itens Harvest Hustle v0.1_54: -1491971758
+      spritesheet sicones de itens Harvest Hustle v0.1_25: -387895269
+      spritesheet sicones de itens Harvest Hustle v0.1_23: -206946032
+      spritesheet sicones de itens Harvest Hustle v0.1_43: 1231775311
+      spritesheet sicones de itens Harvest Hustle v0.1_35: -812223602
+      spritesheet sicones de itens Harvest Hustle v0.1_22: -576857838
+      spritesheet sicones de itens Harvest Hustle v0.1_20: -680612649
+      spritesheet sicones de itens Harvest Hustle v0.1_51: -769156525
+      spritesheet sicones de itens Harvest Hustle v0.1_5: -559794507
+      spritesheet sicones de itens Harvest Hustle v0.1_24: -248875387
+      spritesheet sicones de itens Harvest Hustle v0.1_26: -96344293
+      spritesheet sicones de itens Harvest Hustle v0.1_30: 1287819124
+      spritesheet sicones de itens Harvest Hustle v0.1_1: -346712471
+      spritesheet sicones de itens Harvest Hustle v0.1_7: -604661256
+      spritesheet sicones de itens Harvest Hustle v0.1_42: -777489812
+      spritesheet sicones de itens Harvest Hustle v0.1_44: 1763390709
+      spritesheet sicones de itens Harvest Hustle v0.1_46: 4936299
+      spritesheet sicones de itens Harvest Hustle v0.1_58: 650739511
+      spritesheet sicones de itens Harvest Hustle v0.1_13: -1169342664
+      spritesheet sicones de itens Harvest Hustle v0.1_53: -2086687043
+      spritesheet sicones de itens Harvest Hustle v0.1_31: 1646878864
+      spritesheet sicones de itens Harvest Hustle v0.1_11: 1209792024
+      spritesheet sicones de itens Harvest Hustle v0.1_50: -1219128504
+      spritesheet sicones de itens Harvest Hustle v0.1_39: 1505831322
+      spritesheet sicones de itens Harvest Hustle v0.1_32: -2068497808
+      spritesheet sicones de itens Harvest Hustle v0.1_57: -944759646
+      spritesheet sicones de itens Harvest Hustle v0.1_0: 1150601309
+      spritesheet sicones de itens Harvest Hustle v0.1_41: 1966806481
+      spritesheet sicones de itens Harvest Hustle v0.1_8: 382662393
+      spritesheet sicones de itens Harvest Hustle v0.1_40: -878049215
+      spritesheet sicones de itens Harvest Hustle v0.1_34: 2099281893
+      spritesheet sicones de itens Harvest Hustle v0.1_38: -1761407538
+      spritesheet sicones de itens Harvest Hustle v0.1_52: 704535144
+      spritesheet sicones de itens Harvest Hustle v0.1_56: 1261610033
+      spritesheet sicones de itens Harvest Hustle v0.1_47: -714904466
+      spritesheet sicones de itens Harvest Hustle v0.1_14: 872977920
+      spritesheet sicones de itens Harvest Hustle v0.1_33: -313094881
+      spritesheet sicones de itens Harvest Hustle v0.1_28: -277431251
+      spritesheet sicones de itens Harvest Hustle v0.1_18: -1138908261
+      spritesheet sicones de itens Harvest Hustle v0.1_16: 1664252174
+      spritesheet sicones de itens Harvest Hustle v0.1_9: 2113756157
+      spritesheet sicones de itens Harvest Hustle v0.1_6: 2008359769
+      spritesheet sicones de itens Harvest Hustle v0.1_49: 538415208
+      spritesheet sicones de itens Harvest Hustle v0.1_45: 1832098860
+      spritesheet sicones de itens Harvest Hustle v0.1_36: 1157611581
+      spritesheet sicones de itens Harvest Hustle v0.1_37: -168103312
+      spritesheet sicones de itens Harvest Hustle v0.1_17: -1076990104
+      spritesheet sicones de itens Harvest Hustle v0.1_2: -458439505
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

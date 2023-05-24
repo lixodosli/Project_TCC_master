@@ -43,6 +43,8 @@ public class Useable_Set : MonoBehaviour
 
     public void UseUseable(Item item)
     {
+        if(!CurrentState().CanBeUsed(item)) { return; }
+
         _UsedItem = item;
         ExecutionBar.StartCounting(CurrentState().BarTime);
         ExecutionBar.Complete += UseItem;
@@ -52,6 +54,7 @@ public class Useable_Set : MonoBehaviour
     private void UseItem()
     {
         CurrentState().Use(_UsedItem);
+        _UsedItem.UseEffects();
         ExecutionBar.Complete -= UseItem;
         ExecutionBar.Canceled -= CancelUse;
     }

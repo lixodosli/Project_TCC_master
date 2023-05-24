@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3155935889636044408
+--- !u!1 &7947537527723111466
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3154701405505579894}
-  - component: {fileID: 8150027477847671336}
-  - component: {fileID: 4350255857953375557}
-  - component: {fileID: 8384497204042479071}
-  - component: {fileID: 9010620983732706052}
-  - component: {fileID: 1657144627}
-  - component: {fileID: 5465165379791753446}
+  - component: {fileID: 7277962041320926864}
+  - component: {fileID: 5958078138137895221}
+  - component: {fileID: 8452041773188519423}
+  - component: {fileID: 7100552186727795070}
+  - component: {fileID: 7100552186727795057}
+  - component: {fileID: 7100552186727795068}
+  - component: {fileID: 7100552186727795071}
   m_Layer: 0
-  m_Name: Abobora
+  m_Name: Goiaba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3154701405505579894
+--- !u!4 &7277962041320926864
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: -0.28, z: 4.64}
+  m_GameObject: {fileID: 7947537527723111466}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.5548556, y: 0.0000003874302, z: 5.51897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2588031891370256646}
+  - {fileID: 4652309605157372826}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8150027477847671336
+--- !u!33 &5958078138137895221
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_Mesh: {fileID: -7474138871709678809, guid: 17107b863f1691c4ea540b0ed35c8680, type: 3}
---- !u!23 &4350255857953375557
+  m_GameObject: {fileID: 7947537527723111466}
+  m_Mesh: {fileID: 2859043099852806445, guid: d31460bc111eb9e46b2acd73286ba61a, type: 3}
+--- !u!23 &8452041773188519423
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
+  m_GameObject: {fileID: 7947537527723111466}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 17107b863f1691c4ea540b0ed35c8680, type: 3}
+  - {fileID: -2659236102393079271, guid: d31460bc111eb9e46b2acd73286ba61a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,13 +88,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &8384497204042479071
+--- !u!54 &7100552186727795070
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
+  m_GameObject: {fileID: 7947537527723111466}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -104,75 +104,76 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9010620983732706052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 946bad136ed270549befed24f3b49dce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ItemName: "Ab\xF3bora"
-  m_ItemID: 
-  m_ItemSprite: {fileID: 704535144, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
-  m_CanInteract: 1
-  m_CanCollect: 1
-  m_OnInteractSFX: {fileID: 0}
-  Effects:
-  - rid: 8580562910135975936
-  - rid: 8580562910135975937
-  references:
-    version: 2
-    RefIds:
-    - rid: 8580562910135975936
-      type: {class: ConsumableEffect, ns: , asm: Assembly-CSharp}
-      data:
-        DropOnConsume: 0300000003000000
-    - rid: 8580562910135975937
-      type: {class: HungryEffect, ns: , asm: Assembly-CSharp}
-      data:
-        HungryChange: 1
---- !u!114 &1657144627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb14b3f11f2f7b349b45878faa807617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TipBox_PivotTargetOffset: {x: 0, y: 0.75, z: 0}
-  TipBox_SpeedUpdate: 30
-  TipBox_CharSize: 8
-  TipBox_CharPadding: 10
-  TipBox_BG_MinSize: 48
-  TipBox_BG_MaxSize: 160
---- !u!65 &5465165379791753446
+--- !u!65 &7100552186727795057
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
+  m_GameObject: {fileID: 7947537527723111466}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3649112, y: 0.39255747, z: 0.38614509}
-  m_Center: {x: 0, y: 0.1924402, z: -0.00000011920929}
---- !u!1001 &139859197791729004
+  m_Size: {x: 0.08521156, y: 0.16049087, z: 0.08461124}
+  m_Center: {x: -0.000000022351742, y: 0.080245435, z: -0.0009303801}
+--- !u!114 &7100552186727795068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947537527723111466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb14b3f11f2f7b349b45878faa807617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TipBox_PivotTargetOffset: {x: 0, y: 0.5, z: 0}
+  TipBox_SpeedUpdate: 30
+  TipBox_CharSize: 8
+  TipBox_CharPadding: 10
+  TipBox_BG_MinSize: 48
+  TipBox_BG_MaxSize: 160
+--- !u!114 &7100552186727795071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947537527723111466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946bad136ed270549befed24f3b49dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ItemName: Goiaba
+  m_ItemID: Goiaba.5fe8b568-f480-4a6e-a74f-7ff4927d6835
+  m_ItemSprite: {fileID: 1505831322, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_CanInteract: 1
+  m_CanCollect: 1
+  m_OnInteractSFX: {fileID: 0}
+  m_InteractWithClosest: 0
+  Effects:
+  - rid: 8580562910135975943
+  - rid: 8580562910135975944
+  references:
+    version: 2
+    RefIds:
+    - rid: 8580562910135975943
+      type: {class: ConsumableEffect, ns: , asm: Assembly-CSharp}
+      data:
+        DropOnConsume: 
+    - rid: 8580562910135975944
+      type: {class: HungryEffect, ns: , asm: Assembly-CSharp}
+      data:
+        HungryChange: 1
+--- !u!1001 &7100552185988571120
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3154701405505579894}
+    m_TransformParent: {fileID: 7277962041320926864}
     m_Modifications:
     - target: {fileID: 2457391411733191786, guid: 338592c536a1f6842843c59321ee5fc2,
         type: 3}
@@ -282,13 +283,13 @@ PrefabInstance:
     - target: {fileID: 2457391411733191787, guid: 338592c536a1f6842843c59321ee5fc2,
         type: 3}
       propertyPath: m_Name
-      value: ToolTipCanvas
+      value: ToolTipCanvas (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338592c536a1f6842843c59321ee5fc2, type: 3}
---- !u!224 &2588031891370256646 stripped
+--- !u!224 &4652309605157372826 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2457391411733191786, guid: 338592c536a1f6842843c59321ee5fc2,
     type: 3}
-  m_PrefabInstance: {fileID: 139859197791729004}
+  m_PrefabInstance: {fileID: 7100552185988571120}
   m_PrefabAsset: {fileID: 0}
