@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16edb2c021d077648b9bb18d1dcf57d0
+guid: 92fa5338c30993343b36b2ffcfc0f721
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_0
+      name: "Sementes de piment\xE3o"
       rect:
         serializedVersion: 2
         x: 0
@@ -124,20 +124,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c22b7c98e2f0f849ab17f68828e8f60
-      internalID: 1053598414
+      spriteID: 3f18397cfa4c89e4c8cdf1feee1daf61
+      internalID: -1718430358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_1
+      name: Sementes de alface
       rect:
         serializedVersion: 2
         x: 250
@@ -145,20 +145,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1410fe6673dfa2745bc5e2244097f740
-      internalID: 1745127647
+      spriteID: 7b03f75feca4fa34f84ddb8c7a4c97ca
+      internalID: 1410219089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_2
+      name: "Sementes de almeir\xE3o"
       rect:
         serializedVersion: 2
         x: 500
@@ -166,20 +166,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec11c2ca6d4f89b42b53ca02a197f81b
-      internalID: 1327770224
+      spriteID: 1f6f955dd5a80874688decd95037ec61
+      internalID: 993800107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_3
+      name: Sementes de couve
       rect:
         serializedVersion: 2
         x: 750
@@ -187,20 +187,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b713e6bc56e59174dae1a509f7f4208c
-      internalID: 1187872332
+      spriteID: 597daa2f1e1adb748b9c616ae000f22a
+      internalID: 2106879206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_4
+      name: "Sementes de jil\xF3"
       rect:
         serializedVersion: 2
         x: 1000
@@ -208,20 +208,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80bdaf37f7a46894480301d162a935a8
-      internalID: 803631813
+      spriteID: a75521d57c96de44aaaa49190a0e27c1
+      internalID: -1676731969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_5
+      name: Sementes de tomate
       rect:
         serializedVersion: 2
         x: 0
@@ -229,20 +229,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ef2ba5bddec114aa2791d495cd2b53
-      internalID: -949878153
+      spriteID: 3d1f3374de909c040b0c65e82496f249
+      internalID: 41915256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_6
+      name: Sementes de pimenta
       rect:
         serializedVersion: 2
         x: 250
@@ -250,20 +250,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b479e557c9fa8a4284dde328d06b622
-      internalID: -676569112
+      spriteID: 41314f1bceda28b4aa30ac64ba48b506
+      internalID: -1002226607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_7
+      name: "Sementes de ab\xF3bora"
       rect:
         serializedVersion: 2
         x: 500
@@ -271,20 +271,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa29244b68d6d414a9d2e74805be5c2c
-      internalID: 1066141871
+      spriteID: 017d3d9af427fca45ad3f0198a5a5e91
+      internalID: -1359270890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_8
+      name: "Sementes de feij\xE3o"
       rect:
         serializedVersion: 2
         x: 750
@@ -292,20 +292,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ef76020617986249bb9efbcb2ae7e8e
-      internalID: 1269665644
+      spriteID: 74e314670dd60a74f863b8570886959a
+      internalID: 768037056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_9
+      name: Sementes de milho
       rect:
         serializedVersion: 2
         x: 1000
@@ -313,20 +313,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5827e1e4722d64445975ebdada3dd1ba
-      internalID: 940687186
+      spriteID: 51e47bab341b81e40b5af35c5de72baa
+      internalID: 1268004743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_10
+      name: Muda de alho
       rect:
         serializedVersion: 2
         x: 0
@@ -334,20 +334,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb757f4d2d6d4264782b0879b2923ce6
-      internalID: 1257163494
+      spriteID: cd8cab10ea108d34ebe6ba5ee8d8d281
+      internalID: 631405402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_11
+      name: Muda de cebola
       rect:
         serializedVersion: 2
         x: 250
@@ -355,20 +355,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f0c5a14287f4064e90ad1bc084462a7
-      internalID: 1637988316
+      spriteID: 49df267de0127864eacab65ed055fc3f
+      internalID: -1419747663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_12
+      name: Muda de salsinha
       rect:
         serializedVersion: 2
         x: 500
@@ -376,20 +376,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a1503909471a140b0627d07462a40e
-      internalID: -1198019257
+      spriteID: a179978b71a03f1468e11ed490896d36
+      internalID: -501153966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_13
+      name: Muda de batata-doce
       rect:
         serializedVersion: 2
         x: 750
@@ -397,20 +397,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d169a20ed410634a99b0f5a10cb621a
-      internalID: -616400296
+      spriteID: 6937df800061db34fb95b742580fdc29
+      internalID: -1633966752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_14
+      name: Muda de mandioca
       rect:
         serializedVersion: 2
         x: 1000
@@ -418,20 +418,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea0e0351b0db77429e13ef67e759bfe
-      internalID: 841311012
+      spriteID: 5c953f2c3820cf2419df421067eeb4dc
+      internalID: -1524791303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_15
+      name: Salsinha
       rect:
         serializedVersion: 2
         x: 0
@@ -439,20 +439,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e65b4097a118c46822eb6d44a80416
-      internalID: 1147928990
+      spriteID: a79f2f094a66abd41947b13d45a37946
+      internalID: -1772034793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_16
+      name: Alho
       rect:
         serializedVersion: 2
         x: 250
@@ -460,20 +460,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce29feea1bd4756459cae398e7c54f1c
-      internalID: 437975986
+      spriteID: 0f40292cab8b5cc4db01627abd572d18
+      internalID: 187175912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_17
+      name: Cebola
       rect:
         serializedVersion: 2
         x: 500
@@ -481,20 +481,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b1ae5cb67f7dd49a12dc63325e4737
-      internalID: -1406859507
+      spriteID: 496ffc6d21d920f44901e9955761cd34
+      internalID: -874036233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_18
+      name: "Piment\xE3o"
       rect:
         serializedVersion: 2
         x: 750
@@ -502,20 +502,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a018a89aa3780da4799eb32fcf1ffdcc
-      internalID: 1138729983
+      spriteID: 331317a26c731b4469e9a6d91a2de72a
+      internalID: -884964818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_19
+      name: Alface
       rect:
         serializedVersion: 2
         x: 1000
@@ -523,20 +523,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6ebbee16f68554c9e096b538785f3a
-      internalID: -1918958502
+      spriteID: d1173d39d08b9f24ebfb0d73145a74dd
+      internalID: 1214316371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_20
+      name: "Almeir\xE3o"
       rect:
         serializedVersion: 2
         x: 0
@@ -544,20 +544,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 615757d1c697e2c4fb429975ec7fe6ca
-      internalID: -156105537
+      spriteID: d5eff86d318abbb4394835b9231a887a
+      internalID: 785258575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_21
+      name: Couve
       rect:
         serializedVersion: 2
         x: 250
@@ -565,20 +565,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe8b23a100685fd43bef50c2f71790ac
-      internalID: -220933989
+      spriteID: f07caad10cca2994c9ce0de51f80f660
+      internalID: 806498830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_22
+      name: "Jil\xF3"
       rect:
         serializedVersion: 2
         x: 500
@@ -586,20 +586,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5e32fe988fbb24c809278fa8d80b7a
-      internalID: 699636982
+      spriteID: 53e96e21c449ae04098c2f27c4ec5f70
+      internalID: 1698630777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_23
+      name: Tomate
       rect:
         serializedVersion: 2
         x: 750
@@ -607,20 +607,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed9fa16e56e88e4791f50e35126f311
-      internalID: 1959927139
+      spriteID: e1499386591d4d140be7fee582698d55
+      internalID: -337915725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_24
+      name: Pimenta
       rect:
         serializedVersion: 2
         x: 1000
@@ -628,20 +628,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e4e382f9f345748852a60bd51f663c
-      internalID: -721249170
+      spriteID: 56077489b5f0c2947bbaf06edc637c04
+      internalID: -273980916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_25
+      name: "Ab\xF3bora"
       rect:
         serializedVersion: 2
         x: 0
@@ -649,20 +649,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be2aea4a99fe2a84abe0756fa92feec0
-      internalID: -1468315282
+      spriteID: 1a7a2c9ae676d454fb1696fcf8b83cd1
+      internalID: 1859471735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_26
+      name: "Fava de feij\xE3o"
       rect:
         serializedVersion: 2
         x: 250
@@ -670,20 +670,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23e91ad948517554699032f892189ef6
-      internalID: 444879497
+      spriteID: fc24301b8f7216b4ea4a2728530c8e53
+      internalID: -1897704984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_27
+      name: Milho
       rect:
         serializedVersion: 2
         x: 500
@@ -691,20 +691,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68168a052e7aa534ca2dff0c400eb276
-      internalID: 1817050196
+      spriteID: ee1d0f297068a5a4d9b73b8c5360876f
+      internalID: -1688778507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_28
+      name: Batata-doce
       rect:
         serializedVersion: 2
         x: 750
@@ -712,20 +712,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e03389cdf1b4a7f45a6cb3211c108a44
-      internalID: -573707727
+      spriteID: 0e23d4f3f349069458c7ba9a509f0057
+      internalID: 713686747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_29
+      name: Mandioca
       rect:
         serializedVersion: 2
         x: 1000
@@ -733,20 +733,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d05ea22705ed64f9609a53d6de3d2f
-      internalID: 1450928540
+      spriteID: 679cfc224f1581a47b949643fd7333ee
+      internalID: -1734029842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_30
+      name: "Fac\xE3o"
       rect:
         serializedVersion: 2
         x: 0
@@ -754,20 +754,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a804547c2a8be047b44625bdd94b24b
-      internalID: 1089683119
+      spriteID: 7646916b91e09cd4dab89b7ceda12c93
+      internalID: -883726347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_31
+      name: Rastelo
       rect:
         serializedVersion: 2
         x: 250
@@ -775,20 +775,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ce7fcf650455a40b5576a7eed124e7
-      internalID: 1560768122
+      spriteID: 63d524caac4f96640a00ae5b5839edec
+      internalID: -1164661775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_32
+      name: Enxada
       rect:
         serializedVersion: 2
         x: 500
@@ -796,20 +796,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f07eb5942885edc41a9b93e05c536fe1
-      internalID: -154647495
+      spriteID: bb3f7f67773cc1543a1304f1b892df81
+      internalID: 2116320708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_33
+      name: Machado
       rect:
         serializedVersion: 2
         x: 750
@@ -817,20 +817,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2365152d26dfa4689c9abb3089e7bf
-      internalID: -585276827
+      spriteID: 82ff5d72e8486294b9fcfdf0cd7b6b45
+      internalID: -1343934195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_34
+      name: Picareta
       rect:
         serializedVersion: 2
         x: 1000
@@ -838,20 +838,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b5151f514607d4b8d44d19cc219c6f
-      internalID: -122510758
+      spriteID: 18e02f66248c368459c61e90472b9241
+      internalID: -1715383190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_35
+      name: Regador
       rect:
         serializedVersion: 2
         x: 0
@@ -859,20 +859,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4677e8846f862b4ab39d110c8007d0e
-      internalID: -289295237
+      spriteID: f29495129abb4c547b475b2c648e9035
+      internalID: 510325047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_36
+      name: Balde
       rect:
         serializedVersion: 2
         x: 250
@@ -880,20 +880,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f55b0aa5907c2b841bc70aa550444784
-      internalID: 1837492290
+      spriteID: 8a6bea76c4dc1d14e8d3cb5562b86634
+      internalID: -226669804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_37
+      name: "Balde d'\xE1gua"
       rect:
         serializedVersion: 2
         x: 500
@@ -901,20 +901,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ed8430d7d7617d4f8986355f1e35ab0
-      internalID: 680543731
+      spriteID: c0b880d10b519cf448c73eac743cb674
+      internalID: 460710431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_38
+      name: "Cip\xF3"
       rect:
         serializedVersion: 2
         x: 750
@@ -922,20 +922,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e21d800b8b21c4249b45c2f64d26ea06
-      internalID: -777065289
+      spriteID: 8a4c99b3d31d2744d8ba638681d40b34
+      internalID: 778233364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_39
+      name: Bambu
       rect:
         serializedVersion: 2
         x: 1000
@@ -943,20 +943,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6006f141823ee4f4a97a7e89ac8903fe
-      internalID: 1432152814
+      spriteID: 7b4720db98bcd9a42a789ed124aa139b
+      internalID: -1896315942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_40
+      name: Madeira
       rect:
         serializedVersion: 2
         x: 0
@@ -964,20 +964,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17172b9249fa26348bbe6374691f96c7
-      internalID: -177296417
+      spriteID: 0b0fa63d6736f934ebb71ca5e66b649a
+      internalID: 241762526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_41
+      name: Lenha
       rect:
         serializedVersion: 2
         x: 250
@@ -985,20 +985,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04c57dc6e3554ff4190cc0a1ec73932b
-      internalID: -303585339
+      spriteID: 9efcd984edde819418f84eb4bcb25b77
+      internalID: 270544765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_42
+      name: Pedra
       rect:
         serializedVersion: 2
         x: 500
@@ -1006,20 +1006,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8135fcd9aef0d00459213c17dd55f488
-      internalID: -2087935378
+      spriteID: a4f56c229825bcb4bad6928e05cf1679
+      internalID: 1249400772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_43
+      name: Substrato marrom
       rect:
         serializedVersion: 2
         x: 750
@@ -1027,20 +1027,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e33d1a61b9f73b747beedc62bb9055a5
-      internalID: 1454292333
+      spriteID: 65a670e8c73f6e64fad119d0b6032dc4
+      internalID: -1309101574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_44
+      name: Substrato verde
       rect:
         serializedVersion: 2
         x: 1000
@@ -1048,20 +1048,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a54ac8c3d95a8745978b4327f74e51f
-      internalID: 1181935136
+      spriteID: 49dcc4478f0ac204aa331bf3b905cbea
+      internalID: 1160402229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_45
+      name: Banana
       rect:
         serializedVersion: 2
         x: 0
@@ -1069,20 +1069,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63d67040a3a31b643a9d9c1657c1f559
-      internalID: 853243614
+      spriteID: 83777f65627612d428fd5e383972a358
+      internalID: -812407673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_46
+      name: Goiaba
       rect:
         serializedVersion: 2
         x: 250
@@ -1090,20 +1090,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d43028c0e0350c64db99ce50eba528ef
-      internalID: -287720208
+      spriteID: afb1fc6801c6d2d4785a2bd6584bb543
+      internalID: 439917980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_47
+      name: Saco de arroz
       rect:
         serializedVersion: 2
         x: 500
@@ -1111,20 +1111,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8ff94c931de7d4aaa6d245e05f0fc1
-      internalID: -1262490373
+      spriteID: 5bc71552823a9f444aa95923e1cf0bb2
+      internalID: -1219577101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_48
+      name: Pacote
       rect:
         serializedVersion: 2
         x: 750
@@ -1132,20 +1132,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2691df1dc26e62849988bae9dfe4ab01
-      internalID: -644034074
+      spriteID: 4804ce7da9cd47e41bb6bc3bc479252c
+      internalID: -1314953865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_49
+      name: Garrafa de leite
       rect:
         serializedVersion: 2
         x: 1000
@@ -1153,20 +1153,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed1a2a36aa0f804485115a678d444ee
-      internalID: 466987336
+      spriteID: 5871bc73543019c4ead703df2657ffce
+      internalID: 758749872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_50
+      name: fumo de corda
       rect:
         serializedVersion: 2
         x: 0
@@ -1174,20 +1174,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b92937659cf267478c2e6742e8f0152
-      internalID: -1103553780
+      spriteID: 89691fc676ea6b346bbd4d32a454c6e6
+      internalID: 1878039275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_51
+      name: Extrato de alho (antipraga)
       rect:
         serializedVersion: 2
         x: 250
@@ -1195,20 +1195,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e9bbb4111f8bec49a7c211e6b4100a7
-      internalID: 767221898
+      spriteID: 7f3c306a4233c954aa45a7d4b7cf1a8e
+      internalID: 1134405198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_52
+      name: "Extrato de pimenta (antif\xFAngico)"
       rect:
         serializedVersion: 2
         x: 500
@@ -1216,20 +1216,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09c2905f26b876c499394738f393db20
-      internalID: -735253944
+      spriteID: cc8b90a1eeeaadb4d811f75217e512f3
+      internalID: -1603919318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_53
+      name: Sementes desconhecidas
       rect:
         serializedVersion: 2
         x: 750
@@ -1237,20 +1237,20 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d7e69f9a21cb6b48af7aeb5bc5da954
-      internalID: -1329374880
+      spriteID: e81cf915b12ee9a45a9e1c911068a117
+      internalID: -8092035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_54
+      name: Planta desconhecida
       rect:
         serializedVersion: 2
         x: 1000
@@ -1258,119 +1258,14 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d64af10ee7ad494cb862d087a4469c6
-      internalID: -1219527152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_55
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e87d4e5c44f3406409455caed4e8361b
-      internalID: 2019097055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_56
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebdc7f88e9ae22c499b11050d4390a18
-      internalID: -555125888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_57
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e35eba3403b49f44abe2db148b7ee61c
-      internalID: 1844062188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_58
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f6a56ee207c20744be35c5a1f1d5739
-      internalID: 1127434704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet sicones de itens Harvest Hustle v0.2_59
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 942342deb6e3ff84bb3b86a4fbdd3fed
-      internalID: 322548582
+      spriteID: dcb2b0d9f6528554caa089c505f3c3f6
+      internalID: -676662614
       vertices: []
       indices: 
       edges: []
@@ -1378,7 +1273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 86a9f7cd0b7b4654e877e453916092f2
     internalID: 0
     vertices: []
     indices: 
@@ -1386,66 +1281,61 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spritesheet sicones de itens Harvest Hustle v0.2_21: -220933989
-      spritesheet sicones de itens Harvest Hustle v0.2_38: -777065289
-      spritesheet sicones de itens Harvest Hustle v0.2_39: 1432152814
-      spritesheet sicones de itens Harvest Hustle v0.2_11: 1637988316
-      spritesheet sicones de itens Harvest Hustle v0.2_23: 1959927139
-      spritesheet sicones de itens Harvest Hustle v0.2_57: 1844062188
-      spritesheet sicones de itens Harvest Hustle v0.2_33: -585276827
-      spritesheet sicones de itens Harvest Hustle v0.2_41: -303585339
-      spritesheet sicones de itens Harvest Hustle v0.2_8: 1269665644
-      spritesheet sicones de itens Harvest Hustle v0.2_53: -1329374880
-      spritesheet sicones de itens Harvest Hustle v0.2_58: 1127434704
-      spritesheet sicones de itens Harvest Hustle v0.2_30: 1089683119
-      spritesheet sicones de itens Harvest Hustle v0.2_44: 1181935136
-      spritesheet sicones de itens Harvest Hustle v0.2_3: 1187872332
-      spritesheet sicones de itens Harvest Hustle v0.2_0: 1053598414
-      spritesheet sicones de itens Harvest Hustle v0.2_4: 803631813
-      spritesheet sicones de itens Harvest Hustle v0.2_35: -289295237
-      spritesheet sicones de itens Harvest Hustle v0.2_24: -721249170
-      spritesheet sicones de itens Harvest Hustle v0.2_14: 841311012
-      spritesheet sicones de itens Harvest Hustle v0.2_48: -644034074
-      spritesheet sicones de itens Harvest Hustle v0.2_37: 680543731
-      spritesheet sicones de itens Harvest Hustle v0.2_54: -1219527152
-      spritesheet sicones de itens Harvest Hustle v0.2_15: 1147928990
-      spritesheet sicones de itens Harvest Hustle v0.2_12: -1198019257
-      spritesheet sicones de itens Harvest Hustle v0.2_6: -676569112
-      spritesheet sicones de itens Harvest Hustle v0.2_55: 2019097055
-      spritesheet sicones de itens Harvest Hustle v0.2_26: 444879497
-      spritesheet sicones de itens Harvest Hustle v0.2_32: -154647495
-      spritesheet sicones de itens Harvest Hustle v0.2_27: 1817050196
-      spritesheet sicones de itens Harvest Hustle v0.2_59: 322548582
-      spritesheet sicones de itens Harvest Hustle v0.2_17: -1406859507
-      spritesheet sicones de itens Harvest Hustle v0.2_52: -735253944
-      spritesheet sicones de itens Harvest Hustle v0.2_46: -287720208
-      spritesheet sicones de itens Harvest Hustle v0.2_7: 1066141871
-      spritesheet sicones de itens Harvest Hustle v0.2_40: -177296417
-      spritesheet sicones de itens Harvest Hustle v0.2_51: 767221898
-      spritesheet sicones de itens Harvest Hustle v0.2_2: 1327770224
-      spritesheet sicones de itens Harvest Hustle v0.2_50: -1103553780
-      spritesheet sicones de itens Harvest Hustle v0.2_34: -122510758
-      spritesheet sicones de itens Harvest Hustle v0.2_20: -156105537
-      spritesheet sicones de itens Harvest Hustle v0.2_47: -1262490373
-      spritesheet sicones de itens Harvest Hustle v0.2_25: -1468315282
-      spritesheet sicones de itens Harvest Hustle v0.2_28: -573707727
-      spritesheet sicones de itens Harvest Hustle v0.2_42: -2087935378
-      spritesheet sicones de itens Harvest Hustle v0.2_13: -616400296
-      spritesheet sicones de itens Harvest Hustle v0.2_5: -949878153
-      spritesheet sicones de itens Harvest Hustle v0.2_31: 1560768122
-      spritesheet sicones de itens Harvest Hustle v0.2_56: -555125888
-      spritesheet sicones de itens Harvest Hustle v0.2_45: 853243614
-      spritesheet sicones de itens Harvest Hustle v0.2_18: 1138729983
-      spritesheet sicones de itens Harvest Hustle v0.2_22: 699636982
-      spritesheet sicones de itens Harvest Hustle v0.2_19: -1918958502
-      spritesheet sicones de itens Harvest Hustle v0.2_36: 1837492290
-      spritesheet sicones de itens Harvest Hustle v0.2_29: 1450928540
-      spritesheet sicones de itens Harvest Hustle v0.2_1: 1745127647
-      spritesheet sicones de itens Harvest Hustle v0.2_43: 1454292333
-      spritesheet sicones de itens Harvest Hustle v0.2_9: 940687186
-      spritesheet sicones de itens Harvest Hustle v0.2_10: 1257163494
-      spritesheet sicones de itens Harvest Hustle v0.2_16: 437975986
-      spritesheet sicones de itens Harvest Hustle v0.2_49: 466987336
+      Pimenta: -273980916
+      "Jil\xF3": 1698630777
+      "Ab\xF3bora": 1859471735
+      Sementes de alface: 1410219089
+      Goiaba: 439917980
+      "Cip\xF3": 778233364
+      Salsinha: -1772034793
+      Couve: 806498830
+      Pedra: 1249400772
+      Alface: 1214316371
+      "Piment\xE3o": -884964818
+      Bambu: -1896315942
+      "Fac\xE3o": -883726347
+      Sementes de pimenta: -1002226607
+      Extrato de alho (antipraga): 1134405198
+      Substrato marrom: -1309101574
+      Sementes desconhecidas: -8092035
+      "Sementes de almeir\xE3o": 993800107
+      Madeira: 241762526
+      Alho: 187175912
+      Tomate: -337915725
+      Milho: -1688778507
+      "Extrato de pimenta (antif\xFAngico)": -1603919318
+      Sementes de tomate: 41915256
+      Balde: -226669804
+      Regador: 510325047
+      Pacote: -1314953865
+      "Sementes de feij\xE3o": 768037056
+      "Balde d'\xE1gua": 460710431
+      "Sementes de ab\xF3bora": -1359270890
+      Rastelo: -1164661775
+      Garrafa de leite: 758749872
+      Banana: -812407673
+      Substrato verde: 1160402229
+      Muda de alho: 631405402
+      Cebola: -874036233
+      Enxada: 2116320708
+      Mandioca: -1734029842
+      Muda de batata-doce: -1633966752
+      Muda de mandioca: -1524791303
+      "Almeir\xE3o": 785258575
+      "Fava de feij\xE3o": -1897704984
+      Machado: -1343934195
+      Planta desconhecida: -676662614
+      Picareta: -1715383190
+      Muda de salsinha: -501153966
+      Sementes de milho: 1268004743
+      Sementes de couve: 2106879206
+      "Sementes de piment\xE3o": -1718430358
+      "Sementes de jil\xF3": -1676731969
+      Batata-doce: 713686747
+      Muda de cebola: -1419747663
+      Saco de arroz: -1219577101
+      Lenha: 270544765
+      fumo de corda: 1878039275
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
