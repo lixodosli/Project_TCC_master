@@ -69,7 +69,7 @@ public abstract class Item : Interactable
                     AudioManager.Instance.Play(OnInteractSFX, AudioType.SFX, AudioConfigs.Default());
                 }
 
-                closest.UseUseable(this);
+                //closest.UseUseable(this);
             }
         }
         else
@@ -110,7 +110,7 @@ public class ItemEffect
         _Item = item;
     }
 
-    public void Setup(Item item)
+    public virtual void Setup(Item item)
     {
         _Item = item;
     }
@@ -137,6 +137,7 @@ public class ConsumableEffect : ItemEffect
         {
             ItemSpawnPoint.InstItem(DropOnConsume[i], _Item.transform);
         }
+
         base.UseEffect();
     }
 }
@@ -152,6 +153,8 @@ public class HungryEffect : ItemEffect
     public override void UseEffect()
     {
         Messenger.Broadcast(HungrySystem.HungryName, HungryChange);
+
+        base.UseEffect();
     }
 }
 
@@ -166,5 +169,35 @@ public class TransformToEffect : ItemEffect
     public override void UseEffect()
     {
         _Item = TransformToItem;
+
+        base.UseEffect();
+    }
+}
+
+public class UseStackEffect : ItemEffect
+{
+    public int Stack;
+    private int _StackCount;
+
+    public UseStackEffect(Item item) : base(item)
+    {
+    }
+
+    public override void Setup(Item item)
+    {
+        base.Setup(item);
+        _StackCount = Stack;
+    }
+
+    public override void UseEffect()
+    {
+        _StackCount--;
+
+        if(_StackCount <= 0)
+        {
+            Inventory.Instance.ConsumeItem(_Item);
+        }
+
+        base.UseEffect();
     }
 }

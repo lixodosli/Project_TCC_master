@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 641099741664886114}
   - component: {fileID: 7669847115614844095}
   - component: {fileID: 9118269390220855149}
-  - component: {fileID: 4549827813038126735}
   m_Layer: 0
   m_Name: BrotoUmido
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 407664418272529949}
+  - {fileID: 1207237957367293996}
   - {fileID: 7677639227726959392}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,19 +83,6 @@ MonoBehaviour:
     TimeToTrigger: 24
     PauseWhenDisabled: 1
   Timers: []
---- !u!65 &4549827813038126735
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3213500433783214882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.55, y: 0.5, z: 0.55}
-  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1 &3671007900094669585
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3671007900094669585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.067, z: 0}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -763,83 +749,78 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1001 &153942475232127478
+--- !u!1001 &1615832373564824249
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 641099741664886114}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00008232209
+      value: 0.025
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 49f3dc1892fb94446a63a01a49273531,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7078b41158b9653429f01166339fff83, type: 2}
-    - target: {fileID: 919132149155446097, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 1001979249661765679, guid: cd55372a5f6263442b7a85e39ba1b02d,
         type: 3}
       propertyPath: m_Name
-      value: Terra_Arada_LP_2_MESH
+      value: plano solo aguado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49f3dc1892fb94446a63a01a49273531, type: 3}
---- !u!4 &407664418272529949 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: cd55372a5f6263442b7a85e39ba1b02d, type: 3}
+--- !u!4 &1207237957367293996 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+  m_CorrespondingSourceObject: {fileID: 480880744358916757, guid: cd55372a5f6263442b7a85e39ba1b02d,
     type: 3}
-  m_PrefabInstance: {fileID: 153942475232127478}
+  m_PrefabInstance: {fileID: 1615832373564824249}
   m_PrefabAsset: {fileID: 0}

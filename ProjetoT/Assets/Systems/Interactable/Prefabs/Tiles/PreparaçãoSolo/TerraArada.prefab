@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2390481371204639691}
   - component: {fileID: 7419995503170709745}
   - component: {fileID: 7319601376741610833}
-  - component: {fileID: 7053732215413868612}
   m_Layer: 0
   m_Name: TerraArada
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2784925898250668326}
+  - {fileID: 444441673419079571}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72,96 +71,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemToTransform: {fileID: 7419995503170709745}
   m_TransformOffsetPosition: {x: 0, y: 0, z: 0}
---- !u!65 &7053732215413868612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2390481371204639684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.55, y: 0.5, z: 0.55}
-  m_Center: {x: 0, y: 0.25, z: 0}
---- !u!1001 &2390481370279915213
+--- !u!1001 &6392138384560530451
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2390481371204639691}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6184645197585498426, guid: 6a09710dcbaeee0438329962afdf9c00,
+        type: 3}
+      propertyPath: m_Name
+      value: plano solo arado
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00008232209
+      value: 0.025
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 49f3dc1892fb94446a63a01a49273531,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0a5e7f0b151a30f4692e7eb637ae1e7d, type: 2}
-    - target: {fileID: 919132149155446097, guid: 49f3dc1892fb94446a63a01a49273531,
-        type: 3}
-      propertyPath: m_Name
-      value: Terra_Arada_LP_2_MESH
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49f3dc1892fb94446a63a01a49273531, type: 3}
---- !u!4 &2784925898250668326 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 6a09710dcbaeee0438329962afdf9c00, type: 3}
+--- !u!4 &444441673419079571 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+  m_CorrespondingSourceObject: {fileID: 6818334002808134528, guid: 6a09710dcbaeee0438329962afdf9c00,
     type: 3}
-  m_PrefabInstance: {fileID: 2390481370279915213}
+  m_PrefabInstance: {fileID: 6392138384560530451}
   m_PrefabAsset: {fileID: 0}
