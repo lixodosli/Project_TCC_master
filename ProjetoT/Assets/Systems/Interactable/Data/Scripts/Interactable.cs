@@ -24,6 +24,9 @@ public abstract class Interactable : MonoBehaviour, IInteractable
 
     protected ToolTip m_ToolTip;
     public ToolTip ToolTip => m_ToolTip;
+
+    [SerializeField] protected AudioClip m_OnInteractSFX;
+    public AudioClip OnInteractSFX => m_OnInteractSFX;
     #endregion
 
     public void ChangeInteraction(bool interaction)

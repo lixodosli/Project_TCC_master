@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: Cunversa
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 11400000, guid: aae770ee9bda44842ba286342e2ab88e, type: 2}
+  Name: jalap'ao
+  StartQuest: {fileID: 11400000, guid: e57569b6ebb328b40a1a4241aa094ef8, type: 2}
+  ConversationIfDontHaveRequiredQuest: {fileID: 11400000, guid: a44fc639a82f6d24dbd51d7b3a5b3e94,
+    type: 2}
+  Dialogues:
+  - Name: "iapu\xE7\xE1"
+    Text: Cambodia!
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: RemoveItem
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 3473030357468436672, guid: 1b03ab685b978ff49984ad7153156bf3,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: UpdateQuest
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: e57569b6ebb328b40a1a4241aa094ef8,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

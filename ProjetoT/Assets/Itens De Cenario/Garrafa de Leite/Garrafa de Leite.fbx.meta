@@ -3,7 +3,12 @@ guid: 549a15a9ed10b3c4db8a9603191b0a3a
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garrafa_
+    second: {fileID: 2100000, guid: 2e2440a2f1784a348b1e8fd89a07fccc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
