@@ -1,0 +1,1333 @@
+fileFormatVersion: 2
+guid: 715667898bb9aff41894fd75841064d9
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -7939422232465117443
+    second: WalkCycle
+  - first:
+      74: -3100369314251171874
+    second: Idle
+  - first:
+      74: -798513925027731995
+    second: Item_Interact
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: <Root Transform>
+    rigImportErrors: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'JoelhoCima_ESQ'
+      : rotation error = 23.566469 deg\n\t'JoelhoCima_DIR' : rotation error = 17.501188
+      deg\n\t'Pesco\xE7o_JNT' : rotation error = 2.147946 deg\n\t'JNT_CotoveloBaixo_ESQ'
+      : rotation error = 17.517292 deg\n\t'JNT_CotoveloBaixo_DIR' : rotation error
+      = 11.155800 deg\n"
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'WalkCycle' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'JoelhoCima_ESQ' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'MeioPe_ESQ' has translation
+      animation that will be discarded.\n\t'JoelhoCima_DIR' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'MeioPe_DIR'
+      has translation animation that will be discarded.\n\t'Pesco\xE7o_JNT' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Clavicula_ESQ'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Clavicula_DIR'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_DIR'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Idle' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'JoelhoCima_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'MeioPe_ESQ'
+      has translation animation that will be discarded.\n\t'JoelhoCima_DIR' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'MeioPe_DIR'
+      has translation animation that will be discarded.\n\t'Pesco\xE7o_JNT' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Cabe\xE7a_JNT'
+      has translation animation that will be discarded.\n\t'JNT_Clavicula_ESQ' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloCima_ESQ' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Anelar3_ESQ'
+      has translation animation that will be discarded.\n\t'JNT_Clavicula_DIR' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloCima_DIR' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR' has
+      translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_DIR'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Polegar1_DIR'
+      has translation animation that will be discarded.\n\t'JNT_Polegar2_DIR' has
+      translation animation that will be discarded.\n\nClip 'Item_Interact' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'JoelhoCima_ESQ' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'MeioPe_ESQ'
+      has translation animation that will be discarded.\n\t'JoelhoCima_DIR' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'MeioPe_DIR'
+      has translation animation that will be discarded.\n\t'Barriga_JNT1' has translation
+      animation that will be discarded.\n\t'Pesco\xE7o_JNT' has translation animation
+      that will be discarded.\n\t'Pesco\xE7o_JNT' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_ESQ'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Anelar3_ESQ'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR'
+      has translation animation that will be discarded.\n\t'JNT_CotoveloBaixo_DIR'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'JNT_Mao_DIR'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkCycle
+      takeName: WalkCycle
+      internalID: 0
+      firstFrame: 50
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 49.8
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      internalID: 0
+      firstFrame: 220
+      lastFrame: 800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 219.6
+    - serializedVersion: 16
+      name: Item_Interact
+      takeName: Item_Interact
+      internalID: 0
+      firstFrame: 810
+      lastFrame: 900
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 1
+        functionName: AnimationEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 810
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.33
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 8
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Quadril_JNT
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Perna_JNT_DIR
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JoelhoBaixo_DIR
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Tornozelo_DIR
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MeioPe_DIR
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barriga_JNT
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barriga_JNT1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Peito_JNT
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Clavicula_DIR
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Ombro_DIR
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_CotoveloCima_DIR
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Pulso_DIR
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "Cabe\xE7a_JNT"
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: "MeioCabe\xE7a_JNT"
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Olho_JNT_ESQ
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Olho_JNT_DIR
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_DirectOlho_ESQ
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Clavicula_ESQ
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Ombro_ESQ
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_CotoveloCima_ESQ
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Pulso_ESQ
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Perna_JNT_ESQ
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JoelhoBaixo_ESQ
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Tornozelo_ESQ
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MeioPe_ESQ
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar1_ESQ
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar2_ESQ
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar3_ESQ
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador1_ESQ
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador2_ESQ
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador3_ESQ
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio1_ESQ
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio2_ESQ
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio3_ESQ
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar1_ESQ
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar2_ESQ
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar3_ESQ
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo1_ESQ
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo2_ESQ
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo3_ESQ
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar1_DIR
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar2_DIR
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Polegar3_DIR
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador1_DIR
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador2_DIR
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Indicador3_DIR
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio1_DIR
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio2_DIR
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Medio3_DIR
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar1_DIR
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar2_DIR
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Anelar3_DIR
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo1_DIR
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo2_DIR
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JNT_Minimo3_DIR
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: AllanExportTest02(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Nova_Malha
+      parentName: AllanExportTest02(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olho_DIR
+      parentName: Nova_Malha
+      position: {x: -0.000000003730042, y: -0.021267688, z: 1.1723956e-15}
+      rotation: {x: 0, y: 0.0000001280269, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olho_ESQ
+      parentName: Nova_Malha
+      position: {x: -0.000000003735981, y: -0.021267688, z: -2.8113497e-12}
+      rotation: {x: 0, y: -3.3111548e-11, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:botas:Group20016
+      parentName: Nova_Malha
+      position: {x: -0, y: -0.021267688, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:Botas02:Group4564
+      parentName: Protagonista_com_UVs_v1_3:botas:Group20016
+      position: {x: -0, y: 0, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Protagonista_com_UVs_v1_3:cabe\xE7a:Group37173"
+      parentName: Nova_Malha
+      position: {x: -0, y: -0.021267688, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:Bigode:Group62554
+      parentName: "Protagonista_com_UVs_v1_3:cabe\xE7a:Group37173"
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:cabelin:Group53001
+      parentName: "Protagonista_com_UVs_v1_3:cabe\xE7a:Group37173"
+      position: {x: -0, y: 0, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:Orelhas:Group13972
+      parentName: "Protagonista_com_UVs_v1_3:cabe\xE7a:Group37173"
+      position: {x: -0, y: 0, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:calca:Group43081
+      parentName: Nova_Malha
+      position: {x: -0, y: -0.021267688, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CamisetaGola:group1
+      parentName: Nova_Malha
+      position: {x: -0.0000000295043, y: 1.0541599, z: 0.053274646}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CamisetaBase:Group40209
+      parentName: Protagonista_com_UVs_v1_3:CamisetaGola:group1
+      position: {x: 0.0000000295043, y: -1.0754277, z: -0.053274646}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CamisetaGola:Group57040
+      parentName: Protagonista_com_UVs_v1_3:CamisetaBase:Group40209
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:camisetaManga:Group16203
+      parentName: Protagonista_com_UVs_v1_3:CamisetaBase:Group40209
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:Bracos:Group56925
+      parentName: Protagonista_com_UVs_v1_3:camisetaManga:Group16203
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:RelogioPulseira:Group57151
+      parentName: Protagonista_com_UVs_v1_3:Bracos:Group56925
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:RelogioCirculo:Group46184
+      parentName: Protagonista_com_UVs_v1_3:RelogioPulseira:Group57151
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Protagonista_com_UVs_v1_3:chap\xE9u:Group47942"
+      parentName: Nova_Malha
+      position: {x: -0, y: -0.021267688, z: 9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:chapeuCordinha:Group51183
+      parentName: "Protagonista_com_UVs_v1_3:chap\xE9u:Group47942"
+      position: {x: -0, y: 0, z: -9.15934e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:chapeuAmarra:Group20513
+      parentName: Protagonista_com_UVs_v1_3:chapeuCordinha:Group51183
+      position: {x: -0, y: -1.4654945e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoBase:CintoBase
+      parentName: Nova_Malha
+      position: {x: 0.028831549, y: 0.8083655, z: 0.052710086}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoBase:Group39559
+      parentName: Protagonista_com_UVs_v1_3:CintoBase:CintoBase
+      position: {x: -0.028831549, y: -0.82963324, z: -0.052710086}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: facao_bainha:Group27903
+      parentName: Protagonista_com_UVs_v1_3:CintoBase:Group39559
+      position: {x: -0.026855838, y: 0.06259443, z: 0.058779083}
+      rotation: {x: 0.060328655, y: 0.13625409, z: -0.08864792, w: 0.98485374}
+      scale: {x: 1, y: 1, z: 1}
+    - name: facao_mao:Group8949
+      parentName: facao_bainha:Group27903
+      position: {x: -0.00036953113, y: 0.0022825599, z: -0.00033405857}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: facao_lamina:Group55670
+      parentName: facao_mao:Group8949
+      position: {x: -0.00056624867, y: 0.00019209125, z: 0.0019389004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:cintobolsa01:Group14434
+      parentName: Protagonista_com_UVs_v1_3:CintoBase:Group39559
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoMenor:Group49655
+      parentName: Protagonista_com_UVs_v1_3:CintoBase:Group39559
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoMenorFivela01:Group6920
+      parentName: Protagonista_com_UVs_v1_3:CintoMenor:Group49655
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoMenorFivela:Group10625
+      parentName: Protagonista_com_UVs_v1_3:CintoMenorFivela01:Group6920
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonista_com_UVs_v1_3:CintoMenorAmarras:Group56525
+      parentName: Protagonista_com_UVs_v1_3:CintoBase:Group39559
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigging
+      parentName: AllanExportTest02(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GRP_JNT_IKFK_DIR
+      parentName: Rigging
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_OmbroFK_DIR
+      parentName: GRP_JNT_IKFK_DIR
+      position: {x: 0.10217847, y: 1.1170651, z: -0.024591321}
+      rotation: {x: 0.82949144, y: -0.50352514, z: -0.21704514, w: 0.106291264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_CotoveloCimaFK_DIR
+      parentName: JNT_OmbroFK_DIR
+      position: {x: 0.14564994, y: -0.012831865, z: 0.039093487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_CotoveloBaixoFK_DIR
+      parentName: JNT_CotoveloCimaFK_DIR
+      position: {x: 0.052185725, y: -0.00078697596, z: 0.008553141}
+      rotation: {x: 0.04329837, y: -0.038854275, z: -0.0021085273, w: 0.9983042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_PulsoFK_DIR
+      parentName: JNT_CotoveloBaixoFK_DIR
+      position: {x: 0.1550553, y: -0.011569332, z: -0.00064429676}
+      rotation: {x: -0.011889457, y: -0.000000003594249, z: 0.13906565, w: 0.99021184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GRP_JNT_IKFK_ESQ
+      parentName: Rigging
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_OmbroFK_ESQ
+      parentName: GRP_JNT_IKFK_ESQ
+      position: {x: -0.15651867, y: 1.1008828, z: 0.14268541}
+      rotation: {x: -0.06325749, y: 0.34952176, z: 0.56292444, w: 0.7462903}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_CotoveloCimaFK_ESQ
+      parentName: JNT_OmbroFK_ESQ
+      position: {x: -0.14565107, y: 0.012831267, z: -0.039093513}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_CotoveloBaixoFK_ESQ
+      parentName: JNT_CotoveloCimaFK_ESQ
+      position: {x: -0.05051377, y: -0.015108845, z: -0.004125573}
+      rotation: {x: 0.021309394, y: 0.0067560086, z: 0.14655694, w: 0.9889496}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_PulsoFK_ESQ
+      parentName: JNT_CotoveloBaixoFK_ESQ
+      position: {x: -0.155056, y: 0.011570632, z: 0.00064426195}
+      rotation: {x: -0.011889457, y: -0.000000003594249, z: 0.13906565, w: 0.99021184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_Position
+      parentName: Rigging
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quadril_JNT
+      parentName: JNT_Position
+      position: {x: -0.0007004204, y: 0.7900156, z: 0.07488861}
+      rotation: {x: 0.0000000020457156, y: 0.000000009648625, z: -0.000000016162545,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Perna_JNT_DIR
+      parentName: Quadril_JNT
+      position: {x: 0.09097093, y: -0.0040524583, z: -0.0020226298}
+      rotation: {x: -0.7052042, y: 0.70858234, z: -0.018416965, w: 0.016093941}
+      scale: {x: 1.0000024, y: 1.0000001, z: 1.0000045}
+    - name: JoelhoCima_DIR
+      parentName: Perna_JNT_DIR
+      position: {x: 0.30558828, y: -0.021632787, z: 0.00000012778438}
+      rotation: {x: 0.0006148358, y: 0.010995106, z: 0.0010600387, w: 0.9999388}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000008}
+    - name: JoelhoBaixo_DIR
+      parentName: JoelhoCima_DIR
+      position: {x: 0.07280347, y: -0.0067023234, z: 0.016368397}
+      rotation: {x: 0.000113446265, y: -0.0029361956, z: -0.0017482501, w: 0.9999942}
+      scale: {x: 1.0000013, y: 1.000001, z: 1.0000015}
+    - name: Tornozelo_DIR
+      parentName: JoelhoBaixo_DIR
+      position: {x: 0.3173877, y: -0.017654981, z: 0.051870566}
+      rotation: {x: 0.0081218025, y: 0.0009888664, z: 0.0006151528, w: 0.9999663}
+      scale: {x: 1.0000013, y: 1.0000013, z: 1.0000025}
+    - name: Calcanhar_DIR
+      parentName: Tornozelo_DIR
+      position: {x: 0.06257043, y: -0.018463526, z: 0.048735175}
+      rotation: {x: -0.002846794, y: 0.0033209021, z: -0.004327601, w: -0.9999811}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000011}
+    - name: MeioPe_DIR
+      parentName: Tornozelo_DIR
+      position: {x: 0.051918373, y: 0.00040567893, z: -0.15444554}
+      rotation: {x: 0.049491424, y: 0.0035365084, z: -0.0041471976, w: -0.99875975}
+      scale: {x: 1.0000008, y: 1, z: 1.0000008}
+    - name: PontaPe_DIR
+      parentName: MeioPe_DIR
+      position: {x: 0.017648464, y: -0.00086002913, z: -0.13696392}
+      rotation: {x: -0.009549395, y: 0.011182376, z: 0.70707995, w: -0.70698076}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Perna_JNT_ESQ
+      parentName: Quadril_JNT
+      position: {x: -0.09097085, y: -0.004053128, z: -0.0020226191}
+      rotation: {x: -0.07809389, y: -0.058526434, z: 0.69768566, w: 0.70972586}
+      scale: {x: 1.0000011, y: 1.0000011, z: 1.0000001}
+    - name: JoelhoCima_ESQ
+      parentName: Perna_JNT_ESQ
+      position: {x: -0.30558738, y: 0.021632716, z: -4.5796702e-17}
+      rotation: {x: -0.052112628, y: 0.004886003, z: -0.00498866, w: 0.9986169}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999998}
+    - name: JoelhoBaixo_ESQ
+      parentName: JoelhoCima_ESQ
+      position: {x: -0.072803676, y: 0.006702458, z: -0.016368555}
+      rotation: {x: 0.00001580268, y: -0.00038384684, z: -0.00023037476, w: 0.9999999}
+      scale: {x: 1.000001, y: 1.0000011, z: 1.0000001}
+    - name: Tornozelo_ESQ
+      parentName: JoelhoBaixo_ESQ
+      position: {x: -0.3178304, y: 0.01757945, z: -0.05191465}
+      rotation: {x: 0.008439865, y: 0.0037554416, z: 0.00016520053, w: 0.9999573}
+      scale: {x: 1.0000008, y: 1.0000007, z: 1.0000002}
+    - name: Calcanhar_ESQ
+      parentName: Tornozelo_ESQ
+      position: {x: -0.056247808, y: 0.017089838, z: -0.05636104}
+      rotation: {x: 0.0029086173, y: -0.0034009279, z: 0.004443262, w: 0.9999801}
+      scale: {x: 1.0000006, y: 1.0000008, z: 0.99999994}
+    - name: MeioPe_ESQ
+      parentName: Tornozelo_ESQ
+      position: {x: -0.067459196, y: 0.014185132, z: 0.1476403}
+      rotation: {x: -0.049429286, y: -0.0036207053, z: 0.0042582406, w: 0.998762}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000001}
+    - name: PontaPe_ESQ
+      parentName: MeioPe_ESQ
+      position: {x: -0.017648604, y: 0.00093848864, z: 0.13696386}
+      rotation: {x: 0.009549468, y: -0.011182287, z: -0.70708007, w: 0.7069807}
+      scale: {x: 0.99999946, y: 0.99999976, z: 1.0000001}
+    - name: Barriga_JNT
+      parentName: Quadril_JNT
+      position: {x: 0.0007004208, y: 0.06946933, z: 0.00002050556}
+      rotation: {x: -0.009045521, y: -0.009045557, z: -0.70704895, w: 0.70704895}
+      scale: {x: 1.0000023, y: 1.0000025, z: 1}
+    - name: Barriga_JNT1
+      parentName: Barriga_JNT
+      position: {x: -0.0989346, y: 2.3145316e-11, z: 0.002035858}
+      rotation: {x: -0.000000055879347, y: -0.0000000074505797, z: -0.000000014086252,
+        w: 1}
+      scale: {x: 1.0000031, y: 1.0000033, z: 0.9999997}
+    - name: Peito_JNT
+      parentName: Barriga_JNT1
+      position: {x: -0.12997878, y: -3.2302766e-10, z: -0.018223021}
+      rotation: {x: 0.000000019092111, y: 0.000000020023434, z: 7.276659e-12, w: 1}
+      scale: {x: 1.0000015, y: 1.0000014, z: 1.0000001}
+    - name: "Pesco\xE7o_JNT"
+      parentName: Peito_JNT
+      position: {x: -0.08180094, y: 1.373901e-17, z: -0.005791843}
+      rotation: {x: -4.6566123e-10, y: -0.0000000023283062, z: -1.4551887e-11, w: 1}
+      scale: {x: 1.0000015, y: 1.000002, z: 1.0000004}
+    - name: "Cabe\xE7a_JNT"
+      parentName: "Pesco\xE7o_JNT"
+      position: {x: -0.10513847, y: -3.4347525e-18, z: 0.052369244}
+      rotation: {x: 0.000000010404691, y: 0.020978786, z: -0.0000000092974, w: 0.99977994}
+      scale: {x: 1.0000012, y: 1.0000018, z: 1.0000008}
+    - name: "MeioCabe\xE7a_JNT"
+      parentName: "Cabe\xE7a_JNT"
+      position: {x: -0.15800658, y: 0, z: -0.0051210523}
+      rotation: {x: -0, y: -0, z: 4.1633363e-17, w: 1}
+      scale: {x: 1.0000012, y: 1.0000014, z: 1.000001}
+    - name: JNT_DirectOlho_DIR
+      parentName: "MeioCabe\xE7a_JNT"
+      position: {x: 0.0062208963, y: 0.06801894, z: 0.09035758}
+      rotation: {x: 0.49588946, y: 0.5040771, z: 0.504077, w: -0.49588948}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000002}
+    - name: JNT_DirectOlho_ESQ
+      parentName: "MeioCabe\xE7a_JNT"
+      position: {x: 0.0062206853, y: -0.068019, z: 0.09035773}
+      rotation: {x: -0.5040771, y: 0.49588948, z: 0.49588948, w: 0.504077}
+      scale: {x: 1.0000007, y: 1.0000005, z: 1.0000006}
+    - name: "TopoCabe\xE7a_JNT_FIM"
+      parentName: "MeioCabe\xE7a_JNT"
+      position: {x: -0.23362993, y: 0, z: -0.010309077}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000006, y: 1.000001, z: 1.0000001}
+    - name: Olho_JNT_ESQ
+      parentName: "MeioCabe\xE7a_JNT"
+      position: {x: 0.0062206853, y: -0.068019, z: 0.09035773}
+      rotation: {x: -0.5040771, y: 0.49588948, z: 0.49588948, w: 0.504077}
+      scale: {x: 1.0000027, y: 1.0000011, z: 1.0000038}
+    - name: Palpebra_SUP_ESQ
+      parentName: Olho_JNT_ESQ
+      position: {x: -0.06115331, y: 0.023249956, z: -0.0054323445}
+      rotation: {x: 0.022427617, y: -0.70675105, z: 0.022427613, w: 0.7067511}
+      scale: {x: 0.99999917, y: 0.99999917, z: 0.9999986}
+    - name: Palpebra_INF_ESQ
+      parentName: Olho_JNT_ESQ
+      position: {x: -0.058497135, y: -0.020753412, z: -0.0054323445}
+      rotation: {x: -0.004618734, y: -0.70709175, z: -0.004618813, w: 0.7070917}
+      scale: {x: 0.9999992, y: 0.99999905, z: 0.9999989}
+    - name: Olho_JNT_DIR
+      parentName: "MeioCabe\xE7a_JNT"
+      position: {x: 0.0062208963, y: 0.06801894, z: 0.09035758}
+      rotation: {x: 0.49588946, y: 0.5040771, z: 0.504077, w: -0.49588948}
+      scale: {x: 1.0000017, y: 1.0000052, z: 1.0000023}
+    - name: Palpebra_SUP_DIR
+      parentName: Olho_JNT_DIR
+      position: {x: 0.06315373, y: -0.017071305, z: 0.0054324605}
+      rotation: {x: 0.05971981, y: -0.7045805, z: 0.059719883, w: 0.7045804}
+      scale: {x: 1.0000004, y: 1.0000027, z: 1.0000032}
+    - name: Palpebra_INF_DIR
+      parentName: Olho_JNT_DIR
+      position: {x: 0.059920765, y: 0.01620029, z: 0.0054324605}
+      rotation: {x: -0.039495405, y: -0.70600295, z: -0.039495375, w: 0.706003}
+      scale: {x: 0.9999996, y: 1.0000043, z: 1.0000057}
+    - name: JNT_Clavicula_DIR
+      parentName: Peito_JNT
+      position: {x: -0.013571078, y: 0.064887576, z: -0.03855964}
+      rotation: {x: 0.70704895, y: 0.70704895, z: -0.009045578, w: -0.009045513}
+      scale: {x: 1.0000004, y: 1.0000036, z: 1.0000036}
+    - name: JNT_Ombro_DIR
+      parentName: JNT_Clavicula_DIR
+      position: {x: 0.08940426, y: 0.00022110011, z: -0.0000000013335886}
+      rotation: {x: 0.074909, y: 0.121565, z: 0.071808256, w: 0.9871444}
+      scale: {x: 1, y: 0.9999999, z: 1.0000007}
+    - name: JNT_CotoveloCima_DIR
+      parentName: JNT_Ombro_DIR
+      position: {x: 0.14564994, y: -0.012831865, z: 0.039093487}
+      rotation: {x: -0.0077260565, y: -0.10855018, z: -0.025195645, w: 0.9937417}
+      scale: {x: 1.0000008, y: 1.0000026, z: 1.0000036}
+    - name: JNT_CotoveloBaixo_DIR
+      parentName: JNT_CotoveloCima_DIR
+      position: {x: 0.052185725, y: -0.00078697596, z: 0.008553141}
+      rotation: {x: 0.00050820754, y: 0.048538096, z: -0.0009365295, w: 0.99882084}
+      scale: {x: 1.0000004, y: 1.0000012, z: 1.0000014}
+    - name: JNT_Pulso_DIR
+      parentName: JNT_CotoveloBaixo_DIR
+      position: {x: 0.1550553, y: -0.011569332, z: -0.00064429676}
+      rotation: {x: -0.011197471, y: -0.0027551563, z: 0.11894833, w: 0.9928335}
+      scale: {x: 0.9999996, y: 1.0000031, z: 1.0000018}
+    - name: JNT_Mao_DIR
+      parentName: JNT_Pulso_DIR
+      position: {x: 0.042908993, y: -0.0042372346, z: -0.0050651478}
+      rotation: {x: -0.0040847994, y: 0.0032559477, z: -0.07660292, w: 0.9970481}
+      scale: {x: 1.0000002, y: 0.99999964, z: 1.0000001}
+    - name: JNT_Medio1_DIR
+      parentName: JNT_Mao_DIR
+      position: {x: 0.059089776, y: -0.0028317855, z: -0.010201602}
+      rotation: {x: -0.0011470617, y: 0.015528189, z: 0.06444653, w: 0.99779975}
+      scale: {x: 0.9999998, y: 1.0000006, z: 1.0000007}
+    - name: JNT_Medio2_DIR
+      parentName: JNT_Medio1_DIR
+      position: {x: 0.032770634, y: -0.0003053903, z: -0.00029442104}
+      rotation: {x: -0.00013160452, y: -0.0000723544, z: -0.014572108, w: 0.99989384}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: JNT_Medio3_DIR
+      parentName: JNT_Medio2_DIR
+      position: {x: 0.029907752, y: 0.003047709, z: -0.0002852215}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: JNT_MedioFIM_DIR
+      parentName: JNT_Medio3_DIR
+      position: {x: 0.036112048, y: 0.003508925, z: -0.00000007421111}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: JNT_Anelar1_DIR
+      parentName: JNT_Mao_DIR
+      position: {x: 0.058241844, y: 0.0040412284, z: 0.014152538}
+      rotation: {x: -0.0056617954, y: 0.038424354, z: 0.02579592, w: 0.9989125}
+      scale: {x: 0.9999997, y: 1.0000005, z: 1.0000004}
+    - name: JNT_Anelar2_DIR
+      parentName: JNT_Anelar1_DIR
+      position: {x: 0.027984377, y: 0.0022769682, z: 0.00040820075}
+      rotation: {x: -0, y: 8.881779e-16, z: 0.000000007450576, w: 1}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+    - name: JNT_Anelar3_DIR
+      parentName: JNT_Anelar2_DIR
+      position: {x: 0.025823273, y: 0.0040733027, z: -0.0001797947}
+      rotation: {x: -0.00014258632, y: 0.00080686016, z: -0.0022022107, w: 0.9999973}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: JNT_AnelarFIM_DIR
+      parentName: JNT_Anelar3_DIR
+      position: {x: 0.023432106, y: 0.0056982115, z: 0.0005703928}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: JNT_Minimo1_DIR
+      parentName: JNT_Mao_DIR
+      position: {x: 0.052548513, y: 0.009561584, z: 0.03781814}
+      rotation: {x: -0.0076958234, y: 0.06896654, z: 0.007825535, w: 0.9975586}
+      scale: {x: 0.99999946, y: 1.0000005, z: 1.0000004}
+    - name: JNT_Minimo2_DIR
+      parentName: JNT_Minimo1_DIR
+      position: {x: 0.022023689, y: 0.0024628665, z: 0.0016549398}
+      rotation: {x: 0.0014060755, y: -0.007586143, z: -0.007421782, w: 0.9999427}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: JNT_Minimo3_DIR
+      parentName: JNT_Minimo2_DIR
+      position: {x: 0.020998837, y: 0.0038920236, z: 0.00000015865558}
+      rotation: {x: 0.0007909374, y: -0.0042672376, z: -0.004126932, w: 0.9999821}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: JNT_MinimoFIM_DIR
+      parentName: JNT_Minimo3_DIR
+      position: {x: 0.023405626, y: 0.0059389076, z: -0.0016552067}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: JNT_Indicador1_DIR
+      parentName: JNT_Mao_DIR
+      position: {x: 0.055567667, y: -0.01153056, z: -0.035786685}
+      rotation: {x: -0.0052040364, y: -0.016388547, z: 0.11597204, w: 0.9931036}
+      scale: {x: 0.9999996, y: 1.0000005, z: 1.0000004}
+    - name: JNT_Indicador2_DIR
+      parentName: JNT_Indicador1_DIR
+      position: {x: 0.032742627, y: -0.0049099964, z: -0.0013185547}
+      rotation: {x: 0.0020281852, y: 0.020335717, z: -0.02536154, w: 0.99946946}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1}
+    - name: JNT_Indicador3_DIR
+      parentName: JNT_Indicador2_DIR
+      position: {x: 0.026195126, y: -0.0009365706, z: 0.0013440166}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: JNT_IndicadorFIM_DIR
+      parentName: JNT_Indicador3_DIR
+      position: {x: 0.02898967, y: 0.00014493581, z: 0.0013629515}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+    - name: JNT_Polegar1_DIR
+      parentName: JNT_Mao_DIR
+      position: {x: -0.008590086, y: 0.023536447, z: -0.039748643}
+      rotation: {x: -0.64234275, y: -0.11605211, z: 0.15457918, w: -0.7416421}
+      scale: {x: 0.99999994, y: 1.0000004, z: 0.99999994}
+    - name: JNT_Polegar2_DIR
+      parentName: JNT_Polegar1_DIR
+      position: {x: 0.036807045, y: -0.016327526, z: -0.005815087}
+      rotation: {x: -0.019713718, y: 0.039339192, z: -0.15416461, w: 0.9870649}
+      scale: {x: 0.9999999, y: 1, z: 1.0000004}
+    - name: JNT_Polegar3_DIR
+      parentName: JNT_Polegar2_DIR
+      position: {x: 0.03226814, y: -0.0014200415, z: -0.0022162683}
+      rotation: {x: -0.00005961392, y: 0.060288046, z: -0.03949949, w: 0.9973992}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000001}
+    - name: JNT_PolegarFIM_DIR
+      parentName: JNT_Polegar3_DIR
+      position: {x: 0.027722022, y: 0.0021463027, z: 0.003233913}
+      rotation: {x: 0.00000007918144, y: -0.70710677, z: -0.00000008663201, w: 0.7071067}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.000001}
+    - name: JNT_Clavicula_ESQ
+      parentName: Peito_JNT
+      position: {x: -0.013572053, y: -0.0648875, z: -0.03855961}
+      rotation: {x: 0.009045516, y: 0.009045542, z: 0.70704895, w: 0.70704895}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: JNT_Ombro_ESQ
+      parentName: JNT_Clavicula_ESQ
+      position: {x: -0.089404345, y: -0.0002214064, z: -0.000000015187325}
+      rotation: {x: 0.06602255, y: 0.12191761, z: 0.07123089, w: 0.987777}
+      scale: {x: 0.9999995, y: 0.9999996, z: 1}
+    - name: JNT_CotoveloCima_ESQ
+      parentName: JNT_Ombro_ESQ
+      position: {x: -0.14565107, y: 0.012831267, z: -0.039093513}
+      rotation: {x: -0.0006372182, y: -0.11836693, z: -0.05649844, w: 0.99136114}
+      scale: {x: 1.000001, y: 1.0000012, z: 1.0000001}
+    - name: JNT_CotoveloBaixo_ESQ
+      parentName: JNT_CotoveloCima_ESQ
+      position: {x: -0.05051377, y: -0.015108845, z: -0.004125573}
+      rotation: {x: -0.000000025822024, y: 0.042630963, z: 0.000000031270933, w: 0.9990909}
+      scale: {x: 1.0000013, y: 1.0000007, z: 0.99999905}
+    - name: JNT_Pulso_ESQ
+      parentName: JNT_CotoveloBaixo_ESQ
+      position: {x: -0.155056, y: 0.011570632, z: 0.00064426195}
+      rotation: {x: -0.011792369, y: -0.000578273, z: 0.13452438, w: 0.99084}
+      scale: {x: 1.0000015, y: 1.0000006, z: 1.0000007}
+    - name: JNT_Mao_ESQ
+      parentName: JNT_Pulso_ESQ
+      position: {x: -0.042909577, y: 0.004234239, z: 0.005065083}
+      rotation: {x: -9.3132246e-10, y: 1.1641531e-10, z: 3.543334e-10, w: 1}
+      scale: {x: 0.99999964, y: 0.9999991, z: 1.000001}
+    - name: JNT_Indicador1_ESQ
+      parentName: JNT_Mao_ESQ
+      position: {x: -0.05479936, y: 0.0070903916, z: 0.03631871}
+      rotation: {x: 0.00012556085, y: 0.0064534512, z: 0.048436046, w: 0.99880546}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: JNT_Indicador2_ESQ
+      parentName: JNT_Indicador1_ESQ
+      position: {x: -0.0329818, y: 0.0030968396, z: 0.0007306016}
+      rotation: {x: 0.0013340011, y: 0.020221978, z: -0.02549632, w: 0.99946946}
+      scale: {x: 1.0000004, y: 0.9999999, z: 0.9999999}
+    - name: JNT_Indicador3_ESQ
+      parentName: JNT_Indicador2_ESQ
+      position: {x: -0.026180035, y: -0.00052765466, z: -0.0017883151}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: JNT_IndicadorFIM_ESQ
+      parentName: JNT_Indicador3_ESQ
+      position: {x: -0.02898969, y: -0.0001453858, z: -0.0013632189}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999999}
+    - name: JNT_Medio1_ESQ
+      parentName: JNT_Mao_ESQ
+      position: {x: -0.058592886, y: 0.0068397, z: 0.011126176}
+      rotation: {x: -0.0019562205, y: 0.032359585, z: 0.008954458, w: 0.99943435}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1}
+    - name: JNT_Medio2_ESQ
+      parentName: JNT_Medio1_ESQ
+      position: {x: -0.03277277, y: -0.0001998309, z: 7.327472e-17}
+      rotation: {x: 0.0000000142026595, y: 0.00000008195633, z: -0.01456494, w: 0.99989396}
+      scale: {x: 1.0000004, y: 0.9999999, z: 0.9999999}
+    - name: JNT_Medio3_ESQ
+      parentName: JNT_Medio2_ESQ
+      position: {x: -0.029858517, y: -0.0035084179, z: -7.327472e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: JNT_MedioFIM_ESQ
+      parentName: JNT_Medio3_ESQ
+      position: {x: -0.036112852, y: -0.0035072733, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999999}
+    - name: JNT_Anelar1_ESQ
+      parentName: JNT_Mao_ESQ
+      position: {x: -0.058592886, y: 3.663736e-17, z: -0.01325209}
+      rotation: {x: -0.005713124, y: 0.041925207, z: -0.024292726, w: 0.99880904}
+      scale: {x: 1.0000012, y: 1.0000006, z: 0.99999994}
+    - name: JNT_Anelar2_ESQ
+      parentName: JNT_Anelar1_ESQ
+      position: {x: -0.027987381, y: -0.0022763293, z: 7.327472e-17}
+      rotation: {x: -0, y: -0, z: 7.480285e-18, w: 1}
+      scale: {x: 1.0000004, y: 0.9999999, z: 0.9999999}
+    - name: JNT_Anelar3_ESQ
+      parentName: JNT_Anelar2_ESQ
+      position: {x: -0.029858517, y: -0.0035084179, z: -0.00019013495}
+      rotation: {x: -0.00021516428, y: 0.0029493147, z: -0.020625126, w: 0.999783}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: JNT_AnelarFIM_ESQ
+      parentName: JNT_Anelar3_ESQ
+      position: {x: -0.023432113, y: -0.00569843, z: -0.00057040487}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999999}
+    - name: JNT_Minimo1_ESQ
+      parentName: JNT_Mao_ESQ
+      position: {x: -0.05327612, y: -0.008195363, z: -0.03625692}
+      rotation: {x: -0.00435535, y: 0.07146048, z: -0.046224516, w: 0.9963623}
+      scale: {x: 1.0000015, y: 1.0000007, z: 0.9999998}
+    - name: JNT_Minimo2_ESQ
+      parentName: JNT_Minimo1_ESQ
+      position: {x: -0.022022007, y: -0.0024618048, z: -0.0016550451}
+      rotation: {x: 0.0014129346, y: -0.007619665, z: -0.0074665877, w: 0.9999421}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000001}
+    - name: JNT_Minimo3_ESQ
+      parentName: JNT_Minimo2_ESQ
+      position: {x: -0.020998899, y: -0.00389378, z: 0}
+      rotation: {x: 0.0007823269, y: -0.0042189765, z: -0.0040701027, w: 0.9999826}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: JNT_MinimoFIM_ESQ
+      parentName: JNT_Minimo3_ESQ
+      position: {x: -0.023407461, y: -0.0059368922, z: 0.0016550451}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: JNT_Polegar1_ESQ
+      parentName: JNT_Mao_ESQ
+      position: {x: 0.0075682597, y: -0.024192045, z: 0.039562292}
+      rotation: {x: 0.6438167, y: 0.11632518, z: -0.16341798, w: 0.7384193}
+      scale: {x: 1.0000021, y: 1.0000001, z: 1.0000008}
+    - name: JNT_Polegar2_ESQ
+      parentName: JNT_Polegar1_ESQ
+      position: {x: -0.03686138, y: 0.016848326, z: 0.0035402472}
+      rotation: {x: -0.0017274906, y: 0.040936988, z: -0.15466502, w: 0.98711705}
+      scale: {x: 0.99999845, y: 1.0000024, z: 1.0000004}
+    - name: JNT_Polegar3_ESQ
+      parentName: JNT_Polegar2_ESQ
+      position: {x: -0.032317784, y: 0.0019296075, z: 2.0150549e-16}
+      rotation: {x: 0.0019493268, y: 0.03265457, z: -0.038349833, w: 0.9987288}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: JNT_PolegarFIM_ESQ
+      parentName: JNT_Polegar3_ESQ
+      position: {x: -0.027720712, y: -0.0021465404, z: -0.003237088}
+      rotation: {x: 0.00000011861657, y: -0.7071069, z: -0.000000106801544, w: 0.7071067}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000005}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.33
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 0
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
