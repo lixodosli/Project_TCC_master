@@ -9,15 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
-  m_Name: Step1
+  m_Script: {fileID: 11500000, guid: d519fd6eaec9b6442a6c71a44eecbb37, type: 3}
+  m_Name: PR#1QuestObject
   m_EditorClassIdentifier: 
-  StepName: Pegar a bolinha preta.
-  StepDescription: Pege la
-  Condition:
-    rid: -2
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+  PreviousQuestRequired: {fileID: 0}
+  QuestName: "Colabora\xE7\xE3o comunit\xE1ria"
+  Steps: []

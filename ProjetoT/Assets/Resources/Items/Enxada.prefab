@@ -156,7 +156,7 @@ MonoBehaviour:
   m_ItemSprite: {fileID: 21300000, guid: 01ed9266520b9bf4d80234b24ee4b466, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
-  m_ToolTip: {fileID: 7944993540118724006}
+  m_OnInteractSFX: {fileID: 8300000, guid: 384178fa4d41b7b43a5343f51da10504, type: 3}
 --- !u!114 &7944993540118724006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +175,6 @@ MonoBehaviour:
   TipBox_CharPadding: 10
   TipBox_BG_MinSize: 48
   TipBox_BG_MaxSize: 160
-  Interaction: {fileID: 3473030357468436672}
-  TipBox_Elements: {fileID: 1827888326839319314}
 --- !u!1001 &4271557351809718045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,12 +294,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338592c536a1f6842843c59321ee5fc2, type: 3}
---- !u!1 &1827888326839319314 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2457391411457469455, guid: 338592c536a1f6842843c59321ee5fc2,
-    type: 3}
-  m_PrefabInstance: {fileID: 4271557351809718045}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1827888327104154487 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2457391411733191786, guid: 338592c536a1f6842843c59321ee5fc2,

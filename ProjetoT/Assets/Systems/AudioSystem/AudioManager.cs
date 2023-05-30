@@ -32,7 +32,7 @@ public struct AudioConfigs
     [Range(0, 2)] public float Volume;
     public Vector2 PitchVariation;
 
-    public AudioConfigs Default()
+    public static AudioConfigs Default()
     {
         AudioConfigs config = new AudioConfigs();
         config.Volume = 1;

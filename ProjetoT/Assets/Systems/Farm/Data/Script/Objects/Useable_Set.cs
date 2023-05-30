@@ -8,6 +8,7 @@ public class Useable_Set : MonoBehaviour
     private Useable[] _Useables;
 
     private Item _UsedItem;
+    [SerializeField] private AudioClip m_OnChangeSFX;
 
     private void Awake()
     {
@@ -42,6 +43,8 @@ public class Useable_Set : MonoBehaviour
 
     public void UseUseable(Item item)
     {
+        if(!CurrentState().CanBeUsed(item)) { return; }
+
         _UsedItem = item;
         ExecutionBar.StartCounting(CurrentState().BarTime);
         ExecutionBar.Complete += UseItem;
@@ -51,6 +54,7 @@ public class Useable_Set : MonoBehaviour
     private void UseItem()
     {
         CurrentState().Use(_UsedItem);
+        _UsedItem.UseEffects();
         ExecutionBar.Complete -= UseItem;
         ExecutionBar.Canceled -= CancelUse;
     }
@@ -117,5 +121,6 @@ public class Useable_Set : MonoBehaviour
         }
 
         _Useables[newActive].gameObject.SetActive(true);
+        AudioManager.Instance.Play(m_OnChangeSFX, AudioType.SFX, AudioConfigs.Default());
     }
 }

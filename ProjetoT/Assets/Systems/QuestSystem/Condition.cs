@@ -59,7 +59,12 @@ public class UseSomeItem : Condition
                 break;
 
             case ConditionType.ByID:
-                ConditionCompleted = true;
+                if (item.ItemID == ID)
+                {
+                    ConditionCompleted = true;
+                    Inventory.Instance.OnUseItem -= UpdateCondition;
+                    return;
+                }
                 break;
         }
     }

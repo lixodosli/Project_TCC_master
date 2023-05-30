@@ -9,13 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3154701405505579894}
-  - component: {fileID: 3070418708058527044}
   - component: {fileID: 8150027477847671336}
   - component: {fileID: 4350255857953375557}
-  - component: {fileID: 2111193423679385351}
   - component: {fileID: 8384497204042479071}
-  - component: {fileID: 2111193423679385344}
+  - component: {fileID: 9010620983732706052}
   - component: {fileID: 1657144627}
+  - component: {fileID: 5465165379791753446}
   m_Layer: 0
   m_Name: Abobora
   m_TagString: Untagged
@@ -39,26 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3070418708058527044
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d623cd35a78380d4eb0457c4e483abed, type: 3}
-  m_Controller: {fileID: 9100000, guid: 84dd067921f4e0045bb3a9a6e8fb7789, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &8150027477847671336
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -66,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3155935889636044408}
-  m_Mesh: {fileID: 671581380925931515, guid: c5f92ff26d9f7504a8350d242ffb0bb3, type: 3}
+  m_Mesh: {fileID: -7474138871709678809, guid: 17107b863f1691c4ea540b0ed35c8680, type: 3}
 --- !u!23 &4350255857953375557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4279979935521194213, guid: c5f92ff26d9f7504a8350d242ffb0bb3, type: 3}
+  - {fileID: -876546973899608171, guid: 17107b863f1691c4ea540b0ed35c8680, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,20 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2111193423679385351
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3155935889636044408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 671581380925931515, guid: c5f92ff26d9f7504a8350d242ffb0bb3, type: 3}
 --- !u!54 &8384497204042479071
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -139,7 +104,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2111193423679385344
+--- !u!114 &9010620983732706052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,16 +113,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 3155935889636044408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cf986c2c87c02547bf988dbc7af1ec9, type: 3}
+  m_Script: {fileID: 11500000, guid: 946bad136ed270549befed24f3b49dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_ItemName: "Ab\xF3bora"
   m_ItemID: 
-  m_ItemSprite: {fileID: 21300000, guid: 3061ff2ea6d6f7f46bd21e72d4ca51d5, type: 3}
+  m_ItemSprite: {fileID: 704535144, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
-  m_ItemToDrop: 3
-  m_DropQuantity: 3
+  m_OnInteractSFX: {fileID: 0}
+  Effects:
+  - rid: 8580562910135975936
+  - rid: 8580562910135975937
+  references:
+    version: 2
+    RefIds:
+    - rid: 8580562910135975936
+      type: {class: ConsumableEffect, ns: , asm: Assembly-CSharp}
+      data:
+        DropOnConsume: 0300000003000000
+    - rid: 8580562910135975937
+      type: {class: HungryEffect, ns: , asm: Assembly-CSharp}
+      data:
+        HungryChange: 1
 --- !u!114 &1657144627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +154,19 @@ MonoBehaviour:
   TipBox_CharPadding: 10
   TipBox_BG_MinSize: 48
   TipBox_BG_MaxSize: 160
+--- !u!65 &5465165379791753446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155935889636044408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3649112, y: 0.39255747, z: 0.38614509}
+  m_Center: {x: 0, y: 0.1924402, z: -0.00000011920929}
 --- !u!1001 &139859197791729004
 PrefabInstance:
   m_ObjectHideFlags: 0
