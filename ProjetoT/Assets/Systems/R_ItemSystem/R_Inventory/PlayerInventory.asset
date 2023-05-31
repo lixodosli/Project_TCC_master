@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   InventorySize: 9
-  InventoryItem:
-  - {fileID: 11400000, guid: 171472cc6dd3ccb48b19f56b005b3cfc, type: 2}
+  InventoryItem: []

@@ -8,7 +8,7 @@ public class R_ItemPooling : MonoBehaviour
     public static R_ItemPooling Instance;
 
     public GameObject HolderPrefab;
-    public List<R_ItemHolder> Holders = new List<R_ItemHolder>();
+    public List<R_Item> Holders = new List<R_Item>();
 
     private void Awake()
     {
@@ -16,21 +16,21 @@ public class R_ItemPooling : MonoBehaviour
         Setup();
     }
 
-    public void UpdateDisable(R_ItemHolder holder)
+    public void UpdateDisable(R_Item holder)
     {
         holder.Item = null;
         holder.transform.parent = transform;
     }
 
-    public R_ItemHolder GetItem(R_Item item)
+    public R_Item GetItem(R_ItemConfigs item)
     {
         if(Holders.Count < 1)
         {
             GameObject go = Instantiate(HolderPrefab, transform);
-            Holders.Add(go.GetComponent<R_ItemHolder>());
+            Holders.Add(go.GetComponent<R_Item>());
         }
 
-        R_ItemHolder popedItem = Holders[0];
+        R_Item popedItem = Holders[0];
         popedItem.Item = item;
         popedItem.Setup();
 
@@ -39,9 +39,9 @@ public class R_ItemPooling : MonoBehaviour
 
     public void Setup()
     {
-        R_ItemHolder[] list = FindObjectsOfType<R_ItemHolder>();
+        R_Item[] list = FindObjectsOfType<R_Item>();
 
-        foreach (R_ItemHolder item in list)
+        foreach (R_Item item in list)
         {
             Holders.Add(item);
         }

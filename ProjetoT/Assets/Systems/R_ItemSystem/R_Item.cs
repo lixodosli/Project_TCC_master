@@ -1,70 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-[CreateAssetMenu(menuName = "SO/Item")]
-public class R_Item : ScriptableObject
+public class R_Item : MonoBehaviour
 {
-    public string ItemName;
-    public string ItemDescription;
-    [PreviewSprite] public Sprite ItemIcon;
-    public GameObject ItemModel;
-    [SerializeReference] public R_ItemType Type;
+    public R_ItemConfigs Item;
+    private R_ItemConfigs LateItem;
 
-    [ContextMenu("Consumable")] public void AddConsumableType() => Type = new R_ItemType_Consumable();
-    [ContextMenu("Tool")] public void AddToolType() => Type = new R_ItemType_Tool();
-    [ContextMenu("Reset")] public void ResetType() => Type = null;
+    [SerializeField] private MeshRenderer _Renderer;
+    [SerializeField] private MeshFilter _Filter;
+    [SerializeField] private MeshCollider _Collider;
 
-    public void Use() => Type.Use();
-}
+    private MeshRenderer _ItemModelRenderer;
+    private MeshFilter _ItemModelFilter;
 
-[System.Serializable]
-public class R_ItemType
-{
-    public virtual void Use()
+    private void Start()
     {
-
+        Setup();
     }
 
-    public virtual void Drop()
+    private void Update()
     {
-
-    }
-}
-
-[System.Serializable]
-public class R_ItemType_Consumable : R_ItemType
-{
-    [ReadOnly] public string Type = "Consumable";
-    public int ItemMaxUsage;
-    private int _CurrentUseage = 0;
-    public R_Item TransformsTo;
-
-    public override void Use()
-    {
-        _CurrentUseage++;
-        
-        if(_CurrentUseage >= ItemMaxUsage)
-        {
-            //Do Something;
-        }
+        if (Item != LateItem)
+            Setup();
     }
 
-    public void DoTransform()
+    private void LateUpdate()
     {
-        if (TransformsTo == null)
+        LateItem = Item;
+    }
+
+    public void Setup()
+    {
+        if (Item == null)
             return;
 
+        _ItemModelRenderer = Item.ItemModel.GetComponent<MeshRenderer>();
+        _ItemModelFilter = Item.ItemModel.GetComponent<MeshFilter>();
+
+        _Renderer.materials = _ItemModelRenderer.sharedMaterials;
+        _Filter.mesh = _ItemModelFilter.sharedMesh;
+        _Collider.sharedMesh = _ItemModelFilter.sharedMesh;
     }
-}
 
-[System.Serializable]
-public class R_ItemType_Tool : R_ItemType
-{
-    [ReadOnly] public string Type = "Tool";
-
-    public override void Use()
+    private void OnValidate()
     {
-        base.Use();
+        name = Item == null ? "--GameItem--" : Item.ItemName;
     }
 }
