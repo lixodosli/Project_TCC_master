@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d519fd6eaec9b6442a6c71a44eecbb37, type: 3}
-  m_Name: QuestObject1 PA02
+  m_Name: QuestObject2 PA03
   m_EditorClassIdentifier: 
-  PreviousQuestRequired: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1,
-    type: 2}
-  QuestName: "Antipragas e antif\xFAngicos"
-  Steps:
-  - {fileID: 11400000, guid: dfee8dd6c6914fa49aaf152ee341dbfa, type: 2}
-  - {fileID: 11400000, guid: 4750406a1be9cca4d80e926fb500e863, type: 2}
+  PreviousQuestRequired: {fileID: 0}
+  QuestName: Temperamento forte
+  Steps: []

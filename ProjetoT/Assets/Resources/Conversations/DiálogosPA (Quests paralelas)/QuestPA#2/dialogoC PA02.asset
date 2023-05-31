@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
   m_Name: dialogoC PA02
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 0}
+  RequiredQuest: {fileID: 11400000, guid: 2afcd0d3b630fc44490f8721e4a297fc, type: 2}
   Name: Ao trazer a pimenta crescida
-  StartQuest: {fileID: 0}
+  StartQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
@@ -38,13 +38,25 @@ MonoBehaviour:
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
-  - Name: Maira
+  - Name: 
     Text: "Voc\xEA recebeu Extrato de pimenta (antif\xFAngico)."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Name: Maira
     Text: "Borrifando isso em certas plantas que sofrem com infec\xE7\xE3o por fungos,
       voc\xEA n\xE3o ter\xE1 mais esse problema."

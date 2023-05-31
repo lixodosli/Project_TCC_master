@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
   m_Name: dialogoA PA02
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 0}
+  RequiredQuest: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1, type: 2}
   Name: "\"Antipragas e antif\xFAngicos\".\nAo falar com maira ela revela ter conseguido
     uma muda de alho, planta capaz de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
-  StartQuest: {fileID: 0}
+  StartQuest: {fileID: 11400000, guid: 7c4451749d155d14eb062242e42dd9d8, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
@@ -55,7 +55,19 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Name: Maira
     Text: "Se trouxer um alho crescido aqui posso fazer um extrato antipraga pra
       proteger sua planta\xE7\xE3o como te falei."

@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
-  m_Name: QO3 passo1 PA01
+  m_Name: QO3 PIMENTA passo1 PA02
   m_EditorClassIdentifier: 
-  StepName: "entrega p\xF3s conclus\xE3o da quest"
-  StepDescription: dar mais ervas daninhas para maira
+  StepName: 
+  StepDescription: trazer mais pimenta para Maira
   Condition:
-    rid: 4653522037074296838
+    rid: 4653522054626148353
   references:
     version: 2
     RefIds:
-    - rid: 4653522037074296838
+    - rid: 4653522054626148353
       type: {class: UseSomeItem, ns: , asm: Assembly-CSharp}
       data:
-        Times: 3
+        Times: 1
         ID: 
         Type: 0
         ItemToUse: {fileID: 0}

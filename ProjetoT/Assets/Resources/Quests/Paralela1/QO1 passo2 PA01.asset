@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
   m_Name: QO1 passo2 PA01
   m_EditorClassIdentifier: 
-  StepName: PA1 passo2
+  StepName: Entrega
   StepDescription: Entregar as ervas daninhas para maira
   Condition:
     rid: 4653522037074296835

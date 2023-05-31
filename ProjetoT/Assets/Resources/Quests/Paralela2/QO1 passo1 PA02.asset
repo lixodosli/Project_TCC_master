@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: QO1 passo1 PA02
   m_EditorClassIdentifier: 
   StepName: 
-  StepDescription: 
+  StepDescription: "Ao falar com Maira ap\xF3s completar a quest paralela 1"
   Condition:
-    rid: -2
+    rid: 4653522037074296842
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 4653522037074296842
+      type: {class: InteractWithSomething, ns: , asm: Assembly-CSharp}
+      data:
+        Times: 0
+        ID: 
+        Type: 0
+        Interactable: {fileID: 0}

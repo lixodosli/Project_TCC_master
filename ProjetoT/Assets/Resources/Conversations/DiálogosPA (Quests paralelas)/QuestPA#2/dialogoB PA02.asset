@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
   m_Name: dialogoB PA02
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 0}
+  RequiredQuest: {fileID: 11400000, guid: 7c4451749d155d14eb062242e42dd9d8, type: 2}
   Name: "Entregando o alho cescido para Maira, ela introduz outro conceito de extrato:
     o antif\xFAngico, feito a partir de pimenta"
-  StartQuest: {fileID: 0}
+  StartQuest: {fileID: 11400000, guid: 2afcd0d3b630fc44490f8721e4a297fc, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
@@ -45,7 +45,19 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Name: Maira
     Text: "Borrifando em certas plantas, que sofrem com ataque de pragas, voc\xEA
       n\xE3o ter\xE1 mais esse problema."
@@ -67,7 +79,19 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Name: Maira
     Text: "Al\xE9m de antipraga, existe tamb\xE9m os antif\xFAngicos, que pode serem
       feito com pimenta."
