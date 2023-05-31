@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Garrafa Vazia
   m_ItemID: Garrafa Vazia.1489e621-d001-45cd-be40-aeb45385c417
-  m_ItemSprite: {fileID: 538415208, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: 21300000, guid: 9aa4348290784b2468144a97eb15d8d7, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}

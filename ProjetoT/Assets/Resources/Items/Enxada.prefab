@@ -153,10 +153,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Enxada
   m_ItemID: 
-  m_ItemSprite: {fileID: 21300000, guid: 01ed9266520b9bf4d80234b24ee4b466, type: 3}
+  m_ItemSprite: {fileID: 2116320708, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 8300000, guid: 384178fa4d41b7b43a5343f51da10504, type: 3}
+  m_InteractWithClosest: 0
+  Effects: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &7944993540118724006
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: "P\xE1"
   m_ItemID: "P\xE1.10f6697c-2203-439a-b2d6-369960ecd3aa"
-  m_ItemSprite: {fileID: -1337032456, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: 21300000, guid: 0525793900d728a42936791a8a6de63b, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
