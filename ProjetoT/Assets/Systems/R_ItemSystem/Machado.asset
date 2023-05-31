@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9d9c305b5615244c83e38c8c5f7879f, type: 3}
-  m_Name: Enxada
+  m_Name: Machado
   m_EditorClassIdentifier: 
-  ItemName: Enxada
-  ItemDescription: Usada para poder enxadar os outros.
-  ItemIcon: {fileID: 21300000, guid: 01ed9266520b9bf4d80234b24ee4b466, type: 3}
-  ItemModel: {fileID: 919132149155446097, guid: 3ec19a6c8f0b59d48ade1c7a43688174,
+  ItemName: Machado
+  ItemDescription: 
+  ItemIcon: {fileID: -1343934195, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
+  ItemModel: {fileID: 919132149155446097, guid: f9215fe09d13c664aad2aaf20632288f,
     type: 3}
   Type:
-    rid: 8580562844720037888
+    rid: 8580563072873136129
   references:
     version: 2
     RefIds:
-    - rid: 8580562844720037888
+    - rid: 8580563072873136129
       type: {class: R_ItemType_Tool, ns: , asm: Assembly-CSharp}
       data:
         Type: Tool
