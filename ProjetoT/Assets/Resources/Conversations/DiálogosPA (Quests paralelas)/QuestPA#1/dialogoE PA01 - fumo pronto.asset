@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 11400000, guid: ed5b515ddc9009c4bb5963d2a783e3d6, type: 2}
   Name: Caso o jogador fale com Maira novamente e o fumo estiver pronto
-  StartQuest: {fileID: 11400000, guid: 4152bd83730fb0b46a59d1ff1a59e01f, type: 2}
+  StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 11400000, guid: ead087e4de17a1843bee15167ffb4076,
     type: 2}
   Dialogues:
@@ -44,4 +44,29 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: DeleteQuest
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ed5b515ddc9009c4bb5963d2a783e3d6,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: ChangeNarrative
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
