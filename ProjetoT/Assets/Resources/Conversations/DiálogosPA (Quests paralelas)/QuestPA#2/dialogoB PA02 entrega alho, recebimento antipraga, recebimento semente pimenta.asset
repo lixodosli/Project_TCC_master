@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoB PA02
+  m_Name: dialogoB PA02 entrega alho, recebimento antipraga, recebimento semente
+    pimenta
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 11400000, guid: 7c4451749d155d14eb062242e42dd9d8, type: 2}
   Name: "Entregando o alho cescido para Maira, ela introduz outro conceito de extrato:

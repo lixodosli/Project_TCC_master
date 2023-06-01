@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoE PA01 - fumo pronto
+  m_Name: dialogoE PA01 - fumo pronto outros recebimentos
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 11400000, guid: ed5b515ddc9009c4bb5963d2a783e3d6, type: 2}
   Name: Caso o jogador fale com Maira novamente e o fumo estiver pronto

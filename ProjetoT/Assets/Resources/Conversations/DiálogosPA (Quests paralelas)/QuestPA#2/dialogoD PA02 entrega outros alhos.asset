@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoD PA02 pimenta
+  m_Name: dialogoD PA02 entrega outros alhos
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 11400000, guid: 79688c36db0c5634f827abb750713c35, type: 2}
-  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha pimenta
+  RequiredQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
+  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha alho
     no invent\xE1rio. "
-  StartQuest: {fileID: 11400000, guid: 79688c36db0c5634f827abb750713c35, type: 2}
+  StartQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
-    Text: "Mais extrato de pimenta pras planta n\xE3o criar fungo?"
+    Text: Mais extrato de alho pra afastar as pragas?
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
@@ -47,7 +47,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Name: 
-    Text: "Voc\xEA recebeu Extrato de pimenta (antif\xFAngico)."
+    Text: "Voc\xEA recebeu Extrato de alho (antipraga)."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

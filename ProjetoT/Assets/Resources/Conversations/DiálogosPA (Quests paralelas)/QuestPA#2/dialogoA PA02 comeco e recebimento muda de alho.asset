@@ -10,44 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoD PA02 alho
+  m_Name: dialogoA PA02 comeco e recebimento muda de alho
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
-  Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e tenha alho
-    no invent\xE1rio. "
-  StartQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
+  RequiredQuest: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1, type: 2}
+  Name: "Ao falar com maira ela revela ter conseguido uma muda de alho, planta capaz
+    de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
+  StartQuest: {fileID: 11400000, guid: 7c4451749d155d14eb062242e42dd9d8, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
-    Text: Mais extrato de alho pra afastar as pragas?
+    Text: "Que bom que voc\xEA t\xE1 aqui, Alan! Tenho uma boa not\xEDcia,"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
   - Name: Maira
-    Text: "Muito bem, s\xF3 um segundo."
-    Options: 
-    LettersPerSecond: 0
-    OnEndDialogue:
-      m_PersistentCalls:
-        m_Calls: []
-  - Name: 
-    Text: ...
+    Text: "porque aqui no meu quintal consegui cultivar uma cabe\xE7a de alho. \xC9
+      uma planta extremamente \xFAtil!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
   - Name: Maira
-    Text: "Pronto, aqui est\xE1:"
+    Text: "Al\xE9m da alimenta\xE7\xE3o ele tamb\xE9m \xE9 \xF3timo pra afastar as
+      pragas que s\xF3 o fumo de corda n\xE3o repele."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Aqui, pode levar esse bulbo pra tamb\xE9m poder cultivar alho voc\xEA
+      mesmo."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
   - Name: 
-    Text: "Voc\xEA recebeu Extrato de alho (antipraga)."
+    Text: "Voc\xEA recebeu Muda de alho."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
@@ -66,8 +69,15 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - Name: Maira
-    Text: "Sempre que precisar traga alho ou pimenta, que eu fa\xE7o mais desses
-      extrato que mant\xE9m as plantas saud\xE1vel."
+    Text: "Se trouxer um alho crescido aqui posso fazer um extrato antipraga pra
+      proteger sua planta\xE7\xE3o como te falei."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: Estarei esperando.
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

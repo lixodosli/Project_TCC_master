@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: "dialogoE PA01 N\xE3o tem erva"
+  m_Name: dialogoX PA04 negativa entrega
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: Caso o jogador fale com Maira sem ter erva
+  Name: "Ao falar com Ant\xF4nio ap\xF3s trazer os ingredientes."
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
-  - Name: Maira
-    Text: "Traga mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais
-      fumo de corda."
+  - Name: "Ant\xF4nio"
+    Text: "Preciso de: piment\xE3o, jil\xF3, batata doce e milho. Um de cada e j\xE1
+      vai dar bons espetinhos."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
