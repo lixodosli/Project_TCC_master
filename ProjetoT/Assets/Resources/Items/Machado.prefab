@@ -164,7 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Machado
   m_ItemID: Machado.59ab3f9f-1cd3-4c00-9377-06d16f3834a1
-  m_ItemSprite: {fileID: -2068497808, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: -1343934195, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}

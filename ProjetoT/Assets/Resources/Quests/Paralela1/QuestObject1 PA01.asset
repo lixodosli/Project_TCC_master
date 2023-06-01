@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d519fd6eaec9b6442a6c71a44eecbb37, type: 3}
+  m_Name: QuestObject1 PA01
+  m_EditorClassIdentifier: 
+  PreviousQuestRequired: {fileID: 0}
+  QuestName: Insetos indesejados
+  Steps:
+  - {fileID: 11400000, guid: 4a5bec50a92b87940be829efc08d16c8, type: 2}
+  - {fileID: 11400000, guid: d53624c2e7617704c86237c83b2c1692, type: 2}

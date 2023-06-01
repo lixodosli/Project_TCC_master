@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: dialogoE PR02
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Ao falar com ip\xE1 pela quinta vez"
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: "Ip\xE1"
+    Text: Oi, A-alan...
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Acho que... acho que \xE9 divertido falar com voc\xEA, sabia?"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Voc\xEA, sempre desse seu jeito...  me ouvindo como uma porta."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Nunca se op\xF5e \xE0s coisas que eu digo..."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: Eu me sinto bem, me sinto ouvido.
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Sem contar que voc\xEA ainda \xE9 gentil e trabalhador!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "N\xE3o maltrata a terra, fica o dia todo apenas preocupado em sobreviver
+      mais um dia."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Mas por algum motivo n\xE3o consigo desvencilhar voc\xEA dessa sua imagem
+      nojenta de ser humano!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Me desculpe, mas... N\xE3o sou eu, \xE9 voc\xEA o problema!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Acho que para o bem de n\xF3s dois \xE9 melhor s\xF3 prosseguirmos e apenas
+      esquecermos o que aconteceu."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Um dia ainda vou rasgar a sua garganta e tudo isso n\xE3o ter\xE1 passado
+      de uma grande reca\xEDda."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: "Humpf! At\xE9 parece, n\xE9, Ip\xE1? WHAHAHAHAHAHA!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ip\xE1"
+    Text: Agora, sobre as oferendas!
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
