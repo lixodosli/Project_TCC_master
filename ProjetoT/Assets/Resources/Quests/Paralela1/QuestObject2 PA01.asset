@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviousQuestRequired: {fileID: 11400000, guid: f5e658d5ca369c84c80f5f1776e680f2,
     type: 2}
-  QuestName: Insetos indesejados
+  QuestName: Insetos indesejados recebimento
   Steps:
   - {fileID: 11400000, guid: 30f7504ce84d7ac45ad1ce72737cacdf, type: 2}
