@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: dialogoA PR00
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Primeiro di\xE1logo; obrigat\xF3rio, ocorre assim que o jogo come\xE7a"
+  Name: "Primeiro di\xE1logo. obrigat\xF3rio, ocorre assim que o jogo come\xE7a"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

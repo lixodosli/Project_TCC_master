@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: dialogoA PR02
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "\"A entidade pr\xF3xima ao vilarejo\"\nH\xE1 noites em que Alan acorda no
-    meio da floresta sem saber o porqu\xEA. Nessas ocasi\xF5es ele se encontra com
-    uma medonha criaturinhaque habita o po\xE7o. "
+  Name: "H\xE1 noites em que Alan acorda no meio da floresta sem saber o porqu\xEA.
+    Nessas ocasi\xF5es ele se encontra com uma medonha criaturinhaque habita o po\xE7o. "
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

@@ -15,5 +15,4 @@ MonoBehaviour:
   PreviousQuestRequired: {fileID: 0}
   QuestName: Insetos indesejados
   Steps:
-  - {fileID: 11400000, guid: 4a5bec50a92b87940be829efc08d16c8, type: 2}
   - {fileID: 11400000, guid: d53624c2e7617704c86237c83b2c1692, type: 2}

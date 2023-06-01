@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: dialogoA PR03
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "\"Estou chegando para acabar com voc\xEAs\"\nIp\xE1 finalmente juntou for\xE7as
-    o suficiente para se libertar de seu aprisionamento e assumir sua real forma
-    e promete viol\xEAncia. O jogador deve dentro de sete dias plantar colher e jogar
-    no po\xE7o de Ip\xE1 a planta desconhecida que Clodoaldo lhe deu para impedir
-    que isso aconte\xE7a."
+  Name: "Ip\xE1 finalmente juntou for\xE7as o suficiente para se libertar de seu
+    aprisionamento e assumir sua real forma e promete viol\xEAncia. O jogador deve
+    dentro de sete dias plantar colher e jogar no po\xE7o de Ip\xE1 a planta desconhecida
+    que Clodoaldo lhe deu para impedir que isso aconte\xE7a."
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

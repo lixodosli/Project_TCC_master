@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
-  m_Name: QO1 passo1 PA01
+  m_Name: QO1 passo PA01
   m_EditorClassIdentifier: 
-  StepName: "Intera\xE7\xE3o inicial"
-  StepDescription: falar com a maira
+  StepName: Entrega
+  StepDescription: Entregar as ervas daninhas para maira
   Condition:
-    rid: 4653522037074296834
+    rid: 4653522037074296835
   references:
     version: 2
     RefIds:
-    - rid: 4653522037074296834
-      type: {class: InteractWithSomething, ns: , asm: Assembly-CSharp}
+    - rid: 4653522037074296835
+      type: {class: UseSomeItem, ns: , asm: Assembly-CSharp}
       data:
-        Times: 0
+        Times: 3
         ID: 
         Type: 0
-        Interactable: {fileID: 0}
+        ItemToUse: {fileID: 0}

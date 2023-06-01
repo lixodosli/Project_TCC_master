@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: dialogoA PA02
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1, type: 2}
-  Name: "\"Antipragas e antif\xFAngicos\".\nAo falar com maira ela revela ter conseguido
-    uma muda de alho, planta capaz de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
+  Name: "Ao falar com maira ela revela ter conseguido uma muda de alho, planta capaz
+    de ajudar na manuten\xE7\xE3o da sa\xFAde de outras."
   StartQuest: {fileID: 11400000, guid: 7c4451749d155d14eb062242e42dd9d8, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

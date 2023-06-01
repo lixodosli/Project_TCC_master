@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3567805444749644299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162160072371265440}
+  - component: {fileID: 3204356337270335250}
+  m_Layer: 0
+  m_Name: Maira
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &162160072371265440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567805444749644299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3204356337270335250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567805444749644299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0130fe76caf33b4082ac6ca40e352be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ItemName: Maira
+  m_ItemID: 
+  m_ItemSprite: {fileID: 0}
+  m_CanInteract: 0
+  m_CanCollect: 0
+  m_OnInteractSFX: {fileID: 0}
+  Narratives:
+  - Conversations:
+    - {fileID: 11400000, guid: acb866a40adc98244b23675ea94c4a44, type: 2}
+    - {fileID: 11400000, guid: 48564bdc1ee06ef47ab1944976801d11, type: 2}
+    CurrentConversationIndex: 0
+  - Conversations:
+    - {fileID: 11400000, guid: 43d42394e64600b459d6bd78f057a3d2, type: 2}
+    - {fileID: 11400000, guid: 48564bdc1ee06ef47ab1944976801d11, type: 2}
+    - {fileID: 11400000, guid: 87ff350411790ca42801362c53d90742, type: 2}
+    CurrentConversationIndex: 0
+  - Conversations:
+    - {fileID: 11400000, guid: 138c57f80b5894b4c84f5386f224c02b, type: 2}
+    - {fileID: 11400000, guid: 0b54d94b5a3453e4f93f4f1f47641b23, type: 2}
+    CurrentConversationIndex: 0
+  - Conversations:
+    - {fileID: 11400000, guid: ddb6a38fc823c6e4787ba31d60f6faa3, type: 2}
+    - {fileID: 11400000, guid: ead087e4de17a1843bee15167ffb4076, type: 2}
+    CurrentConversationIndex: 0
+  CurrentNarrativeIndex: 0
