@@ -97,8 +97,84 @@ public class InteractWithSomething : Condition
     }
 }
 
+public enum WaitType { WaitTimeInDays, WaitTimeInHours };
+
 [System.Serializable]
-public class WaitForSomethihg : Condition
+public class WaitForSomeTime : Condition
 {
+    public WaitType WaitType;
+    private int StartHour;
+    private int StartDay;
+
+    public override void Start()
+    {
+        ConditionCompleted = false;
+        StartHour = TimeManager.TotalHours;
+        StartDay = TimeManager.CurrentDay;
+        TimeManager.Instance.OnTotalHourChange += UpdateCondition;
+    }
+
+    public void UpdateCondition(int time)
+    {
+        bool conditionToEnd = WaitType == WaitType.WaitTimeInDays ? TimeManager.CurrentDay >= StartDay + Times : TimeManager.TotalHours >= StartHour + Times;
+
+        if (conditionToEnd)
+        {
+            ConditionCompleted = true;
+            TimeManager.Instance.OnTotalHourChange -= UpdateCondition;
+        }
+    }
+}
+
+[System.Serializable]
+public class NeedSomeItem : Condition
+{
+    public Interactable PlaceToDelieverTheItems;
+    public Item[] ItemsNeeded;
+
+    public override void Start()
+    {
+        ConditionCompleted = false;
+        InteractableInstigator.Instance.OnInteract += CheckInventory;
+    }
+
+    public void CheckInventory(Interactable deliver)
+    {
+        if (deliver.ItemName != PlaceToDelieverTheItems.ItemName)
+            return;
+
+        // Create a dictionary to store the count of each item in the Inventory
+        Dictionary<Item, int> inventoryCount = new Dictionary<Item, int>();
+
+        // Count the items in the Inventory
+        foreach (Item item in Inventory.Instance.Items)
+        {
+            if (inventoryCount.ContainsKey(item))
+            {
+                inventoryCount[item]++;
+            }
+            else
+            {
+                inventoryCount[item] = 1;
+            }
+        }
+
+        // Check if the Inventory contains every item in the ItemsNeeded array
+        foreach (Item item in ItemsNeeded)
+        {
+            // If the item is not in the Inventory or the count is less than needed, return false
+            if (!inventoryCount.ContainsKey(item) || inventoryCount[item] == 0)
+            {
+                ConditionCompleted = false;
+            }
+
+            // Decrement the count of the item in the Inventory
+            inventoryCount[item]--;
+        }
+
+        // If all items in ItemsNeeded are found in the Inventory, return true
+        ConditionCompleted = true;
+        InteractableInstigator.Instance.OnInteract -= CheckInventory;
+    }
 
 }

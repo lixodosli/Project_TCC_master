@@ -10,9 +10,10 @@ public class QuestStep : ScriptableObject
     [SerializeReference] public Condition Condition;
 
     #region Menu
-    public void AddUseItemCondition() { Condition = new UseSomeItem(); }
-    public void AddInteractCondition() { Condition = new InteractWithSomething(); }
-    public void AddWaitCondition() { Condition = new WaitForSomethihg(); }
-    public void ResetCondition() { Condition = null; }
+    [ContextMenu("Add Use Item Condition")] public void AddUseItemCondition() { Condition = new UseSomeItem(); }
+    [ContextMenu("Add Do Interaction Condition")] public void AddInteractCondition() { Condition = new InteractWithSomething(); }
+    [ContextMenu("Add Wait Condition")] public void AddWaitCondition() { Condition = new WaitForSomeTime(); }
+    [ContextMenu("Add Need Some Item Condition")] public void AddNeedSomeItem() { Condition = new NeedSomeItem(); }
+    [ContextMenu("Reset Condition")] public void ResetCondition() { Condition = null; }
     #endregion
 }
