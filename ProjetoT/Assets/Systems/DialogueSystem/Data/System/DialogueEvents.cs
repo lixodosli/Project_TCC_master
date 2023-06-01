@@ -22,6 +22,11 @@ public class DialogueEvents : ScriptableObject
         Debug.Log("Toma essa quest ai hihi");
     }
 
+    public void DeleteQuest(Quest quest)
+    {
+        PlayerQuests.Instance.RemoveQuest(quest);
+    }
+
     public void RemoveItem(Item item)
     {
         Debug.Log("ME DA ESSA BOSTA");

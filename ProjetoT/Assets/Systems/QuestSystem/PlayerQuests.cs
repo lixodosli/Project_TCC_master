@@ -21,7 +21,7 @@ public class PlayerQuests : MonoBehaviour
         if (!HasCondition(quest))
             return;
 
-        Messenger.Broadcast<string>(QuestTracker, quest.QuestName);
+        Messenger.Broadcast<string>(QuestTracker, quest.QuestName); // provisorio, tem que tirar
 
         QuestsSteps.Add(quest, 0);
         QuestsList.Add(quest);
@@ -38,6 +38,17 @@ public class PlayerQuests : MonoBehaviour
         else debug += "Condição não encontrada.";
 
         Debug.Log(debug);
+    }
+
+    public void RemoveQuest(Quest quest)
+    {
+        bool haveQuest = QuestsList.Find(q => q.name == quest.name);
+
+        if(!haveQuest)
+            return;
+
+        QuestsSteps.Remove(quest);
+        QuestsList.Remove(quest);
     }
 
     public bool IsCompleted(Quest quest)
