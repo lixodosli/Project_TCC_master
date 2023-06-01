@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: dialogoA PA03
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "\"Temperamento forte\"\nAnt\xF4nio precisa repor seu estoque de especiarias,
-    furtado por um vulto."
+  Name: "Ant\xF4nio precisa repor seu estoque de especiarias, furtado por um vulto."
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

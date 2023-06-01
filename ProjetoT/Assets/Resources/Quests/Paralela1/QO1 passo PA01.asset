@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
+  m_Name: QO1 passo PA01
+  m_EditorClassIdentifier: 
+  StepName: Entrega
+  StepDescription: Entregar as ervas daninhas para maira
+  Condition:
+    rid: 4653522037074296835
+  references:
+    version: 2
+    RefIds:
+    - rid: 4653522037074296835
+      type: {class: UseSomeItem, ns: , asm: Assembly-CSharp}
+      data:
+        Times: 3
+        ID: 
+        Type: 0
+        ItemToUse: {fileID: 0}

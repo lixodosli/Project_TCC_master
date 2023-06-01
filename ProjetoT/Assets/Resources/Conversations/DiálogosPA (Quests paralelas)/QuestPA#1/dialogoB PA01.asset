@@ -15,7 +15,8 @@ MonoBehaviour:
   RequiredQuest: {fileID: 11400000, guid: f5e658d5ca369c84c80f5f1776e680f2, type: 2}
   Name: "Ap\xF3s entregar as ervas daninhas para Maira"
   StartQuest: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1, type: 2}
-  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 11400000, guid: 48564bdc1ee06ef47ab1944976801d11,
+    type: 2}
   Dialogues:
   - Name: Maira
     Text: "\xD3timo, \xE9 essa planta mesmo!"
@@ -46,4 +47,16 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: AdvanceNarrative
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
