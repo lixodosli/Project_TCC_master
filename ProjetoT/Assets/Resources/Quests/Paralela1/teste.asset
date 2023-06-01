@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bebe392b00987fd41a63ca6cd1b659e9, type: 3}
-  m_Name: QO1 passo PA01
+  m_Name: teste
   m_EditorClassIdentifier: 
   StepName: Entrega
   StepDescription: Entregar as ervas daninhas para maira
