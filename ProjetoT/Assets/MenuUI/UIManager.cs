@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
 
    public List<Transform> menuAniBu = new List<Transform>();
 
+   public string cena;
    public float fadeTime = 1f;
    public float fadeLogoTime = 1f;
    public float fadeElasticTime = 1f;
@@ -112,5 +115,13 @@ public class UIManager : MonoBehaviour
             menuAniBu[i].DOScale(1f, .25f);
         }
         
+    }
+   public void QuitGame()
+    {
+        Application.Quit();
+    }
+   public void StartGame()
+    {
+        SceneManager.LoadScene(cena);
     }
 }
