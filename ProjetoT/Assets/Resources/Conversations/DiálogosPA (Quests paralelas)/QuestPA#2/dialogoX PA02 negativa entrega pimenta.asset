@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoE PA01
+  m_Name: dialogoX PA02 negativa entrega pimenta
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: Caso o jogador fale com Maira novamente antes do fumo estar pronto
+  Name: "Caso o jogador fale com Maira e ainda N\xC3O tenha pimenta no invent\xE1rio. "
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
-    Text: "Sobre o fumo de corda, as folhas de tabaco ainda n\xE3o secaram totalmente,
-      ainda n\xE3o posso tran\xE7\xE1-las."
+    Text: "Do mesmo jeito que voc\xEA fez com o alho, \xE9 s\xF3 me trazer essas
+      pimentas crescida que eu fa\xE7o o extrato pra gente."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

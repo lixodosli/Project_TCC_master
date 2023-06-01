@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoD PA01
+  m_Name: dialogoD PA01 outras entregas
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 11400000, guid: 4152bd83730fb0b46a59d1ff1a59e01f, type: 2}
   Name: "Caso o jogador tenha conclu\xEDdo a miss\xE3o e com erva-daninha no invent\xE1rio

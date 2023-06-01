@@ -10,22 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
-  m_Name: dialogoC PA01
+  m_Name: dialogoC PA02 entrega pimenta e recebimento antifungico
   m_EditorClassIdentifier: 
-  RequiredQuest: {fileID: 11400000, guid: 5929ca980a0251943a1872e483524ae1, type: 2}
-  Name: Ao falar com Maira depois dos 3 dias
-  StartQuest: {fileID: 11400000, guid: 4152bd83730fb0b46a59d1ff1a59e01f, type: 2}
+  RequiredQuest: {fileID: 11400000, guid: 2afcd0d3b630fc44490f8721e4a297fc, type: 2}
+  Name: Ao trazer a pimenta crescida
+  StartQuest: {fileID: 11400000, guid: ddf1db5288f9b1d4cbddf23842938012, type: 2}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
   - Name: Maira
-    Text: "Aqui est\xE1, como prometido."
+    Text: "Voc\xEA trouxe a pimenta tamb\xE9m! Me d\xE1 s\xF3 um segundo..."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
   - Name: 
-    Text: "Voc\xEA recebeu Fumo de corda."
+    Text: ...
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Maira
+    Text: "Pronto, aqui est\xE1"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Extrato de pimenta (antif\xFAngico)."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
@@ -44,16 +58,16 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - Name: Maira
-    Text: "Usando no meio da planta\xE7\xE3o suas folhosa n\xE3o v\xE3o ser atacada
-      por pelo menos uns cinco dia."
+    Text: "Borrifando isso em certas plantas que sofrem com infec\xE7\xE3o por fungos,
+      voc\xEA n\xE3o ter\xE1 mais esse problema."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
         m_Calls: []
   - Name: Maira
-    Text: "Traga mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais
-      fumo de corda"
+    Text: "A partir de agora, sempre que precisar traga alho ou pimenta, que eu fa\xE7o
+      mais desses extrato que mant\xE9m as plantas saud\xE1vel."
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

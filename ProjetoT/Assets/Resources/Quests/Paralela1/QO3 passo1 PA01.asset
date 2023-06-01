@@ -15,14 +15,17 @@ MonoBehaviour:
   StepName: "entrega p\xF3s conclus\xE3o da quest"
   StepDescription: dar mais ervas daninhas para maira
   Condition:
-    rid: 4653522037074296838
+    rid: 1506305683715260416
   references:
     version: 2
     RefIds:
-    - rid: 4653522037074296838
-      type: {class: UseSomeItem, ns: , asm: Assembly-CSharp}
+    - rid: 1506305683715260416
+      type: {class: NeedSomeItem, ns: , asm: Assembly-CSharp}
       data:
-        Times: 3
+        Times: 0
         ID: 
         Type: 0
-        ItemToUse: {fileID: 0}
+        PlaceToDelieverTheItems: {fileID: 3204356337270335250, guid: 63ef5deb3f3d8584fb3443a3f0799dbc,
+          type: 3}
+        ItemsNeeded:
+        - {fileID: 0}
