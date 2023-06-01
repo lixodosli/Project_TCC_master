@@ -8,7 +8,7 @@ public class Conversation : ScriptableObject
 {
     public Quest RequiredQuest;
     [TextArea] public string Name;
-    public Quest StartQuest;
+    public Quest StartQuest; //QuestToBeStartedWhenTheConversationIsOver;
     public Conversation ConversationIfDontHaveRequiredQuest;
     public List<Dialogue> Dialogues = new List<Dialogue>();
 }
