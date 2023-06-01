@@ -115,4 +115,10 @@ public class ToolTip : MonoBehaviour
     {
         m_TipBox_Elements.gameObject.SetActive(false);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(transform.position + TipBox_PivotTargetOffset, 0.05f);
+    }
 }
