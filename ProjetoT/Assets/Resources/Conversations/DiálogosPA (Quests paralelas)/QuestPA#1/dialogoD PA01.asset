@@ -16,10 +16,11 @@ MonoBehaviour:
   Name: "Caso o jogador tenha conclu\xEDdo a miss\xE3o e com erva-daninha no invent\xE1rio
     fale com Maira"
   StartQuest: {fileID: 11400000, guid: ed5b515ddc9009c4bb5963d2a783e3d6, type: 2}
-  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 11400000, guid: 0b54d94b5a3453e4f93f4f1f47641b23,
+    type: 2}
   Dialogues:
   - Name: Maira
-    Text: Muito bem, vou colocar as olhas pra secarem.
+    Text: Muito bem, vou colocar as folhas pra secarem.
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:
@@ -31,4 +32,16 @@ MonoBehaviour:
     LettersPerSecond: 0
     OnEndDialogue:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6e880470aced3c0408b551a4231bacea, type: 2}
+          m_TargetAssemblyTypeName: DialogueEvents, Assembly-CSharp
+          m_MethodName: AdvanceNarrative
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
