@@ -22,13 +22,14 @@ public class InteractableInstigator : MonoBehaviour
     {
         PlayerInputManager.Instance.PlayerInput.World.Action.performed -= OnInteractionTriggered;
     }
-
+    
     private void OnInteractionTriggered(InputAction.CallbackContext context)
     {
         if (GameStateManager.Game.State != GameState.World_Free || NearbyInteractables.ClosestInteractable == null)
             return;
 
         NearbyInteractables.ClosestInteractable.DoInteraction();
+        Debug.Log($"Trigou Interactable <{NearbyInteractables.ClosestInteractable.ItemName}>");
         OnInteract?.Invoke(NearbyInteractables.ClosestInteractable);
     }
 }
