@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Goiaba
   m_ItemID: Goiaba.5fe8b568-f480-4a6e-a74f-7ff4927d6835
-  m_ItemSprite: {fileID: 1505831322, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: 439917980, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}

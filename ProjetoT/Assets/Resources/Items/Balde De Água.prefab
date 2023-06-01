@@ -165,9 +165,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: "Balde De \xC1gua"
   m_ItemID: 
-  m_ItemSprite: {fileID: 21300000, guid: 2c936abd14c89de438454f106d151c1a, type: 3}
+  m_ItemSprite: {fileID: 460710431, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
+  m_OnInteractSFX: {fileID: 0}
+  m_InteractWithClosest: 0
+  Effects: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &3791583461524819436
 MonoBehaviour:
   m_ObjectHideFlags: 0

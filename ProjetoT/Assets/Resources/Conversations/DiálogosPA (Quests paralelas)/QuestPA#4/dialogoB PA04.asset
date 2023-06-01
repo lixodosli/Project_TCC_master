@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: dialogoB PA04
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "Ao falar com Ant\xF4nio ap\xF3s trazer os ingredientes."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: "Ant\xF4nio"
+    Text: "Maravilha, voc\xEA trouxe!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Valeu, Alan, v\xE3o adorar o que irei preparar aqui juntando o que tenho
+      e o que voc\xEA trouxe."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: 'Aqui, fica com isso:'
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Saco de arroz."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Vai l\xE1 e leva isso pra sua caixa de estocagem."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Tenho certeza que todos v\xE3o adorar comer os espetinhos junto com esse
+      arroz indo pra contribui\xE7\xE3o comunit\xE1ria."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Clodoaldo vai ficar muito feliz amanh\xE3 quando eu levar os espetinhos
+      para todos pessoalmente."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Farei quest\xE3o de dier que tamb\xE9m foi gra\xE7as a voc\xEA."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

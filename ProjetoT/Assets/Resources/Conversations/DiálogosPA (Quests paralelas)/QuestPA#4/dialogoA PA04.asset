@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f4ea6144ba83c478ceff6ea9099f3d, type: 3}
+  m_Name: dialogoA PA04
+  m_EditorClassIdentifier: 
+  RequiredQuest: {fileID: 0}
+  Name: "\"Churrasquinho vegano\"\nAnt\xF4nio quer fazer um churrasquinho simples
+    para compartilhar com todos."
+  StartQuest: {fileID: 0}
+  ConversationIfDontHaveRequiredQuest: {fileID: 0}
+  Dialogues:
+  - Name: "Ant\xF4nio"
+    Text: "Ol\xE1, Alan!"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Queria parabenizar voc\xEA pelo seu trabalho, sua horta parece andar muito
+      bem."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Gra\xE7as ao esfor\xE7o de todos do vilarejo j\xE1 n\xE3o se passa mais
+      extrema necessidade como antes."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Ei, o que voc\xEA acha de comemorarmos isso? Tava pensando em assar alguma
+      coisa bem temperada e compartilhar com todos."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Se n\xE3o lhe fizer falta, \xE9 s\xF3 me trazer algumas coisas que t\xE1
+      \xF3timo."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Talvez: piment\xE3o, jil\xF3 e batata doce. um de cada j\xE1 vai dar bons
+      espetinhos."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Milho caia bem tamb\xE9m, mas voc\xEA ainda n\xE3o cultiva, estou certo?"
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: 
+    Text: "Voc\xEA recebeu Sementes de milho."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "Consegui esses gr\xE3os recentemente, pode ficar com eles pra sua produ\xE7\xE3o."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: "Ant\xF4nio"
+    Text: "S\xF3 n\xE3o esquece de separar um pro nosso churrasquinho."
+    Options: 
+    LettersPerSecond: 0
+    OnEndDialogue:
+      m_PersistentCalls:
+        m_Calls: []

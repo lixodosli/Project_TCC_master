@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Cebola
   m_ItemID: Cebola.dfb37a87-6796-424b-9f2c-3785552d816f
-  m_ItemSprite: {fileID: -63171678, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: -874036233, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}

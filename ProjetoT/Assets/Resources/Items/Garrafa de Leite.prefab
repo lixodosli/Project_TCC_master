@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemName: Garrafa de Leite
   m_ItemID: Garrafa de Leite.92e7e590-73c5-4222-ae88-7ded019a7ca6
-  m_ItemSprite: {fileID: 538415208, guid: 137af010d0d176d4b923bcdfa08405ef, type: 3}
+  m_ItemSprite: {fileID: 758749872, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
