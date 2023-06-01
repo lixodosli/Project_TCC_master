@@ -8,8 +8,8 @@ public class R_PlayerItemInstigator : MonoBehaviour
 {
     public R_Inventory Inventory;
 
-    private List<R_ItemHolder> ItemsClose = new List<R_ItemHolder>();
-    public static R_ItemHolder ClosestItem;
+    private List<R_Item> ItemsClose = new List<R_Item>();
+    public static R_Item ClosestItem;
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class R_PlayerItemInstigator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent<R_ItemHolder>(out var item))
+        if(other.TryGetComponent<R_Item>(out var item))
         {
             ItemsClose.Add(item);
         }
@@ -49,7 +49,7 @@ public class R_PlayerItemInstigator : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.TryGetComponent<R_ItemHolder>(out var item))
+        if(other.TryGetComponent<R_Item>(out var item))
         {
             ItemsClose.Remove(item);
         }
