@@ -12,6 +12,9 @@ public class TimeManager : MonoBehaviour
     public static int CurrentDay = 1;
     public static int TotalHours => CurrentDay * 24 + CurrentHour;
 
+    public delegate void TimeCallback(int time);
+    public TimeCallback OnTotalHourChange;
+
     private List<GEvent> _EndOfDayFunctions = new List<GEvent>();
 
     private void Awake()
@@ -42,6 +45,8 @@ public class TimeManager : MonoBehaviour
             CurrentHour -= 24;
             CurrentDay++;
         }
+
+        OnTotalHourChange?.Invoke(TotalHours);
     }
 
     public void ExecuteEndOfDayFunctions()

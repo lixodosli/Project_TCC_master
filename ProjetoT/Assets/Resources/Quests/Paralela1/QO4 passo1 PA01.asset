@@ -15,13 +15,15 @@ MonoBehaviour:
   StepName: "p\xF3s espera p\xF3s conclus\xE3o da quest"
   StepDescription: Esperar os 3 dias para o fumo ficar pronto
   Condition:
-    rid: 4653522037074296839
+    rid: 6470089400874172416
   references:
     version: 2
     RefIds:
-    - rid: 4653522037074296839
-      type: {class: WaitForSomethihg, ns: , asm: Assembly-CSharp}
+    - rid: 6470089400874172416
+      type: {class: NeedSomeItem, ns: , asm: Assembly-CSharp}
       data:
         Times: 0
         ID: 
         Type: 0
+        PlaceToDelieverTheItems: {fileID: 0}
+        ItemsNeeded: []
