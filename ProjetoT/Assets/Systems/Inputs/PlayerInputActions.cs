@@ -98,6 +98,24 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InventoryRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""e7ecdf2b-e175-4e5d-9032-0ceffbe74753"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InventoryLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""5743d8f8-392d-4f4e-88e2-7c469872e29a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -115,7 +133,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a6036355-1b59-409a-9b00-a7ae922c2ea9"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -276,6 +294,28 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""InventoryNavigateDown"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""56829e36-4735-4bfd-ad3d-bf5bfe06f787"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7d70ed93-d94a-49c5-8c52-80f467a29c49"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -292,6 +332,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_World_InventoryNavigateLeft = m_World.FindAction("InventoryNavigateLeft", throwIfNotFound: true);
         m_World_InventoryNavigateUp = m_World.FindAction("InventoryNavigateUp", throwIfNotFound: true);
         m_World_InventoryNavigateDown = m_World.FindAction("InventoryNavigateDown", throwIfNotFound: true);
+        m_World_InventoryRight = m_World.FindAction("InventoryRight", throwIfNotFound: true);
+        m_World_InventoryLeft = m_World.FindAction("InventoryLeft", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -359,6 +401,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_World_InventoryNavigateLeft;
     private readonly InputAction m_World_InventoryNavigateUp;
     private readonly InputAction m_World_InventoryNavigateDown;
+    private readonly InputAction m_World_InventoryRight;
+    private readonly InputAction m_World_InventoryLeft;
     public struct WorldActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -371,6 +415,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @InventoryNavigateLeft => m_Wrapper.m_World_InventoryNavigateLeft;
         public InputAction @InventoryNavigateUp => m_Wrapper.m_World_InventoryNavigateUp;
         public InputAction @InventoryNavigateDown => m_Wrapper.m_World_InventoryNavigateDown;
+        public InputAction @InventoryRight => m_Wrapper.m_World_InventoryRight;
+        public InputAction @InventoryLeft => m_Wrapper.m_World_InventoryLeft;
         public InputActionMap Get() { return m_Wrapper.m_World; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -404,6 +450,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @InventoryNavigateDown.started -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryNavigateDown;
                 @InventoryNavigateDown.performed -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryNavigateDown;
                 @InventoryNavigateDown.canceled -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryNavigateDown;
+                @InventoryRight.started -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryRight;
+                @InventoryRight.performed -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryRight;
+                @InventoryRight.canceled -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryRight;
+                @InventoryLeft.started -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryLeft;
+                @InventoryLeft.performed -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryLeft;
+                @InventoryLeft.canceled -= m_Wrapper.m_WorldActionsCallbackInterface.OnInventoryLeft;
             }
             m_Wrapper.m_WorldActionsCallbackInterface = instance;
             if (instance != null)
@@ -432,6 +484,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @InventoryNavigateDown.started += instance.OnInventoryNavigateDown;
                 @InventoryNavigateDown.performed += instance.OnInventoryNavigateDown;
                 @InventoryNavigateDown.canceled += instance.OnInventoryNavigateDown;
+                @InventoryRight.started += instance.OnInventoryRight;
+                @InventoryRight.performed += instance.OnInventoryRight;
+                @InventoryRight.canceled += instance.OnInventoryRight;
+                @InventoryLeft.started += instance.OnInventoryLeft;
+                @InventoryLeft.performed += instance.OnInventoryLeft;
+                @InventoryLeft.canceled += instance.OnInventoryLeft;
             }
         }
     }
@@ -446,5 +504,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnInventoryNavigateLeft(InputAction.CallbackContext context);
         void OnInventoryNavigateUp(InputAction.CallbackContext context);
         void OnInventoryNavigateDown(InputAction.CallbackContext context);
+        void OnInventoryRight(InputAction.CallbackContext context);
+        void OnInventoryLeft(InputAction.CallbackContext context);
     }
 }
