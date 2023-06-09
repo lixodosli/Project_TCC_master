@@ -78,22 +78,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "InventoryRight",
-                    "type": "Button",
-                    "id": "e7ecdf2b-e175-4e5d-9032-0ceffbe74753",
-                    "expectedControlType": "Button",
+                    "name": "ChangeInventory",
+                    "type": "Value",
+                    "id": "29ad8ab6-293f-4de9-b201-fcc1c3aa7e81",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "InventoryLeft",
-                    "type": "Button",
-                    "id": "5743d8f8-392d-4f4e-88e2-7c469872e29a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -274,26 +265,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "56829e36-4735-4bfd-ad3d-bf5bfe06f787",
-                    "path": "<Keyboard>/e",
+                    "name": "1D Axis",
+                    "id": "d6622ae4-ac21-49d2-801e-9a5e8714db81",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "InventoryRight",
-                    "isComposite": false,
+                    "action": "ChangeInventory",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "7d70ed93-d94a-49c5-8c52-80f467a29c49",
+                    "name": "Negative",
+                    "id": "3573c40a-6a41-4b84-9237-0c64ab6486b9",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "InventoryLeft",
+                    "action": "ChangeInventory",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "d99e6a91-b6e0-43b2-9bf2-40ea5e7c2fbc",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
