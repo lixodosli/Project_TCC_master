@@ -16,6 +16,9 @@ MonoBehaviour:
   Text: Volta aqui depois desse tempo, vou te dar uma parte por ter me trazido de
     bom grado.
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870977
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -23,3 +26,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870977
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: 0358274af04616b4daf3cdf8eb73a0a6,
+          type: 2}

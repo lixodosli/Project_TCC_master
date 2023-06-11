@@ -26,13 +26,13 @@ public class DialogueNode : ScriptableObject
 
     public void DoEffects() => Effects.ForEach(e => e.DoEffect());
 
-    public virtual DialogueNode Dialogue() => this;
+    public virtual DialogueNode NextDialogue() { return null; }
 }
 
 [System.Serializable]
 public class DialogueEffect
 {
-    public NPC ReferenceNPC;
+    public NPCConfig ReferenceNPC;
 
     public virtual void DoEffect()
     {
@@ -57,7 +57,7 @@ public class MoveNPCEffect : DialogueEffect
 
     public override void DoEffect()
     {
-        ReferenceNPC.transform.position = NewPosition.transform.position;
+        //ReferenceNPC.transform.position = NewPosition.transform.position;
     }
 }
 

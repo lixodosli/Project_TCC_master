@@ -19,7 +19,8 @@ public class NewDialogueSystem : MonoBehaviour
     {
         m_Conversation = conversation;
 
-        _CurrentDialogueNode = m_Conversation.FirstDialogue;
+        _CurrentDialogueNode = m_Conversation.FirstDialogue.Text == "" ? m_Conversation.FirstDialogue.NextDialogue() : m_Conversation.FirstDialogue;
+
         if (_CurrentDialogueNode == null)
         {
             Debug.LogError("No first dialogue node found in the conversation.");
@@ -27,6 +28,9 @@ public class NewDialogueSystem : MonoBehaviour
         }
 
         DisplayCurrentDialogue();
+
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed += PassDialogue;
+        GameStateManager.Game.RaiseChangeGameState(GameState.Cutscene);
     }
 
     public void DisplayCurrentDialogue()
@@ -50,6 +54,7 @@ public class NewDialogueSystem : MonoBehaviour
         m_DialogueUI.HideDialogue();
         _CurrentDialogueNode = null;
         m_Conversation = null;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PassDialogue;
         GameStateManager.Game.RaiseChangeGameState(GameState.World_Free);
     }
 
@@ -62,7 +67,7 @@ public class NewDialogueSystem : MonoBehaviour
             if (!_CurrentDialogueNode.DoEffectsOnStart)
                 _CurrentDialogueNode.DoEffects();
 
-            _CurrentDialogueNode = _CurrentDialogueNode.Dialogue();
+            _CurrentDialogueNode = _CurrentDialogueNode.NextDialogue();
             DisplayCurrentDialogue();
         }
     }

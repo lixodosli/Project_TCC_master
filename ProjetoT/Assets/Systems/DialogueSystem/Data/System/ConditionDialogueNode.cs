@@ -15,15 +15,15 @@ public class ConditionDialogueNode : DialogueNode
     public DialogueNode IfTrue;
     public DialogueNode IfFalse;
 
-    public override DialogueNode Dialogue()
+    public override DialogueNode NextDialogue()
     {
         foreach (DialogueCondition condition in Conditions)
         {
             if (!condition.HaveCondition())
-                return IfFalse.Dialogue();
+                return IfFalse;
         }
 
-        return IfTrue.Dialogue();
+        return IfTrue;
     }
 }
 
@@ -44,11 +44,24 @@ public class ItemDialogueCondition : DialogueCondition
     {
         Item[] itemsInInventory = Inventory.Instance.Items;
         int checkageCount = 0;
+        bool haveItem = false;
 
         foreach (Item item in itemsInInventory)
         {
-            if(item.ItemName == ItemToCheck.ItemName)
-                checkageCount++;
+            if (item != null)
+            {
+                haveItem = true;
+                break;
+            }
+        }
+
+        if (haveItem)
+        {
+            foreach (Item item in Inventory.Instance.Items)
+            {
+                if(item != null && item.ItemName == ItemToCheck.ItemName)
+                    checkageCount++;
+            }
         }
 
         if (checkageCount >= ItemQuantity)

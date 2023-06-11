@@ -7,5 +7,5 @@ public class SimpleDialogueNode : DialogueNode
     [Header("Structure")]
     public DialogueNode NextDialog;
 
-    public override DialogueNode Dialogue() => NextDialog;
+    public override DialogueNode NextDialogue() => NextDialog;
 }
