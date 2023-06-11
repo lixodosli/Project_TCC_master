@@ -17,7 +17,7 @@ MonoBehaviour:
     na nossa regi\xE3o."
   LettersPerSecond: 0
   Effects:
-  - rid: 6470089634015870976
+  - rid: 6470089634015870979
   DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
@@ -29,10 +29,9 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6470089634015870976
+    - rid: 6470089634015870979
       type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
       data:
-        ReferenceNPC: {fileID: 3204356337270335250, guid: 63ef5deb3f3d8584fb3443a3f0799dbc,
-          type: 3}
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
         NewConversation: {fileID: 11400000, guid: ccac762e18df831478a490481c3d26d2,
           type: 2}

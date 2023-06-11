@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Maira_PA01_EntregaErvasDaninhas
   m_EditorClassIdentifier: 
   ConversationContext: Primeira entrega das ervas daninhas.
-  FirstDialogue: {fileID: 11400000, guid: 1fd815251e19f514cb9ddaf4aa11fbb8, type: 2}
+  FirstDialogue: {fileID: 11400000, guid: 027c702e615bd8e41bb219e7403a5524, type: 2}

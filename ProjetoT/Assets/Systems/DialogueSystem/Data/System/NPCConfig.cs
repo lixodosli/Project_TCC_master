@@ -6,7 +6,7 @@ using UnityEngine;
 public class NPCConfig : ScriptableObject
 {
     public NewConversation FirstConversation;
-    public NewConversation CurrentConversation { get; private set; }
+    public NewConversation CurrentConversation { get; private set; } = null;
 
     public void ChangeConversation(NewConversation newConversation) => CurrentConversation = newConversation;
 }

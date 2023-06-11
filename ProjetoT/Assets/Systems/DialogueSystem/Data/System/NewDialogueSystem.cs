@@ -19,7 +19,8 @@ public class NewDialogueSystem : MonoBehaviour
     {
         m_Conversation = conversation;
 
-        _CurrentDialogueNode = m_Conversation.FirstDialogue;
+        _CurrentDialogueNode = m_Conversation.FirstDialogue.Text == "" ? m_Conversation.FirstDialogue.NextDialogue() : m_Conversation.FirstDialogue;
+
         if (_CurrentDialogueNode == null)
         {
             Debug.LogError("No first dialogue node found in the conversation.");
@@ -66,7 +67,6 @@ public class NewDialogueSystem : MonoBehaviour
             if (!_CurrentDialogueNode.DoEffectsOnStart)
                 _CurrentDialogueNode.DoEffects();
 
-            Debug.Log("Chegou aq");
             _CurrentDialogueNode = _CurrentDialogueNode.NextDialogue();
             DisplayCurrentDialogue();
         }

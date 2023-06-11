@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1877f2fd2a4cb9d4492dbd6cf99f9b04, type: 3}
-  m_Name: NPC_Maira
+  m_Script: {fileID: 11500000, guid: b7c94db9b34fad342a0df4c3a6f10df2, type: 3}
+  m_Name: Maira_PA01_RecebimentoFumoDeCorda
   m_EditorClassIdentifier: 
-  FirstConversation: {fileID: 11400000, guid: 0358274af04616b4daf3cdf8eb73a0a6, type: 2}
+  ConversationContext: 
+  FirstDialogue: {fileID: 0}
