@@ -234,6 +234,7 @@ public class Inventory : MonoBehaviour
             return;
         }
 
+        OnDropItem?.Invoke(item);
         Items[slot] = null;
         item.transform.parent = null;
         item.transform.position = transform.position + transform.forward + m_DropOffset;

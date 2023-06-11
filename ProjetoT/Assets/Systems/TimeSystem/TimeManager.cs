@@ -16,6 +16,7 @@ public class TimeManager : MonoBehaviour
     public TimeCallback OnTotalHourChange;
 
     private List<GEvent> _EndOfDayFunctions = new List<GEvent>();
+    public List<TimeCounterAlongTime> Timers = new List<TimeCounterAlongTime>();
 
     private void Awake()
     {

@@ -23,9 +23,14 @@ MonoBehaviour:
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
-  Conditions: []
-  IfTrue: {fileID: 0}
-  IfFalse: {fileID: 0}
+  Conditions:
+  - rid: 6470089634015870983
+  IfTrue: {fileID: 11400000, guid: c0cc69726bd6d1341a8ef0fa7c67cd9b, type: 2}
+  IfFalse: {fileID: 11400000, guid: 59b1a1536ae657d4890eaf6a64eb59a0, type: 2}
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6470089634015870983
+      type: {class: WaitTimeDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        TimerName: EsperandoFumo

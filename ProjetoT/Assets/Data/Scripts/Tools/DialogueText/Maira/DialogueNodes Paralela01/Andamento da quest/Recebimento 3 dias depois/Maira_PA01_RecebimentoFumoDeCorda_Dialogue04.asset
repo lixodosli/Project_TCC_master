@@ -16,6 +16,9 @@ MonoBehaviour:
   Text: "Traga mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais
     fumo de corda."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870992
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -23,3 +26,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870992
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: 796a291b65e0a3a409cb9a650b632fb7,
+          type: 2}
