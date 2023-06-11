@@ -6071,7 +6071,7 @@ GameObject:
   - component: {fileID: 925345366}
   - component: {fileID: 925345365}
   - component: {fileID: 925345367}
-  - component: {fileID: 925345368}
+  - component: {fileID: 925345369}
   m_Layer: 0
   m_Name: Tools
   m_TagString: Untagged
@@ -6122,7 +6122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EnumName: ItemList
   m_FilePath: Assets/Data/ItemList.cs
---- !u!114 &925345368
+--- !u!114 &925345369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6131,9 +6131,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 925345364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6b68ac32c414141a65592f45c3fa1e, type: 3}
+  m_Script: {fileID: 11500000, guid: d676eb4d89396dc4d9d0b51743b2d9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tsvLink: https://docs.google.com/spreadsheets/d/e/2PACX-1vRtklx0vC6cQCA3QxUkhxnd0ao8sddKkyBhnjeSuKY2xyB8nfGDSRGNkSn6QqTomIjYR-lbAVtS0fP4/pub?output=tsv
+  targetFolderPath: Assets/Data/Scripts/Tools/DialogueText
+  WhatIRead: "FileName\tNPCName\tDialogue\tCharCount\r\nMaira_PA01_Inicio_Dialogue01\tMaira\tAh,
+    oi, Alan.\t13\r\nMaira_PA01_Inicio_Dialogue02\tMaira\tUltimamente t\xEAm andado
+    muitas lagartas por aqui.\t48\r\nMaira_PA01_Inicio_Dialogue03\tMaira\tElas devastam
+    tudo que \xE9 folha que encontram, pra afastar esses bicho, s\xF3 queimando um
+    fumo de corda.\t101\r\nMaira_PA01_Inicio_Dialogue04\tMaira\tElas n\xE3o chegam
+    nem perto se sentem o cheiro da fuma\xE7a que faz.\t63\r\nMaira_PA01_Inicio_Dialogue05\tMaira\tO
+    problema \xE9 que aqui comigo eu n\xE3o tenho mais nenhuma folha de tabaco pra
+    fazer um desse.\t90\r\nMaira_PA01_Inicio_Dialogue06\tMaira\tVoc\xEA poderia trazer
+    pra mim?\t28\r\nMaira_PA01_Inicio_Dialogue07\tMaira\tJ\xE1 deve ter topado com
+    essa planta por a\xED, ela virou uma erva daninha na nossa regi\xE3o.\t86\r\nMaira_PA01_EntregaErvasDaninhas_Dialogue01\tMaira\t\xD3timo,
+    \xE9 essa planta mesmo!\t27\r\nMaira_PA01_EntregaErvasDaninhas_Dialogue02\tMaira\tVou
+    come\xE7ar secando as folhas do tabaco agora.\t46\r\nMaira_PA01_EntregaErvasDaninhas_Dialogue03\tMaira\tS\xF3
+    que leva tempo, o fumo s\xF3 vai ficar pronto daqui uns tr\xEAs dia.\t65\r\nMaira_PA01_EntregaErvasDaninhas_Dialogue04\tMaira\tVolta
+    aqui depois desse tempo, vou te dar uma parte por ter me trazido de bom grado.\t84\r\nMaira_PA01_RecebimentoFumoDeCorda_Dialogue01\tMaira\tAqui
+    est\xE1, como prometido.\t26\r\nMaira_PA01_RecebimentoFumoDeCorda_Dialogue02\t\tVoc\xEA
+    recebeu Fumo de corda.\t27\r\nMaira_PA01_RecebimentoFumoDeCorda_Dialogue03\tMaira\tUsando
+    no meio da planta\xE7\xE3o suas folhosa n\xE3o v\xE3o ser atacada por pelo menos
+    uns cinco dia.\t90\r\nMaira_PA01_RecebimentoFumoDeCorda_Dialogue04\tMaira\tTraga
+    mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais fumo de corda.\t84\r\nMaira_PA01_EntregaErvasDaninhas_NEGATIVA_Dialogue01\tMaira\tSe
+    me trouxer 3 ervas-daninhas farei fumo de corda para lidar com os insetos que
+    atacam as folhosa.\t99\r\nMaira_PA01_RecebimentoFumoDeCorda_NEGATIVA_Dialogue01\tMaira\tSobre
+    o fumo de corda, as folhas de tabaco ainda n\xE3o secaram totalmente, ainda n\xE3o
+    posso tran\xE7\xE1-las.\t100\r\nMaira_LOOPFumoDeCorda_EntregaErvasDaninhas_Dialogue01\tMaira\tMuito
+    bem, vou colocar as folhas pra secarem.\t45\r\nMaira_LOOPFumoDeCorda_EntregaErvasDaninhas_Dialogue02\tMaira\t\xC9
+    s\xF3 vir buscar o fumo de corda daqui tr\xEAs dia.\t47\r\nMaira_LOOPFumoDeCorda_RecebimentoFumoDeCorda_Dialogue01\t\tVoc\xEA
+    recebeu Fumo de corda.\t27\r\nMaira_LOOPFumoDeCorda_RecebimentoFumoDeCorda_Dialogue02\tMaira\tTraga
+    mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais fumo de corda.\t84\r\nMaira_LOOPFumoDeCorda_NEGATIVA_EntregaErvasDaninhas_Dialogue01\tMaira\tTraga
+    mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais fumo de corda.\t84\r\nMaira_LOOPFumoDeCorda_NEGATIVA_RecebimentoFumoDeCorda_Dialogue01\tMaira\tSobre
+    o fumo de corda, as folhas de tabaco ainda n\xE3o secaram totalmente, ainda n\xE3o
+    posso tran\xE7\xE1-las.\t100"
 --- !u!1 &927140435
 GameObject:
   m_ObjectHideFlags: 0

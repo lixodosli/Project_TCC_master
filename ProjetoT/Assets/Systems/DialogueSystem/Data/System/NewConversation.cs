@@ -9,12 +9,5 @@ public class NewConversation : ScriptableObject
     [TextArea] public string ConversationContext;
 
     [Header("Dialogue")]
-    [SerializeReference] public DialogueNode FirstDialogues;
-}
-
-public enum CheckageType
-{
-    ItemCheckage,
-    QuestCheckage,
-    TimeCheckage
+    [SerializeReference] public DialogueNode FirstDialogue;
 }
