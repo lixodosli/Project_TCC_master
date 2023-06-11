@@ -5,9 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Condition Node", menuName = "Scriptable Objects/Dialogue System/Dialogue/Condition Node")]
 public class ConditionDialogueNode : DialogueNode
 {
-    [Header("Checkage")]
-    public CheckageType Type;
-
     [SerializeReference] public List<DialogueCondition> Conditions = new List<DialogueCondition>();
 
     [ContextMenu("Item Condition")] public void AddItemCondition() => Conditions.Add(new ItemDialogueCondition());
@@ -17,6 +14,17 @@ public class ConditionDialogueNode : DialogueNode
     [Header("Dialogues")]
     public DialogueNode IfTrue;
     public DialogueNode IfFalse;
+
+    public override DialogueNode Dialogue()
+    {
+        foreach (DialogueCondition condition in Conditions)
+        {
+            if (!condition.HaveCondition())
+                return IfFalse.Dialogue();
+        }
+
+        return IfTrue.Dialogue();
+    }
 }
 
 [System.Serializable]

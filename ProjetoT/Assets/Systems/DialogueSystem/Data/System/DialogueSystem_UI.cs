@@ -20,6 +20,23 @@ public class DialogueSystem_UI : MonoBehaviour
         IsActive = m_DialogueBox.activeSelf;
     }
 
+    public void DisplayDialogue(string name, string text, float textSpeed)
+    {
+        StopAllCoroutines();
+        TextFormatter formatter = new TextFormatter();
+
+        _TextSpeed = textSpeed == 0f ? m_LettersPerSecond : textSpeed;
+
+        m_NameBox.SetActive(name != "");
+        m_DialogueNameText.text = name;
+
+        formatter.FormatText(text, m_DialogueText);
+
+        StartCoroutine(DisplayTextLetterByLetter(m_DialogueText));
+
+        m_DialogueBox.SetActive(true);
+    }
+
     public void DisplayDialogue(string name, string text, int[] options, float textSpeed)
     {
         StopAllCoroutines();

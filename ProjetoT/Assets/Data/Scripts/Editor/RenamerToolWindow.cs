@@ -12,7 +12,7 @@ public class RenamerToolWindow : EditorWindow
     string originalWord = "";
     string newWord = "";
     bool addNumbering;
-    bool initDone = false;
+    //bool initDone = false;
     string finalName = String.Empty;
     Vector2 scrollPosition = Vector2.zero;
     GUIStyle yellowText;
