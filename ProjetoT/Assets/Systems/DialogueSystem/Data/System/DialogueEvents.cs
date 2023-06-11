@@ -40,11 +40,11 @@ public class DialogueEvents : ScriptableObject
             return;
         }
 
-        DialogueSystem.Instance.CurrentNPC.NextNarrative();
+        //DialogueSystem.Instance.CurrentNPC.NextNarrative();
     }
-    public void ChangeNarrative(int index) => DialogueSystem.Instance.CurrentNPC.ChangeNarrative(index);
-    public void AdvanceConversation() => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].NextConversation();
-    public void ChangeConversation(int index) => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].ChangeConversation(index);
+    //public void ChangeNarrative(int index) => DialogueSystem.Instance.CurrentNPC.ChangeNarrative(index);
+    //public void AdvanceConversation() => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].NextConversation();
+    //public void ChangeConversation(int index) => DialogueSystem.Instance.CurrentNPC.Narratives[DialogueSystem.Instance.CurrentNPC.CurrentNarrativeIndex].ChangeConversation(index);
 
     public void GoToAnotherConversation(Conversation conversation)
     {
@@ -53,11 +53,11 @@ public class DialogueEvents : ScriptableObject
 
     public void ChangeConversationIndex(int index)
     {
-        NPCFeitoNasCoxa.Instance.ChangeNarrative(index);
+        //NPCFeitoNasCoxa.Instance.ChangeNarrative(index);
     }
 
     public void VaiPraLonge()
     {
-        NPCFeitoNasCoxa.Instance.VaiPraOndeJudasPerdeuAsBotas();
+        //NPCFeitoNasCoxa.Instance.VaiPraOndeJudasPerdeuAsBotas();
     }
 }
