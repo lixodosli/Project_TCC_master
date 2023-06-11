@@ -21,12 +21,35 @@ public class NPC : Interactable
     {
         CurrentNarrativeIndex = index;
     }
+
+    public virtual void ChangeNarrative(NewConversation conversation)
+    {
+        bool found = false;
+        int foundedNarrative = 0;
+
+        for (int i = 0; i < Narratives.Count; i++)
+        {
+            found = Narratives[i].NConversations.Find(c => c.ConversationContext == conversation.ConversationContext) != null;
+
+            if (found)
+            {
+                foundedNarrative = i;
+                break;
+            }
+        }
+
+        if (!found)
+            return;
+
+        CurrentNarrativeIndex = foundedNarrative;
+    }
 }
 
 [System.Serializable]
 public class Narratives
 {
     public List<Conversation> Conversations;
+    public List<NewConversation> NConversations;
     public int CurrentConversationIndex;
 
     public void NextConversation()
