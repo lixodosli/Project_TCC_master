@@ -5,6 +5,7 @@ using SaveSystem;
 public class PlayerMovement : MonoBehaviour, ISaveable
 {
     public SaveChannel Save;
+    public static PlayerMovement Player;
 
     [SerializeField] private float m_Speed;
     [SerializeField] private float m_RotationSpeed;
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour, ISaveable
 
     private void Awake()
     {
+        Player = this;
         SetCanMove();
         _Rigidbody = GetComponent<Rigidbody>();
         Inventory.Instance.OnCollectItem += CollectItemAnim;

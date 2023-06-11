@@ -1044,6 +1044,7 @@ GameObject:
   - component: {fileID: 215379749}
   - component: {fileID: 215379753}
   - component: {fileID: 215379754}
+  - component: {fileID: 215379755}
   m_Layer: 0
   m_Name: GameStateManager
   m_TagString: Untagged
@@ -1106,6 +1107,19 @@ MonoBehaviour:
   m_DialogueUI: {fileID: 293608296}
   m_Conversations: []
   CurrentNPC: {fileID: 0}
+--- !u!114 &215379755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215379747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528f63f802214ad43923c6e30b60e83f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DialogueUI: {fileID: 293608296}
 --- !u!4 &216659977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05b3c7998f9521b49ab8389ec3a123e3,
@@ -3939,7 +3953,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-369530
+  m_Name: pb_Mesh-22306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4705,20 +4719,6 @@ MonoBehaviour:
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
-  Narratives:
-  - Conversations:
-    - {fileID: 11400000, guid: 997fb7c93bbc05d42818cc715229d5e8, type: 2}
-    - {fileID: 11400000, guid: e7e82b89a5b9fda48986e20abe9765d4, type: 2}
-    CurrentConversationIndex: 0
-  - Conversations:
-    - {fileID: 11400000, guid: 265404243347e1e46a157f01041921be, type: 2}
-    - {fileID: 11400000, guid: 41aaf20710ffa25409050d3fb5337363, type: 2}
-    - {fileID: 11400000, guid: aec3130407b80f24a93e9f812cd4c4d7, type: 2}
-    CurrentConversationIndex: 0
-  CurrentNarrativeIndex: 0
-  HaveCondition1: 0
-  HaveCondition2: 0
-  JudasSpot: {fileID: 0}
 --- !u!1 &822539059
 GameObject:
   m_ObjectHideFlags: 0

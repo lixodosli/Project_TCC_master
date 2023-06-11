@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class EndDialogueNode : DialogueNode
 {
-    public NPC ReferenceNPC;
+    [SerializeReference] public List<DialogueEffect> Effects = new List<DialogueEffect>();
 }
