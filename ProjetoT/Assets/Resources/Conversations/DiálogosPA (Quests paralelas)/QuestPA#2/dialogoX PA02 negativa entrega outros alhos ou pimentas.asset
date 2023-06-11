@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
   Name: "Caso o jogador fale com Maira novamente ap\xF3s a miss\xE3o e N\xC3O tenha
-    alho no invent\xE1rio. "
+    alho ou pimenta no invent\xE1rio. "
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:

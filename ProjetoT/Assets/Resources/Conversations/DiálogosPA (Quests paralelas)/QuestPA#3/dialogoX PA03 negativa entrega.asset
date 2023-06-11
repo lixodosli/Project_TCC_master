@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: dialogoX PA03 negativa entrega
   m_EditorClassIdentifier: 
   RequiredQuest: {fileID: 0}
-  Name: "Ao trazer os ingredientes do vinagrete para Ant\xF4nio"
+  Name: "Ao N\xC3O trazer os ingredientes do vinagrete para Ant\xF4nio"
   StartQuest: {fileID: 0}
   ConversationIfDontHaveRequiredQuest: {fileID: 0}
   Dialogues:
