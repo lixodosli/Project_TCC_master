@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Maira_PA01_RecebimentoFumoDeCorda
   m_EditorClassIdentifier: 
   ConversationContext: 
-  FirstDialogue: {fileID: 0}
+  FirstDialogue: {fileID: 11400000, guid: 75bf3a64e2825c447968a337d5928a15, type: 2}

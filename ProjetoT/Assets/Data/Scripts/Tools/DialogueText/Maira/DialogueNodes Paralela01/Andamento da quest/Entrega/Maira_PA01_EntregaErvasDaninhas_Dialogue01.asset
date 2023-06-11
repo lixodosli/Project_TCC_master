@@ -15,6 +15,10 @@ MonoBehaviour:
   Name: Maira
   Text: "\xD3timo, \xE9 essa planta mesmo!"
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870982
+  - rid: 6470089634015870994
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +26,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 7d70d0c171037f8419f402d9a5774fab, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870982
+      type: {class: WaitTimeEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        TimerName: EsperandoFumo
+        TimeToWaitInHours: 72
+    - rid: 6470089634015870994
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemsToRemove:
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}

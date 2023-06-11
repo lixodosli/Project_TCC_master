@@ -33,5 +33,5 @@ MonoBehaviour:
       type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
       data:
         ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
-        NewConversation: {fileID: 11400000, guid: 0358274af04616b4daf3cdf8eb73a0a6,
+        NewConversation: {fileID: 11400000, guid: e8e98b30626234d42a56094a65b2eacc,
           type: 2}

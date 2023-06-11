@@ -9,7 +9,8 @@ public class ConditionDialogueNode : DialogueNode
 
     [ContextMenu("Item Condition")] public void AddItemCondition() => Conditions.Add(new ItemDialogueCondition());
     [ContextMenu("Quest Condition")] public void AddQuestCondition() => Conditions.Add(new QuestDialogueCondition());
-    [ContextMenu("Time Condition")] public void AddTimeCondition() => Conditions.Add(new TimeDialogueCondition());
+    [ContextMenu("Day Time Condition")] public void AddDayTimeCondition() => Conditions.Add(new DayTimeDialogueCondition());
+    [ContextMenu("Wait Time Condition")] public void AddWaitTimeCondition() => Conditions.Add(new WaitTimeDialogueCondition());
 
     [Header("Dialogues")]
     public DialogueNode IfTrue;
@@ -80,11 +81,30 @@ public class QuestDialogueCondition : DialogueCondition
 }
 
 [System.Serializable]
-public class TimeDialogueCondition : DialogueCondition
+public class DayTimeDialogueCondition : DialogueCondition
 {
     [Header("Time Configs")]
     public int Checkage;
     public bool TotalHour;
 
     public override bool HaveCondition() => TotalHour ? Checkage >= TimeManager.TotalHours : TimeManager.CurrentHour >= Checkage;
+}
+
+[System.Serializable]
+public class WaitTimeDialogueCondition : DialogueCondition
+{
+    [Header("Time Configs")]
+    public string TimerName;
+
+    public override bool HaveCondition()
+    {
+        TimeCounterAlongTime timer = TimeManager.Instance.Timers.Find(a => a.TimerName == TimerName);
+
+        if (timer == null || !timer.Achieve)
+            return false;
+
+        TimeManager.Instance.OnTotalHourChange -= timer.UpdateCounter;
+        TimeManager.Instance.Timers.Remove(timer);
+        return true;
+    }
 }

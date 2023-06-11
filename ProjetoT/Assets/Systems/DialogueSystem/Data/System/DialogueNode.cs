@@ -23,6 +23,7 @@ public class DialogueNode : ScriptableObject
     [ContextMenu("Add Remove Item")] public void AddRemoveItem() => Effects.Add(new RemoveItemEffect());
     [ContextMenu("Add Start Quest")] public void AddStartQuest() => Effects.Add(new StartQuestEffect());
     [ContextMenu("Add Move Player")] public void AddMovePlayer() => Effects.Add(new MovePlayerEffect());
+    [ContextMenu("Add Wait Time Player")] public void AddWaitTime() => Effects.Add(new WaitTimeEffect());
 
     public void DoEffects() => Effects.ForEach(e => e.DoEffect());
 
@@ -89,9 +90,17 @@ public class RemoveItemEffect : DialogueEffect
 
         for (int itemCount = 0; itemCount < ItemsToRemove.Count; itemCount++)
         {
+            Item checkageItem = ItemsToRemove[itemCount].GetComponent<Item>();
+
+            if (checkageItem == null)
+                continue;
+
             for (int inventoryCount = 0; inventoryCount < Inventory.Instance.Items.Length; inventoryCount++)
             {
                 Item inventoryItem = Inventory.Instance.Items[inventoryCount];
+
+                if (inventoryItem == null)
+                    continue;
 
                 // Check if the item has already been checked
                 if (checkedItems.Contains(inventoryItem))
@@ -99,10 +108,11 @@ public class RemoveItemEffect : DialogueEffect
                     continue; // Skip to the next iteration if already checked
                 }
 
-                if (inventoryItem.ItemName == ItemsToRemove[itemCount].GetComponent<Item>().ItemName)
+                if (inventoryItem.ItemName == checkageItem.ItemName)
                 {
                     haveItem[itemCount] = true;
                     checkedItems.Add(inventoryItem); // Add the item to the checked list
+                    Inventory.Instance.ConsumeItem(inventoryItem); // Consume the item
                     break; // Exit the inner loop since the item has been found
                 }
             }
@@ -113,7 +123,6 @@ public class RemoveItemEffect : DialogueEffect
                 return;
             }
         }
-
     }
 }
 
@@ -136,6 +145,21 @@ public class MovePlayerEffect : DialogueEffect
     public override void DoEffect()
     {
         PlayerMovement.Player.transform.position = NewPosition.transform.position;
+    }
+}
+
+[System.Serializable]
+public class WaitTimeEffect : DialogueEffect
+{
+    public string TimerName;
+    public int TimeToWaitInHours;
+
+    public override void DoEffect()
+    {
+        TimeCounterAlongTime timer = new TimeCounterAlongTime(TimerName, TimeToWaitInHours);
+
+        TimeManager.Instance.OnTotalHourChange += timer.UpdateCounter;
+        TimeManager.Instance.Timers.Add(timer);
     }
 }
 

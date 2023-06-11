@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Fumo de corda."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870989
+  DoEffectsOnStart: 1
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 904984d70e6a7944ebf393498678f2c9, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870989
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemToGive:
+        - {fileID: 8859889353750488642, guid: 9e31c72a48fa5434aad723beee621254, type: 3}
