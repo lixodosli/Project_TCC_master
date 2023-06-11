@@ -15,15 +15,15 @@ public class ConditionDialogueNode : DialogueNode
     public DialogueNode IfTrue;
     public DialogueNode IfFalse;
 
-    public override DialogueNode Dialogue()
+    public override DialogueNode NextDialogue()
     {
         foreach (DialogueCondition condition in Conditions)
         {
             if (!condition.HaveCondition())
-                return IfFalse.Dialogue();
+                return IfFalse.NextDialogue();
         }
 
-        return IfTrue.Dialogue();
+        return IfTrue.NextDialogue();
     }
 }
 

@@ -4,32 +4,20 @@ using UnityEngine;
 
 public class NPC : Interactable
 {
-    public NewConversation CurrentConversation { get; private set; }
+    public NPCConfig Config;
+
+    private void Start()
+    {
+        if (Config.CurrentConversation == null)
+            ChangeConversation(Config.FirstConversation);
+    }
 
     public override void DoInteraction()
     {
-        NewDialogueSystem.Instance.StartConversation(CurrentConversation);
+        NewDialogueSystem.Instance.StartConversation(Config.CurrentConversation);
     }
 
-    public void ChangeConversation(NewConversation newConversation) => CurrentConversation = newConversation;
-
-    //public List<Narratives> Narratives;
-    //public int CurrentNarrativeIndex;
-
-    //public override void DoInteraction()
-    //{
-    //    DialogueSystem.Instance.StartConversation(this);
-    //}
-
-    //public virtual void NextNarrative()
-    //{
-    //    CurrentNarrativeIndex++;
-    //}
-
-    //public virtual void ChangeNarrative(int index)
-    //{
-    //    CurrentNarrativeIndex = index;
-    //}
+    public void ChangeConversation(NewConversation newConversation) => Config.ChangeConversation(newConversation);
 }
 
 [System.Serializable]

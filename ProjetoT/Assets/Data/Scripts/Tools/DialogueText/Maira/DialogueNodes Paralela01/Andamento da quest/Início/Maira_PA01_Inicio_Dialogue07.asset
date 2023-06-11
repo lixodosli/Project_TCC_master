@@ -16,6 +16,9 @@ MonoBehaviour:
   Text: "J\xE1 deve ter topado com essa planta por a\xED, ela virou uma erva daninha
     na nossa regi\xE3o."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870976
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -23,3 +26,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870976
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 3204356337270335250, guid: 63ef5deb3f3d8584fb3443a3f0799dbc,
+          type: 3}
+        NewConversation: {fileID: 11400000, guid: ccac762e18df831478a490481c3d26d2,
+          type: 2}

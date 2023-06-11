@@ -3953,7 +3953,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-22306
+  m_Name: pb_Mesh-150944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4719,6 +4719,7 @@ MonoBehaviour:
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
+  FirstConversation: {fileID: 0}
 --- !u!1 &822539059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,7 +5108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &826780055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8429,6 +8430,12 @@ PrefabInstance:
       propertyPath: m_CanInteract
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3204356337270335250, guid: 63ef5deb3f3d8584fb3443a3f0799dbc,
+        type: 3}
+      propertyPath: FirstConversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 0358274af04616b4daf3cdf8eb73a0a6,
+        type: 2}
     - target: {fileID: 3567805444749644299, guid: 63ef5deb3f3d8584fb3443a3f0799dbc,
         type: 3}
       propertyPath: m_Name

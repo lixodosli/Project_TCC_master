@@ -27,6 +27,9 @@ public class NewDialogueSystem : MonoBehaviour
         }
 
         DisplayCurrentDialogue();
+
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed += PassDialogue;
+        GameStateManager.Game.RaiseChangeGameState(GameState.Cutscene);
     }
 
     public void DisplayCurrentDialogue()
@@ -50,6 +53,7 @@ public class NewDialogueSystem : MonoBehaviour
         m_DialogueUI.HideDialogue();
         _CurrentDialogueNode = null;
         m_Conversation = null;
+        PlayerInputManager.Instance.PlayerInput.World.Action.performed -= PassDialogue;
         GameStateManager.Game.RaiseChangeGameState(GameState.World_Free);
     }
 
@@ -62,7 +66,8 @@ public class NewDialogueSystem : MonoBehaviour
             if (!_CurrentDialogueNode.DoEffectsOnStart)
                 _CurrentDialogueNode.DoEffects();
 
-            _CurrentDialogueNode = _CurrentDialogueNode.Dialogue();
+            Debug.Log("Chegou aq");
+            _CurrentDialogueNode = _CurrentDialogueNode.NextDialogue();
             DisplayCurrentDialogue();
         }
     }
