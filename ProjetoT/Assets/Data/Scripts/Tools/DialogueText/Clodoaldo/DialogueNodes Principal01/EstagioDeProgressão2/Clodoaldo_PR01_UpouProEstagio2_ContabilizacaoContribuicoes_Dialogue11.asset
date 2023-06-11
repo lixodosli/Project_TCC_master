@@ -21,4 +21,4 @@ MonoBehaviour:
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
-  NextDialog: {fileID: 0}
+  NextDialog: {fileID: 11400000, guid: 118ad634f7e811d4fa2ec00a42b7d250, type: 2}
