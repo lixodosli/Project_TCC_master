@@ -6,7 +6,7 @@ public class NewDialogueSystem : MonoBehaviour
     public static NewDialogueSystem Instance;
 
     [SerializeField] private DialogueSystem_UI m_DialogueUI;
-    [SerializeField] private NewConversation m_Conversation;
+    private NewConversation m_Conversation;
 
     private DialogueNode _CurrentDialogueNode;
 
@@ -34,6 +34,10 @@ public class NewDialogueSystem : MonoBehaviour
         if (_CurrentDialogueNode != null)
         {
             m_DialogueUI.DisplayDialogue(_CurrentDialogueNode.Name, _CurrentDialogueNode.Text, _CurrentDialogueNode.LettersPerSecond);
+            _CurrentDialogueNode.OnStartDialogue?.Invoke();
+
+            if (_CurrentDialogueNode.DoEffectsOnStart)
+                _CurrentDialogueNode.DoEffects();
         }
         else
         {
@@ -54,6 +58,10 @@ public class NewDialogueSystem : MonoBehaviour
         if (m_DialogueUI.IsActive && GameStateManager.Game.State == GameState.Cutscene)
         {
             _CurrentDialogueNode.OnEndDialogue?.Invoke();
+
+            if (!_CurrentDialogueNode.DoEffectsOnStart)
+                _CurrentDialogueNode.DoEffects();
+
             _CurrentDialogueNode = _CurrentDialogueNode.Dialogue();
             DisplayCurrentDialogue();
         }
