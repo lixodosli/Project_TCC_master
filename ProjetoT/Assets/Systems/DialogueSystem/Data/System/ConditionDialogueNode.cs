@@ -11,6 +11,7 @@ public class ConditionDialogueNode : DialogueNode
     [ContextMenu("Quest Condition")] public void AddQuestCondition() => Conditions.Add(new QuestDialogueCondition());
     [ContextMenu("Day Time Condition")] public void AddDayTimeCondition() => Conditions.Add(new DayTimeDialogueCondition());
     [ContextMenu("Wait Time Condition")] public void AddWaitTimeCondition() => Conditions.Add(new WaitTimeDialogueCondition());
+    [ContextMenu("Donation Condition")] public void AddDonationCondition() => Conditions.Add(new DonationLevelCondition());
 
     [Header("Dialogues")]
     public DialogueNode IfTrue;
@@ -106,5 +107,17 @@ public class WaitTimeDialogueCondition : DialogueCondition
         TimeManager.Instance.OnTotalHourChange -= timer.UpdateCounter;
         TimeManager.Instance.Timers.Remove(timer);
         return true;
+    }
+}
+
+[System.Serializable]
+public class DonationLevelCondition : DialogueCondition
+{
+    public int DonationLevel;
+    public bool DonationInPoints;
+
+    public override bool HaveCondition()
+    {
+        return DonationInPoints ? DonationsManager.Instance.Structure.CurrentDonationsPoints >= DonationLevel : DonationsManager.Instance.Structure.CurrentMilestoneIndex >= DonationLevel;
     }
 }
