@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2784925898250668326}
+  - {fileID: 3555424459060361388}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85,83 +85,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.5, z: 0.55}
   m_Center: {x: 0, y: 0.25, z: 0}
---- !u!1001 &2390481370279915213
+--- !u!1001 &5437001486369179825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2390481371204639691}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8171969618751597223, guid: e19831f0746c5db44aa0f63c48dc7a3e,
+        type: 3}
+      propertyPath: m_Name
+      value: TerraArada
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00008232209
+      value: 0.0005
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+    - target: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 49f3dc1892fb94446a63a01a49273531,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0a5e7f0b151a30f4692e7eb637ae1e7d, type: 2}
-    - target: {fileID: 919132149155446097, guid: 49f3dc1892fb94446a63a01a49273531,
-        type: 3}
-      propertyPath: m_Name
-      value: Terra_Arada_LP_2_MESH
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49f3dc1892fb94446a63a01a49273531, type: 3}
---- !u!4 &2784925898250668326 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: e19831f0746c5db44aa0f63c48dc7a3e, type: 3}
+--- !u!4 &3555424459060361388 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49f3dc1892fb94446a63a01a49273531,
+  m_CorrespondingSourceObject: {fileID: 8801014156448329757, guid: e19831f0746c5db44aa0f63c48dc7a3e,
     type: 3}
-  m_PrefabInstance: {fileID: 2390481370279915213}
+  m_PrefabInstance: {fileID: 5437001486369179825}
   m_PrefabAsset: {fileID: 0}
