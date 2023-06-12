@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Scriptable Objects/Donations")]
+[CreateAssetMenu(menuName = "Scriptable Objects/Donations")]
 public class DonationsStructure : ScriptableObject
 {
     public List<int> DonationsMilestones = new List<int>();
