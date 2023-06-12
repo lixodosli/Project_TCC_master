@@ -6,6 +6,7 @@ public class DonationsManager : MonoBehaviour
 {
     public static DonationsManager Instance;
     public DonationsStructure Structure;
+    public DonationsPointsConfigs PointsConfigs;
 
     public delegate void DonationsCallback(int total);
     public DonationsCallback OnAddDonation;
