@@ -12,4 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa365cf4542c7ff49a7dded1dfcf77da, type: 3}
   m_Name: DefaultDonationsPoints
   m_EditorClassIdentifier: 
-  PointsList: []
+  PointsList:
+  - Item: {fileID: 424462767195344498, guid: 51c701a672e28504a8c507a5f619be7c, type: 3}
+    Points: 1
+  - Item: {fileID: 5203624329570352729, guid: 2802980429de75449bca402ce5476b83, type: 3}
+    Points: 1
+  - Item: {fileID: 6751928007826737003, guid: 271164296e2e7674299c8612b5b23cf4, type: 3}
+    Points: 1
+  - Item: {fileID: 6925554120334176891, guid: 21dbd673e23eeb645981f35db6a44587, type: 3}
+    Points: 1
+  - Item: {fileID: 5894908199547425817, guid: af5086a3ce62e6341b91dbe656a7e100, type: 3}
+    Points: 1
+  - Item: {fileID: 2230200223603006595, guid: e2be71d6654136b4fb3c6b59e3e5dcea, type: 3}
+    Points: 1
+  - Item: {fileID: 5698824548640571246, guid: f0fb5e9b987ce284aba8e19c559e384d, type: 3}
+    Points: 1
+  - Item: {fileID: 2486619536255280330, guid: 09cb9110826936d4ab6efc7320b27290, type: 3}
+    Points: 1
+  - Item: {fileID: 2408318878952600145, guid: 882c5caa158edee4cbfcdeb6a811b76c, type: 3}
+    Points: 1
+  - Item: {fileID: 2491086078450493830, guid: 11a6cd7c4700e0143bc08520236d8b19, type: 3}
+    Points: 1
+  - Item: {fileID: 5995258862302258492, guid: 58f80bb70b7b31b4f92eb85aec0a050f, type: 3}
+    Points: 1
+  - Item: {fileID: 9083551465080880622, guid: a3c437f6d1ea1484d8eed3854fa5266c, type: 3}
+    Points: 1
+  - Item: {fileID: 113452490701172749, guid: ddcb902603323974ea5eb5d521c97faa, type: 3}
+    Points: 1
+  - Item: {fileID: 5820150149387624411, guid: 17f13f6ee7821ec4eb312170749228d4, type: 3}
+    Points: 1
+  - Item: {fileID: 4826523985093584011, guid: b9dc6872594611a4dad01feafb871574, type: 3}
+    Points: 1
+  - Item: {fileID: 8483869380073568561, guid: 00f5112a896c5794cbe2a4366ab74f39, type: 3}
+    Points: 1
