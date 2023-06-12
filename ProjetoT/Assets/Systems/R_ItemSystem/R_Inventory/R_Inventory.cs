@@ -31,12 +31,12 @@ public class R_Inventory : ScriptableObject
         InventoryChanged?.Invoke(this);
     }
 
-    public R_ItemConfigs GetItem(int index)
+    public R_ItemConfigs FindItem(int index)
     {
         return InventoryItem[index];
     }
 
-    public R_ItemConfigs GetItem(R_ItemConfigs item)
+    public R_ItemConfigs FindItem(R_ItemConfigs item)
     {
         return InventoryItem.Find(i => i.Equals(item));
     }

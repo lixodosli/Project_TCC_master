@@ -23,6 +23,5 @@ public class ProvisoryQuest : MonoBehaviour
         if(quest == Quest1.QuestName)
             tracking = true;
 
-        npc.ChangeNarrative(1);
     }
 }

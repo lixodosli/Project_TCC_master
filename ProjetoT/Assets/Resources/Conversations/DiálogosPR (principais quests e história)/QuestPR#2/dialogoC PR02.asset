@@ -39,7 +39,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Name: "Ip\xE1"
-    Text: "Poque ele queria usar p\xF3 de mico!"
+    Text: "Porque ele queria usar p\xF3 de mico!"
     Options: 
     LettersPerSecond: 0
     OnEndDialogue:

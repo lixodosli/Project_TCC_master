@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e192ebd2ed5b14c9b1f00122109cf3, type: 3}
+  m_Name: Maira_PA01_RecebimentoFumoDeCorda_Dialogue04
+  m_EditorClassIdentifier: 
+  Name: Maira
+  Text: "Traga mais erva-daninha caso precise, que em tr\xEAs dias vamos ter mais
+    fumo de corda."
+  LettersPerSecond: 0
+  Effects:
+  - rid: 6470089634015870992
+  DoEffectsOnStart: 0
+  OnStartDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870992
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: 796a291b65e0a3a409cb9a650b632fb7,
+          type: 2}

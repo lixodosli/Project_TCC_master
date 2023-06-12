@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ChangeInventory",
+                    "type": "Value",
+                    "id": "29ad8ab6-293f-4de9-b201-fcc1c3aa7e81",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -93,7 +102,7 @@
                 {
                     "name": "",
                     "id": "a6036355-1b59-409a-9b00-a7ae922c2ea9",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -254,6 +263,39 @@
                     "action": "InventoryNavigateDown",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "d6622ae4-ac21-49d2-801e-9a5e8714db81",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeInventory",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "3573c40a-6a41-4b84-9237-0c64ab6486b9",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "d99e6a91-b6e0-43b2-9bf2-40ea5e7c2fbc",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

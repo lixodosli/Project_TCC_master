@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public enum ConditionType { Default, ByTimes, ByID }
@@ -15,7 +16,7 @@ public class Condition
 
     public virtual void Start()
     {
-        _Counter = 0;
+        //_Counter = 0;
     }
 
     public virtual bool IsComplete()
@@ -130,7 +131,7 @@ public class WaitForSomeTime : Condition
 public class NeedSomeItem : Condition
 {
     public Interactable PlaceToDelieverTheItems;
-    public Item[] ItemsNeeded;
+    public List<Item> ItemsNeeded = new List<Item>();
 
     public override void Start()
     {
@@ -147,15 +148,22 @@ public class NeedSomeItem : Condition
         Dictionary<Item, int> inventoryCount = new Dictionary<Item, int>();
 
         // Count the items in the Inventory
-        foreach (Item item in Inventory.Instance.Items)
+        for (int i = 0; i < Inventory.Instance.Items.Length; i++)
         {
-            if (inventoryCount.ContainsKey(item))
+            Item item = Inventory.Instance.Items[i];
+
+            if (item == null)
+                continue;
+
+            if (inventoryCount.ContainsKey(item)) // I'M GETTING PROBLEM HERE
             {
+                //Debug.Log($"Eu já tenho o item <{item.ItemName}> no dicio. Ele tem <{inventoryCount[item]}>.");
                 inventoryCount[item]++;
             }
             else
             {
                 inventoryCount[item] = 1;
+                //inventoryCount[item] = 1;
             }
         }
 
@@ -163,9 +171,15 @@ public class NeedSomeItem : Condition
         foreach (Item item in ItemsNeeded)
         {
             // If the item is not in the Inventory or the count is less than needed, return false
-            if (!inventoryCount.ContainsKey(item) || inventoryCount[item] == 0)
+            if (!inventoryCount.ContainsKey(item))
             {
                 ConditionCompleted = false;
+                return;
+            }
+            else if (inventoryCount[item] == 0)
+            {
+                ConditionCompleted = false;
+                return;
             }
 
             // Decrement the count of the item in the Inventory
@@ -177,4 +191,15 @@ public class NeedSomeItem : Condition
         InteractableInstigator.Instance.OnInteract -= CheckInventory;
     }
 
+    private bool CheckKey(Item item, Dictionary<Item, int> dict)
+    {
+        foreach (KeyValuePair<Item, int> entry in dict)
+        {
+            Debug.Log($"{entry.Key}");
+            //if (entry.Key.ItemName == item.ItemName)
+            //    return true;
+        }
+
+        return false;
+    }
 }
