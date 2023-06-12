@@ -5,19 +5,20 @@ using UnityEngine;
 public class FarmingCollect : Interactable
 {
     public Useable UseableReference;
-    public ItemList ItemToCollect;
+    public List<GameObject> ItemToCollect = new List<GameObject>();
 
     public override void DoInteraction()
     {
         if (GameStateManager.Game.State != GameState.World_Free)
             return;
 
-        GameObject item = ItemSpawnPoint.InstItem(ItemToCollect, transform);
+        foreach (GameObject item in ItemToCollect)
+        {
+            GameObject c = Instantiate(item, Inventory.Instance.transform);
+            c.GetComponent<Item>().SetID();
+            Inventory.Instance.CollectItem(c.GetComponent<Item>());
+        }
 
-        if (item == null)
-            return;
-
-        Inventory.Instance.CollectItem(item.GetComponent<Item>());
         UseableReference.SendMessage(0);
     }
 }
