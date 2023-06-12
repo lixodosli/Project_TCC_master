@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
+  m_Name: Poco_Idle1_InteracaoPadraoComOPoco_CDialogue01
+  m_EditorClassIdentifier: 
+  Name: 
+  Text: 
+  LettersPerSecond: 0
+  Effects: []
+  DoEffectsOnStart: 0
+  OnStartDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  Conditions:
+  - rid: 1506305913177243675
+  IfTrue: {fileID: 11400000, guid: 3eac2ef6a7c8add48a2c8351716979ee, type: 2}
+  IfFalse: {fileID: 11400000, guid: 71842451a70ccb549a8845eb4d0b8e8c, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243675
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        ItemToCheck: {fileID: 5820150149387624411, guid: 17f13f6ee7821ec4eb312170749228d4,
+          type: 3}
+        ItemQuantity: 1

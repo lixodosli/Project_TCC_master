@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7c94db9b34fad342a0df4c3a6f10df2, type: 3}
-  m_Name: Maira_LOOPFumoDeCorda_RecebimentoFumoDeCorda
+  m_Name: Antonio_PA03_EntregaIngredientesTempero
   m_EditorClassIdentifier: 
-  ConversationContext: "Checagem se o novo fumo de corda est\xE1 pronto"
-  FirstDialogue: {fileID: 11400000, guid: d4e521407e630ac4da6ebda24922b966, type: 2}
+  ConversationContext: "Checagem da entrega dos ingredientes do tempero que Ant\xF4nio
+    precisa (2x salsinha, 2x cebola, 1x tomate)"
+  FirstDialogue: {fileID: 11400000, guid: 67882135c2e5e1b42b9a66228a3aa837, type: 2}

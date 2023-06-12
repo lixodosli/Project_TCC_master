@@ -17,6 +17,7 @@ MonoBehaviour:
   LettersPerSecond: 0
   Effects:
   - rid: 6470089634015870985
+  - rid: 1506305913177243680
   DoEffectsOnStart: 1
   OnStartDialogue:
     m_PersistentCalls:
@@ -28,6 +29,14 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1506305913177243680
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemsToRemove:
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}
+        - {fileID: 2242485431741505342, guid: 4e01c7ae9fc2e8146bdfe23183585b56, type: 3}
     - rid: 6470089634015870985
       type: {class: WaitTimeEffect, ns: , asm: Assembly-CSharp}
       data:

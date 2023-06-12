@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: "Ant\xF4nio"
   Text: "Farei quest\xE3o de dier que tamb\xE9m foi gra\xE7as a voc\xEA."
   LettersPerSecond: 0
+  Effects:
+  - rid: 1506305913177243669
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243669
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 3d6d250cb8d4f454aa134e06c47c28b9, type: 2}
+        NewConversation: {fileID: 11400000, guid: 3aefdcf69681af240867420739de8462,
+          type: 2}
