@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c94db9b34fad342a0df4c3a6f10df2, type: 3}
   m_Name: Maira_PA01_EntregaErvasDaninhas
   m_EditorClassIdentifier: 
-  ConversationContext: Primeira entrega das ervas daninhas.
+  ConversationContext: Primeira entrega das ervas daninhas (3x).
   FirstDialogue: {fileID: 11400000, guid: 027c702e615bd8e41bb219e7403a5524, type: 2}

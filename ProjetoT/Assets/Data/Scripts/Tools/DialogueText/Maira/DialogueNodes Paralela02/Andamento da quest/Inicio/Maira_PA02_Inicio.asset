@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7c94db9b34fad342a0df4c3a6f10df2, type: 3}
-  m_Name: Maira_LOOPFumoDeCorda_RecebimentoFumoDeCorda
+  m_Name: Maira_PA02_Inicio
   m_EditorClassIdentifier: 
-  ConversationContext: "Checagem se o novo fumo de corda est\xE1 pronto"
-  FirstDialogue: {fileID: 11400000, guid: d4e521407e630ac4da6ebda24922b966, type: 2}
+  ConversationContext: "Checagem se o jogador ja upou pro nivel 2 de doa\xE7\xE3o
+    para iniciar a paralela 02"
+  FirstDialogue: {fileID: 11400000, guid: 615131590cc6e604ea0564d52680d56a, type: 2}

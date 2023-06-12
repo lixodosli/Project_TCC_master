@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: "Ant\xF4nio"
   Text: "Maravilha, voc\xEA trouxe!"
   LettersPerSecond: 0
+  Effects:
+  - rid: 1506305913177243677
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 7bce33277b857ed4f9dbe560328a1fd5, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243677
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 3d6d250cb8d4f454aa134e06c47c28b9, type: 2}
+        ItemsToRemove:
+        - {fileID: 4334225856995590168, guid: ddcb902603323974ea5eb5d521c97faa, type: 3}
+        - {fileID: 4500694142824977669, guid: 882c5caa158edee4cbfcdeb6a811b76c, type: 3}
+        - {fileID: 3394075250032735142, guid: af5086a3ce62e6341b91dbe656a7e100, type: 3}
+        - {fileID: 8062083597363318292, guid: 58f80bb70b7b31b4f92eb85aec0a050f, type: 3}

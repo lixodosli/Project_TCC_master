@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e192ebd2ed5b14c9b1f00122109cf3, type: 3}
-  m_Name: Poco_Idle1_InteracaoPadraoComOPoco_Dialogue1
+  m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
+  m_Name: Antonio_PA04_Inicio_CDialogue01
   m_EditorClassIdentifier: 
   Name: 
-  Text: "Uma forte e medonha aura paira ao redor do po\xE7o."
+  Text: 
   LettersPerSecond: 0
   Effects: []
   DoEffectsOnStart: 0
@@ -23,7 +23,15 @@ MonoBehaviour:
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
-  NextDialog: {fileID: 0}
+  Conditions:
+  - rid: 1506305913177243663
+  IfTrue: {fileID: 11400000, guid: 25134255f2b795d4791da718772f333d, type: 2}
+  IfFalse: {fileID: 11400000, guid: 452d7ab8a17414f4583722684b455f6f, type: 2}
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1506305913177243663
+      type: {class: DonationLevelCondition, ns: , asm: Assembly-CSharp}
+      data:
+        DonationLevel: 3
+        DonationInPoints: 0
