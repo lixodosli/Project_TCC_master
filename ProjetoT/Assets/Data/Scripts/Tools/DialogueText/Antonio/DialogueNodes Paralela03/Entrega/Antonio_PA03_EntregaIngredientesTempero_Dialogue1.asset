@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: "Ant\xF4nio"
   Text: "Voc\xEA n\xE3o tem no\xE7\xE3o do quanto vai ajudar."
   LettersPerSecond: 0
+  Effects:
+  - rid: 1506305913177243654
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 392347d15fb7cbd4697d06d619ed4ecc, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243654
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 3d6d250cb8d4f454aa134e06c47c28b9, type: 2}
+        ItemsToRemove:
+        - {fileID: 271967265854252969, guid: b9dc6872594611a4dad01feafb871574, type: 3}
+        - {fileID: 271967265854252969, guid: b9dc6872594611a4dad01feafb871574, type: 3}
+        - {fileID: 8090324183780911707, guid: e2be71d6654136b4fb3c6b59e3e5dcea, type: 3}
+        - {fileID: 8090324183780911707, guid: e2be71d6654136b4fb3c6b59e3e5dcea, type: 3}
+        - {fileID: 1158408248974223655, guid: 00f5112a896c5794cbe2a4366ab74f39, type: 3}

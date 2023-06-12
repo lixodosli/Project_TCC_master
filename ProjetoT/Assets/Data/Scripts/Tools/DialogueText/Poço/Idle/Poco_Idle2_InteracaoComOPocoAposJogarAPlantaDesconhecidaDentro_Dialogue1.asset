@@ -15,10 +15,22 @@ MonoBehaviour:
   Name: 
   Text: 'A energia maliciosa que vinha de dentro de repente se dissipou! '
   LettersPerSecond: 0
+  Effects:
+  - rid: 1506305913177243676
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
-  NextDialog: {fileID: 0}
+  NextDialog: {fileID: 11400000, guid: ff1d6a59a63602b45b82dde2e02adfdc, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243676
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: ba85e84c2eb4c3e4aaf9113e9d708a11, type: 2}
+        NewConversation: {fileID: 11400000, guid: 9d9a695af9d8aa1478bd6a4929f5fa75,
+          type: 2}

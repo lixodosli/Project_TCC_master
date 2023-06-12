@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e192ebd2ed5b14c9b1f00122109cf3, type: 3}
-  m_Name: Antonio_PA03_EntregaIngredientesTempero_NEGATIVA_Dialogue1
+  m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
+  m_Name: Maira_PA02_Inicio_CDialogue01
   m_EditorClassIdentifier: 
-  Name: "Ant\xF4nio"
-  Text: "Pra me ajudar basta trazer salsinha, cebola e tomate. Dois de cada, exceto
-    o tomate, que pode ser s\xF3 um."
+  Name: 
+  Text: 
   LettersPerSecond: 0
   Effects: []
   DoEffectsOnStart: 0
@@ -24,7 +23,15 @@ MonoBehaviour:
   OnEndDialogue:
     m_PersistentCalls:
       m_Calls: []
-  NextDialog: {fileID: 0}
+  Conditions:
+  - rid: 1506305913177243682
+  IfTrue: {fileID: 0}
+  IfFalse: {fileID: 0}
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1506305913177243682
+      type: {class: DonationLevelCondition, ns: , asm: Assembly-CSharp}
+      data:
+        DonationLevel: 1
+        DonationInPoints: 0

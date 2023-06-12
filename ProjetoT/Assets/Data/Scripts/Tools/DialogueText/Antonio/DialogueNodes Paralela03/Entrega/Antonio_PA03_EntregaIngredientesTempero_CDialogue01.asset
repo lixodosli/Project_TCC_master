@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
+  m_Name: Antonio_PA03_EntregaIngredientesTempero_CDialogue01
+  m_EditorClassIdentifier: 
+  Name: 
+  Text: 
+  LettersPerSecond: 0
+  Effects: []
+  DoEffectsOnStart: 0
+  OnStartDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  Conditions:
+  - rid: 1506305913177243651
+  - rid: 1506305913177243652
+  - rid: 1506305913177243653
+  IfTrue: {fileID: 11400000, guid: 203341afbd444d347b1625e8ae287402, type: 2}
+  IfFalse: {fileID: 11400000, guid: 41fc106faa25fd54b978fcf9d07ce4bd, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243651
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        ItemToCheck: {fileID: 4826523985093584011, guid: b9dc6872594611a4dad01feafb871574,
+          type: 3}
+        ItemQuantity: 2
+    - rid: 1506305913177243652
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        ItemToCheck: {fileID: 2230200223603006595, guid: e2be71d6654136b4fb3c6b59e3e5dcea,
+          type: 3}
+        ItemQuantity: 2
+    - rid: 1506305913177243653
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        ItemToCheck: {fileID: 8483869380073568561, guid: 00f5112a896c5794cbe2a4366ab74f39,
+          type: 3}
+        ItemQuantity: 1

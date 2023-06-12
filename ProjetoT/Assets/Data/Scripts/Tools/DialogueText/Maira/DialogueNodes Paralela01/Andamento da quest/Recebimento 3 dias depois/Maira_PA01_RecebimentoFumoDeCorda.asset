@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c94db9b34fad342a0df4c3a6f10df2, type: 3}
   m_Name: Maira_PA01_RecebimentoFumoDeCorda
   m_EditorClassIdentifier: 
-  ConversationContext: 
+  ConversationContext: "Ap\xF3s se passarem os 3 dias, recebimento do fumo de corda"
   FirstDialogue: {fileID: 11400000, guid: 75bf3a64e2825c447968a337d5928a15, type: 2}

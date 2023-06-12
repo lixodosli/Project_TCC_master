@@ -16,6 +16,9 @@ MonoBehaviour:
   Text: "Eles s\xE3o: salsinha, cebola e tomate. Dois de cada, exceto o tomate, que
     pode ser s\xF3 um."
   LettersPerSecond: 0
+  Effects:
+  - rid: 1506305913177243659
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -23,3 +26,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1506305913177243659
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 3d6d250cb8d4f454aa134e06c47c28b9, type: 2}
+        NewConversation: {fileID: 11400000, guid: 0ac38c97ecdafec45a26c6c988142938,
+          type: 2}
