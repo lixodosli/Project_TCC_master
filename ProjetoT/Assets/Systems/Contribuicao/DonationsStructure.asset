@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e757aebd390d144a54d20b4f79e21d, type: 3}
+  m_Name: DonationsStructure
+  m_EditorClassIdentifier: 
+  DonationsMilestones: 000000000f0000003200000064000000f4010000
+  CurrentDonationsPoints: 0
+  CurrentMilestoneIndex: 0

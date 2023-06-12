@@ -1045,6 +1045,7 @@ GameObject:
   - component: {fileID: 215379753}
   - component: {fileID: 215379754}
   - component: {fileID: 215379755}
+  - component: {fileID: 215379756}
   m_Layer: 0
   m_Name: GameStateManager
   m_TagString: Untagged
@@ -1120,6 +1121,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DialogueUI: {fileID: 293608296}
+--- !u!114 &215379756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215379747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc10ee63a76fef94bbfded6329fcd767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Structure: {fileID: 11400000, guid: 5bcfd6dd5a5223b49af4cca3b8c5ad7a, type: 2}
 --- !u!4 &216659977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05b3c7998f9521b49ab8389ec3a123e3,
@@ -3953,7 +3967,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-150944
+  m_Name: pb_Mesh-531226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
