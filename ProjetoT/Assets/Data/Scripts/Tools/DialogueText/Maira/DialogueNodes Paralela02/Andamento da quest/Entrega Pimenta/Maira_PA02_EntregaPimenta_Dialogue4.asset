@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Maira_PA02_EntregaPimenta_Dialogue4
   m_EditorClassIdentifier: 
   Name: 
-  Text: "Voc\xEA recebeu Extrato de pimenta (antif\xFAngico)."
+  Text: "Voc\xEA recebeu Antif\xFAngico (Extrato de Pimenta)"
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348489
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: beb38eec6fcfb6e459b0c6ff4213694a, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348489
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemToGive:
+        - {fileID: 3047235688909727026, guid: a3bc9f891db7cc04ba8181e0d6b48406, type: 3}

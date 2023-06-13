@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: Maira
   Text: Estarei esperando.
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348491
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348491
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: b4c28dda3ebe71c40b0c7cdbbd3aca53,
+          type: 2}

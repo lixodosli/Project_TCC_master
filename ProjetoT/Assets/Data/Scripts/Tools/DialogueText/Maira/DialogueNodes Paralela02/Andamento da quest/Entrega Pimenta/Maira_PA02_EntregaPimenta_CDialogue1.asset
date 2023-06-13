@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
-  m_Name: Maira_PA02_Inicio_CDialogue01
+  m_Name: Maira_PA02_EntregaPimenta_CDialogue1
   m_EditorClassIdentifier: 
   Name: 
   Text: 
@@ -24,14 +24,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   Conditions:
-  - rid: 1506305913177243682
-  IfTrue: {fileID: 0}
-  IfFalse: {fileID: 0}
+  - rid: 6470089662115348487
+  IfTrue: {fileID: 11400000, guid: 8f19cd3956f7e86469cbafc91c3be80f, type: 2}
+  IfFalse: {fileID: 11400000, guid: 944ba0275b2dcf64cb509851594686cd, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 1506305913177243682
-      type: {class: DonationLevelCondition, ns: , asm: Assembly-CSharp}
+    - rid: 6470089662115348487
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
       data:
-        DonationLevel: 1
-        DonationInPoints: 0
+        ItemToCheck: {fileID: 9083551465080880622, guid: a3c437f6d1ea1484d8eed3854fa5266c,
+          type: 3}
+        ItemQuantity: 1

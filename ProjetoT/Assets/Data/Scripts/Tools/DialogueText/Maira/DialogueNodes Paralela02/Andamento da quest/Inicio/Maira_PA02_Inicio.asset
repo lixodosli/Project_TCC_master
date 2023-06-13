@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConversationContext: "Checagem se o jogador ja upou pro nivel 2 de doa\xE7\xE3o
     para iniciar a paralela 02"
-  FirstDialogue: {fileID: 11400000, guid: 615131590cc6e604ea0564d52680d56a, type: 2}
+  FirstDialogue: {fileID: 11400000, guid: 4ff6041b7edfdbc449a8d69721430c06, type: 2}

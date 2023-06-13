@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: Maira
   Text: "Que bom que voc\xEA t\xE1 aqui, Alan!"
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348481
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 6dd1dfc35368d3b4584b0fe293d6de07, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348481
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: 9531dbc79d832734c9dc4a48b027290e,
+          type: 2}

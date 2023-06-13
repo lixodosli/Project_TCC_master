@@ -6,7 +6,7 @@ public class ToolTip : MonoBehaviour
 {
     #region Position
     [Header("Position Configs")]
-    public Vector3 TipBox_PivotTargetOffset;
+    public Vector3 TipBox_PivotTargetOffset = new Vector3(0f, 0.75f, 0f);
     public float TipBox_SpeedUpdate = 30;
     #endregion
 

@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: Maira
   Text: "Ah, voc\xEA trouxe o alho? Muito bem, me d\xE1 s\xF3 um segundo..."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348484
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 20b6b7bd1da64104e9b9aa0f8459745b, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348484
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemsToRemove:
+        - {fileID: 4771220039176555943, guid: 271164296e2e7674299c8612b5b23cf4, type: 3}
