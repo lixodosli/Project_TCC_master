@@ -54,11 +54,13 @@ public class ChangeConversationEffect : DialogueEffect
 [System.Serializable]
 public class MoveNPCEffect : DialogueEffect
 {
-    public Transform NewPosition;
+    public string NPCName;
+    public Vector3 NewPosition;
 
     public override void DoEffect()
     {
-        //ReferenceNPC.transform.position = NewPosition.transform.position;
+        GameObject npc = GameObject.Find(NPCName);
+        npc.transform.position = NewPosition;
     }
 }
 
@@ -140,11 +142,11 @@ public class StartQuestEffect : DialogueEffect
 [System.Serializable]
 public class MovePlayerEffect : DialogueEffect
 {
-    public Transform NewPosition;
+    public Vector3 NewPosition;
 
     public override void DoEffect()
     {
-        PlayerMovement.Player.transform.position = NewPosition.transform.position;
+        PlayerMovement.Player.transform.position = NewPosition;
     }
 }
 

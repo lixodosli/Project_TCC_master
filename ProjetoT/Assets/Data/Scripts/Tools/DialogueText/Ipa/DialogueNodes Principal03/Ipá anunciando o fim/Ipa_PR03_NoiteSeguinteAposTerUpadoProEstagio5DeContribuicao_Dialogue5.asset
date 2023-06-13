@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Ipa_PR03_NoiteSeguinteAposTerUpadoProEstagio5DeContribuicao_Dialogue5
   m_EditorClassIdentifier: 
   Name: "Ip\xE1"
-  Text: Oque?
+  Text: O que?
   LettersPerSecond: 0
+  Effects: []
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +24,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 31315d3f6d4d6c148a5819ea6b4c8d53, type: 2}
+  references:
+    version: 2
+    RefIds: []
