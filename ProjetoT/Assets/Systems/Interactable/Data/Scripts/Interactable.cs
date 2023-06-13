@@ -29,6 +29,11 @@ public abstract class Interactable : MonoBehaviour, IInteractable
     public AudioClip OnInteractSFX => m_OnInteractSFX;
     #endregion
 
+    private void OnDisable()
+    {
+        Messenger.Broadcast(NearbyInteractables.InteractableName, ItemName);
+    }
+
     public void ChangeInteraction(bool interaction)
     {
         m_CanInteract = interaction;

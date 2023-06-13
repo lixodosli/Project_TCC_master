@@ -132,13 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946bad136ed270549befed24f3b49dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ItemName: Muda de Batata-Doce
+  m_ItemName: Muda de Cebola
   m_ItemID: 
-  m_ItemSprite: {fileID: -1633966752, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
+  m_ItemSprite: {fileID: -1419747663, guid: 92fa5338c30993343b36b2ffcfc0f721, type: 3}
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
-  m_InteractWithClosest: 0
+  m_InteractWithClosest: 1
   Effects: []
   references:
     version: 2

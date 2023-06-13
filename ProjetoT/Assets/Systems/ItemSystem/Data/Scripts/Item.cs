@@ -7,6 +7,7 @@ public abstract class Item : Interactable
 {
     [SerializeField] private bool m_InteractWithClosest;
     [SerializeReference] public List<ItemEffect> Effects = new List<ItemEffect>();
+    private bool FunctionsEnabbled = false;
 
     [ContextMenu("Add Consumable")] public void AddConsumable() => Effects.Add(new ConsumableEffect(this));
     [ContextMenu("Add Food")] public void AddFood() => Effects.Add(new HungryEffect(this));
@@ -29,6 +30,18 @@ public abstract class Item : Interactable
             effect.Setup(this);
         }
     }
+
+    private void OnEnable()
+    {
+        Invoke(nameof(EnableFunctions), 0.3f);
+    }
+
+    private void OnDisable()
+    {
+        FunctionsEnabbled = false;
+    }
+
+    private void EnableFunctions() => FunctionsEnabbled = true;
 
     private void OnTransformParentChanged()
     {
@@ -69,7 +82,7 @@ public abstract class Item : Interactable
                     AudioManager.Instance.Play(OnInteractSFX, AudioType.SFX, AudioConfigs.Default());
                 }
 
-                closest.UseUseable(this);
+                //closest.UseUseable(this);
             }
         }
         else
@@ -82,6 +95,8 @@ public abstract class Item : Interactable
     {
         if (GameStateManager.Game.State != GameState.World_Free)
             return;
+
+        if (!FunctionsEnabbled) return;
 
         Inventory.Instance.CollectItem(this);
     }

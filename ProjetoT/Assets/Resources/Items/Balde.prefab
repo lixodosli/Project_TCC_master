@@ -197,7 +197,7 @@ MonoBehaviour:
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
-  m_InteractWithClosest: 0
+  m_InteractWithClosest: 1
   Effects: []
   references:
     version: 2

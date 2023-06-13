@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
 public class DonationBox : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Item itemCollided = collision.gameObject.GetComponent<Item>();
-
-        if(itemCollided != null)
+        if (other.gameObject.TryGetComponent<Item>(out var itemCollided))
         {
             DonationsManager.Instance.AddDonation(DonationsManager.Instance.PointsConfigs.Points(itemCollided));
-            Destroy(itemCollided);
+            Messenger.Broadcast(NearbyInteractables.InteractableName, itemCollided.ItemName);
+            itemCollided.transform.position = new Vector3(9999f, 0, 9999f);
+            itemCollided.gameObject.SetActive(false);
+            itemCollided.GetComponent<Rigidbody>().useGravity = false;
+            //Destroy(itemCollided.gameObject, 1f);
         }
     }
 }

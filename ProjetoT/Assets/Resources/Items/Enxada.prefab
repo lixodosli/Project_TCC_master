@@ -157,7 +157,7 @@ MonoBehaviour:
   m_CanInteract: 1
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 8300000, guid: 384178fa4d41b7b43a5343f51da10504, type: 3}
-  m_InteractWithClosest: 0
+  m_InteractWithClosest: 1
   Effects: []
   references:
     version: 2
