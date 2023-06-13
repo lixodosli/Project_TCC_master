@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Muda de cebola."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348497
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 00e9be1089621344aad0886445bb5185, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348497
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        ItemToGive:
+        - {fileID: 3538600493520248644, guid: 40a0a22152c5e0f44a3554d5dfaf12bb, type: 3}

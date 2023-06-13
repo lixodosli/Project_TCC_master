@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Sementes de alface."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348498
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: a2f8468aa007b8b45adce7f0afdc0027, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348498
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        ItemToGive:
+        - {fileID: 2759118627011562091, guid: 2aea7e9fdc7f4234680c22e01370fe17, type: 3}
