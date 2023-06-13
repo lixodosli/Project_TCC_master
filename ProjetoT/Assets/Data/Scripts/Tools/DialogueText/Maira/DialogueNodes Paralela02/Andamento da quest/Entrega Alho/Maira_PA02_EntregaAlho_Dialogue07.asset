@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Sementes de pimenta."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348486
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 8c68f3c7bb8b3604ead9022d0e9e07ce, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348486
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemToGive:
+        - {fileID: 2242070091237212673, guid: 4b2b2decd5b6ddc4fa9ee0836558b791, type: 3}

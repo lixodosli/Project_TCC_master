@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Maira_LOOPFumoDeCorda_EntregaErvasDaninhas
   m_EditorClassIdentifier: 
   ConversationContext: Maira esta disposta a fazer mais fumo.
-  FirstDialogue: {fileID: 11400000, guid: a17f898eb003f8540b3543abfd0f522b, type: 2}
+  FirstDialogue: {fileID: 11400000, guid: 8a3313fe77d1b9c428a56870dfe38733, type: 2}

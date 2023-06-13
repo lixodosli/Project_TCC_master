@@ -12,11 +12,13 @@ public class DonationsStructure : ScriptableObject
     private void OnEnable()
     {
         CurrentDonationsPoints = 0;
+        CurrentMilestoneIndex = 0;
     }
 
     private void OnValidate()
     {
         CurrentDonationsPoints = Mathf.Clamp(CurrentDonationsPoints, 0, int.MaxValue);
+        CurrentMilestoneIndex = Mathf.Clamp(CurrentMilestoneIndex, 0, DonationsMilestones.Count - 1);
     }
 
     public void AddDonation(int add)

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92228ada37c5bff458d2e26a8e7e5e2e, type: 3}
+  m_Name: Maira_LOOPFumoDeCorda_EntregaErvasDaninhas_CDialogue02
+  m_EditorClassIdentifier: 
+  Name: 
+  Text: 
+  LettersPerSecond: 0
+  Effects: []
+  DoEffectsOnStart: 0
+  OnStartDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEndDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  Conditions:
+  - rid: 6470089634015870984
+  IfTrue: {fileID: 11400000, guid: 6f89e371ba6c18c4585157338dd5c854, type: 2}
+  IfFalse: {fileID: 11400000, guid: b75143ce91d2e444289a96a1b545acd5, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089634015870984
+      type: {class: ItemDialogueCondition, ns: , asm: Assembly-CSharp}
+      data:
+        ItemToCheck: {fileID: 8439045993010298482, guid: 4e01c7ae9fc2e8146bdfe23183585b56,
+          type: 3}
+        ItemQuantity: 3

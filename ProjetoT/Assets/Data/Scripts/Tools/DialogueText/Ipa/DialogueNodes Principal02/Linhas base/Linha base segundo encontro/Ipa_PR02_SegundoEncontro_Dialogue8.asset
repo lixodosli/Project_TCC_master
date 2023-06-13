@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: "Ip\xE1"
   Text: Agora, indo ao que interessa, minhas oferendas!
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348495
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348495
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 01322af0d2a57ab44b0540c0b71290b9, type: 2}
+        NewConversation: {fileID: 11400000, guid: ed5c6bcff3837b045a9a50ded3fc87e5,
+          type: 2}

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Maira_PA02_EntregaAlho_Dialogue04
   m_EditorClassIdentifier: 
   Name: 
-  Text: "Voc\xEA recebeu Extrato de alho (antipraga)"
+  Text: "Voc\xEA recebeu Antipraga (Extrato de alho)"
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348485
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 563e5d29049c6204ca54f5150367e57b, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348485
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemToGive:
+        - {fileID: 9025736541542543985, guid: b5dcef2fe76717a4bb929cb213ab7a0c, type: 3}

@@ -46,6 +46,7 @@ public class NearbyInteractables : MonoBehaviour
     private void UpdateList(string itemName)
     {
         Interactable interactable = _NearbyInteractables.Find(i => i.ItemName == itemName);
+
         if (interactable != null && !interactable.gameObject.activeSelf)
         {
             interactable.SetIsClose(false);

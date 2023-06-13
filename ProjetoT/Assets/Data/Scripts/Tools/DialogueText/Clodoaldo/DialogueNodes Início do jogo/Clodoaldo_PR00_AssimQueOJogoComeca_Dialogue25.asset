@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Sementes de almeir\xE3o."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348499
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: df86d875952ffec4180eef4f53a52012, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348499
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        ItemToGive:
+        - {fileID: 3732727624958379196, guid: 6d5223f9ecd364e4b9b87282e9c046b4, type: 3}

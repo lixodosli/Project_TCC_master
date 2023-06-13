@@ -4,4 +4,9 @@ using UnityEngine;
 
 public class GameItem : Item
 {
+    private void OnValidate()
+    {
+        if(ItemName != null)
+            name = ItemName;
+    }
 }

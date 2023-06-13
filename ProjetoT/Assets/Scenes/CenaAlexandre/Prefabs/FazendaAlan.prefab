@@ -18758,6 +18758,7 @@ MonoBehaviour:
   m_CanCollect: 1
   m_OnInteractSFX: {fileID: 0}
   m_TeleportConfig: {fileID: 11400000, guid: ab07634ee0a470947a3b64ef69a5ce38, type: 2}
+  TimePass: 0
 --- !u!114 &1289240932646195551
 MonoBehaviour:
   m_ObjectHideFlags: 0

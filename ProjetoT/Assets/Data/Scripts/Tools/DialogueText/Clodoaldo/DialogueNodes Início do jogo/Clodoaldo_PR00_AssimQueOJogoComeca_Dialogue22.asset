@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: 
   Text: "Voc\xEA recebeu Muda de salsinha."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348496
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: 90d0577d8eed789469b3db6af5247dfb, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348496
+      type: {class: AddItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        ItemToGive:
+        - {fileID: 9169216651573170342, guid: d99c5fa31ae4bbf4d9b336f95e2ad9ef, type: 3}

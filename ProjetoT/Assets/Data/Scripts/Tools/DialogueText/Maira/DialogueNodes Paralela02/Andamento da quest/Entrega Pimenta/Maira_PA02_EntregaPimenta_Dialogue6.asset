@@ -16,6 +16,9 @@ MonoBehaviour:
   Text: "A partir de agora, sempre que precisar traga alho ou pimenta, que eu fa\xE7o
     mais desses extrato que mant\xE9m as plantas saud\xE1vel."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348490
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -23,3 +26,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348490
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        NewConversation: {fileID: 11400000, guid: 37b1a60a9e0d6dc41bb0c9eb754f88d3,
+          type: 2}

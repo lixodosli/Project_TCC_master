@@ -15,6 +15,9 @@ MonoBehaviour:
   Name: Maira
   Text: "Voc\xEA trouxe a pimenta tamb\xE9m! Me d\xE1 s\xF3 um segundo..."
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348488
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +25,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 11400000, guid: aa9c783f3cd7321419e8fc0081486e29, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348488
+      type: {class: RemoveItemEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: d57f01d0359aeab4ba56bf8cb280cf1a, type: 2}
+        ItemsToRemove:
+        - {fileID: 5614389124184314524, guid: a3c437f6d1ea1484d8eed3854fa5266c, type: 3}

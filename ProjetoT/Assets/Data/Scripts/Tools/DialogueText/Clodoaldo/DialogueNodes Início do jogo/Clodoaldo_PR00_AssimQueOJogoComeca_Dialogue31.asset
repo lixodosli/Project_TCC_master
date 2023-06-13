@@ -15,6 +15,10 @@ MonoBehaviour:
   Name: Clodoaldo
   Text: A cada seis dias visitarei a fazenda para acompanhar seu progresso e demandas.
   LettersPerSecond: 0
+  Effects:
+  - rid: 6470089662115348492
+  - rid: 6470089662115348493
+  DoEffectsOnStart: 0
   OnStartDialogue:
     m_PersistentCalls:
       m_Calls: []
@@ -22,3 +26,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NextDialog: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6470089662115348492
+      type: {class: MoveNPCEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        NPCName: ClodoaldoIdle
+        NewPosition: {x: 303.57, y: 0.045, z: -255.16}
+    - rid: 6470089662115348493
+      type: {class: ChangeConversationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ReferenceNPC: {fileID: 11400000, guid: 7bbe1ba518e474447a49e24b46896274, type: 2}
+        NewConversation: {fileID: 11400000, guid: c312be6c801196c429fa0467665374b5,
+          type: 2}
